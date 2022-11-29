@@ -1,2 +1,2 @@
-# PyTrial
-AI-Driven In Silico Clinical Trial Optimization.
+# PyTrial: AI-Driven In Silico Clinical Trial Optimization
+
