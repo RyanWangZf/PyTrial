@@ -1,0 +1,6765 @@
+DRUG,atc4
+quinidine gluconate,C01BA
+strattera,N06BA
+atomoxetine,N06BA
+duloxetine,N06AX
+cymbalta,N06AX
+olanzapine,N05AH
+melatonin,N05AH
+olanzapine (disintegrating tablet),N05AH
+olanzapine (disintergrating tablet),N05AH
+zymar,N05AH
+d5w,N05AH
+furosemide,N05AH
+lorazepam,N05AH
+haloperidol,N05AH
+zyprex,N05AH
+olanzapi,N05AH
+zyprexa zydis,N05AH
+olan,N05AH
+olanza,N05AH
+zydis,N05AH
+ola,N05AH
+abciximab,B01AC
+reopro,B01AC
+gemcitabine hcl,L01BC
+gemcitabine,L01BC
+insulin,A10AB
+humalog,A10AB
+humalog insulin,A10AB
+insulin pump,A10AB
+insulin pump (self administering medication),A10AB
+insulin ,A10AB
+insulin human regular,A10AB
+insulin lispro (human),A10AB
+ultralente humulin insulin,A10AB
+humalog 75/25 pen,A10AB
+creon 20,A10AB
+insulin lispro desensitization protocol,A10AB
+insulin,A10AC
+humalog,A10AC
+humalog insulin,A10AC
+insulin pump,A10AC
+insulin pump (self administering medication),A10AC
+insulin ,A10AC
+insulin human regular,A10AC
+insulin lispro (human),A10AC
+ultralente humulin insulin,A10AC
+humalog 75/25 pen,A10AC
+creon 20,A10AC
+insulin lispro desensitization protocol,A10AC
+insulin,A10AD
+humalog,A10AD
+humalog insulin,A10AD
+insulin pump,A10AD
+insulin pump (self administering medication),A10AD
+insulin ,A10AD
+insulin human regular,A10AD
+insulin lispro (human),A10AD
+ultralente humulin insulin,A10AD
+humalog 75/25 pen,A10AD
+creon 20,A10AD
+insulin lispro desensitization protocol,A10AD
+humalog mix 75-25,A10AB
+byetta,A10AB
+humalog mix 75-25,A10AC
+byetta,A10AC
+humalog mix 75-25,A10AD
+byetta,A10AD
+pemetrexed,L01BA
+humulin-r insulin,A10AB
+neo*iv*insulin (dilute),A10AB
+urecholine,A10AB
+regular insulin,A10AB
+revlimid,A10AB
+humulin r,A10AB
+zz ,A10AB
+*nf* adefovir (hepsera),A10AB
+adefovir dipivoxil,A10AB
+insulin regular human,A10AB
+mestinon sr,A10AB
+insulin human regular (dilute),A10AB
+pimecrolimus,A10AB
+hydromorphone,A10AB
+fenofibrate,A10AB
+novolog,A10AB
+acetaminophen (liquid),A10AB
+brimonidine,A10AB
+humulin-r insulin,A10AC
+neo*iv*insulin (dilute),A10AC
+urecholine,A10AC
+regular insulin,A10AC
+revlimid,A10AC
+humulin r,A10AC
+zz ,A10AC
+*nf* adefovir (hepsera),A10AC
+adefovir dipivoxil,A10AC
+insulin regular human,A10AC
+mestinon sr,A10AC
+insulin human regular (dilute),A10AC
+pimecrolimus,A10AC
+hydromorphone,A10AC
+fenofibrate,A10AC
+novolog,A10AC
+acetaminophen (liquid),A10AC
+brimonidine,A10AC
+humulin-r insulin,A10AD
+neo*iv*insulin (dilute),A10AD
+urecholine,A10AD
+regular insulin,A10AD
+revlimid,A10AD
+humulin r,A10AD
+zz ,A10AD
+*nf* adefovir (hepsera),A10AD
+adefovir dipivoxil,A10AD
+insulin regular human,A10AD
+mestinon sr,A10AD
+insulin human regular (dilute),A10AD
+pimecrolimus,A10AD
+hydromorphone,A10AD
+fenofibrate,A10AD
+novolog,A10AD
+acetaminophen (liquid),A10AD
+brimonidine,A10AD
+humulin-r insulin,A10AE
+insulin human regular,A10AE
+insulin,A10AE
+neo*iv*insulin (dilute),A10AE
+urecholine,A10AE
+regular insulin,A10AE
+revlimid,A10AE
+humulin r,A10AE
+zz ,A10AE
+insulin pump,A10AE
+*nf* adefovir (hepsera),A10AE
+adefovir dipivoxil,A10AE
+insulin regular human,A10AE
+mestinon sr,A10AE
+insulin human regular (dilute),A10AE
+pimecrolimus,A10AE
+hydromorphone,A10AE
+fenofibrate,A10AE
+novolog,A10AE
+acetaminophen (liquid),A10AE
+brimonidine,A10AE
+insulin pump (self administering medication),A10AE
+humulin-r insulin,A10AF
+insulin human regular,A10AF
+insulin,A10AF
+neo*iv*insulin (dilute),A10AF
+urecholine,A10AF
+regular insulin,A10AF
+revlimid,A10AF
+humulin r,A10AF
+zz ,A10AF
+insulin pump,A10AF
+*nf* adefovir (hepsera),A10AF
+adefovir dipivoxil,A10AF
+insulin regular human,A10AF
+mestinon sr,A10AF
+insulin human regular (dilute),A10AF
+pimecrolimus,A10AF
+hydromorphone,A10AF
+fenofibrate,A10AF
+novolog,A10AF
+acetaminophen (liquid),A10AF
+brimonidine,A10AF
+insulin pump (self administering medication),A10AF
+insulin regular human (u-500),A10AB
+humulin-r insulin (u-500),A10AB
+insulin regular human (u-500),A10AC
+humulin-r insulin (u-500),A10AC
+insulin regular human (u-500),A10AD
+humulin-r insulin (u-500),A10AD
+insulin regular human (u-500),A10AE
+humulin-r insulin (u-500),A10AE
+insulin regular human (u-500),A10AF
+humulin-r insulin (u-500),A10AF
+humulin 70/30,A10AB
+insulin human 70/30,A10AB
+humulin,A10AB
+nph insulin human recomb,A10AB
+humulin 70/30,A10AC
+insulin human 70/30,A10AC
+humulin,A10AC
+nph insulin human recomb,A10AC
+humulin 70/30,A10AD
+insulin human 70/30,A10AD
+humulin,A10AD
+nph insulin human recomb,A10AD
+humulin 70/30,A10AE
+insulin human 70/30,A10AE
+humulin,A10AE
+insulin ,A10AE
+nph insulin human recomb,A10AE
+humulin 70/30,A10AF
+insulin human 70/30,A10AF
+humulin,A10AF
+insulin ,A10AF
+nph insulin human recomb,A10AF
+triamcinolone acetonide,A01AC
+triamcinolone acetonide inj,A01AC
+triamcinolone acetonide,C05AA
+triamcinolone acetonide inj,C05AA
+triamcinolone acetonide,D07AB
+triamcinolone acetonide inj,D07AB
+triamcinolone acetonide,D07XB
+triamcinolone acetonide inj,D07XB
+triamcinolone acetonide,H02AB
+triamcinolone acetonide inj,H02AB
+triamcinolone acetonide,R01AD
+triamcinolone acetonide inj,R01AD
+triamcinolone acetonide,R03BA
+triamcinolone acetonide inj,R03BA
+triamcinolone acetonide,S01BA
+triamcinolone acetonide inj,S01BA
+dasatinib,L01XE
+hydroxyurea,L01XX
+*nf* dasatinib,L01XE
+entecavir,J05AF
+entecavir oral solution,J05AF
+stavudine,J05AF
+*nf* abatacept,L04AA
+aztreonam,J01DF
+aztreonam  desensitization ,J01DF
+atazanavir,J05AE
+valganciclovir hcl,J05AB
+valganciclovir hcl suspension,J05AB
+valganciclovir,J05AB
+valganciclovir suspension,J05AB
+valganciclovir ,J05AB
+valgan,J05AB
+valganciclovir (self med),J05AB
+valganciclov,J05AB
+valganci,J05AB
+valganciclovi,J05AB
+valgancic,J05AB
+valganciclo,J05AB
+val,J05AB
+valganciclovir oral solution,J05AB
+valganc,J05AB
+valgancicl,J05AB
+saquinavir (invirase) cap,J05AE
+pegasys,L03AB
+peginterferon alfa-2a,L03AB
+oseltamivir,J05AH
+oseltamivir phosphate,J05AH
+tamiflu,J05AH
+oselt,J05AH
+oseltam,J05AH
+*nf* capecitabine,L01BC
+ivermectin,D11AX
+*nf* ivermectin,D11AX
+ivermectin,P02CF
+*nf* ivermectin,P02CF
+finasteride,D11AX
+propecia,D11AX
+finasteride,G04CB
+propecia,G04CB
+raltegravir,J05AX
+raltegravir 400mg tablet,J05AX
+januvia,A10BH
+lutein,A10BH
+sitagliptin,A10BH
+aprepitant,A04AD
+indinavir sulfate,J05AE
+imipenem-cilastatin,J01DH
+imipenem-cilastatin *nf*,J01DH
+dorzolamide 2% ophth. soln.,S01EC
+caspofungin,J02AX
+caspofungin acetate,J02AX
+*nf* caspofungin acetate,J02AX
+caspofungin *nf*,J02AX
+caspofungin desensitization,J02AX
+*nf* ertapenem sodium,J01DH
+carvedilol,C07AG
+nelarabine (nf),L01BB
+argatroban,B01AE
+ropinirole hcl,N04BC
+ropinirole,N04BC
+requip,N04BC
+avodart,N04BC
+ropinirole hydrochloride,N04BC
+venlafaxine xr,N06AX
+venlafaxine,N06AX
+avodart,N06AX
+effexor xr,N06AX
+cartia xt,N06AX
+januvia,N06AX
+venlafax,N06AX
+venlafaxi,N06AX
+pantoprazole sodium,A02BC
+pantoprazole,A02BC
+tizanidine,A02BC
+calcium gluconate,A02BC
+phenylephrine hcl,A02BC
+lidocaine 1% (w/presv.),A02BC
+heparin,A02BC
+epinephrine,A02BC
+potassium chloride,A02BC
+midazolam,A02BC
+ketorolac tromethamine,A02BC
+sodium bicarbonate,A02BC
+travatan z,A02BC
+dulera (mometasone-formoterol) 200-5mcg/actuation,A02BC
+advair hfa,A02BC
+sirolimus,L04AA
+sirolimus,S01XA
+insulin pump,L04AA
+insulin pump (self administering medication),L04AA
+insulin pump,S01XA
+insulin pump (self administering medication),S01XA
+temsirolimus,L01XE
+gemtuzumab ozogamicin,L01XC
+tigecycline,J01AA
+hydrocortisone na succ.,A01AC
+hydrocortisone na succ,A01AC
+hydrocortisone,A01AC
+levemir,A01AC
+hydrocor,A01AC
+synthroid,A01AC
+cortef,A01AC
+magnesium sulfate,A01AC
+calcium gluconate,A01AC
+hydrocortisone na succ.,A07EA
+hydrocortisone na succ,A07EA
+hydrocortisone,A07EA
+levemir,A07EA
+hydrocor,A07EA
+synthroid,A07EA
+cortef,A07EA
+magnesium sulfate,A07EA
+calcium gluconate,A07EA
+hydrocortisone na succ.,C05AA
+hydrocortisone na succ,C05AA
+hydrocortisone,C05AA
+levemir,C05AA
+hydrocor,C05AA
+synthroid,C05AA
+cortef,C05AA
+magnesium sulfate,C05AA
+calcium gluconate,C05AA
+hydrocortisone na succ.,D07AA
+hydrocortisone na succ,D07AA
+hydrocortisone,D07AA
+levemir,D07AA
+hydrocor,D07AA
+synthroid,D07AA
+cortef,D07AA
+magnesium sulfate,D07AA
+calcium gluconate,D07AA
+hydrocortisone na succ.,D07XA
+hydrocortisone na succ,D07XA
+hydrocortisone,D07XA
+levemir,D07XA
+hydrocor,D07XA
+synthroid,D07XA
+cortef,D07XA
+magnesium sulfate,D07XA
+calcium gluconate,D07XA
+hydrocortisone na succ.,H02AB
+hydrocortisone na succ,H02AB
+hydrocortisone,H02AB
+levemir,H02AB
+hydrocor,H02AB
+synthroid,H02AB
+cortef,H02AB
+magnesium sulfate,H02AB
+calcium gluconate,H02AB
+hydrocortisone na succ.,S01BA
+hydrocortisone na succ,S01BA
+hydrocortisone,S01BA
+levemir,S01BA
+hydrocor,S01BA
+synthroid,S01BA
+cortef,S01BA
+magnesium sulfate,S01BA
+calcium gluconate,S01BA
+hydrocortisone na succ.,S01CB
+hydrocortisone na succ,S01CB
+hydrocortisone,S01CB
+levemir,S01CB
+hydrocor,S01CB
+synthroid,S01CB
+cortef,S01CB
+magnesium sulfate,S01CB
+calcium gluconate,S01CB
+hydrocortisone na succ.,S02BA
+hydrocortisone na succ,S02BA
+hydrocortisone,S02BA
+levemir,S02BA
+hydrocor,S02BA
+synthroid,S02BA
+cortef,S02BA
+magnesium sulfate,S02BA
+calcium gluconate,S02BA
+methylprednisolone sod succ ,D07AA
+methylprednisolone sod succ ,D10AA
+methylprednisolone sod succ ,H02AB
+medroxyprogesterone acetate,G03AC
+provera,G03AC
+medroxyprogesterone acetate,G03DA
+provera,G03DA
+medroxyprogesterone acetate,L02AB
+provera,L02AB
+methylprednisolone,D07AA
+methylprednisolone,D10AA
+methylprednisolone,H02AB
+bacitracin,D06AX
+bacitracin,J01XX
+bacitracin,R02AB
+colestid,C10AC
+colestipol,C10AC
+nascobal,C10AC
+glyburide prestab,A10BB
+glyburide,A10BB
+testosterone cypionate,G03BA
+colestipol hcl,C10AC
+methylprednisolone na succ.,D07AA
+methylprednisolone na succ,D07AA
+methylprednisolone sodium succ,D07AA
+methylprednisolone na succ.,D10AA
+methylprednisolone na succ,D10AA
+methylprednisolone sodium succ,D10AA
+methylprednisolone na succ.,H02AB
+methylprednisolone na succ,H02AB
+methylprednisolone sodium succ,H02AB
+clindamycin,D10AF
+clindamycin solution,D10AF
+clindamycin suspension,D10AF
+calcium gluconate,D10AF
+hydromorphone (dilaudid),D10AF
+fentanyl citrate,D10AF
+clindamycin,G01AA
+clindamycin solution,G01AA
+clindamycin suspension,G01AA
+calcium gluconate,G01AA
+hydromorphone (dilaudid),G01AA
+fentanyl citrate,G01AA
+clindamycin,J01FF
+clindamycin solution,J01FF
+clindamycin suspension,J01FF
+calcium gluconate,J01FF
+hydromorphone (dilaudid),J01FF
+fentanyl citrate,J01FF
+neo*iv*hydrocortisone (1mg/ml),A01AC
+hydrocortisone na succinate,A01AC
+hydrocortisone sod succinate,A01AC
+hydrocortiso,A01AC
+neo*iv*hydrocortisone (1mg/ml),A07EA
+hydrocortisone na succinate,A07EA
+hydrocortisone sod succinate,A07EA
+hydrocortiso,A07EA
+neo*iv*hydrocortisone (1mg/ml),C05AA
+hydrocortisone na succinate,C05AA
+hydrocortisone sod succinate,C05AA
+hydrocortiso,C05AA
+neo*iv*hydrocortisone (1mg/ml),D07AA
+hydrocortisone na succinate,D07AA
+hydrocortisone sod succinate,D07AA
+hydrocortiso,D07AA
+neo*iv*hydrocortisone (1mg/ml),D07XA
+hydrocortisone na succinate,D07XA
+hydrocortisone sod succinate,D07XA
+hydrocortiso,D07XA
+neo*iv*hydrocortisone (1mg/ml),H02AB
+hydrocortisone na succinate,H02AB
+hydrocortisone sod succinate,H02AB
+hydrocortiso,H02AB
+neo*iv*hydrocortisone (1mg/ml),S01BA
+hydrocortisone na succinate,S01BA
+hydrocortisone sod succinate,S01BA
+hydrocortiso,S01BA
+neo*iv*hydrocortisone (1mg/ml),S01CB
+hydrocortisone na succinate,S01CB
+hydrocortisone sod succinate,S01CB
+hydrocortiso,S01CB
+neo*iv*hydrocortisone (1mg/ml),S02BA
+hydrocortisone na succinate,S02BA
+hydrocortisone sod succinate,S02BA
+hydrocortiso,S02BA
+hemabate,G02AD
+carboprost tromethamine,G02AD
+methylprednisolone acetate,D07AA
+methylprednisolone acetate,D10AA
+methylprednisolone acetate,H02AB
+clindamycin 1% solution,D10AF
+clindamycin phosphate,D10AF
+clindamycin 1% solution,G01AA
+clindamycin phosphate,G01AA
+clindamycin 1% solution,J01FF
+clindamycin phosphate,J01FF
+alprostadil,C01EA
+alprostadil,G04BE
+ibutilide fumarate,C01BD
+tolterodine,G04BD
+*nf* epirubicin,L01DB
+linezolid,J01XX
+imodium a-d *nf*,J01XX
+acetic acid,J01XX
+acetic acid glacial 0.04%,J01XX
+insulin humalog 75/25 pen,J01XX
+humalog mix 75-25,J01XX
+linezolid suspension,J01XX
+aromasin,L02BG
+insulin pump,L02BG
+exemestane,L02BG
+sulfasalazine,A07EC
+sulfazine ec,A07EC
+sulfasalazine dr,A07EC
+sulfasalazine ec,A07EC
+tranexamic acid,B02AA
+idarubicin hcl,L01DB
+idarubicin,L01DB
+rifabutin,J04AB
+latanoprost 0.005% ophth. soln.,S01EE
+latanoprost,S01EE
+xal,S01EE
+*nf brinzolamide (azopt),S01EE
+timolol maleate 0.5% xe,S01EE
+xalatan,S01EE
+lumigan,S01EE
+travatan z,S01EE
+megestrol acetate,G03AC
+megestrol oral soln,G03AC
+megestrol acetate,G03DB
+megestrol oral soln,G03DB
+megestrol acetate,L02AB
+megestrol oral soln,L02AB
+artificial tear ointment,A06AA
+albuterol inhaler,A06AA
+white petrolatum-mineral oil,A06AA
+midazolam,A06AA
+fentanyl,A06AA
+phenylephrine,A06AA
+potassium chloride (powder),A06AA
+potassium chloride,A06AA
+ondansetron,A06AA
+"lidocaine 1%/epi 1::100,000",A06AA
+lactaid,A06AA
+artificial ,A06AA
+artif,A06AA
+lacri-lube oint,A06AA
+sulfacetamide-prednisolone ophth. oint.,D10AF
+sulfacetamide-prednisolone ophth. oint.,S01AB
+sulfacetamide-prednisolone ophth. oint.,A07EA
+sulfacetamide-prednisolone ophth. oint.,C05AA
+sulfacetamide-prednisolone ophth. oint.,D07AA
+sulfacetamide-prednisolone ophth. oint.,D07XA
+sulfacetamide-prednisolone ophth. oint.,H02AB
+sulfacetamide-prednisolone ophth. oint.,R01AD
+sulfacetamide-prednisolone ophth. oint.,S01BA
+sulfacetamide-prednisolone ophth. oint.,S01CB
+sulfacetamide-prednisolone ophth. oint.,S02BA
+sulfacetamide-prednisolone ophth. oint.,S03BA
+acular,M01AB
+ketorolac tromethamine,M01AB
+betimol,M01AB
+*nf* timolol  hemihydrate (betimol),M01AB
+acular ls,M01AB
+ketorolac,M01AB
+acular,S01BC
+ketorolac tromethamine,S01BC
+betimol,S01BC
+*nf* timolol  hemihydrate (betimol),S01BC
+acular ls,S01BC
+ketorolac,S01BC
+restasis,L04AD
+restasis,S01XA
+brimonidine tartrate 0.15% ophth.,D11AX
+alphagan p,D11AX
+brimonidine,D11AX
+lumigan,D11AX
+mupirocin,D11AX
+lorazepam,D11AX
+brimonidine tartrate 0.15% ophth.,S01EA
+alphagan p,S01EA
+brimonidine,S01EA
+lumigan,S01EA
+mupirocin,S01EA
+lorazepam,S01EA
+oxaliplatin,L01XA
+oxaliplatin desensitization,L01XA
+primaquine phosphate,P01BA
+dronedarone,C01BD
+*nf* rasburicase,V03AF
+rasburicase,V03AF
+misoprostol,A02BB
+misoprostol,G02AD
+celebrex,L01XX
+celecoxib,L01XX
+celebrex,M01AH
+celecoxib,M01AH
+eplerenone,C03DA
+disopyramide cr,C01BA
+disopyramide phosphate,C01BA
+mupirocin nasal ointment 2%,D06AX
+vancomycin for nasal inhalation,D06AX
+vancomycin for inhalation,D06AX
+mupirocin nasal ointment 2%,R01AX
+vancomycin for nasal inhalation,R01AX
+vancomycin for inhalation,R01AX
+mupirocin cream 2%,D06AX
+mupirocin 2% cream,D06AX
+bactroban,D06AX
+mupirocin,D06AX
+mupirocin calcium,D06AX
+mupirocin cream 2%,R01AX
+mupirocin 2% cream,R01AX
+bactroban,R01AX
+mupirocin,R01AX
+mupirocin calcium,R01AX
+creon 12,A09AA
+progesterone,G03DA
+progesterone micronized,G03DA
+felbatol,N03AX
+felbamate,N03AX
+penicillamine,M01CC
+lamictal,M01CC
+amaryl,A10BB
+glimepiride,A10BB
+estrogens conjugated,G03CA
+unasyn,J01CR
+potassium chloride,J01CR
+unasyn,J01CG
+potassium chloride,J01CG
+unasyn,J01CA
+potassium chloride,J01CA
+unasyn,S01AA
+potassium chloride,S01AA
+ampicillin-sulbactam,J01CR
+*nf* basiliximab,J01CR
+ampicillin-sulbactam,J01CG
+*nf* basiliximab,J01CG
+ampicillin-sulbactam,J01CA
+*nf* basiliximab,J01CA
+ampicillin-sulbactam,S01AA
+*nf* basiliximab,S01AA
+ampicillin sodium/sulbactam,J01CR
+ampicillin sodium/sulbactam,J01CG
+ampicillin sodium/sulbactam,J01CA
+ampicillin sodium/sulbactam,S01AA
+penicillin g potassium,J01CE
+penicillin g k desensitization,J01CE
+neo*iv*penicillin g potassium,J01CE
+penicillin g potassium,S01AA
+penicillin g k desensitization,S01AA
+neo*iv*penicillin g potassium,S01AA
+doxazosin,C02CA
+cardura,C02CA
+voriconazole,J02AC
+fluconazole,D01AC
+neo*po*fluconazole,D01AC
+fluconazole,J02AC
+neo*po*fluconazole,J02AC
+d5w,D01AC
+mycophenolate mofetil,D01AC
+syringe (iv room),D01AC
+methylprednisolone na succ.,D01AC
+d5w,J02AC
+mycophenolate mofetil,J02AC
+syringe (iv room),J02AC
+methylprednisolone na succ.,J02AC
+fluconazole suspension,D01AC
+fluconazole suspension,J02AC
+ziprasidone,N05AE
+ziprasidone mesylate,N05AE
+ziprasidone hydrochloride,N05AE
+geodon,N05AE
+ziprasidone hcl,N05AE
+sertraline hcl,N06AB
+rivastigmine,N06AB
+*nf* timolol  hemihydrate (betimol),N06AB
+b-50,N06AB
+sertraline,N06AB
+dronabinol,A04AD
+mirtazapine,N06AX
+remeron soltab,N06AX
+rocuronium,M03AC
+rocuro,M03AC
+rocuronium bromide,M03AC
+*nf* rocuronium bromide,M03AC
+zemuron,M03AC
+calcitriol,A11CC
+calcitriol,D05AX
+prednisone,A07EA
+sprycel,A07EA
+aralast,A07EA
+prednisone,H02AB
+sprycel,H02AB
+aralast,H02AB
+insulin pump,A07EA
+imatinib,A07EA
+insulin pump,H02AB
+imatinib,H02AB
+zyflo cr,A07EA
+acetylcysteine,A07EA
+symbicort,A07EA
+zyflo cr,H02AB
+acetylcysteine,H02AB
+symbicort,H02AB
+pletal,B01AC
+cilostazol,B01AC
+balsalazide,A07EC
+balsa,A07EC
+calcium acetate,V03AE
+oxcarbazepine,N03AF
+propofol,N03AF
+ramipril,C09AA
+buprenorphine,N02AE
+phenylephrine,N02AE
+propofol,N02AE
+buprenorphine,N07BC
+phenylephrine,N07BC
+propofol,N07BC
+famciclovir,J05AB
+famc,J05AB
+famciclovir,S01AD
+famc,S01AD
+levetiracetam oral solution,N03AX
+levetiracetam,N03AX
+levetiracetam solution,N03AX
+propofol,N03AX
+acetaminophen (liquid),N03AX
+potassium chloride (powder),N03AX
+morphine sulfate ir,N02AA
+morphine,N02AA
+morphine sulfate,N02AA
+morphine sulfate (immediate release),N02AA
+sunitinib,N02AA
+dexamethasone,A01AC
+dexamethasone intensol,A01AC
+dexamethasone,C05AA
+dexamethasone intensol,C05AA
+dexamethasone,D07AB
+dexamethasone intensol,D07AB
+dexamethasone,D07XB
+dexamethasone intensol,D07XB
+dexamethasone,D10AA
+dexamethasone intensol,D10AA
+dexamethasone,H02AB
+dexamethasone intensol,H02AB
+dexamethasone,R01AD
+dexamethasone intensol,R01AD
+dexamethasone,S01BA
+dexamethasone intensol,S01BA
+dexamethasone,S01CB
+dexamethasone intensol,S01CB
+dexamethasone,S02BA
+dexamethasone intensol,S02BA
+dexamethasone,S03BA
+dexamethasone intensol,S03BA
+dexamethasone oral soln (0.1mg/1ml),A01AC
+dexamethasone oral soln (0.1mg/1ml),C05AA
+dexamethasone oral soln (0.1mg/1ml),D07AB
+dexamethasone oral soln (0.1mg/1ml),D07XB
+dexamethasone oral soln (0.1mg/1ml),D10AA
+dexamethasone oral soln (0.1mg/1ml),H02AB
+dexamethasone oral soln (0.1mg/1ml),R01AD
+dexamethasone oral soln (0.1mg/1ml),S01BA
+dexamethasone oral soln (0.1mg/1ml),S01CB
+dexamethasone oral soln (0.1mg/1ml),S02BA
+dexamethasone oral soln (0.1mg/1ml),S03BA
+diphenoxylate-atropine,A03BA
+diphenoxylate-atropine,S01FA
+diphenoxylate-atropine,A07DA
+furosemide,C03CA
+kaopectate/benadryl/lido visc.,C01BB
+kaolin-pectin/benadryl/lido visc.,C01BB
+lidocaine viscous 2%,C01BB
+lidocaine viscous,C01BB
+kaopectate/benadryl/lido visc.,C05AD
+kaolin-pectin/benadryl/lido visc.,C05AD
+lidocaine viscous 2%,C05AD
+lidocaine viscous,C05AD
+kaopectate/benadryl/lido visc.,D04AB
+kaolin-pectin/benadryl/lido visc.,D04AB
+lidocaine viscous 2%,D04AB
+lidocaine viscous,D04AB
+kaopectate/benadryl/lido visc.,N01BB
+kaolin-pectin/benadryl/lido visc.,N01BB
+lidocaine viscous 2%,N01BB
+lidocaine viscous,N01BB
+kaopectate/benadryl/lido visc.,R02AD
+kaolin-pectin/benadryl/lido visc.,R02AD
+lidocaine viscous 2%,R02AD
+lidocaine viscous,R02AD
+kaopectate/benadryl/lido visc.,S01HA
+kaolin-pectin/benadryl/lido visc.,S01HA
+lidocaine viscous 2%,S01HA
+lidocaine viscous,S01HA
+kaopectate/benadryl/lido visc.,S02DA
+kaolin-pectin/benadryl/lido visc.,S02DA
+lidocaine viscous 2%,S02DA
+lidocaine viscous,S02DA
+alternagel-benadryl-lidocaine visc.,C01BB
+lidocaine ,C01BB
+lidocaine,C01BB
+lidocaine topical,C01BB
+alternagel-benadryl-lidocaine visc.,C05AD
+lidocaine ,C05AD
+lidocaine,C05AD
+lidocaine topical,C05AD
+alternagel-benadryl-lidocaine visc.,D04AB
+lidocaine ,D04AB
+lidocaine,D04AB
+lidocaine topical,D04AB
+alternagel-benadryl-lidocaine visc.,N01BB
+lidocaine ,N01BB
+lidocaine,N01BB
+lidocaine topical,N01BB
+alternagel-benadryl-lidocaine visc.,R02AD
+lidocaine ,R02AD
+lidocaine,R02AD
+lidocaine topical,R02AD
+alternagel-benadryl-lidocaine visc.,S01HA
+lidocaine ,S01HA
+lidocaine,S01HA
+lidocaine topical,S01HA
+alternagel-benadryl-lidocaine visc.,S02DA
+lidocaine ,S02DA
+lidocaine,S02DA
+lidocaine topical,S02DA
+neo*po*lorazepam oral concentrate,N05BA
+lorazepam,N05BA
+meperidine,N02AB
+*nf*esomeprazole ,N02AB
+iso-osmotic dextrose,N02AB
+vancomycin hcl,N02AB
+nitroprusside sodium,N02AB
+nitroglycerin,N02AB
+ns,N02AB
+d5w,N02AB
+soln.,N02AB
+propofol (generic),N02AB
+potassium chloride,N02AB
+humulin-r insulin,N02AB
+sw,N02AB
+unasyn,N02AB
+meperidine hcl,N02AB
+methadone hcl,N07BC
+methad,N07BC
+methadone,N07BC
+methadon,N07BC
+dilaudid,N07BC
+neo*po*propranolol,C07AA
+propranolol oral solution,C07AA
+hcrf,A01AC
+sw,A01AC
+potassium chloride,A01AC
+hcrf,C05AA
+sw,C05AA
+potassium chloride,C05AA
+hcrf,D07AB
+sw,D07AB
+potassium chloride,D07AB
+hcrf,D07XB
+sw,D07XB
+potassium chloride,D07XB
+hcrf,D10AA
+sw,D10AA
+potassium chloride,D10AA
+hcrf,H02AB
+sw,H02AB
+potassium chloride,H02AB
+hcrf,R01AD
+sw,R01AD
+potassium chloride,R01AD
+hcrf,S01BA
+sw,S01BA
+potassium chloride,S01BA
+hcrf,S01CB
+sw,S01CB
+potassium chloride,S01CB
+hcrf,S02BA
+sw,S02BA
+potassium chloride,S02BA
+hcrf,S03BA
+sw,S03BA
+potassium chloride,S03BA
+mercaptopurine,L01BB
+calcium carbonate,A02AC
+calc,A02AC
+insulin detemir,A02AC
+calcium carbonate suspension,A02AC
+calcium carbonate,A12AA
+calc,A12AA
+insulin detemir,A12AA
+calcium carbonate suspension,A12AA
+clotrimazole,A01AB
+omnaris (ciclesonide),A01AB
+levalbuterol neb,A01AB
+dulera (mometasone-formoterol),A01AB
+clotrimazole,D01AC
+omnaris (ciclesonide),D01AC
+levalbuterol neb,D01AC
+dulera (mometasone-formoterol),D01AC
+clotrimazole,G01AF
+omnaris (ciclesonide),G01AF
+levalbuterol neb,G01AF
+dulera (mometasone-formoterol),G01AF
+ambien cr,A01AC
+aspercreme ,A01AC
+dexa,A01AC
+dasatinib,A01AC
+dexamethas,A01AC
+dexametha,A01AC
+temodar,A01AC
+ambien cr,C05AA
+aspercreme ,C05AA
+dexa,C05AA
+dasatinib,C05AA
+dexamethas,C05AA
+dexametha,C05AA
+temodar,C05AA
+ambien cr,D07AB
+aspercreme ,D07AB
+dexa,D07AB
+dasatinib,D07AB
+dexamethas,D07AB
+dexametha,D07AB
+temodar,D07AB
+ambien cr,D07XB
+aspercreme ,D07XB
+dexa,D07XB
+dasatinib,D07XB
+dexamethas,D07XB
+dexametha,D07XB
+temodar,D07XB
+ambien cr,D10AA
+aspercreme ,D10AA
+dexa,D10AA
+dasatinib,D10AA
+dexamethas,D10AA
+dexametha,D10AA
+temodar,D10AA
+ambien cr,H02AB
+aspercreme ,H02AB
+dexa,H02AB
+dasatinib,H02AB
+dexamethas,H02AB
+dexametha,H02AB
+temodar,H02AB
+ambien cr,R01AD
+aspercreme ,R01AD
+dexa,R01AD
+dasatinib,R01AD
+dexamethas,R01AD
+dexametha,R01AD
+temodar,R01AD
+ambien cr,S01BA
+aspercreme ,S01BA
+dexa,S01BA
+dasatinib,S01BA
+dexamethas,S01BA
+dexametha,S01BA
+temodar,S01BA
+ambien cr,S01CB
+aspercreme ,S01CB
+dexa,S01CB
+dasatinib,S01CB
+dexamethas,S01CB
+dexametha,S01CB
+temodar,S01CB
+ambien cr,S02BA
+aspercreme ,S02BA
+dexa,S02BA
+dasatinib,S02BA
+dexamethas,S02BA
+dexametha,S02BA
+temodar,S02BA
+ambien cr,S03BA
+aspercreme ,S03BA
+dexa,S03BA
+dasatinib,S03BA
+dexamethas,S03BA
+dexametha,S03BA
+temodar,S03BA
+dexamet,A01AC
+dexameth,A01AC
+dex,A01AC
+dexam,A01AC
+dexamethason,A01AC
+dexame,A01AC
+dexamethaso,A01AC
+ketorolac,A01AC
+dexamet,C05AA
+dexameth,C05AA
+dex,C05AA
+dexam,C05AA
+dexamethason,C05AA
+dexame,C05AA
+dexamethaso,C05AA
+ketorolac,C05AA
+dexamet,D07AB
+dexameth,D07AB
+dex,D07AB
+dexam,D07AB
+dexamethason,D07AB
+dexame,D07AB
+dexamethaso,D07AB
+ketorolac,D07AB
+dexamet,D07XB
+dexameth,D07XB
+dex,D07XB
+dexam,D07XB
+dexamethason,D07XB
+dexame,D07XB
+dexamethaso,D07XB
+ketorolac,D07XB
+dexamet,D10AA
+dexameth,D10AA
+dex,D10AA
+dexam,D10AA
+dexamethason,D10AA
+dexame,D10AA
+dexamethaso,D10AA
+ketorolac,D10AA
+dexamet,H02AB
+dexameth,H02AB
+dex,H02AB
+dexam,H02AB
+dexamethason,H02AB
+dexame,H02AB
+dexamethaso,H02AB
+ketorolac,H02AB
+dexamet,R01AD
+dexameth,R01AD
+dex,R01AD
+dexam,R01AD
+dexamethason,R01AD
+dexame,R01AD
+dexamethaso,R01AD
+ketorolac,R01AD
+dexamet,S01BA
+dexameth,S01BA
+dex,S01BA
+dexam,S01BA
+dexamethason,S01BA
+dexame,S01BA
+dexamethaso,S01BA
+ketorolac,S01BA
+dexamet,S01CB
+dexameth,S01CB
+dex,S01CB
+dexam,S01CB
+dexamethason,S01CB
+dexame,S01CB
+dexamethaso,S01CB
+ketorolac,S01CB
+dexamet,S02BA
+dexameth,S02BA
+dex,S02BA
+dexam,S02BA
+dexamethason,S02BA
+dexame,S02BA
+dexamethaso,S02BA
+ketorolac,S02BA
+dexamet,S03BA
+dexameth,S03BA
+dex,S03BA
+dexam,S03BA
+dexamethason,S03BA
+dexame,S03BA
+dexamethaso,S03BA
+ketorolac,S03BA
+rescula,C03CA
+magnesium sulfate,C03CA
+d5w,C03CA
+nitroglycerin,C03CA
+lumigan,C03CA
+ethezyme,C03CA
+januvia,C03CA
+carbachol,C03CA
+tobramycin fortified ophth. soln.,C03CA
+arimidex,C03CA
+ns,C03CA
+potassium chloride,C03CA
+neo*po*furosemide (10mg/1ml),C03CA
+insulin pump,C03CA
+xopenex,C03CA
+heparin,A07EA
+advair diskus,A07EA
+desvenlafaxine,A07EA
+zytiga,A07EA
+heparin,H02AB
+advair diskus,H02AB
+desvenlafaxine,H02AB
+zytiga,H02AB
+ondansetron,A07EA
+ondansetron,H02AB
+warfarin,B01AA
+melatonin,B01AA
+calcium citrate + vit d,B01AA
+cranberry extract-vit c 4200/40 mg,B01AA
+fentanyl,B01AA
+warf,B01AA
+heparin,B01AA
+coenzyme q10  200mg,B01AA
+sutent,B01AA
+levemir flexpen,B01AA
+insulin detemir,B01AA
+hydromorphone solution,B01AA
+d5w,B01AA
+vancomycin hcl,B01AA
+betamethasone sodium phos/acet,B01AA
+syringe (iv room),B01AA
+lansoprazole,B01AA
+heparin sodium,B01AA
+insulin,B01AA
+amoxapine,B01AA
+neomycin-polymyxin-gramicidin,B01AA
+metoprolol,B01AA
+lialda,B01AA
+levemir,B01AA
+dexilant,B01AA
+dexlansoprazole (dexilant),B01AA
+vytorin 10-80,B01AA
+benicar hct,B01AA
+januvia,B01AA
+bicalutamide,B01AA
+lantus solostar,B01AA
+humalog kwikpen,B01AA
+lotronex,B01AA
+carafate,B01AA
+exelon,B01AA
+efavirenz,J05AG
+efavirenz oral soln,J05AG
+naphazoline-pheniramine ophth. solution,R01AA
+nap,R01AA
+naphazoline-pheniramine ophth. solution,R01AB
+nap,R01AB
+naphazoline-pheniramine ophth. solution,S01GA
+nap,S01GA
+naphazoline-pheniramine ophth. solution,D04AA
+nap,D04AA
+naphazoline-pheniramine ophth. solution,R06AB
+nap,R06AB
+betaxolol ophth susp  0.25%,C07AB
+betoptic s,C07AB
+betaxolol ophth susp  0.25%,S01ED
+betoptic s,S01ED
+patanol,R01AC
+olopatadine hcl,R01AC
+olopatadine,R01AC
+patanol,S01GX
+olopatadine hcl,S01GX
+olopatadine,S01GX
+brinzolamide,S01EC
+azopt,S01EC
+cyclopentolate-phenylephrine,S01FA
+cyclopentolate-phenylephrine,C01CA
+cyclopentolate-phenylephrine,R01AA
+cyclopentolate-phenylephrine,R01AB
+cyclopentolate-phenylephrine,R01BA
+cyclopentolate-phenylephrine,S01FB
+cyclopentolate-phenylephrine,S01GA
+cyclopentolate 1%,S01FA
+potassium chloride,S01FA
+sodium chloride,S01FA
+neo*iv*caffeine citrate,S01FA
+syringe (neonatal),S01FA
+d10w,S01FA
+neomycin-polymyxin-dexameth ophth. oint,A01AC
+neomycin-polymyxin-dexameth ophth. oint,C05AA
+neomycin-polymyxin-dexameth ophth. oint,D07AB
+neomycin-polymyxin-dexameth ophth. oint,D07XB
+neomycin-polymyxin-dexameth ophth. oint,D10AA
+neomycin-polymyxin-dexameth ophth. oint,H02AB
+neomycin-polymyxin-dexameth ophth. oint,R01AD
+neomycin-polymyxin-dexameth ophth. oint,S01BA
+neomycin-polymyxin-dexameth ophth. oint,S01CB
+neomycin-polymyxin-dexameth ophth. oint,S02BA
+neomycin-polymyxin-dexameth ophth. oint,S03BA
+neomycin-polymyxin-dexameth ophth. oint,A01AB
+neomycin-polymyxin-dexameth ophth. oint,A07AA
+neomycin-polymyxin-dexameth ophth. oint,B05CA
+neomycin-polymyxin-dexameth ophth. oint,D06AX
+neomycin-polymyxin-dexameth ophth. oint,J01GB
+neomycin-polymyxin-dexameth ophth. oint,R02AB
+neomycin-polymyxin-dexameth ophth. oint,S01AA
+neomycin-polymyxin-dexameth ophth. oint,S02AA
+neomycin-polymyxin-dexameth ophth. oint,S03AA
+neomycin-polymyxin-dexameth ophth. oint,J01XB
+tobramycin fortified ophth. soln.,J01GB
+tobramycin 0.3% ophth soln,J01GB
+vancomycin fortified opthalmic,J01GB
+tobramycin,J01GB
+tobramycin fortified ophth. soln.,S01AA
+tobramycin 0.3% ophth soln,S01AA
+vancomycin fortified opthalmic,S01AA
+tobramycin,S01AA
+tobramycin 0.3% ophth ointment,J01GB
+tobramycin 0.3% ophth ointment,S01AA
+tobramycin-dexamethasone ophth susp,J01GB
+tobramycin-dexamethasone ophth susp,S01AA
+tobramycin-dexamethasone ophth susp,A01AC
+tobramycin-dexamethasone ophth susp,C05AA
+tobramycin-dexamethasone ophth susp,D07AB
+tobramycin-dexamethasone ophth susp,D07XB
+tobramycin-dexamethasone ophth susp,D10AA
+tobramycin-dexamethasone ophth susp,H02AB
+tobramycin-dexamethasone ophth susp,R01AD
+tobramycin-dexamethasone ophth susp,S01BA
+tobramycin-dexamethasone ophth susp,S01CB
+tobramycin-dexamethasone ophth susp,S02BA
+tobramycin-dexamethasone ophth susp,S03BA
+tobramycin-dexamethasone ophth oint,J01GB
+difluprednate,J01GB
+tobramycin-dexamethasone ophth oint,S01AA
+difluprednate,S01AA
+tobramycin-dexamethasone ophth oint,A01AC
+difluprednate,A01AC
+tobramycin-dexamethasone ophth oint,C05AA
+difluprednate,C05AA
+tobramycin-dexamethasone ophth oint,D07AB
+difluprednate,D07AB
+tobramycin-dexamethasone ophth oint,D07XB
+difluprednate,D07XB
+tobramycin-dexamethasone ophth oint,D10AA
+difluprednate,D10AA
+tobramycin-dexamethasone ophth oint,H02AB
+difluprednate,H02AB
+tobramycin-dexamethasone ophth oint,R01AD
+difluprednate,R01AD
+tobramycin-dexamethasone ophth oint,S01BA
+difluprednate,S01BA
+tobramycin-dexamethasone ophth oint,S01CB
+difluprednate,S01CB
+tobramycin-dexamethasone ophth oint,S02BA
+difluprednate,S02BA
+tobramycin-dexamethasone ophth oint,S03BA
+difluprednate,S03BA
+*nf* ciprofloxacin 0.3% ophth oint,J01MA
+*nf* ciprofloxacin 0.3% ophth oint,S01AE
+*nf* ciprofloxacin 0.3% ophth oint,S02AA
+*nf* ciprofloxacin 0.3% ophth oint,S03AA
+ciprofloxacin ophth soln,J01MA
+ciprofloxacin ophth soln,S01AE
+ciprofloxacin ophth soln,S02AA
+ciprofloxacin ophth soln,S03AA
+apraclonidine 0.5%,S01EA
+pilopine hs,S01EA
+tetracaine hcl,C05AD
+tetracaine hcl,D04AB
+tetracaine hcl,N01BA
+tetracaine hcl,S01HA
+balanced salt opth. soln,A12AA
+balanced salt opth. soln,B05XA
+balanced salt opth. soln,G04BA
+balanced salt opth. soln,B05CB
+balanced salt opth. soln,A12CC
+balanced salt opth. soln,A12BA
+balanced salt opth. soln,A12CA
+moxifloxacin,J01MA
+vigamox,J01MA
+amphotericin b (bulk),J01MA
+lotemax,J01MA
+omnipred,J01MA
+nevanac,J01MA
+moxifloxacin,S01AE
+vigamox,S01AE
+amphotericin b (bulk),S01AE
+lotemax,S01AE
+omnipred,S01AE
+nevanac,S01AE
+miconazole powder 2%,A01AB
+olmesartan/hydrochlorothiazide,A01AB
+micon,A01AB
+miconazole powder 2%,A07AC
+olmesartan/hydrochlorothiazide,A07AC
+micon,A07AC
+miconazole powder 2%,D01AC
+olmesartan/hydrochlorothiazide,D01AC
+micon,D01AC
+miconazole powder 2%,G01AF
+olmesartan/hydrochlorothiazide,G01AF
+micon,G01AF
+miconazole powder 2%,J02AB
+olmesartan/hydrochlorothiazide,J02AB
+micon,J02AB
+miconazole powder 2%,S02AA
+olmesartan/hydrochlorothiazide,S02AA
+micon,S02AA
+terbinafine 1% cream,D01AE
+terbinafine 1% cream,D01BA
+scopolamine patch,A04AD
+amiodarone hcl,A04AD
+epinephrine,A04AD
+d5w,A04AD
+ns        (glass bottle),A04AD
+phenytoin sodium,A04AD
+iso-osmotic dextrose,A04AD
+scopolamine patch,N05CM
+amiodarone hcl,N05CM
+epinephrine,N05CM
+d5w,N05CM
+ns        (glass bottle),N05CM
+phenytoin sodium,N05CM
+iso-osmotic dextrose,N05CM
+scopolamine patch,S01FA
+amiodarone hcl,S01FA
+epinephrine,S01FA
+d5w,S01FA
+ns        (glass bottle),S01FA
+phenytoin sodium,S01FA
+iso-osmotic dextrose,S01FA
+methenamine hippurate,J01XX
+rifampin,J04AB
+*nf* sunitinib,L01XE
+maraviroc,J05AX
+sunitinib,L01XE
+amlodipine,C08CA
+amlodipine besylate,C08CA
+colesevelam,C08CA
+levofloxacin,C08CA
+dextrose 5%,C08CA
+avodart,C08CA
+insulin pump,C08CA
+*nf* nifedipine xl,C08CA
+procardia xl,C08CA
+azithromycin,J01FA
+allegra-d 24 hour,J01FA
+azithromycin,S01AA
+allegra-d 24 hour,S01AA
+neo*po*azithromycin,J01FA
+neo*po*azithromycin,S01AA
+azithromycin ,J01FA
+azithromycin ,S01AA
+sildenafil,G04BE
+bosentan,G04BE
+reva,G04BE
+rev,G04BE
+viagra,G04BE
+sildenafil citrate,G04BE
+*nf* sildenafil citrate,G04BE
+dofetilide,C01BD
+phenytoin infatab,N03AB
+phenytoin (suspension),N03AB
+phenytoin,N03AB
+phenytoin sodium extended,N03AB
+phenytoin ,N03AB
+dilantin ,N03AB
+dilantin,N03AB
+dilantin infatabs,N03AB
+dilan,N03AB
+dil,N03AB
+ns        (glass bottle),N03AB
+phenytoin sodium,N03AB
+phenytoi,N03AB
+phenytoin chewtabs,N03AB
+dila,N03AB
+phen,N03AB
+phenyto,N03AB
+atorvastatin,C10AA
+*nf* bimatoprost (lumigan),C10AA
+avalide,C10AA
+lipitor,C10AA
+insulin levemir,C10AA
+cefazolin,C10AA
+iso-osmotic dextrose,C10AA
+dronedarone,C10AA
+insulin pump,C10AA
+phenylephrine,C10AA
+lidocaine 1% p.f.,C10AA
+metoprolol,C10AA
+potassium chloride,C10AA
+chantix,C10AA
+budesonide,C10AA
+nitroglycerin,C10AA
+furosemide,C10AA
+midazolam,C10AA
+fentanyl citrate,C10AA
+syringe (neonatal),C10AA
+hydralazine,C10AA
+symbicort,C10AA
+zarontin,N03AD
+ethosuximide,N03AD
+phenelzine sulfate,N06AF
+dilantin extended,N03AB
+phenyt,N03AB
+phenytoin sodium (iv),N03AB
+nitroglycerin sl,C01DA
+nitroglycerin sl,C05AE
+quinapril,C09AA
+avodart,C09AA
+insulin pump,C09AA
+gabapentin,N03AX
+bextra,N03AX
+vancomycin hcl,N03AX
+iso-osmotic dextrose,N03AX
+carafate,N03AX
+cryselle (28),N03AX
+lyrica,N03AX
+pregabalin,N03AX
+*nf* pregabalin,N03AX
+pantoprazole sodium,N03AX
+ns,N03AX
+pregabalin oral solution,N03AX
+gabapentin (liquid),N03AX
+neurontin,N03AX
+valproate sodium,N03AG
+valproic acid,N03AG
+paricalcitol,H05BX
+zemplar,H05BX
+ritonavir (oral solution),J05AE
+ritonavir,J05AE
+leuprolide acetate,L02AE
+lopinavir-ritonavir (oral soln),J05AR
+ritonavir/lopinavir,J05AR
+lopinavir-ritonavir,J05AR
+lopinavir-ritonavir (oral soln),J05AE
+ritonavir/lopinavir,J05AE
+lopinavir-ritonavir,J05AE
+humira,L04AB
+cisatracurium besylate,M03AC
+cisatracurium,M03AC
+levothyroxine sodium,H03AA
+levo,H03AA
+nexium,H03AA
+levoth,H03AA
+levothyroxine,H03AA
+fenofibrate,C10AB
+*nf* fenofibrate,C10AB
+tricor,C10AB
+fenofibrate nanocrystallized,C10AB
+fenofibrate micronized,C10AB
+fenofibric acid,C10AB
+lactaid fast act,H03AA
+synth,H03AA
+levoxyl,H03AA
+multaq (dronedarone),H03AA
+dronedarone,H03AA
+metoprolol tartrate,H03AA
+kaletra,J05AR
+kaletra,J05AE
+lactaid,H03AA
+potassium chloride,H03AA
+desmopressin acetate,H01BA
+ddavp,H01BA
+enoxaparin sodium,B01AB
+lovenox,B01AB
+uroxatral,B01AB
+dobutamine hcl,B01AB
+enoxaparin,B01AB
+albuterol inhaler,B01AB
+ondansetron,B01AB
+desmopressin ,H01BA
+desmopressin nasal,H01BA
+desmopressi,H01BA
+rilutek,N07XX
+riluzole,N07XX
+cyclosporine (sandimmune),L04AD
+cyclosporine,L04AD
+cyclosporine (sandimmune),S01XA
+cyclosporine,S01XA
+terbinafine,D01AE
+terbinafine,D01BA
+octreotide acetate,H01CB
+nexium,H01CB
+cyclosporine modified (neoral),L04AD
+cyclosporine (neoral) modified,L04AD
+neoral,L04AD
+travasol 4.25% w/ dextrose 5%,L04AD
+multivitamin 12,L04AD
+flarex,L04AD
+cyclosporine ,L04AD
+cyclosporine modified (neoral),S01XA
+cyclosporine (neoral) modified,S01XA
+neoral,S01XA
+travasol 4.25% w/ dextrose 5%,S01XA
+multivitamin 12,S01XA
+flarex,S01XA
+cyclosporine ,S01XA
+methylprednisolone na succ.,L04AD
+d5w,L04AD
+cyclo,L04AD
+syringe (iv room),L04AD
+iso-osmotic dextrose,L04AD
+neoral capules,L04AD
+neoral *study medication*,L04AD
+neoral study med (*ind*),L04AD
+neoral* study medication*,L04AD
+methylprednisolone na succ.,S01XA
+d5w,S01XA
+cyclo,S01XA
+syringe (iv room),S01XA
+iso-osmotic dextrose,S01XA
+neoral capules,S01XA
+neoral *study medication*,S01XA
+neoral study med (*ind*),S01XA
+neoral* study medication*,S01XA
+femara,L02BG
+letrozole,L02BG
+pantoprazole sodium,L04AD
+ns,L04AD
+acetazolamide sodium,L04AD
+*nf* basiliximab,L04AD
+vancomycin hcl,L04AD
+iso-osmotic sodium chloride,L04AD
+famotidine,L04AD
+cyclosporine modified,L04AD
+pantoprazole sodium,S01XA
+ns,S01XA
+acetazolamide sodium,S01XA
+*nf* basiliximab,S01XA
+vancomycin hcl,S01XA
+iso-osmotic sodium chloride,S01XA
+famotidine,S01XA
+cyclosporine modified,S01XA
+rivastigmine,N06DA
+exelon,N06DA
+comtan,N04BX
+entacapone,N04BX
+*nf* entacapone,N04BX
+*nf* basiliximab,L04AC
+basiliximab,L04AC
+simulect,L04AC
+vivelle-dot,G03CA
+vivelle,G03CA
+*nf* estradiol transdermal patch,G03CA
+estradiol,G03CA
+nateglinide,A10BX
+valsartan,C09CA
+myfortic,L04AA
+*nf* mycophenolate sodium,L04AA
+mycophenolate ,L04AA
+mycophenolate sodium,L04AA
+zoledronic acid,M05BA
+imatinib mesylate,L01XE
+lotrel,C08CA
+lotrel,C09AA
+gleevec,L01XE
+*nf* imatinib mesylate,L01XE
+imatinib oral suspension,L01XE
+imatinib ,L01XE
+imatinib,L01XE
+exjade,V03AC
+*nf* deferasirox,V03AC
+tobramycin in 0.225 % nacl,J01GB
+tobramycin inhalation soln,J01GB
+tobramycin in 0.225 % nacl,S01AA
+tobramycin inhalation soln,S01AA
+betamethasone sodium phos/acet,A07EA
+betamethasone acet & sod phos,A07EA
+betamethasone sodium phos/acet,C05AA
+betamethasone acet & sod phos,C05AA
+betamethasone sodium phos/acet,D07AC
+betamethasone acet & sod phos,D07AC
+betamethasone sodium phos/acet,D07XC
+betamethasone acet & sod phos,D07XC
+betamethasone sodium phos/acet,H02AB
+betamethasone acet & sod phos,H02AB
+betamethasone sodium phos/acet,R01AD
+betamethasone acet & sod phos,R01AD
+betamethasone sodium phos/acet,R03BA
+betamethasone acet & sod phos,R03BA
+betamethasone sodium phos/acet,S01BA
+betamethasone acet & sod phos,S01BA
+betamethasone sodium phos/acet,S01CB
+betamethasone acet & sod phos,S01CB
+betamethasone sodium phos/acet,S02BA
+betamethasone acet & sod phos,S02BA
+betamethasone sodium phos/acet,S03BA
+betamethasone acet & sod phos,S03BA
+betamethasone dipro 0.05% cream,A07EA
+diprosone,A07EA
+betamethasone dipro 0.05% cream,C05AA
+diprosone,C05AA
+betamethasone dipro 0.05% cream,D07AC
+diprosone,D07AC
+betamethasone dipro 0.05% cream,D07XC
+diprosone,D07XC
+betamethasone dipro 0.05% cream,H02AB
+diprosone,H02AB
+betamethasone dipro 0.05% cream,R01AD
+diprosone,R01AD
+betamethasone dipro 0.05% cream,R03BA
+diprosone,R03BA
+betamethasone dipro 0.05% cream,S01BA
+diprosone,S01BA
+betamethasone dipro 0.05% cream,S01CB
+diprosone,S01CB
+betamethasone dipro 0.05% cream,S02BA
+diprosone,S02BA
+betamethasone dipro 0.05% cream,S03BA
+diprosone,S03BA
+eptifibatide,B01AC
+posaconazole suspension,J02AC
+posaconazole,J02AC
+astepro,J02AC
+peg-intron,L03AB
+ribavirin,J05AP
+avelox,J01MA
+avelox,S01AE
+metformin,A10BA
+metformin (glucophage),A10BA
+glimepiride (amaryl),A10BA
+byetta,A10BA
+nifedipine (bulk),A10BA
+glucophage xr,A10BA
+glyburide/metformin (2.5mg-500mg),A10BB
+glucovance (2.5mg-500mg),A10BB
+glyburide/metformin (2.5mg-500mg),A10BA
+glucovance (2.5mg-500mg),A10BA
+glucovance (5mg-500mg),A10BB
+glyburide/metformin (5mg-500mg),A10BB
+glucovance (5mg-500mg),A10BA
+glyburide/metformin (5mg-500mg),A10BA
+didanosine ec,J05AF
+dolasetron mesylate,A04AA
+anzemet,A04AA
+zofran,A04AA
+ns,A04AA
+dolasetron mesylate i.v.,A04AA
+*nf* dolasetron mesylate,A04AA
+arava,L04AA
+leflunomide,L04AA
+lantus,A10AE
+sw,A10AE
+insulin glargine,A10AE
+glargine,A10AE
+apri,A10AE
+tacrolimus,A10AE
+betaxolol hcl,A10AE
+nitroglycerin,A10AE
+nitroprusside sodium,A10AE
+phenylephrine hcl,A10AE
+potassium chloride,A10AE
+soln.,A10AE
+d5w,A10AE
+ns,A10AE
+uroxatral,A10AE
+jolessa,A10AE
+ethyl chloride,A10AE
+exenatide,A10AE
+apidra,A10AB
+moexipril hcl,C09AA
+moexipril,C09AA
+lamotrigine,N03AX
+fluocinonide 0.05% cream,C05AA
+fluocinonide 0.05% cream,D07AC
+fluocinonide 0.05% ointment,C05AA
+fluocinonide 0.05% ointment,D07AC
+loperamide,A07DA
+viibryd,N03AX
+amnesteem,N03AX
+piroxicam,M01AC
+piroxicam,M02AA
+piroxicam,S01BC
+pravastatin,C10AA
+penicillin v potassium,J01CE
+dicloxacillin,J01CF
+alendronate sodium,M05BA
+lamivudine-zidovudine (combivir),J05AF
+lamivudine-zidovudine (combivir),J05AR
+cabergoline,G02CB
+cabergoline,N04BC
+metformin xr (glucophage xr),A10BA
+kytril,A04AA
+mexiletine,C01BB
+mexiletine hcl,C01BB
+acyclovir,D06BB
+acyclovir,J05AB
+acyclovir,S01AD
+glyburi,A10BB
+haloperidol,N05AD
+haloperidol lactate,N05AD
+rimantadine,J05AC
+pyridostigmine bromide,N07AA
+fludrocortisone acetate,H02AA
+insulin pump,H02AA
+mirapex,H02AA
+milk of magnesia,A02AA
+propofol diprivan,A02AA
+pulmicort,A02AA
+insulin,A02AA
+xibrom,A02AA
+milk of magnesia,G04BX
+propofol diprivan,G04BX
+pulmicort,G04BX
+insulin,G04BX
+xibrom,G04BX
+diphenhydramine,D04AA
+diphenhydramine hcl,D04AA
+benadryl allergy,D04AA
+haloperidol,D04AA
+diphenhydramine,R06AA
+diphenhydramine hcl,R06AA
+benadryl allergy,R06AA
+haloperidol,R06AA
+docusate sodium (liquid),A06AA
+docusate sodium,A06AA
+docusate,A06AA
+docusate ,A06AA
+furosemide,A06AA
+docusate sodiu,A06AA
+docusa,A06AA
+docusat,A06AA
+zelnorm (tegaserod),A06AA
+docu,A06AA
+nuvaring,A06AA
+insulin pump,A06AA
+docusate sodi,A06AA
+propofol,A06AA
+docusate sod,A06AA
+heparin,A06AA
+docus,A06AA
+fentanyl citrate,A06AA
+docusate so,A06AA
+docusate s,A06AA
+norethindrone acetate,A06AA
+bosentan,A06AA
+meperidine,A06AA
+mannitol 20%,A06AA
+bicitra,A09AB
+sodium citrate/citric acid,A09AB
+bicitra,B05CB
+sodium citrate/citric acid,B05CB
+amantadine syrup,N04BB
+amantadine,N04BB
+fluphenazine,N05AB
+acetaminophen,N02BE
+acetaminophen (liquid),N02BE
+acetami,N02BE
+lotemax,N02BE
+alrex,N02BE
+acetaminophen ,N02BE
+acetamin,N02BE
+acetaminophe,N02BE
+ace,N02BE
+iquix,N02BE
+propofol,N02BE
+insulin pump (self administering medication),N02BE
+midazolam,N02BE
+fentanyl citrate,N02BE
+fentanyl,N02BE
+phenylephrine,N02BE
+acetaminophen (rectal),N02BE
+guaifenesin,R05CA
+guai,R05CA
+mucinex,R05CA
+albuterol 0.083% neb soln,R05CA
+robitussin chest congestion,R05CA
+fluoxymesterone,R05CA
+patanol,R05CA
+azopt,R05CA
+aluminum-magnesium hydrox.-simethicone,A02AB
+aluminum,A02AB
+maalox,A02AB
+orap,A02AB
+dasatinib,A02AB
+aluminum-magnesium hydrox.-simethicone,A02AA
+aluminum,A02AA
+maalox,A02AA
+orap,A02AA
+dasatinib,A02AA
+aluminum-magnesium hydrox.-simethicone,G04BX
+aluminum,G04BX
+maalox,G04BX
+orap,G04BX
+dasatinib,G04BX
+guaifenesin-codeine phosphate,R05DA
+guaifenesin-codeine phosphate,R05CA
+prevident mint gel 1.1%,A01AA
+sodium fluoride (dental gel),A01AA
+prevident mint gel 1.1%,A12CD
+sodium fluoride (dental gel),A12CD
+lacosamide,N03AX
+lacosamide *nf*,N03AX
+vimpat,N03AX
+nicotine patch,N07BA
+zegerid otc,N07BA
+nicotine lozenge,N07BA
+chloroquine,P01BA
+methocarbamol,M03BA
+symbicort,M03BA
+phenobarbital,N03AA
+propylthiouracil,H03BA
+primidone,N03AA
+acetaminophen-caff-butalbital,N02BE
+fioricet,N02BE
+calcium 500+d,N02BE
+butalbital-acetaminophen-caff,N02BE
+acetaminophen-caff-butalbital,N06BC
+fioricet,N06BC
+calcium 500+d,N06BC
+butalbital-acetaminophen-caff,N06BC
+metoprolol tartrate,C07AB
+code ats99 study med,C07AB
+code lut/zea03 study med,C07AB
+code epa/dha 26 study med,C07AB
+norepinephrine,C07AB
+phenylephrine,C07AB
+cephalexin,J01DB
+triamcinolone acetonide 0.025% cream,A01AC
+triamcinolone acetonide 0.025% cream,C05AA
+triamcinolone acetonide 0.025% cream,D07AB
+triamcinolone acetonide 0.025% cream,D07XB
+triamcinolone acetonide 0.025% cream,H02AB
+triamcinolone acetonide 0.025% cream,R01AD
+triamcinolone acetonide 0.025% cream,R03BA
+triamcinolone acetonide 0.025% cream,S01BA
+triamcinolone acetonide 0.1% cream,A01AC
+triamcinolone 0.1% cream,A01AC
+triamcinolone acetonide 0.1% cream,C05AA
+triamcinolone 0.1% cream,C05AA
+triamcinolone acetonide 0.1% cream,D07AB
+triamcinolone 0.1% cream,D07AB
+triamcinolone acetonide 0.1% cream,D07XB
+triamcinolone 0.1% cream,D07XB
+triamcinolone acetonide 0.1% cream,H02AB
+triamcinolone 0.1% cream,H02AB
+triamcinolone acetonide 0.1% cream,R01AD
+triamcinolone 0.1% cream,R01AD
+triamcinolone acetonide 0.1% cream,R03BA
+triamcinolone 0.1% cream,R03BA
+triamcinolone acetonide 0.1% cream,S01BA
+triamcinolone 0.1% cream,S01BA
+triamcinolone 0.1% ointment,A01AC
+triamcinolone 0.1% ointment,C05AA
+triamcinolone 0.1% ointment,D07AB
+triamcinolone 0.1% ointment,D07XB
+triamcinolone 0.1% ointment,H02AB
+triamcinolone 0.1% ointment,R01AD
+triamcinolone 0.1% ointment,R03BA
+triamcinolone 0.1% ointment,S01BA
+triamcinolone acetonide 0.025% ointment,A01AC
+triamcinolone acetonide 0.025% ointment,C05AA
+triamcinolone acetonide 0.025% ointment,D07AB
+triamcinolone acetonide 0.025% ointment,D07XB
+triamcinolone acetonide 0.025% ointment,H02AB
+triamcinolone acetonide 0.025% ointment,R01AD
+triamcinolone acetonide 0.025% ointment,R03BA
+triamcinolone acetonide 0.025% ointment,S01BA
+triamcinolone acetonide 0.1% ointment,A01AC
+triamcinolone acetonide 0.1% ointment,C05AA
+triamcinolone acetonide 0.1% ointment,D07AB
+triamcinolone acetonide 0.1% ointment,D07XB
+triamcinolone acetonide 0.1% ointment,H02AB
+triamcinolone acetonide 0.1% ointment,R01AD
+triamcinolone acetonide 0.1% ointment,R03BA
+triamcinolone acetonide 0.1% ointment,S01BA
+nystatin ointment,A07AA
+nystatin (topical),A07AA
+nystatin cream,A07AA
+acetaminophen,A07AA
+nystatin ointment,D01AA
+nystatin (topical),D01AA
+nystatin cream,D01AA
+acetaminophen,D01AA
+nystatin ointment,G01AA
+nystatin (topical),G01AA
+nystatin cream,G01AA
+acetaminophen,G01AA
+bacitracin ointment,D06AX
+soma,D06AX
+hctz/triamterene (maxzide),D06AX
+iodosorb,D06AX
+bacitracin ointment,J01XX
+soma,J01XX
+hctz/triamterene (maxzide),J01XX
+iodosorb,J01XX
+bacitracin ointment,R02AB
+soma,R02AB
+hctz/triamterene (maxzide),R02AB
+iodosorb,R02AB
+"lidocaine 1%/epi 1::100,000",D06AX
+potassium chloride,D06AX
+"lidocaine 1%/epi 1::100,000",J01XX
+potassium chloride,J01XX
+"lidocaine 1%/epi 1::100,000",R02AB
+potassium chloride,R02AB
+neomycin-polymyxin-bacitracin,D06AX
+neomycin-polymyxin-bacitracin,J01XX
+neomycin-polymyxin-bacitracin,R02AB
+neomycin-polymyxin-bacitracin,A01AB
+neomycin-polymyxin-bacitracin,A07AA
+neomycin-polymyxin-bacitracin,B05CA
+neomycin-polymyxin-bacitracin,J01GB
+neomycin-polymyxin-bacitracin,S01AA
+neomycin-polymyxin-bacitracin,S02AA
+neomycin-polymyxin-bacitracin,S03AA
+neomycin-polymyxin-bacitracin,J01XB
+hydrocortisone cream 0.5%,A01AC
+hydrocortisone cream 0.5%,A07EA
+hydrocortisone cream 0.5%,C05AA
+hydrocortisone cream 0.5%,D07AA
+hydrocortisone cream 0.5%,D07XA
+hydrocortisone cream 0.5%,H02AB
+hydrocortisone cream 0.5%,S01BA
+hydrocortisone cream 0.5%,S01CB
+hydrocortisone cream 0.5%,S02BA
+hydrocortisone cream 1%,A01AC
+hydrocortisone cream 1%,A07EA
+hydrocortisone cream 1%,C05AA
+hydrocortisone cream 1%,D07AA
+hydrocortisone cream 1%,D07XA
+hydrocortisone cream 1%,H02AB
+hydrocortisone cream 1%,S01BA
+hydrocortisone cream 1%,S01CB
+hydrocortisone cream 1%,S02BA
+hydrocortisone oint 0.5%,A01AC
+hydrocortisone oint 0.5%,A07EA
+hydrocortisone oint 0.5%,C05AA
+hydrocortisone oint 0.5%,D07AA
+hydrocortisone oint 0.5%,D07XA
+hydrocortisone oint 0.5%,H02AB
+hydrocortisone oint 0.5%,S01BA
+hydrocortisone oint 0.5%,S01CB
+hydrocortisone oint 0.5%,S02BA
+bacitracin-polymyxin ointment,D06AX
+bacitracin-polymyxin ointment,J01XX
+bacitracin-polymyxin ointment,R02AB
+bacitracin-polymyxin ointment,A07AA
+bacitracin-polymyxin ointment,J01XB
+bacitracin-polymyxin ointment,S01AA
+bacitracin-polymyxin ointment,S02AA
+bacitracin-polymyxin ointment,S03AA
+poly,D06AX
+poly,J01XX
+poly,R02AB
+poly,A07AA
+poly,J01XB
+poly,S01AA
+poly,S02AA
+poly,S03AA
+betamethasone valerate 0.1% cream,A07EA
+betamethasone,A07EA
+betamethasone valerate 0.1% cream,C05AA
+betamethasone,C05AA
+betamethasone valerate 0.1% cream,D07AC
+betamethasone,D07AC
+betamethasone valerate 0.1% cream,D07XC
+betamethasone,D07XC
+betamethasone valerate 0.1% cream,H02AB
+betamethasone,H02AB
+betamethasone valerate 0.1% cream,R01AD
+betamethasone,R01AD
+betamethasone valerate 0.1% cream,R03BA
+betamethasone,R03BA
+betamethasone valerate 0.1% cream,S01BA
+betamethasone,S01BA
+betamethasone valerate 0.1% cream,S01CB
+betamethasone,S01CB
+betamethasone valerate 0.1% cream,S02BA
+betamethasone,S02BA
+betamethasone valerate 0.1% cream,S03BA
+betamethasone,S03BA
+dibucaine,C05AD
+dibucaine,D04AB
+dibucaine,N01BB
+dibucaine,S01HA
+dibucaine,S02DA
+nystatin,A07AA
+mycostatin,A07AA
+propofol,A07AA
+acetaminophen (rectal),A07AA
+rasagiline (azilect),A07AA
+nystatin,D01AA
+mycostatin,D01AA
+propofol,D01AA
+acetaminophen (rectal),D01AA
+rasagiline (azilect),D01AA
+nystatin,G01AA
+mycostatin,G01AA
+propofol,G01AA
+acetaminophen (rectal),G01AA
+rasagiline (azilect),G01AA
+betamethasone dipro 0.05% oint,A07EA
+betamethasone dipro 0.05% oint,C05AA
+betamethasone dipro 0.05% oint,D07AC
+betamethasone dipro 0.05% oint,D07XC
+betamethasone dipro 0.05% oint,H02AB
+betamethasone dipro 0.05% oint,R01AD
+betamethasone dipro 0.05% oint,R03BA
+betamethasone dipro 0.05% oint,S01BA
+betamethasone dipro 0.05% oint,S01CB
+betamethasone dipro 0.05% oint,S02BA
+betamethasone dipro 0.05% oint,S03BA
+betamethasone dipro 0.05% lot.,A07EA
+betamethasone dipro 0.05% lot.,C05AA
+betamethasone dipro 0.05% lot.,D07AC
+betamethasone dipro 0.05% lot.,D07XC
+betamethasone dipro 0.05% lot.,H02AB
+betamethasone dipro 0.05% lot.,R01AD
+betamethasone dipro 0.05% lot.,R03BA
+betamethasone dipro 0.05% lot.,S01BA
+betamethasone dipro 0.05% lot.,S01CB
+betamethasone dipro 0.05% lot.,S02BA
+betamethasone dipro 0.05% lot.,S03BA
+fluocin,C05AA
+fluocinolone 0.01% cream,C05AA
+fluocinolone acetonide 0.01% cream,C05AA
+fluocin,D07AC
+fluocinolone 0.01% cream,D07AC
+fluocinolone acetonide 0.01% cream,D07AC
+fluocin,S01BA
+fluocinolone 0.01% cream,S01BA
+fluocinolone acetonide 0.01% cream,S01BA
+fluocin,S02BA
+fluocinolone 0.01% cream,S02BA
+fluocinolone acetonide 0.01% cream,S02BA
+fluocinolone acetonide 0.01% solution,C05AA
+fluocinolone 0.01% solution,C05AA
+fluocinolone acetonide 0.01% solution,D07AC
+fluocinolone 0.01% solution,D07AC
+fluocinolone acetonide 0.01% solution,S01BA
+fluocinolone 0.01% solution,S01BA
+fluocinolone acetonide 0.01% solution,S02BA
+fluocinolone 0.01% solution,S02BA
+fluocinolone 0.025% cream,C05AA
+fluocinolone acetonide 0.025% cream,C05AA
+fluocinolone 0.025% cream,D07AC
+fluocinolone acetonide 0.025% cream,D07AC
+fluocinolone 0.025% cream,S01BA
+fluocinolone acetonide 0.025% cream,S01BA
+fluocinolone 0.025% cream,S02BA
+fluocinolone acetonide 0.025% cream,S02BA
+fluocinolone,C05AA
+fluocinolone,D07AC
+fluocinolone,S01BA
+fluocinolone,S02BA
+gentamicin sulfate,D06AX
+gentamicin,D06AX
+gentamicin 0.1% cream,D06AX
+gentamicin sulfate,J01GB
+gentamicin,J01GB
+gentamicin 0.1% cream,J01GB
+gentamicin sulfate,S01AA
+gentamicin,S01AA
+gentamicin 0.1% cream,S01AA
+gentamicin sulfate,S02AA
+gentamicin,S02AA
+gentamicin 0.1% cream,S02AA
+gentamicin sulfate,S03AA
+gentamicin,S03AA
+gentamicin 0.1% cream,S03AA
+hydrocortisone cream 2.5%,A01AC
+hydrocortisone cream 2.5%,A07EA
+hydrocortisone cream 2.5%,C05AA
+hydrocortisone cream 2.5%,D07AA
+hydrocortisone cream 2.5%,D07XA
+hydrocortisone cream 2.5%,H02AB
+hydrocortisone cream 2.5%,S01BA
+hydrocortisone cream 2.5%,S01CB
+hydrocortisone cream 2.5%,S02BA
+nystatin-triamcinolone,A01AC
+nystatin-triamcinolone cream,A01AC
+nystatin-triamcinolone,C05AA
+nystatin-triamcinolone cream,C05AA
+nystatin-triamcinolone,D07AB
+nystatin-triamcinolone cream,D07AB
+nystatin-triamcinolone,D07XB
+nystatin-triamcinolone cream,D07XB
+nystatin-triamcinolone,H02AB
+nystatin-triamcinolone cream,H02AB
+nystatin-triamcinolone,R01AD
+nystatin-triamcinolone cream,R01AD
+nystatin-triamcinolone,R03BA
+nystatin-triamcinolone cream,R03BA
+nystatin-triamcinolone,S01BA
+nystatin-triamcinolone cream,S01BA
+nystatin-triamcinolone,A07AA
+nystatin-triamcinolone cream,A07AA
+nystatin-triamcinolone,D01AA
+nystatin-triamcinolone cream,D01AA
+nystatin-triamcinolone,G01AA
+nystatin-triamcinolone cream,G01AA
+nystatin-triamcinolone ointment,A01AC
+nystatin-triamcinolone ointment,C05AA
+nystatin-triamcinolone ointment,D07AB
+nystatin-triamcinolone ointment,D07XB
+nystatin-triamcinolone ointment,H02AB
+nystatin-triamcinolone ointment,R01AD
+nystatin-triamcinolone ointment,R03BA
+nystatin-triamcinolone ointment,S01BA
+nystatin-triamcinolone ointment,A07AA
+nystatin-triamcinolone ointment,D01AA
+nystatin-triamcinolone ointment,G01AA
+hydrocortisone oint 2.5%,A01AC
+hydrocortisone oint 2.5%,A07EA
+hydrocortisone oint 2.5%,C05AA
+hydrocortisone oint 2.5%,D07AA
+hydrocortisone oint 2.5%,D07XA
+hydrocortisone oint 2.5%,H02AB
+hydrocortisone oint 2.5%,S01BA
+hydrocortisone oint 2.5%,S01CB
+hydrocortisone oint 2.5%,S02BA
+clobetasol propionate 0.05% ointment,D07AD
+clobetasol propionate 0.05% cream,D07AD
+lidocaine 5% ointment,C01BB
+lidoca,C01BB
+lidocaine ointment 5%,C01BB
+lidoc,C01BB
+lidocaine 5% ointment,C05AD
+lidoca,C05AD
+lidocaine ointment 5%,C05AD
+lidoc,C05AD
+lidocaine 5% ointment,D04AB
+lidoca,D04AB
+lidocaine ointment 5%,D04AB
+lidoc,D04AB
+lidocaine 5% ointment,N01BB
+lidoca,N01BB
+lidocaine ointment 5%,N01BB
+lidoc,N01BB
+lidocaine 5% ointment,R02AD
+lidoca,R02AD
+lidocaine ointment 5%,R02AD
+lidoc,R02AD
+lidocaine 5% ointment,S01HA
+lidoca,S01HA
+lidocaine ointment 5%,S01HA
+lidoc,S01HA
+lidocaine 5% ointment,S02DA
+lidoca,S02DA
+lidocaine ointment 5%,S02DA
+lidoc,S02DA
+erythromycin,D10AF
+erythromycin,J01FA
+erythromycin,S01AA
+betamethasone dipro 0.05% augmented gel,A07EA
+betamethasone dipro 0.05% augmented gel,C05AA
+betamethasone dipro 0.05% augmented gel,D07AC
+betamethasone dipro 0.05% augmented gel,D07XC
+betamethasone dipro 0.05% augmented gel,H02AB
+betamethasone dipro 0.05% augmented gel,R01AD
+betamethasone dipro 0.05% augmented gel,R03BA
+betamethasone dipro 0.05% augmented gel,S01BA
+betamethasone dipro 0.05% augmented gel,S01CB
+betamethasone dipro 0.05% augmented gel,S02BA
+betamethasone dipro 0.05% augmented gel,S03BA
+bacitracin/polymyxin b sulfate opht. oint,D06AX
+bacitracin-polymyxin ,D06AX
+bacitracin/polymyxin b sulfate opht. oint,J01XX
+bacitracin-polymyxin ,J01XX
+bacitracin/polymyxin b sulfate opht. oint,R02AB
+bacitracin-polymyxin ,R02AB
+bacitracin/polymyxin b sulfate opht. oint,A07AA
+bacitracin-polymyxin ,A07AA
+bacitracin/polymyxin b sulfate opht. oint,J01XB
+bacitracin-polymyxin ,J01XB
+bacitracin/polymyxin b sulfate opht. oint,S01AA
+bacitracin-polymyxin ,S01AA
+bacitracin/polymyxin b sulfate opht. oint,S02AA
+bacitracin-polymyxin ,S02AA
+bacitracin/polymyxin b sulfate opht. oint,S03AA
+bacitracin-polymyxin ,S03AA
+econazole,D01AC
+econ,D01AC
+prednisolone acetate,D01AC
+econopred plus,D01AC
+econazole,G01AF
+econ,G01AF
+prednisolone acetate,G01AF
+econopred plus,G01AF
+nitroglycerin ointment  2%,C01DA
+nitroglycerin oint. 2%,C01DA
+nitroglycerin ointment  2%,C05AE
+nitroglycerin oint. 2%,C05AE
+lidocaine-prilocaine,C01BB
+emla,C01BB
+lidocaine-prilocaine,C05AD
+emla,C05AD
+lidocaine-prilocaine,D04AB
+emla,D04AB
+lidocaine-prilocaine,N01BB
+emla,N01BB
+lidocaine-prilocaine,R02AD
+emla,R02AD
+lidocaine-prilocaine,S01HA
+emla,S01HA
+lidocaine-prilocaine,S02DA
+emla,S02DA
+repaglinide,A10BX
+insulin reg human (novolin r),A10AB
+novolin r,A10AB
+insulin reg human (novolin r),A10AC
+novolin r,A10AC
+insulin reg human (novolin r),A10AD
+novolin r,A10AD
+insulin reg human (novolin r),A10AE
+novolin r,A10AE
+insulin reg human (novolin r),A10AF
+novolin r,A10AF
+labetalol,C07AG
+propofol,C07AG
+potassium chloride (powder),C07AG
+midazolam,C07AG
+flutamide,L02BB
+anagrelide,L01XX
+agrylin (anagrelide) 0.5mg cap,L01XX
+bupropion sr,N06AX
+bupropion (sustained release),N06AX
+bupropion,N06AX
+bupropion hcl,N06AX
+wellbutrin sr,N06AX
+ondansetron,A04AA
+sumatriptan succinate,N02CC
+epoprostenol na,B01AC
+bosentan,B01AC
+epoprostenol,B01AC
+atovaquone suspension,P01AX
+amerge,N02CC
+naratriptan,N02CC
+lamictal,N03AX
+lamotrig,N03AX
+lamivudine,J05AF
+lami,J05AF
+malarone,P01BB
+malarone,P01AX
+fluticasone-salmeterol diskus (100/50),R03AK
+fluticasone-salmeterol diskus (100/50),R03AC
+fluticasone-salmeterol diskus (100/50),D07AC
+fluticasone-salmeterol diskus (100/50),R01AD
+fluticasone-salmeterol diskus (100/50),R03BA
+fluticasone-salmeterol diskus (250/50) ,R03AK
+fluticasone-salmeterol diskus (250/50) ,R03AC
+fluticasone-salmeterol diskus (250/50) ,D07AC
+fluticasone-salmeterol diskus (250/50) ,R01AD
+fluticasone-salmeterol diskus (250/50) ,R03BA
+*nf* salmeterol-fluticasone,R03AK
+advair diskus,R03AK
+fluticasone-salmeterol diskus (500/50) ,R03AK
+fluticasone-salmeterol,R03AK
+*nf* salmeterol-fluticasone,R03AC
+advair diskus,R03AC
+fluticasone-salmeterol diskus (500/50) ,R03AC
+fluticasone-salmeterol,R03AC
+*nf* salmeterol-fluticasone,D07AC
+advair diskus,D07AC
+fluticasone-salmeterol diskus (500/50) ,D07AC
+fluticasone-salmeterol,D07AC
+*nf* salmeterol-fluticasone,R01AD
+advair diskus,R01AD
+fluticasone-salmeterol diskus (500/50) ,R01AD
+fluticasone-salmeterol,R01AD
+*nf* salmeterol-fluticasone,R03BA
+advair diskus,R03BA
+fluticasone-salmeterol diskus (500/50) ,R03BA
+fluticasone-salmeterol,R03BA
+imitrex,N02CC
+lamictal xr,N03AX
+valacyclovir,J05AB
+valtrex,J05AB
+valacyclovir hcl,J05AB
+*nf* valacyclovir,J05AB
+wellbutrin,N06AX
+buprop,N06AX
+urocit-k 10,A12BA
+urocit-k 5,A12BA
+potassium citrate,A12BA
+zonisamide,N03AX
+methimazole,H03BB
+indomethacin xr,C01EB
+indomethacin xr,M01AB
+indomethacin xr,M02AA
+indomethacin xr,S01BC
+sulfadiazine,J01EC
+bisoprolol fumarate,C07AB
+zebeta,C07AB
+bisopro,C07AB
+bisopr,C07AB
+bisop,C07AB
+bisoprolol,C07AB
+cholestyramine,C10AC
+atacand,C09CA
+candesartan,C09CA
+candesartan cilexetil,C09CA
+atacand hct,C09CA
+symbicort,D07AC
+symbicort,R01AD
+symbicort,R03BA
+symbicort,R03AC
+symbicort,R03AK
+*nf* budesonide,A07EA
+budesonide,A07EA
+entocort ec,A07EA
+nexium,A07EA
+*nf* budesonide,D07AC
+budesonide,D07AC
+entocort ec,D07AC
+nexium,D07AC
+*nf* budesonide,R01AD
+budesonide,R01AD
+entocort ec,R01AD
+nexium,R01AD
+*nf* budesonide,R03BA
+budesonide,R03BA
+entocort ec,R03BA
+nexium,R03BA
+ticagrelor,B01AC
+brilinta,B01AC
+metoprolol xl,C07AB
+metoprolol,C07AB
+iso-osmotic dextrose,C07AB
+metoprolol xl (toprol xl),C07AB
+metoprolol succinate xl,C07AB
+uroxatral,C07AB
+d5w,C07AB
+heparin sodium,C07AB
+nitroglycerin,C07AB
+symlin,C07AB
+fluticasone-salmeterol,C07AB
+toprol xl,C07AB
+metoprolol ,C07AB
+metoprolo,C07AB
+pulmicort,A07EA
+pulmicort,D07AC
+pulmicort,R01AD
+pulmicort,R03BA
+unifiber,A07EA
+budesonide (bulk),A07EA
+unifiber,D07AC
+budesonide (bulk),D07AC
+unifiber,R01AD
+budesonide (bulk),R01AD
+unifiber,R03BA
+budesonide (bulk),R03BA
+nexium,A02BC
+*nf* esomeprazole,A02BC
+esomeprazole magnesium,A02BC
+nexium 40mg capsules,A02BC
+ribavirin aerosol,J05AP
+tasmar,N04BX
+tolcapone,N04BX
+pyridostigmine bromide syrup,N07AA
+pyridostigmine ,N07AA
+pyrid,N07AA
+flucytosine,D01AE
+flucytosine,J02AX
+piperacillin-tazobactam na,J01CG
+piperacillin-tazobactam,J01CG
+piperacillin-tazobactam na,J01CA
+piperacillin-tazobactam,J01CA
+zosyn desensitization,J01CG
+zosyn desensitization,J01CA
+clobazam,J01CG
+clobazam,J01CA
+morphine sulfate,J01CG
+morphine sulfate,J01CA
+l-hyoscyamine,A03BA
+hyoscyamine,A03BA
+hyo,A03BA
+l-hyoscyamine sl,A03BA
+hyosc,A03BA
+hyoscyamine ,A03BA
+levsin,A03BA
+hyoscyami,A03BA
+oxazepam,N05BA
+nifedipine,C08CA
+nifed,C08CA
+isradipine,C08CA
+isosorbide mononitrate,C01DA
+isosorbide ,C01DA
+potassium iodide,R05CA
+potassium iodide,S01XA
+potassium iodide,V03AB
+potassium chloride,A12BA
+potassium chloride replacement (oncology),A12BA
+tarceva,A12BA
+potassium chloride (powder),A12BA
+potassium chloride ,A12BA
+enablex,A12BA
+potassium ,A12BA
+januvia,A12BA
+baclofen,A12BA
+latuda (lurasidone),A12BA
+micro-k,A12BA
+insulin pump (self administering medication),A12BA
+potassium chloride,B05XA
+potassium chloride replacement (oncology),B05XA
+tarceva,B05XA
+potassium chloride (powder),B05XA
+potassium chloride ,B05XA
+enablex,B05XA
+potassium ,B05XA
+januvia,B05XA
+baclofen,B05XA
+latuda (lurasidone),B05XA
+micro-k,B05XA
+insulin pump (self administering medication),B05XA
+amiodarone,C01BD
+midodrine,C01CA
+nephramine 2.7%,N06AX
+nephramine 2.7%,B05XB
+nephramine 2.7%,V03AB
+nephramine 2.7%,A12CA
+nephramine 2.7%,B05CB
+nephramine 2.7%,B05XA
+hespan,B05AA
+cefazolin,J01DB
+metformin xr,J01DB
+d5w (excel),B05CX
+5% dextrose (excel bag),B05CX
+byetta,B05CX
+d5w (excel),V04CA
+5% dextrose (excel bag),V04CA
+byetta,V04CA
+d5w (excel),V06DC
+5% dextrose (excel bag),V06DC
+byetta,V06DC
+d5w (excel bag),B05CX
+sw,B05CX
+ns,B05CX
+d5w (excel bag),V04CA
+sw,V04CA
+ns,V04CA
+d5w (excel bag),V06DC
+sw,V06DC
+ns,V06DC
+ns (excel),A12CA
+0.9% sodium chloride (excel bag),A12CA
+ns (excel),B05CB
+0.9% sodium chloride (excel bag),B05CB
+ns (excel),B05XA
+0.9% sodium chloride (excel bag),B05XA
+starter pn d10,N06AX
+starter pn d5,N06AX
+starter pn d10,B05CX
+starter pn d5,B05CX
+starter pn d10,B05XA
+starter pn d5,B05XA
+starter pn d10,B05XB
+starter pn d5,B05XB
+starter pn d10,V03AB
+starter pn d5,V03AB
+starter pn d10,A12CA
+starter pn d5,A12CA
+starter pn d10,B05CB
+starter pn d5,B05CB
+heparin sodium,B01AB
+warfarin,B01AB
+heparin sodium,C05BA
+warfarin,C05BA
+heparin sodium,S01XA
+warfarin,S01XA
+sincalide,V04CC
+hurricaine spray,C05AD
+benzocaine 20% spray,C05AD
+d5w,C05AD
+hurricaine spray,D04AB
+benzocaine 20% spray,D04AB
+d5w,D04AB
+hurricaine spray,N01BA
+benzocaine 20% spray,N01BA
+d5w,N01BA
+hurricaine spray,R02AD
+benzocaine 20% spray,R02AD
+d5w,R02AD
+metronidazole topical 1 % gel,A01AB
+metronidazole,A01AB
+metronidazole cream 1%,A01AB
+metronidazole topical 1 % gel,D06BX
+metronidazole,D06BX
+metronidazole cream 1%,D06BX
+metronidazole topical 1 % gel,G01AF
+metronidazole,G01AF
+metronidazole cream 1%,G01AF
+metronidazole topical 1 % gel,J01XD
+metronidazole,J01XD
+metronidazole cream 1%,J01XD
+metronidazole topical 1 % gel,P01AB
+metronidazole,P01AB
+metronidazole cream 1%,P01AB
+arimidex,L02BG
+anastrozole,L02BG
+quetiapine extended-release,N05AH
+meropenem,J01DH
+meropenem desensitization,J01DH
+fulvestrant (faslodex),L02BA
+fulvestrant,L02BA
+rosuvastatin calcium,C10AA
+rosuvastatin,C10AA
+bystolic,C10AA
+renacidin,A09AB
+*nf* renacidin soln,A09AB
+renacidin,A02AA
+*nf* renacidin soln,A02AA
+renacidin,A06AD
+*nf* renacidin soln,A06AD
+5% dextrose,B05CX
+d5w,B05CX
+isradipine,B05CX
+dextrose 5%,B05CX
+omeprazole,B05CX
+felodipine,B05CX
+restasis,B05CX
+5% dextrose,V04CA
+d5w,V04CA
+isradipine,V04CA
+dextrose 5%,V04CA
+omeprazole,V04CA
+felodipine,V04CA
+restasis,V04CA
+5% dextrose,V06DC
+d5w,V06DC
+isradipine,V06DC
+dextrose 5%,V06DC
+omeprazole,V06DC
+felodipine,V06DC
+restasis,V06DC
+clobetasol propionate,B05CX
+vytorin 10/20,B05CX
+tobramycin fortified ophth. soln.,B05CX
+cefazolin ophthalmic solution,B05CX
+benzoyl peroxide,B05CX
+estradiol/norethindr( activella),B05CX
+vancomycin enema,B05CX
+iso-osmotic dextrose,B05CX
+d5w 0.1% albumin,B05CX
+heparin,B05CX
+soln.,B05CX
+ns        (glass bottle),B05CX
+nitroprusside sodium,B05CX
+phenylephrine hcl,B05CX
+water,B05CX
+*nf* argatroban,B05CX
+morphine sulfate,B05CX
+vigamox,B05CX
+sodium bicarbonate,B05CX
+dopamine,B05CX
+norepinephrine,B05CX
+lidocaine jelly 2% (urojet),B05CX
+phenylephrine,B05CX
+mannitol 20%,B05CX
+magnesium sulfate,B05CX
+propofol,B05CX
+zanamivir,B05CX
+combigan,B05CX
+acidophilus-b.bifidum-b.longum,B05CX
+fentanyl citrate,B05CX
+potassium chloride (powder),B05CX
+vasopressin,B05CX
+potassium chloride,B05CX
+hydromorphone (dilaudid),B05CX
+acetaminophen,B05CX
+ondansetron,B05CX
+clobetasol propionate,V04CA
+vytorin 10/20,V04CA
+tobramycin fortified ophth. soln.,V04CA
+cefazolin ophthalmic solution,V04CA
+benzoyl peroxide,V04CA
+estradiol/norethindr( activella),V04CA
+vancomycin enema,V04CA
+iso-osmotic dextrose,V04CA
+d5w 0.1% albumin,V04CA
+heparin,V04CA
+soln.,V04CA
+ns        (glass bottle),V04CA
+nitroprusside sodium,V04CA
+phenylephrine hcl,V04CA
+water,V04CA
+*nf* argatroban,V04CA
+morphine sulfate,V04CA
+vigamox,V04CA
+sodium bicarbonate,V04CA
+dopamine,V04CA
+norepinephrine,V04CA
+lidocaine jelly 2% (urojet),V04CA
+phenylephrine,V04CA
+mannitol 20%,V04CA
+magnesium sulfate,V04CA
+propofol,V04CA
+zanamivir,V04CA
+combigan,V04CA
+acidophilus-b.bifidum-b.longum,V04CA
+fentanyl citrate,V04CA
+potassium chloride (powder),V04CA
+vasopressin,V04CA
+potassium chloride,V04CA
+hydromorphone (dilaudid),V04CA
+acetaminophen,V04CA
+ondansetron,V04CA
+clobetasol propionate,V06DC
+vytorin 10/20,V06DC
+tobramycin fortified ophth. soln.,V06DC
+cefazolin ophthalmic solution,V06DC
+benzoyl peroxide,V06DC
+estradiol/norethindr( activella),V06DC
+vancomycin enema,V06DC
+iso-osmotic dextrose,V06DC
+d5w 0.1% albumin,V06DC
+heparin,V06DC
+soln.,V06DC
+ns        (glass bottle),V06DC
+nitroprusside sodium,V06DC
+phenylephrine hcl,V06DC
+water,V06DC
+*nf* argatroban,V06DC
+morphine sulfate,V06DC
+vigamox,V06DC
+sodium bicarbonate,V06DC
+dopamine,V06DC
+norepinephrine,V06DC
+lidocaine jelly 2% (urojet),V06DC
+phenylephrine,V06DC
+mannitol 20%,V06DC
+magnesium sulfate,V06DC
+propofol,V06DC
+zanamivir,V06DC
+combigan,V06DC
+acidophilus-b.bifidum-b.longum,V06DC
+fentanyl citrate,V06DC
+potassium chloride (powder),V06DC
+vasopressin,V06DC
+potassium chloride,V06DC
+hydromorphone (dilaudid),V06DC
+acetaminophen,V06DC
+ondansetron,V06DC
+betaseron,B05CX
+cvvh citrated,B05CX
+sutent,B05CX
+symbicort,B05CX
+liothyronine,B05CX
+calcium chloride,B05CX
+ascorbic acid,B05CX
+betaseron,V04CA
+cvvh citrated,V04CA
+sutent,V04CA
+symbicort,V04CA
+liothyronine,V04CA
+calcium chloride,V04CA
+ascorbic acid,V04CA
+betaseron,V06DC
+cvvh citrated,V06DC
+sutent,V06DC
+symbicort,V06DC
+liothyronine,V06DC
+calcium chloride,V06DC
+ascorbic acid,V06DC
+nuvaring(etonogestrel/ethinyl estradiol,B05CX
+nuvaring(etonogestrel/ethinyl estradiol,V04CA
+nuvaring(etonogestrel/ethinyl estradiol,V06DC
+d5w w 0.2% albumin,B05CX
+foradil aerolizer,B05CX
+convatek,B05CX
+riboflavin,B05CX
+desvenlafaxine,B05CX
+d5w w 0.2% albumin,V04CA
+foradil aerolizer,V04CA
+convatek,V04CA
+riboflavin,V04CA
+desvenlafaxine,V04CA
+d5w w 0.2% albumin,V06DC
+foradil aerolizer,V06DC
+convatek,V06DC
+riboflavin,V06DC
+desvenlafaxine,V06DC
+d10w,B05CX
+d12.5w,B05CX
+d12w,B05CX
+maalox,B05CX
+sodium chloride,B05CX
+corn starch (bulk),B05CX
+d10w,V04CA
+d12.5w,V04CA
+d12w,V04CA
+maalox,V04CA
+sodium chloride,V04CA
+corn starch (bulk),V04CA
+d10w,V06DC
+d12.5w,V06DC
+d12w,V06DC
+maalox,V06DC
+sodium chloride,V06DC
+corn starch (bulk),V06DC
+1/2 ns,A12CA
+0.45% sodium chloride,A12CA
+1/2 ns,B05CB
+0.45% sodium chloride,B05CB
+1/2 ns,B05XA
+0.45% sodium chloride,B05XA
+0.45 % sodium chloride,A12CA
+haloperidol,A12CA
+midazolam,A12CA
+fentanyl citrate,A12CA
+foltx,A12CA
+chantix,A12CA
+aranesp,A12CA
+aranesp 300 mcg,A12CA
+dutasteride,A12CA
+sevelamer carbonate,A12CA
+econazole 1% cream,A12CA
+phenytoin sodium,A12CA
+0.45 % sodium chloride,B05CB
+haloperidol,B05CB
+midazolam,B05CB
+fentanyl citrate,B05CB
+foltx,B05CB
+chantix,B05CB
+aranesp,B05CB
+aranesp 300 mcg,B05CB
+dutasteride,B05CB
+sevelamer carbonate,B05CB
+econazole 1% cream,B05CB
+phenytoin sodium,B05CB
+0.45 % sodium chloride,B05XA
+haloperidol,B05XA
+midazolam,B05XA
+fentanyl citrate,B05XA
+foltx,B05XA
+chantix,B05XA
+aranesp,B05XA
+aranesp 300 mcg,B05XA
+dutasteride,B05XA
+sevelamer carbonate,B05XA
+econazole 1% cream,B05XA
+phenytoin sodium,B05XA
+ns (irrigation bottle),A12CA
+ns (irrigation bottle),B05CB
+ns (irrigation bottle),B05XA
+0.9% sodium chloride,A12CA
+0.9% sodium chloride,B05CB
+0.9% sodium chloride,B05XA
+ns,A12CA
+ns epidural bag (0.9% nacl),A12CA
+lidocaine 1% (w/presv.),A12CA
+vancomycin ophthalmic 50mg/ml,A12CA
+tobramycin fortified ophth. 15mg/ml,A12CA
+fleet enema,A12CA
+phenytoin sodium **brand name only**,A12CA
+hki-272,A12CA
+bupivacaine 0.1%,A12CA
+repliva 21/7 (new formulation),A12CA
+diflunisal,A12CA
+propofol,A12CA
+albuterol 0.083% neb soln,A12CA
+ipratropium bromide neb,A12CA
+lorazepam,A12CA
+diltiazem,A12CA
+esmolol,A12CA
+metoprolol,A12CA
+potassium citrate,A12CA
+acetaminophen (rectal),A12CA
+fentanyl,A12CA
+acidophilus,A12CA
+ns,B05CB
+ns epidural bag (0.9% nacl),B05CB
+lidocaine 1% (w/presv.),B05CB
+vancomycin ophthalmic 50mg/ml,B05CB
+tobramycin fortified ophth. 15mg/ml,B05CB
+fleet enema,B05CB
+phenytoin sodium **brand name only**,B05CB
+hki-272,B05CB
+bupivacaine 0.1%,B05CB
+repliva 21/7 (new formulation),B05CB
+diflunisal,B05CB
+propofol,B05CB
+albuterol 0.083% neb soln,B05CB
+ipratropium bromide neb,B05CB
+lorazepam,B05CB
+diltiazem,B05CB
+esmolol,B05CB
+metoprolol,B05CB
+potassium citrate,B05CB
+acetaminophen (rectal),B05CB
+fentanyl,B05CB
+acidophilus,B05CB
+ns,B05XA
+ns epidural bag (0.9% nacl),B05XA
+lidocaine 1% (w/presv.),B05XA
+vancomycin ophthalmic 50mg/ml,B05XA
+tobramycin fortified ophth. 15mg/ml,B05XA
+fleet enema,B05XA
+phenytoin sodium **brand name only**,B05XA
+hki-272,B05XA
+bupivacaine 0.1%,B05XA
+repliva 21/7 (new formulation),B05XA
+diflunisal,B05XA
+propofol,B05XA
+albuterol 0.083% neb soln,B05XA
+ipratropium bromide neb,B05XA
+lorazepam,B05XA
+diltiazem,B05XA
+esmolol,B05XA
+metoprolol,B05XA
+potassium citrate,B05XA
+acetaminophen (rectal),B05XA
+fentanyl,B05XA
+acidophilus,B05XA
+hyaluronidase,A12CA
+insulin pump (self administering medication),A12CA
+preparation h maximum strength,A12CA
+insulin pump,A12CA
+januvia,A12CA
+cartia xt,A12CA
+abreva,A12CA
+thrombin,A12CA
+revatio (sildenafil),A12CA
+phenylephrine,A12CA
+sodium chloride 0.9 % or no intervention,A12CA
+dopamine,A12CA
+magnesium sulfate,A12CA
+calcium gluconate,A12CA
+furosemide,A12CA
+potassium chloride,A12CA
+ondansetron,A12CA
+vicodin ,A12CA
+sanctura xr,A12CA
+sanctura,A12CA
+miralax,A12CA
+mirapex,A12CA
+metoprolol tartrate,A12CA
+levetiracetam,A12CA
+ethiodol,A12CA
+tegretol xr,A12CA
+potassium chloride (powder),A12CA
+erythromycin opthalmic,A12CA
+hyaluronidase,B05CB
+insulin pump (self administering medication),B05CB
+preparation h maximum strength,B05CB
+insulin pump,B05CB
+januvia,B05CB
+cartia xt,B05CB
+abreva,B05CB
+thrombin,B05CB
+revatio (sildenafil),B05CB
+phenylephrine,B05CB
+sodium chloride 0.9 % or no intervention,B05CB
+dopamine,B05CB
+magnesium sulfate,B05CB
+calcium gluconate,B05CB
+furosemide,B05CB
+potassium chloride,B05CB
+ondansetron,B05CB
+vicodin ,B05CB
+sanctura xr,B05CB
+sanctura,B05CB
+miralax,B05CB
+mirapex,B05CB
+metoprolol tartrate,B05CB
+levetiracetam,B05CB
+ethiodol,B05CB
+tegretol xr,B05CB
+potassium chloride (powder),B05CB
+erythromycin opthalmic,B05CB
+hyaluronidase,B05XA
+preparation h maximum strength,B05XA
+insulin pump,B05XA
+cartia xt,B05XA
+abreva,B05XA
+thrombin,B05XA
+revatio (sildenafil),B05XA
+phenylephrine,B05XA
+sodium chloride 0.9 % or no intervention,B05XA
+dopamine,B05XA
+magnesium sulfate,B05XA
+calcium gluconate,B05XA
+furosemide,B05XA
+ondansetron,B05XA
+vicodin ,B05XA
+sanctura xr,B05XA
+sanctura,B05XA
+miralax,B05XA
+mirapex,B05XA
+metoprolol tartrate,B05XA
+levetiracetam,B05XA
+ethiodol,B05XA
+tegretol xr,B05XA
+erythromycin opthalmic,B05XA
+clobazam,A12CA
+iso-osmotic sodium chloride,A12CA
+thiamine hcl,A12CA
+folic acid,A12CA
+multivitamin 12,A12CA
+lr,A12CA
+d5w,A12CA
+phenylephrine hcl,A12CA
+ampicillin sodium,A12CA
+lactobacillus acidophilus,A12CA
+hydralazine,A12CA
+lipram 4500,A12CA
+avodart,A12CA
+sodium bicarbonate,A12CA
+tears naturale pm,A12CA
+coenzyme q10,A12CA
+naltrexone,A12CA
+betaseron,A12CA
+byetta,A12CA
+lysine 500mg tablets,A12CA
+halobetasol propionate,A12CA
+urelle,A12CA
+nevanac,A12CA
+vigamox,A12CA
+durezol 0.05% drops,A12CA
+lidocaine 1%,A12CA
+hydromorphone pca (dilaudid),A12CA
+zestril,A12CA
+levemir,A12CA
+soriatane ck,A12CA
+meningococcal conj vaccine (menomune),A12CA
+milk thistle,A12CA
+norepinephrine,A12CA
+zanamivir,A12CA
+clobazam,B05CB
+iso-osmotic sodium chloride,B05CB
+thiamine hcl,B05CB
+folic acid,B05CB
+multivitamin 12,B05CB
+lr,B05CB
+d5w,B05CB
+phenylephrine hcl,B05CB
+ampicillin sodium,B05CB
+lactobacillus acidophilus,B05CB
+hydralazine,B05CB
+lipram 4500,B05CB
+avodart,B05CB
+sodium bicarbonate,B05CB
+tears naturale pm,B05CB
+coenzyme q10,B05CB
+naltrexone,B05CB
+betaseron,B05CB
+byetta,B05CB
+lysine 500mg tablets,B05CB
+halobetasol propionate,B05CB
+urelle,B05CB
+nevanac,B05CB
+vigamox,B05CB
+durezol 0.05% drops,B05CB
+lidocaine 1%,B05CB
+hydromorphone pca (dilaudid),B05CB
+zestril,B05CB
+levemir,B05CB
+soriatane ck,B05CB
+meningococcal conj vaccine (menomune),B05CB
+milk thistle,B05CB
+norepinephrine,B05CB
+zanamivir,B05CB
+clobazam,B05XA
+iso-osmotic sodium chloride,B05XA
+thiamine hcl,B05XA
+folic acid,B05XA
+multivitamin 12,B05XA
+lr,B05XA
+d5w,B05XA
+phenylephrine hcl,B05XA
+ampicillin sodium,B05XA
+lactobacillus acidophilus,B05XA
+hydralazine,B05XA
+lipram 4500,B05XA
+avodart,B05XA
+sodium bicarbonate,B05XA
+tears naturale pm,B05XA
+coenzyme q10,B05XA
+naltrexone,B05XA
+betaseron,B05XA
+byetta,B05XA
+lysine 500mg tablets,B05XA
+halobetasol propionate,B05XA
+urelle,B05XA
+nevanac,B05XA
+vigamox,B05XA
+durezol 0.05% drops,B05XA
+lidocaine 1%,B05XA
+hydromorphone pca (dilaudid),B05XA
+zestril,B05XA
+levemir,B05XA
+soriatane ck,B05XA
+meningococcal conj vaccine (menomune),B05XA
+milk thistle,B05XA
+norepinephrine,B05XA
+zanamivir,B05XA
+lidocaine 1% p.f.,A12CA
+diazepam,A12CA
+lidocaine 1% p.f.,B05CB
+diazepam,B05CB
+lidocaine 1% p.f.,B05XA
+diazepam,B05XA
+1/4 ns,A12CA
+labetalol,A12CA
+acetaminophen (liquid),A12CA
+bumetanide,A12CA
+atomoxitene,A12CA
+vexol,A12CA
+nitroglycerin,A12CA
+heparin sodium,A12CA
+systane,A12CA
+azor,A12CA
+dextrose 50%,A12CA
+milk thistle extract,A12CA
+1/4 ns,B05CB
+labetalol,B05CB
+acetaminophen (liquid),B05CB
+bumetanide,B05CB
+atomoxitene,B05CB
+vexol,B05CB
+nitroglycerin,B05CB
+heparin sodium,B05CB
+systane,B05CB
+azor,B05CB
+dextrose 50%,B05CB
+milk thistle extract,B05CB
+1/4 ns,B05XA
+labetalol,B05XA
+acetaminophen (liquid),B05XA
+bumetanide,B05XA
+atomoxitene,B05XA
+vexol,B05XA
+nitroglycerin,B05XA
+heparin sodium,B05XA
+systane,B05XA
+azor,B05XA
+dextrose 50%,B05XA
+milk thistle extract,B05XA
+sodium chloride 3% (hypertonic),A12CA
+pulmicort respules,A12CA
+istalol,A12CA
+zelboraf,A12CA
+sodium chloride 3% (hypertonic),B05CB
+pulmicort respules,B05CB
+istalol,B05CB
+zelboraf,B05CB
+sodium chloride 3% (hypertonic),B05XA
+pulmicort respules,B05XA
+istalol,B05XA
+zelboraf,B05XA
+d5 1/4ns,B05CX
+d5 1/4ns,V04CA
+d5 1/4ns,V06DC
+d5 1/4ns,A12CA
+d5 1/4ns,B05CB
+d5 1/4ns,B05XA
+d5 1/2ns,B05CX
+lorazepam,B05CX
+avodart,B05CX
+azor,B05CX
+multaq,B05CX
+requip xl,B05CX
+rasagiline,B05CX
+levothyroxine sodium,B05CX
+d5 1/2ns,V04CA
+lorazepam,V04CA
+avodart,V04CA
+azor,V04CA
+multaq,V04CA
+requip xl,V04CA
+rasagiline,V04CA
+levothyroxine sodium,V04CA
+d5 1/2ns,V06DC
+lorazepam,V06DC
+avodart,V06DC
+azor,V06DC
+multaq,V06DC
+requip xl,V06DC
+rasagiline,V06DC
+levothyroxine sodium,V06DC
+d5 1/2ns,A12CA
+multaq,A12CA
+requip xl,A12CA
+rasagiline,A12CA
+levothyroxine sodium,A12CA
+d5 1/2ns,B05CB
+multaq,B05CB
+requip xl,B05CB
+rasagiline,B05CB
+levothyroxine sodium,B05CB
+d5 1/2ns,B05XA
+multaq,B05XA
+requip xl,B05XA
+rasagiline,B05XA
+levothyroxine sodium,B05XA
+d5ns,B05CX
+travatan z,B05CX
+bumetanide,B05CX
+darvocet-n 100,B05CX
+necon 1/35 (28),B05CX
+d5ns,V04CA
+travatan z,V04CA
+bumetanide,V04CA
+darvocet-n 100,V04CA
+necon 1/35 (28),V04CA
+d5ns,V06DC
+travatan z,V06DC
+bumetanide,V06DC
+darvocet-n 100,V06DC
+necon 1/35 (28),V06DC
+d5ns,A12CA
+travatan z,A12CA
+darvocet-n 100,A12CA
+necon 1/35 (28),A12CA
+d5ns,B05CB
+travatan z,B05CB
+darvocet-n 100,B05CB
+necon 1/35 (28),B05CB
+d5ns,B05XA
+travatan z,B05XA
+darvocet-n 100,B05XA
+necon 1/35 (28),B05XA
+lr,A12AA
+lactated ringers,A12AA
+ranexa,A12AA
+levemir,A12AA
+benicar hct,A12AA
+propofol,A12AA
+lidocaine 1%,A12AA
+fentanyl citrate,A12AA
+norepinephrine,A12AA
+potassium chloride,A12AA
+atropine sulfate,A12AA
+prozac,A12AA
+combigan,A12AA
+axitinib,A12AA
+nexium,A12AA
+lactated ringers,B05XA
+ranexa,B05XA
+benicar hct,B05XA
+atropine sulfate,B05XA
+prozac,B05XA
+combigan,B05XA
+axitinib,B05XA
+nexium,B05XA
+lr,G04BA
+lactated ringers,G04BA
+ranexa,G04BA
+levemir,G04BA
+benicar hct,G04BA
+propofol,G04BA
+lidocaine 1%,G04BA
+fentanyl citrate,G04BA
+norepinephrine,G04BA
+potassium chloride,G04BA
+atropine sulfate,G04BA
+prozac,G04BA
+combigan,G04BA
+axitinib,G04BA
+nexium,G04BA
+lr,A12BA
+lactated ringers,A12BA
+ranexa,A12BA
+levemir,A12BA
+benicar hct,A12BA
+propofol,A12BA
+lidocaine 1%,A12BA
+fentanyl citrate,A12BA
+norepinephrine,A12BA
+atropine sulfate,A12BA
+prozac,A12BA
+combigan,A12BA
+axitinib,A12BA
+nexium,A12BA
+lactated ringers,A12CA
+ranexa,A12CA
+benicar hct,A12CA
+atropine sulfate,A12CA
+prozac,A12CA
+combigan,A12CA
+axitinib,A12CA
+nexium,A12CA
+lactated ringers,B05CB
+ranexa,B05CB
+benicar hct,B05CB
+atropine sulfate,B05CB
+prozac,B05CB
+combigan,B05CB
+axitinib,B05CB
+nexium,B05CB
+d5lr,A12AA
+d5lr,B05XA
+d5lr,G04BA
+d5lr,B05CX
+d5lr,V04CA
+d5lr,V06DC
+d5lr,A12BA
+d5lr,A12CA
+d5lr,B05CB
+plasmalyte,B05XA
+plasmalyte,A12CC
+plasmalyte,A12BA
+plasmalyte,A12CA
+plasmalyte,B05CB
+mannitol 20 %,A06AD
+mannitol 20%,A06AD
+mannitol,A06AD
+tyzeka (telbivudine),A06AD
+mannitol 20 %,B05BC
+mannitol 20%,B05BC
+mannitol,B05BC
+tyzeka (telbivudine),B05BC
+mannitol 20 %,B05CX
+mannitol,B05CX
+tyzeka (telbivudine),B05CX
+mannitol 20 %,R05CB
+mannitol 20%,R05CB
+mannitol,R05CB
+tyzeka (telbivudine),R05CB
+ns,B01AB
+heparin (iabp),B01AB
+heparin (porcine) in ns (pf),B01AB
+ns,C05BA
+heparin (iabp),C05BA
+heparin (porcine) in ns (pf),C05BA
+heparin (iabp),S01XA
+heparin (porcine) in ns (pf),S01XA
+proventil,D06AX
+rasagiline,D06AX
+proventil,J01GB
+rasagiline,J01GB
+proventil,S01AA
+rasagiline,S01AA
+proventil,S02AA
+rasagiline,S02AA
+proventil,S03AA
+rasagiline,S03AA
+ns (mini bag plus),A12CA
+ns (mini bag plus),B05CB
+ns (mini bag plus),B05XA
+0.9% sodium chloride (mini bag plus),A12CA
+zomig 2.5mg -zmt tabs,A12CA
+muro 128,A12CA
+baclofen,A12CA
+warfarin,A12CA
+enablex,A12CA
+0.9% sodium chloride (mini bag plus),B05CB
+zomig 2.5mg -zmt tabs,B05CB
+muro 128,B05CB
+baclofen,B05CB
+warfarin,B05CB
+enablex,B05CB
+0.9% sodium chloride (mini bag plus),B05XA
+zomig 2.5mg -zmt tabs,B05XA
+muro 128,B05XA
+warfarin,B05XA
+potassium chl 20 meq / 1000 ml d5 1/2 ns,B05CX
+lutein,B05CX
+blue-green algae (spirulina),B05CX
+haloperidol,B05CX
+betimol ( timolol ),B05CX
+diazepam,B05CX
+potassium citrate,B05CX
+thera tears,B05CX
+lumigan 0.01%,B05CX
+verelan pm,B05CX
+stalevo 150,B05CX
+potassium chl 20 meq / 1000 ml d5 1/2 ns,V04CA
+lutein,V04CA
+blue-green algae (spirulina),V04CA
+haloperidol,V04CA
+betimol ( timolol ),V04CA
+diazepam,V04CA
+potassium citrate,V04CA
+thera tears,V04CA
+lumigan 0.01%,V04CA
+verelan pm,V04CA
+stalevo 150,V04CA
+potassium chl 20 meq / 1000 ml d5 1/2 ns,V06DC
+lutein,V06DC
+blue-green algae (spirulina),V06DC
+haloperidol,V06DC
+betimol ( timolol ),V06DC
+diazepam,V06DC
+potassium citrate,V06DC
+thera tears,V06DC
+lumigan 0.01%,V06DC
+verelan pm,V06DC
+stalevo 150,V06DC
+potassium chl 20 meq / 1000 ml d5 1/2 ns,A12BA
+lutein,A12BA
+blue-green algae (spirulina),A12BA
+haloperidol,A12BA
+lorazepam,A12BA
+betimol ( timolol ),A12BA
+diazepam,A12BA
+betaseron,A12BA
+acetaminophen,A12BA
+thera tears,A12BA
+lumigan 0.01%,A12BA
+verelan pm,A12BA
+stalevo 150,A12BA
+potassium chl 20 meq / 1000 ml d5 1/2 ns,B05XA
+lutein,B05XA
+blue-green algae (spirulina),B05XA
+betimol ( timolol ),B05XA
+acetaminophen,B05XA
+thera tears,B05XA
+lumigan 0.01%,B05XA
+verelan pm,B05XA
+stalevo 150,B05XA
+potassium chl 20 meq / 1000 ml d5 1/2 ns,A12CA
+lutein,A12CA
+blue-green algae (spirulina),A12CA
+betimol ( timolol ),A12CA
+acetaminophen,A12CA
+thera tears,A12CA
+lumigan 0.01%,A12CA
+verelan pm,A12CA
+stalevo 150,A12CA
+potassium chl 20 meq / 1000 ml d5 1/2 ns,B05CB
+lutein,B05CB
+blue-green algae (spirulina),B05CB
+betimol ( timolol ),B05CB
+acetaminophen,B05CB
+thera tears,B05CB
+lumigan 0.01%,B05CB
+verelan pm,B05CB
+stalevo 150,B05CB
+potassium chl 40 meq / 1000 ml d5 1/2 ns,B05CX
+potassium chl 40 meq / 1000 ml d5 1/2 ns,V04CA
+potassium chl 40 meq / 1000 ml d5 1/2 ns,V06DC
+potassium chl 40 meq / 1000 ml d5 1/2 ns,A12BA
+potassium chl 40 meq / 1000 ml d5 1/2 ns,B05XA
+potassium chl 40 meq / 1000 ml d5 1/2 ns,A12CA
+potassium chl 40 meq / 1000 ml d5 1/2 ns,B05CB
+potassium chl 20 meq / 1000 ml d5w,B05CX
+potassium chl 20 meq / 1000 ml d5w,V04CA
+potassium chl 20 meq / 1000 ml d5w,V06DC
+potassium chl 20 meq / 1000 ml d5w,A12BA
+potassium chl 20 meq / 1000 ml d5w,B05XA
+potassium chl 20 meq / 1000 ml ns,A12BA
+avodart,A12BA
+thalidomide,A12BA
+*nf* novolog,A12BA
+ondansetron,A12BA
+metoprolol tartrate,A12BA
+nepafenac,A12BA
+esomeprazole magnesium,A12BA
+phenylephrine,A12BA
+diltiazem,A12BA
+potassium chl 20 meq / 1000 ml ns,B05XA
+thalidomide,B05XA
+*nf* novolog,B05XA
+nepafenac,B05XA
+esomeprazole magnesium,B05XA
+potassium chl 20 meq / 1000 ml ns,A12CA
+thalidomide,A12CA
+*nf* novolog,A12CA
+nepafenac,A12CA
+esomeprazole magnesium,A12CA
+potassium chl 20 meq / 1000 ml ns,B05CB
+thalidomide,B05CB
+*nf* novolog,B05CB
+nepafenac,B05CB
+esomeprazole magnesium,B05CB
+atripla,A12BA
+glucosamine,A12BA
+erythromycin,A12BA
+sodium bicarbonate,A12BA
+d5w,A12BA
+magnesium sulfate,A12BA
+unifiber,A12BA
+cyanocobalamin,A12BA
+adefovir dipivoxil,A12BA
+lacrilube,A12BA
+corn starch (bulk),A12BA
+calcium gluconate,A12BA
+fentanyl,A12BA
+midazolam,A12BA
+heparin,A12BA
+warfarin,A12BA
+albuterol 0.083% neb soln,A12BA
+hydralazine,A12BA
+atripla,B05XA
+glucosamine,B05XA
+erythromycin,B05XA
+unifiber,B05XA
+cyanocobalamin,B05XA
+adefovir dipivoxil,B05XA
+lacrilube,B05XA
+corn starch (bulk),B05XA
+heparin,B05XA
+lidocaine 1% (w/presv.),A12BA
+*nf*esomeprazole ,A12BA
+*nf*esomeprazole ,B05XA
+potassium chl 20 meq / 1000 ml d5ns,B05CX
+albuterol,B05CX
+fentanyl,B05CX
+potassium chl 20 meq / 1000 ml d5ns,V04CA
+albuterol,V04CA
+fentanyl,V04CA
+potassium chl 20 meq / 1000 ml d5ns,V06DC
+albuterol,V06DC
+fentanyl,V06DC
+potassium chl 20 meq / 1000 ml d5ns,A12BA
+albuterol,A12BA
+potassium chl 20 meq / 1000 ml d5ns,B05XA
+albuterol,B05XA
+potassium chl 20 meq / 1000 ml d5ns,A12CA
+albuterol,A12CA
+potassium chl 20 meq / 1000 ml d5ns,B05CB
+albuterol,B05CB
+potassium chl 40 meq / 1000 ml d5ns,B05CX
+potassium chl 40 meq / 1000 ml ns,B05CX
+potassium chl 40 meq / 1000 ml d5ns,V04CA
+potassium chl 40 meq / 1000 ml ns,V04CA
+potassium chl 40 meq / 1000 ml d5ns,V06DC
+potassium chl 40 meq / 1000 ml ns,V06DC
+potassium chl 40 meq / 1000 ml d5ns,A12BA
+potassium chl 40 meq / 1000 ml ns,A12BA
+potassium chl 40 meq / 1000 ml d5ns,B05XA
+potassium chl 40 meq / 1000 ml ns,B05XA
+potassium chl 40 meq / 1000 ml d5ns,A12CA
+potassium chl 40 meq / 1000 ml ns,A12CA
+potassium chl 40 meq / 1000 ml d5ns,B05CB
+potassium chl 40 meq / 1000 ml ns,B05CB
+potassium chl 20 meq / 1000 ml d5lr,A12AA
+potassium chl 20 meq / 1000 ml d5lr,B05XA
+potassium chl 20 meq / 1000 ml d5lr,G04BA
+potassium chl 20 meq / 1000 ml d5lr,B05CX
+potassium chl 20 meq / 1000 ml d5lr,V04CA
+potassium chl 20 meq / 1000 ml d5lr,V06DC
+potassium chl 20 meq / 1000 ml d5lr,A12BA
+potassium chl 20 meq / 1000 ml d5lr,A12CA
+potassium chl 20 meq / 1000 ml d5lr,B05CB
+dopamine,C01CA
+morphine sulfate,C01CA
+oxacillin,J01CF
+nitroglycerin,C01DA
+insulin pump (self administering medication),C01DA
+depakote,C01DA
+nitroglycerin,C05AE
+insulin pump (self administering medication),C05AE
+depakote,C05AE
+metronidazole (flagyl),A01AB
+neo*iv*metronidazole,A01AB
+metronidazole (flagyl),D06BX
+neo*iv*metronidazole,D06BX
+metronidazole (flagyl),G01AF
+neo*iv*metronidazole,G01AF
+metronidazole (flagyl),J01XD
+neo*iv*metronidazole,J01XD
+metronidazole (flagyl),P01AB
+neo*iv*metronidazole,P01AB
+dobutamine,C01CA
+amino acids 4.25% w/ dextrose 5%,N06AX
+amino acids 4.25%-dextrose 5%,N06AX
+amino acids 4.25% w/ dextrose 5%,A12AA
+amino acids 4.25%-dextrose 5%,A12AA
+amino acids 4.25% w/ dextrose 5%,B05XA
+amino acids 4.25%-dextrose 5%,B05XA
+amino acids 4.25% w/ dextrose 5%,G04BA
+amino acids 4.25%-dextrose 5%,G04BA
+amino acids 4.25% w/ dextrose 5%,B05CX
+amino acids 4.25%-dextrose 5%,B05CX
+amino acids 4.25% w/ dextrose 5%,V04CA
+amino acids 4.25%-dextrose 5%,V04CA
+amino acids 4.25% w/ dextrose 5%,V06DC
+amino acids 4.25%-dextrose 5%,V06DC
+amino acids 4.25% w/ dextrose 5%,B05XB
+amino acids 4.25%-dextrose 5%,B05XB
+amino acids 4.25% w/ dextrose 5%,A12CC
+amino acids 4.25%-dextrose 5%,A12CC
+amino acids 4.25% w/ dextrose 5%,V03AB
+amino acids 4.25%-dextrose 5%,V03AB
+amino acids 4.25% w/ dextrose 5%,A12CA
+amino acids 4.25%-dextrose 5%,A12CA
+amino acids 4.25% w/ dextrose 5%,B05CB
+amino acids 4.25%-dextrose 5%,B05CB
+amino acids 5%-dextrose 15%,N06AX
+warfarin,N06AX
+amino acids 5%-dextrose 15%,A12AA
+warfarin,A12AA
+amino acids 5%-dextrose 15%,B05XA
+amino acids 5%-dextrose 15%,G04BA
+warfarin,G04BA
+amino acids 5%-dextrose 15%,B05CX
+warfarin,B05CX
+amino acids 5%-dextrose 15%,V04CA
+warfarin,V04CA
+amino acids 5%-dextrose 15%,V06DC
+warfarin,V06DC
+amino acids 5%-dextrose 15%,B05XB
+warfarin,B05XB
+amino acids 5%-dextrose 15%,A12CC
+warfarin,A12CC
+amino acids 5%-dextrose 15%,V03AB
+warfarin,V03AB
+amino acids 5%-dextrose 15%,A12CA
+amino acids 5%-dextrose 15%,B05CB
+ceftriaxone,J01DD
+sarafem,J01DD
+midazolam,J01DD
+sodium bicarbonate,J01DD
+famotidine,A02BA
+potassium chloride,A02BA
+diphenhydramine,A02BA
+norepinephrine,A02BA
+phenylephrine,A02BA
+propofol,A02BA
+fentanyl,A02BA
+lidocaine 1%,A02BA
+milrinone,C01CE
+magnesium citrate,A06AD
+magnesium citrate,A12CC
+magnesium citrate,B05CB
+scot-tussin expectorant,R05CA
+nadolol,C07AA
+d5w,C07AA
+octreotide acetate,C07AA
+pantoprazole sodium,C07AA
+pindolol,C07AA
+probenecid,M04AB
+ketoconazole,D01AC
+ketoconazole,G01AF
+ketoconazole,J02AB
+hydroxychloroquine sulfate,P01BA
+hydroxychloroquine,P01BA
+clonidine patch 0.1 mg/24 hr,C02AC
+clonidine patch 0.1 mg/24 hr,N02CX
+clonidine patch 0.1 mg/24 hr,S01EA
+clonidine patch 0.2 mg/24 hr,C02AC
+clonidine patch 0.2 mg/24 hr,N02CX
+clonidine patch 0.2 mg/24 hr,S01EA
+clonidine patch 0.3 mg/24 hr,C02AC
+clonidine patch 0.3 mg/24 hr,N02CX
+clonidine patch 0.3 mg/24 hr,S01EA
+bromocriptine mesylate,G02CB
+bromocriptine mesylate,N04BC
+nitroglycerin patch,C01DA
+nitroglycerin ,C01DA
+nitroglycerin patch,C05AE
+nitroglycerin ,C05AE
+fentanyl patch,N01AH
+fentanyl patch,N02AB
+acetaminophen w/codeine,N02BE
+acetaminophen w/codeine,R05DA
+acetaminophen w/codeine,N02AJ
+oxycodone-acetaminophen,N02BE
+oxycodone-acetaminophen elixir,N02BE
+januvia,N02BE
+avodart( dutasteride),N02BE
+percocet,N02BE
+oxycodone-acetaminophen,N02AA
+oxycodone-acetaminophen elixir,N02AA
+januvia,N02AA
+avodart( dutasteride),N02AA
+percocet,N02AA
+oxycodone-acetaminophen (5mg-325mg),N02BE
+oxycodone,N02BE
+famotidine,N02BE
+levobunolol,N02BE
+isradipine,N02BE
+insulin pump,N02BE
+theophylline,N02BE
+avodart,N02BE
+requip xl,N02BE
+symbicort 160-4.5,N02BE
+oxycodone-acetaminophen (5mg-325mg),N02AA
+oxycodone,N02AA
+famotidine,N02AA
+levobunolol,N02AA
+isradipine,N02AA
+insulin pump,N02AA
+theophylline,N02AA
+avodart,N02AA
+requip xl,N02AA
+insulin pump (self administering medication),N02AA
+symbicort 160-4.5,N02AA
+oxycodone (immediate release) ,N02AA
+oxycodone ,N02AA
+oxycodone liquid,N02AA
+baclofen,N02AA
+oxymorphone,N02AA
+cortisone,N02AA
+enablex,N02AA
+artificial saliva,N02AA
+leflunomide,N02AA
+meloxicam,N02AA
+morphine sr (ms contin),N02AA
+morphine sulfate sr,N02AA
+revatio,N02AA
+erlotinib (tarceva),N02AA
+docetaxel (taxotere),L01CD
+bupivacaine 0.25%,N01BB
+1,N01BB
+bupivacaine 0.5%,N01BB
+bupivacaine,N01BB
+bupivacaine 0.1%,N01BB
+flovent hfa,N01BB
+diltiazem,C05AE
+diltiazem,C08DB
+meperidine (pf),N02AB
+mepe,N02AB
+meperi,N02AB
+meperidine pf,N02AB
+diazepam,N05BA
+valium,N05BA
+heparin,N05BA
+melatonin,N05BA
+hydromorphone (dilaudid),N02AA
+insulin detemir,N02AA
+budesonide (nasal),N02AA
+chantix,N02AA
+nexium,N02AA
+zantac 75,N02AA
+lunesta,N02AA
+hydromorphone,N02AA
+warfarin,N02AA
+lidocaine 1%,N02AA
+propofol,N02AA
+potassium chloride,N02AA
+ranolazine,N02AA
+etidronate disodium,N02AA
+combigan,N02AA
+lapatinib,N02AA
+fentanyl citrate,N02AA
+norepinephrine,C01CA
+nalbuphine hcl,N02AF
+vecuronium bromide,M03AC
+dexmedetomidine hcl,N05CM
+dexmedetomidine,N05CM
+insulin pump,N05CM
+bupivacaine 0.75%,N01BB
+procainamide,C01BA
+lorazepam 2mg syringe,N05BA
+naltrexone,N05BA
+insulin pump,N05BA
+mometasone,N05BA
+lorazepam 2mg syringe ,N05BA
+propofol,N05BA
+lorazepam 2 mg syringe ,N05BA
+lorazepam 2mg syringa,N05BA
+lorazepam 2 mg syringe,N05BA
+loraze,N05BA
+lidocaine,N05BA
+albuterol 0.083% neb soln,N05BA
+ipratropium bromide neb,N05BA
+racepinephrine,N05BA
+claravis,N05BA
+pristiq,N05BA
+potassium chloride (powder),N05BA
+haloperidol,N05BA
+lidocaine 1% p.f.,N05BA
+ketamine,N01AX
+ketamine hcl,N01AX
+ketamine (for intubation),N01AX
+ketamine ,N01AX
+ketamin,N01AX
+midazolam,N05CD
+mannitol 20%,N05CD
+deferoxamine mesylate,V03AC
+deferoxamine (dfo) *ind*,V03AC
+hydromorphone-hp,N02AA
+lidocaine 0.5%/epinephrine,A01AD
+lidocaine 0.5%,A01AD
+lidocaine 0.5%/epinephrine,B02BC
+lidocaine 0.5%,B02BC
+lidocaine 0.5%/epinephrine,C01CA
+lidocaine 0.5%,C01CA
+lidocaine 0.5%/epinephrine,R01AA
+lidocaine 0.5%,R01AA
+lidocaine 0.5%/epinephrine,R03AA
+lidocaine 0.5%,R03AA
+lidocaine 0.5%/epinephrine,S01EA
+lidocaine 0.5%,S01EA
+lidocaine 0.5%/epinephrine,C01BB
+lidocaine 0.5%,C01BB
+lidocaine 0.5%/epinephrine,C05AD
+lidocaine 0.5%,C05AD
+lidocaine 0.5%/epinephrine,D04AB
+lidocaine 0.5%,D04AB
+lidocaine 0.5%/epinephrine,N01BB
+lidocaine 0.5%,N01BB
+lidocaine 0.5%/epinephrine,R02AD
+lidocaine 0.5%,R02AD
+lidocaine 0.5%/epinephrine,S01HA
+lidocaine 0.5%,S01HA
+lidocaine 0.5%/epinephrine,S02DA
+lidocaine 0.5%,S02DA
+lidocaine 1%/epinephrine 1:100000,A01AD
+lidocaine 1%/epinephrine 1:100000,B02BC
+lidocaine 1%/epinephrine 1:100000,C01CA
+lidocaine 1%/epinephrine 1:100000,R01AA
+lidocaine 1%/epinephrine 1:100000,R03AA
+lidocaine 1%/epinephrine 1:100000,S01EA
+lidocaine 1%/epinephrine 1:100000,C01BB
+lidocaine 1%/epinephrine 1:100000,C05AD
+lidocaine 1%/epinephrine 1:100000,D04AB
+lidocaine 1%/epinephrine 1:100000,N01BB
+lidocaine 1%/epinephrine 1:100000,R02AD
+lidocaine 1%/epinephrine 1:100000,S01HA
+lidocaine 1%/epinephrine 1:100000,S02DA
+"lidocaine 1%/epinephrine 1:100,000",A01AD
+"lidocaine 1%/epinephrine 1:100,000",B02BC
+"lidocaine 1%/epinephrine 1:100,000",C01CA
+"lidocaine 1%/epinephrine 1:100,000",R01AA
+"lidocaine 1%/epinephrine 1:100,000",R03AA
+"lidocaine 1%/epinephrine 1:100,000",S01EA
+"lidocaine 1%/epinephrine 1:100,000",C01BB
+"lidocaine 1%/epinephrine 1:100,000",C05AD
+"lidocaine 1%/epinephrine 1:100,000",D04AB
+"lidocaine 1%/epinephrine 1:100,000",N01BB
+"lidocaine 1%/epinephrine 1:100,000",R02AD
+"lidocaine 1%/epinephrine 1:100,000",S01HA
+"lidocaine 1%/epinephrine 1:100,000",S02DA
+lidocaine 1.5%/epinephrine p.f.,A01AD
+lidocaine,A01AD
+lidocaine 1.5%/epinephrine p.f.,B02BC
+lidocaine,B02BC
+lidocaine 1.5%/epinephrine p.f.,C01CA
+lidocaine,C01CA
+lidocaine 1.5%/epinephrine p.f.,R01AA
+lidocaine,R01AA
+lidocaine 1.5%/epinephrine p.f.,R03AA
+lidocaine,R03AA
+lidocaine 1.5%/epinephrine p.f.,S01EA
+lidocaine,S01EA
+lidocaine 1.5%/epinephrine p.f.,C01BB
+lidocaine 1.5%/epinephrine p.f.,C05AD
+lidocaine 1.5%/epinephrine p.f.,D04AB
+lidocaine 1.5%/epinephrine p.f.,N01BB
+lidocaine 1.5%/epinephrine p.f.,R02AD
+lidocaine 1.5%/epinephrine p.f.,S01HA
+lidocaine 1.5%/epinephrine p.f.,S02DA
+lidocaine 2%/epinephrine,A01AD
+lidocaine 2%/epinephrine p.f.,A01AD
+"lidocaine 2%/epi 1:100,000",A01AD
+lidocaine 2%/epinephrine,B02BC
+lidocaine 2%/epinephrine p.f.,B02BC
+"lidocaine 2%/epi 1:100,000",B02BC
+lidocaine 2%/epinephrine,C01CA
+lidocaine 2%/epinephrine p.f.,C01CA
+"lidocaine 2%/epi 1:100,000",C01CA
+lidocaine 2%/epinephrine,R01AA
+lidocaine 2%/epinephrine p.f.,R01AA
+"lidocaine 2%/epi 1:100,000",R01AA
+lidocaine 2%/epinephrine,R03AA
+lidocaine 2%/epinephrine p.f.,R03AA
+"lidocaine 2%/epi 1:100,000",R03AA
+lidocaine 2%/epinephrine,S01EA
+lidocaine 2%/epinephrine p.f.,S01EA
+"lidocaine 2%/epi 1:100,000",S01EA
+lidocaine 2%/epinephrine,C01BB
+lidocaine 2%/epinephrine p.f.,C01BB
+"lidocaine 2%/epi 1:100,000",C01BB
+lidocaine 2%/epinephrine,C05AD
+lidocaine 2%/epinephrine p.f.,C05AD
+"lidocaine 2%/epi 1:100,000",C05AD
+lidocaine 2%/epinephrine,D04AB
+lidocaine 2%/epinephrine p.f.,D04AB
+"lidocaine 2%/epi 1:100,000",D04AB
+lidocaine 2%/epinephrine,N01BB
+lidocaine 2%/epinephrine p.f.,N01BB
+"lidocaine 2%/epi 1:100,000",N01BB
+lidocaine 2%/epinephrine,R02AD
+lidocaine 2%/epinephrine p.f.,R02AD
+"lidocaine 2%/epi 1:100,000",R02AD
+lidocaine 2%/epinephrine,S01HA
+lidocaine 2%/epinephrine p.f.,S01HA
+"lidocaine 2%/epi 1:100,000",S01HA
+lidocaine 2%/epinephrine,S02DA
+lidocaine 2%/epinephrine p.f.,S02DA
+"lidocaine 2%/epi 1:100,000",S02DA
+sodium acetate,B05XA
+acetylcysteine 20%,R05CB
+acetylcysteine 20%,S01XA
+acetylcysteine 20%,V03AB
+verapamil hcl,C08DA
+verapamil,C08DA
+lidocain,C01BB
+lidocain,C05AD
+lidocain,D04AB
+lidocain,N01BB
+lidocain,R02AD
+lidocain,S01HA
+lidocain,S02DA
+lidocaine 1%,C01BB
+magnesium oxide-mg aa chelate,C01BB
+1,C01BB
+lidocaine 1%,C05AD
+magnesium oxide-mg aa chelate,C05AD
+1,C05AD
+lidocaine 1%,D04AB
+magnesium oxide-mg aa chelate,D04AB
+1,D04AB
+lidocaine 1%,N01BB
+magnesium oxide-mg aa chelate,N01BB
+lidocaine 1%,R02AD
+magnesium oxide-mg aa chelate,R02AD
+1,R02AD
+lidocaine 1%,S01HA
+magnesium oxide-mg aa chelate,S01HA
+1,S01HA
+lidocaine 1%,S02DA
+magnesium oxide-mg aa chelate,S02DA
+1,S02DA
+lidocaine 2%,C01BB
+lidocaine 2% p.f.,C01BB
+lidocaine 2%,C05AD
+lidocaine 2% p.f.,C05AD
+lidocaine 2%,D04AB
+lidocaine 2% p.f.,D04AB
+lidocaine 2%,N01BB
+lidocaine 2% p.f.,N01BB
+lidocaine 2%,R02AD
+lidocaine 2% p.f.,R02AD
+lidocaine 2%,S01HA
+lidocaine 2% p.f.,S01HA
+lidocaine 2%,S02DA
+lidocaine 2% p.f.,S02DA
+lidocaine 1% (buffered),C01BB
+lidocaine 1% (buffered),C05AD
+lidocaine 1% (buffered),D04AB
+lidocaine 1% (buffered),N01BB
+lidocaine 1% (buffered),R02AD
+lidocaine 1% (buffered),S01HA
+lidocaine 1% (buffered),S02DA
+vancomycin,A07AA
+vancomycin enema,A07AA
+vancomycin desensitization,A07AA
+clarinex,A07AA
+istalol,A07AA
+insulin aspart,A07AA
+phenylephrine,A07AA
+mupirocin nasal ointment 2%,A07AA
+betamethasone,A07AA
+vancomycin,J01XA
+vancomycin enema,J01XA
+vancomycin desensitization,J01XA
+clarinex,J01XA
+istalol,J01XA
+insulin aspart,J01XA
+propofol,J01XA
+phenylephrine,J01XA
+mupirocin nasal ointment 2%,J01XA
+betamethasone,J01XA
+aminocaproic acid,B02AA
+aminocapr,B02AA
+aminocaproic,B02AA
+aminocaproic ,B02AA
+lidocaine 1% p,C01BB
+insulin detemir,C01BB
+lidocaine 1% ,C01BB
+lidocaine 1% pf,C01BB
+lidocaine 1% p,C05AD
+insulin detemir,C05AD
+lidocaine 1% ,C05AD
+lidocaine 1% pf,C05AD
+lidocaine 1% p,D04AB
+insulin detemir,D04AB
+lidocaine 1% ,D04AB
+lidocaine 1% pf,D04AB
+lidocaine 1% p,N01BB
+insulin detemir,N01BB
+lidocaine 1% ,N01BB
+lidocaine 1% pf,N01BB
+lidocaine 1% p,R02AD
+insulin detemir,R02AD
+lidocaine 1% ,R02AD
+lidocaine 1% pf,R02AD
+lidocaine 1% p,S01HA
+insulin detemir,S01HA
+lidocaine 1% ,S01HA
+lidocaine 1% pf,S01HA
+lidocaine 1% p,S02DA
+insulin detemir,S02DA
+lidocaine 1% ,S02DA
+lidocaine 1% pf,S02DA
+ciprofloxacin iv,J01MA
+vesicare,J01MA
+ciprofloxacin iv,S01AE
+vesicare,S01AE
+ciprofloxacin iv,S02AA
+vesicare,S02AA
+ciprofloxacin iv,S03AA
+vesicare,S03AA
+neo*nasal*sodium chloride 0.9%,A12CA
+neo*nasal*sodium chloride 0.9%,B05CB
+neo*nasal*sodium chloride 0.9%,B05XA
+sodium chloride 0.9%,A12CA
+sodium chloride 0.9%,B05CB
+sodium chloride 0.9%,B05XA
+dextrose 50%,B05CX
+lamotrigine,B05CX
+kayexalate,B05CX
+dextros,B05CX
+brimonidine,B05CX
+nizatidine,B05CX
+slow fe,B05CX
+dextrose,B05CX
+atropine sulfate,B05CX
+ampyra,B05CX
+epinephrine,B05CX
+exelon,B05CX
+proglycem,B05CX
+dextr,B05CX
+hydralazine,B05CX
+lidocaine 1% p.f.,B05CX
+calcium gluconate,B05CX
+dextrose 50%,V04CA
+lamotrigine,V04CA
+kayexalate,V04CA
+dextros,V04CA
+brimonidine,V04CA
+nizatidine,V04CA
+slow fe,V04CA
+dextrose,V04CA
+atropine sulfate,V04CA
+ampyra,V04CA
+epinephrine,V04CA
+exelon,V04CA
+proglycem,V04CA
+dextr,V04CA
+hydralazine,V04CA
+lidocaine 1% p.f.,V04CA
+calcium gluconate,V04CA
+dextrose 50%,V06DC
+lamotrigine,V06DC
+kayexalate,V06DC
+dextros,V06DC
+brimonidine,V06DC
+nizatidine,V06DC
+slow fe,V06DC
+dextrose,V06DC
+atropine sulfate,V06DC
+ampyra,V06DC
+epinephrine,V06DC
+exelon,V06DC
+proglycem,V06DC
+dextr,V06DC
+hydralazine,V06DC
+lidocaine 1% p.f.,V06DC
+calcium gluconate,V06DC
+epinephrine hcl,A01AD
+epinephrine,A01AD
+epinephrine 1:1000,A01AD
+epi,A01AD
+epinephrine base,A01AD
+epinephrine hcl,B02BC
+epinephrine,B02BC
+epinephrine 1:1000,B02BC
+epi,B02BC
+epinephrine base,B02BC
+epinephrine hcl,C01CA
+epinephrine,C01CA
+epinephrine 1:1000,C01CA
+epi,C01CA
+epinephrine base,C01CA
+epinephrine hcl,R01AA
+epinephrine,R01AA
+epinephrine 1:1000,R01AA
+epi,R01AA
+epinephrine base,R01AA
+epinephrine hcl,R03AA
+epinephrine,R03AA
+epinephrine 1:1000,R03AA
+epi,R03AA
+epinephrine base,R03AA
+epinephrine hcl,S01EA
+epinephrine,S01EA
+epinephrine 1:1000,S01EA
+epi,S01EA
+epinephrine base,S01EA
+calcium chloride,A12AA
+calcium,A12AA
+calcium chloride,B05XA
+calcium,B05XA
+calcium chloride,G04BA
+calcium,G04BA
+ceftazidime,J01DD
+aminophylline,R03DA
+plasmanate,C03CA
+levalbuterol (xopenex),C03CA
+caduet 5-80,C03CA
+thalidomide,C03CA
+flutamide,C03CA
+acetic acid 0.25% irrig. soln,G01AD
+acetic acid 0.04% soln,G01AD
+acetic acid 0.25% irrig. soln,S02AA
+acetic acid 0.04% soln,S02AA
+sodium bicarbonate 4.2% (2.4meq),B05CB
+sodium bicarbonate 4.2% (2.4meq),B05XA
+sodium bicar,B05CB
+sodium bicarb,B05CB
+sodium bic,B05CB
+sodium bica,B05CB
+sodiu,B05CB
+sodium,B05CB
+sodium bi,B05CB
+sodium b,B05CB
+sodium bicarbo,B05CB
+sodium bicar,B05XA
+sodium bicarb,B05XA
+sodium bic,B05XA
+sodium bica,B05XA
+sodiu,B05XA
+sodium,B05XA
+sodium bi,B05XA
+sodium b,B05XA
+sodium bicarbo,B05XA
+succinylcholine,M03AB
+azilect,B05CB
+sod,B05CB
+azilect,B05XA
+sod,B05XA
+morphine sulfate,A12BA
+acetaminophen (rectal),A12BA
+morphine sulfate,B05XA
+avodart  0.5mg,A12BA
+ertapenem,A12BA
+avodart  0.5mg,B05XA
+ertapenem,B05XA
+etomidate,N01AX
+magnesium sulfate,A06AD
+sterile water,A06AD
+magnesium sulfate (ob),A06AD
+magnesium sulfate,A12CC
+sterile water,A12CC
+magnesium sulfate (ob),A12CC
+sterile water,B05XA
+magnesium sulfate (ob),B05XA
+magnesium sulfate,D11AX
+sterile water,D11AX
+magnesium sulfate (ob),D11AX
+magnesium sulfate,V04CC
+sterile water,V04CC
+magnesium sulfate (ob),V04CC
+magnesium sulfate replacement (oncology),A06AD
+medium chain triglycerides,A06AD
+magnesium sulfate (latex free),A06AD
+insulin detemir,A06AD
+magnesium ,A06AD
+magnesium,A06AD
+ipratropium bromide,A06AD
+diazepam,A06AD
+atropine sulfate,A06AD
+potassium chloride,A06AD
+propofol,A06AD
+lotemax,A06AD
+avodart (dutasteride),A06AD
+budesonide (nasal),A06AD
+byetta,A06AD
+insulin pump,A06AD
+insulin pump (self administering medication),A06AD
+norepinephrine,A06AD
+phenylephrine,A06AD
+potassium chloride replacement (oncology),A06AD
+calcium gluconate,A06AD
+desvenlafaxine,A06AD
+sodium chloride,A06AD
+lorazepam,A06AD
+latuda,A06AD
+fentanyl citrate,A06AD
+nature-throid,A06AD
+menthol (icy hot patch),A06AD
+roflumilast,A06AD
+aripiprazole,A06AD
+cefadroxil,A06AD
+benazepril-hydrochlorothiazide,A06AD
+exelon,A06AD
+nexium,A06AD
+alphagan p,A06AD
+symbicort,A06AD
+magnesium sulfate replacement (oncology),A12CC
+medium chain triglycerides,A12CC
+magnesium sulfate (latex free),A12CC
+insulin detemir,A12CC
+magnesium ,A12CC
+magnesium,A12CC
+ipratropium bromide,A12CC
+diazepam,A12CC
+atropine sulfate,A12CC
+potassium chloride,A12CC
+propofol,A12CC
+lotemax,A12CC
+avodart (dutasteride),A12CC
+budesonide (nasal),A12CC
+byetta,A12CC
+insulin pump,A12CC
+insulin pump (self administering medication),A12CC
+norepinephrine,A12CC
+phenylephrine,A12CC
+potassium chloride replacement (oncology),A12CC
+calcium gluconate,A12CC
+desvenlafaxine,A12CC
+sodium chloride,A12CC
+lorazepam,A12CC
+latuda,A12CC
+fentanyl citrate,A12CC
+nature-throid,A12CC
+menthol (icy hot patch),A12CC
+roflumilast,A12CC
+aripiprazole,A12CC
+cefadroxil,A12CC
+benazepril-hydrochlorothiazide,A12CC
+exelon,A12CC
+nexium,A12CC
+alphagan p,A12CC
+symbicort,A12CC
+magnesium sulfate replacement (oncology),B05XA
+medium chain triglycerides,B05XA
+magnesium sulfate (latex free),B05XA
+insulin detemir,B05XA
+magnesium ,B05XA
+magnesium,B05XA
+ipratropium bromide,B05XA
+lotemax,B05XA
+avodart (dutasteride),B05XA
+budesonide (nasal),B05XA
+desvenlafaxine,B05XA
+sodium chloride,B05XA
+latuda,B05XA
+nature-throid,B05XA
+menthol (icy hot patch),B05XA
+roflumilast,B05XA
+aripiprazole,B05XA
+cefadroxil,B05XA
+benazepril-hydrochlorothiazide,B05XA
+exelon,B05XA
+alphagan p,B05XA
+symbicort,B05XA
+magnesium sulfate replacement (oncology),D11AX
+medium chain triglycerides,D11AX
+magnesium sulfate (latex free),D11AX
+insulin detemir,D11AX
+magnesium ,D11AX
+magnesium,D11AX
+ipratropium bromide,D11AX
+diazepam,D11AX
+atropine sulfate,D11AX
+potassium chloride,D11AX
+propofol,D11AX
+lotemax,D11AX
+avodart (dutasteride),D11AX
+budesonide (nasal),D11AX
+byetta,D11AX
+insulin pump,D11AX
+insulin pump (self administering medication),D11AX
+norepinephrine,D11AX
+phenylephrine,D11AX
+potassium chloride replacement (oncology),D11AX
+calcium gluconate,D11AX
+desvenlafaxine,D11AX
+sodium chloride,D11AX
+latuda,D11AX
+fentanyl citrate,D11AX
+nature-throid,D11AX
+menthol (icy hot patch),D11AX
+roflumilast,D11AX
+aripiprazole,D11AX
+cefadroxil,D11AX
+benazepril-hydrochlorothiazide,D11AX
+exelon,D11AX
+nexium,D11AX
+symbicort,D11AX
+magnesium sulfate replacement (oncology),V04CC
+medium chain triglycerides,V04CC
+magnesium sulfate (latex free),V04CC
+insulin detemir,V04CC
+magnesium ,V04CC
+magnesium,V04CC
+ipratropium bromide,V04CC
+diazepam,V04CC
+atropine sulfate,V04CC
+potassium chloride,V04CC
+propofol,V04CC
+lotemax,V04CC
+avodart (dutasteride),V04CC
+budesonide (nasal),V04CC
+byetta,V04CC
+insulin pump,V04CC
+insulin pump (self administering medication),V04CC
+norepinephrine,V04CC
+phenylephrine,V04CC
+potassium chloride replacement (oncology),V04CC
+calcium gluconate,V04CC
+desvenlafaxine,V04CC
+sodium chloride,V04CC
+lorazepam,V04CC
+latuda,V04CC
+fentanyl citrate,V04CC
+nature-throid,V04CC
+menthol (icy hot patch),V04CC
+roflumilast,V04CC
+aripiprazole,V04CC
+cefadroxil,V04CC
+benazepril-hydrochlorothiazide,V04CC
+exelon,V04CC
+nexium,V04CC
+alphagan p,V04CC
+symbicort,V04CC
+levemir,A01AB
+levemir,D06BX
+levemir,G01AF
+levemir,J01XD
+levemir,P01AB
+d5w (glass bottle),B05CX
+intralipid 10%,B05CX
+hydrocortisone na succ.,B05CX
+syringe,B05CX
+linezolid,B05CX
+revatio,B05CX
+byetta (exenatide),B05CX
+sevelamer carbonate,B05CX
+alphagan p,B05CX
+d5w (glass bottle),V04CA
+intralipid 10%,V04CA
+hydrocortisone na succ.,V04CA
+syringe,V04CA
+linezolid,V04CA
+revatio,V04CA
+byetta (exenatide),V04CA
+sevelamer carbonate,V04CA
+alphagan p,V04CA
+d5w (glass bottle),V06DC
+intralipid 10%,V06DC
+hydrocortisone na succ.,V06DC
+syringe,V06DC
+linezolid,V06DC
+revatio,V06DC
+byetta (exenatide),V06DC
+sevelamer carbonate,V06DC
+alphagan p,V06DC
+fentanyl citrate,N01AH
+fentanyl citrate,N02AB
+neo*sc*phytonadione,B02BA
+phytonadione,B02BA
+d5w,B02BA
+nitroprusside sodium,B02BA
+phenylephrine hcl,B02BA
+sw,B02BA
+ns,B02BA
+phyto,B02BA
+phyton,B02BA
+dakins 1/2 strength,D08AX
+dakins,D08AX
+dakins 1/4 strength,D08AX
+dakins full strength,D08AX
+dakins 1/8 strength,D08AX
+liotrix-1,H03AA
+ceftaroline,J01DI
+*nf* ceftaroline,J01DI
+escitalopram oxalate,N06AB
+lexapro,N06AB
+lexipro,N06AB
+chantix,N06AB
+namenda,N06DX
+memantine,N06DX
+memantine hcl,N06DX
+zymar,N06DX
+acular,N06DX
+exelon transdermal patch,N06DX
+citalopram hydrobromide,N06AB
+melatonin,N06AB
+fosfomycin tromethamine,J01XX
+tacrolimus,D11AH
+tacrolimus suspension,D11AH
+xenaderm,D11AH
+nitroglycerin,D11AH
+sw,D11AH
+d5w,D11AH
+tacrolimus (self med),D11AH
+prograf,D11AH
+tacro,D11AH
+tacroli,D11AH
+tacrolimus,L04AD
+tacrolimus suspension,L04AD
+xenaderm,L04AD
+nitroglycerin,L04AD
+sw,L04AD
+tacrolimus (self med),L04AD
+prograf,L04AD
+tacro,L04AD
+tacroli,L04AD
+interferon alfa 2a (infergen),D11AH
+vigamox,D11AH
+*nf* tacrolimus suspension,D11AH
+benefiber,D11AH
+iso-osmotic dextrose,D11AH
+vancomycin hcl,D11AH
+tacrolimus study med (*ind*),D11AH
+insulin pump (self administering medication),D11AH
+interferon alfa 2a (infergen),L04AD
+vigamox,L04AD
+*nf* tacrolimus suspension,L04AD
+benefiber,L04AD
+tacrolimus study med (*ind*),L04AD
+insulin pump (self administering medication),L04AD
+prograf suspension,D11AH
+prograf suspension,L04AD
+methylprednisolone na succ.,D11AH
+ipratropium bromide,D11AH
+tacrolimus (prograf brand) suspension,D11AH
+tacr,D11AH
+tacrolimus ,D11AH
+ipratropium bromide,L04AD
+tacrolimus (prograf brand) suspension,L04AD
+tacr,L04AD
+tacrolimus ,L04AD
+adenosine,C01EB
+micafungin,J02AX
+*nf* micafungin,J02AX
+protopic,D11AH
+protopic,L04AD
+*nf* tacrolimus 0.1% ointment,D11AH
+*nf* tacrolimus 0.1% ointment,L04AD
+tretinoin 0.025% cream,D10AD
+tretinoin 0.025% cream,L01XX
+betamethasone valerate 0.1% ointment,A07EA
+betamethasone valerate 0.1% ointment,C05AA
+betamethasone valerate 0.1% ointment,D07AC
+betamethasone valerate 0.1% ointment,D07XC
+betamethasone valerate 0.1% ointment,H02AB
+betamethasone valerate 0.1% ointment,R01AD
+betamethasone valerate 0.1% ointment,R03BA
+betamethasone valerate 0.1% ointment,S01BA
+betamethasone valerate 0.1% ointment,S01CB
+betamethasone valerate 0.1% ointment,S02BA
+betamethasone valerate 0.1% ointment,S03BA
+clobetasol propionate,D07AD
+miconazole nitrate vaginal,A01AB
+miconazole nitrate (dual-pak),A01AB
+miconazole nitrate vaginal,A07AC
+miconazole nitrate (dual-pak),A07AC
+miconazole nitrate vaginal,D01AC
+miconazole nitrate (dual-pak),D01AC
+miconazole nitrate vaginal,G01AF
+miconazole nitrate (dual-pak),G01AF
+miconazole nitrate vaginal,J02AB
+miconazole nitrate (dual-pak),J02AB
+miconazole nitrate vaginal,S02AA
+miconazole nitrate (dual-pak),S02AA
+albuterol 0.083% neb soln,R03AC
+albuterol neb soln,R03AC
+albuterol,R03AC
+*nf* loteprednol 0.5% ophth,R03AC
+prilosec,R03AC
+albuterol sulfate,R03AC
+interferon beta-1b,R03AC
+metoprolol,R03AC
+d5w,R03AC
+heparin sodium,R03AC
+vancomycin hcl,R03AC
+iso-osmotic dextrose,R03AC
+potassium chloride,R03AC
+lipram-pn16,R03AC
+hydromorphone,R03AC
+albuterol 0.083% neb soln,R03CC
+albuterol neb soln,R03CC
+albuterol,R03CC
+*nf* loteprednol 0.5% ophth,R03CC
+prilosec,R03CC
+albuterol sulfate,R03CC
+interferon beta-1b,R03CC
+metoprolol,R03CC
+d5w,R03CC
+heparin sodium,R03CC
+vancomycin hcl,R03CC
+iso-osmotic dextrose,R03CC
+potassium chloride,R03CC
+lipram-pn16,R03CC
+hydromorphone,R03CC
+ipratropium bromide neb,R01AX
+ipratropium bromide,R01AX
+uroqid-acid no.2,R01AX
+d5w,R01AX
+cisatracurium besylate,R01AX
+famotidine,R01AX
+phytonadione,R01AX
+ns,R01AX
+metronidazole,R01AX
+beclomethasone dipropionate,R01AX
+ipratropium brom,R01AX
+foradil aerolizer,R01AX
+janumet,R01AX
+symbicort,R01AX
+baclofen,R01AX
+enablex,R01AX
+propofol,R01AX
+zirgan,R01AX
+ipratropium,R01AX
+ipratropium bromide neb,R03BB
+ipratropium bromide,R03BB
+uroqid-acid no.2,R03BB
+d5w,R03BB
+cisatracurium besylate,R03BB
+famotidine,R03BB
+phytonadione,R03BB
+ns,R03BB
+metronidazole,R03BB
+beclomethasone dipropionate,R03BB
+ipratropium brom,R03BB
+foradil aerolizer,R03BB
+janumet,R03BB
+symbicort,R03BB
+baclofen,R03BB
+enablex,R03BB
+propofol,R03BB
+zirgan,R03BB
+ipratropium,R03BB
+ipratropium ,R01AX
+ipratropium bromide mdi,R01AX
+ipratropium ,R03BB
+ipratropium bromide mdi,R03BB
+pramoxine,C05AD
+pramoxine-menthol-petrolatum,C05AD
+pramoxine,D04AB
+pramoxine-menthol-petrolatum,D04AB
+cyanocobalamin,B03BA
+torsemide,C03CA
+torsemide ,C03CA
+hydralazine hcl,C02DB
+hydralazine,C02DB
+neo*iv*hydralazine,C02DB
+dextrose 50%,C02DB
+sw,C02DB
+d5w,C02DB
+phenylephrine,C02DB
+erythromycin topical solution,C02DB
+soln.,C02DB
+mannitol 20%,C02DB
+enalaprilat,C02DB
+nitroprusside sodium,C02DB
+neo*po*hydralazine,C02DB
+erythromycin ethylsuccinate,C02DB
+methylprednisolone na succ.,C02DB
+syringe (iv room),C02DB
+potassium chloride,C02DB
+acetaminophen,C02DB
+atropine sulfate,A03BA
+nitroglycerin,A03BA
+d5w,A03BA
+atropine sulfate,S01FA
+nitroglycerin,S01FA
+dopamine hcl,C01CA
+*nf* iron sucrose,B03AB
+caffeine-sodium benzoate,N06BC
+caffeine-sodium benzoate,A16AX
+hydroxyzine,N05BB
+acetylcysteine,R05CB
+acetylcysteine,S01XA
+acetylcysteine,V03AB
+acetylcysteine (iv),R05CB
+acetylcysteine ,R05CB
+propofol,R05CB
+acetylcystei,R05CB
+insulin pump (self administering medication),R05CB
+somatropin,R05CB
+zirgan(ganciclovir),R05CB
+xopenex,R05CB
+acetylcysteine (iv),S01XA
+acetylcysteine ,S01XA
+propofol,S01XA
+acetylcystei,S01XA
+somatropin,S01XA
+zirgan(ganciclovir),S01XA
+xopenex,S01XA
+acetylcysteine (iv),V03AB
+acetylcysteine ,V03AB
+propofol,V03AB
+acetylcystei,V03AB
+insulin pump (self administering medication),V03AB
+somatropin,V03AB
+zirgan(ganciclovir),V03AB
+xopenex,V03AB
+ethanol 70% catheter dwell,D08AX
+alcohol dehydrated,D08AX
+ethanol 70% catheter dwell (tunneled access line),D08AX
+ethanol 70% catheter lock,D08AX
+ethanol 70% catheter dwell,V03AB
+alcohol dehydrated,V03AB
+ethanol 70% catheter dwell (tunneled access line),V03AB
+ethanol 70% catheter lock,V03AB
+ethanol 70% catheter dwell,V03AZ
+alcohol dehydrated,V03AZ
+ethanol 70% catheter dwell (tunneled access line),V03AZ
+ethanol 70% catheter lock,V03AZ
+aspirin-caffeine-butalbital,A01AD
+butalbital-aspirin-caffeine,A01AD
+butalbital-acetaminophen-caff,A01AD
+aspirin-caffeine-butalbital,B01AC
+butalbital-aspirin-caffeine,B01AC
+butalbital-acetaminophen-caff,B01AC
+aspirin-caffeine-butalbital,N02BA
+butalbital-aspirin-caffeine,N02BA
+butalbital-acetaminophen-caff,N02BA
+aspirin-caffeine-butalbital,N06BC
+butalbital-aspirin-caffeine,N06BC
+cocaine 4% soln,N01BC
+cocaine 4% soln,R02AD
+cocaine 4% soln,S01HA
+cocaine 4% soln,S02DA
+hemorrhoidal suppository,C01CA
+hemorrhoidal suppository,R01AA
+hemorrhoidal suppository,R01AB
+hemorrhoidal suppository,R01BA
+hemorrhoidal suppository,S01FB
+hemorrhoidal suppository,S01GA
+pseudoephedrine hcl,R01BA
+capsaicin 0.025%,M02AB
+capsaicin 0.025%,N01BX
+bisacodyl,A06AB
+propofol,A06AB
+potassium chloride,A06AB
+lidocaine 1% p.f.,A06AB
+avodart,A06AB
+phenylephrine,A06AB
+symbicort,A06AB
+norepinephrine,A06AB
+bisacodyl,A06AG
+propofol,A06AG
+potassium chloride,A06AG
+lidocaine 1% p.f.,A06AG
+avodart,A06AG
+phenylephrine,A06AG
+symbicort,A06AG
+norepinephrine,A06AG
+hydroxypropyl methylcellulose,S01KA
+hyaluronidase,B06AA
+tretinoin (atra-all transretinoic acid),D10AD
+ve,D10AD
+tretinoin suspension,D10AD
+tretinoin ,D10AD
+tretinoin (atra-all transretinoic acid),L01XX
+ve,L01XX
+tretinoin suspension,L01XX
+tretinoin ,L01XX
+dextroamphetamine,N06BA
+adderall,N06BA
+florinef,H02AA
+charcoal aqueous (activated),A07BA
+charcoal,A07BA
+char,A07BA
+charcoal-sorbitol,A07BA
+charc,A07BA
+activated charcoal-sorbitol,A07BA
+activated,A07BA
+charco,A07BA
+hydrocortisone enema,A01AC
+hydrocortisone enema,A07EA
+hydrocortisone enema,C05AA
+hydrocortisone enema,D07AA
+hydrocortisone enema,D07XA
+hydrocortisone enema,H02AB
+hydrocortisone enema,S01BA
+hydrocortisone enema,S01CB
+hydrocortisone enema,S02BA
+aspirin,A01AD
+sodium bicarbonate,A01AD
+ceftriaxone,A01AD
+vancomycin hcl,A01AD
+ns,A01AD
+pantoprazole sodium,A01AD
+metronidazole,A01AD
+epoetin alfa,A01AD
+aspirin ec,A01AD
+aspirin (rectal),A01AD
+sodium chloride (hypertonic),A01AD
+asp,A01AD
+aspirin,B01AC
+sodium bicarbonate,B01AC
+ceftriaxone,B01AC
+vancomycin hcl,B01AC
+ns,B01AC
+pantoprazole sodium,B01AC
+metronidazole,B01AC
+epoetin alfa,B01AC
+aspirin ec,B01AC
+aspirin (rectal),B01AC
+sodium chloride (hypertonic),B01AC
+asp,B01AC
+aspirin,N02BA
+sodium bicarbonate,N02BA
+ceftriaxone,N02BA
+vancomycin hcl,N02BA
+ns,N02BA
+pantoprazole sodium,N02BA
+metronidazole,N02BA
+epoetin alfa,N02BA
+aspirin ec,N02BA
+aspirin (rectal),N02BA
+sodium chloride (hypertonic),N02BA
+asp,N02BA
+belladonna & opium,A07DA
+belladonna-opium,A07DA
+belladonna & opium (16.2/30mg),A07DA
+belladonna alkaloids-opium,A07DA
+belladonna & opium,N02AA
+belladonna-opium,N02AA
+belladonna & opium (16.2/30mg),N02AA
+belladonna alkaloids-opium,N02AA
+ranolazine,A06AB
+bisacodyl (rectal),A06AB
+januvia,A06AB
+xibrom,A06AB
+travatan,A06AB
+alphagan p,A06AB
+prednisolone acetate,A06AB
+imatinib,A06AB
+dopamine,A06AB
+furosemide,A06AB
+acetaminophen (liquid),A06AB
+lotemax,A06AB
+bisaco,A06AB
+biscolax,A06AB
+uroxatral,A06AB
+enablex,A06AB
+atropine sulfate,A06AB
+aspirin,A06AB
+multaq,A06AB
+vemurafenib (ro5185426),A06AB
+metoprolol tartrate,A06AB
+lidocaine 2%,A06AB
+lorazepam,A06AB
+ranolazine,A06AG
+bisacodyl (rectal),A06AG
+januvia,A06AG
+xibrom,A06AG
+travatan,A06AG
+alphagan p,A06AG
+prednisolone acetate,A06AG
+imatinib,A06AG
+dopamine,A06AG
+furosemide,A06AG
+acetaminophen (liquid),A06AG
+lotemax,A06AG
+bisaco,A06AG
+biscolax,A06AG
+uroxatral,A06AG
+enablex,A06AG
+atropine sulfate,A06AG
+aspirin,A06AG
+multaq,A06AG
+vemurafenib (ro5185426),A06AG
+metoprolol tartrate,A06AG
+lidocaine 2%,A06AG
+lorazepam,A06AG
+hydromorphone (rectal),N02AA
+*nf* diazoxide suspension,C02DA
+pantoprazole sodium,C02DA
+ns,C02DA
+*nf* diazoxide suspension,V03AH
+pantoprazole sodium,V03AH
+ns,V03AH
+lisinopril,C09AA
+sulfasalazine_,A07EC
+glipizide xl,A10BB
+ursodiol,A05AA
+guaifenesin dm table,A05AA
+nifedipine cr,C08CA
+revatio (sildenafil citrate),C08CA
+trimethoprim,J01EA
+minoxidil,C02DC
+minoxidil,D11AX
+sulindac,M01AB
+amoxapine,N06AA
+tipranavir,J05AE
+aptivus,J05AE
+mobic,M01AC
+meloxicam,M01AC
+clonidine tts 2 patch,C02AC
+clonidine,C02AC
+clonidine patch,C02AC
+clonidine tts 2 patch,N02CX
+clonidine,N02CX
+clonidine patch,N02CX
+clonidine tts 2 patch,S01EA
+clonidine,S01EA
+clonidine patch,S01EA
+clonidine tts 3 patch,C02AC
+clonidine tts 1 patch,C02AC
+clonidine ,C02AC
+clonidine tts,C02AC
+clonidine tts 3 patch,N02CX
+clonidine tts 1 patch,N02CX
+clonidine ,N02CX
+clonidine tts,N02CX
+clonidine tts 3 patch,S01EA
+clonidine tts 1 patch,S01EA
+clonidine ,S01EA
+clonidine tts,S01EA
+nevirapine,J05AG
+nevirapine suspension,J05AG
+dabigatran etexilate,B01AE
+pradaxa,B01AE
+mirapex,N04BC
+pramipexole,N04BC
+*nf* pramipexole,N04BC
+stalevo 100,N04BC
+mirapex er,N04BC
+sanctura xr,N04BC
+lactulose enema,A06AD
+lactulose,A06AD
+hydrochlorothiazide,C03AA
+omnipred,C03AA
+dexamethasone sod phosphate,A01AC
+basis soap,A01AC
+dexamethasone sod phosphate,C05AA
+basis soap,C05AA
+dexamethasone sod phosphate,D07AB
+basis soap,D07AB
+dexamethasone sod phosphate,D07XB
+basis soap,D07XB
+dexamethasone sod phosphate,D10AA
+basis soap,D10AA
+dexamethasone sod phosphate,H02AB
+basis soap,H02AB
+dexamethasone sod phosphate,R01AD
+basis soap,R01AD
+dexamethasone sod phosphate,S01BA
+basis soap,S01BA
+dexamethasone sod phosphate,S01CB
+basis soap,S01CB
+dexamethasone sod phosphate,S02BA
+basis soap,S02BA
+dexamethasone sod phosphate,S03BA
+basis soap,S03BA
+potassium chloride,D04AA
+humulin-r insulin,D04AA
+iso-osmotic dextrose,D04AA
+vancomycin hcl,D04AA
+enema disposable,D04AA
+bupivacaine 0.50%,D04AA
+ns epidural bag ,D04AA
+hydromorphone p.f.,D04AA
+lidocaine 1%,D04AA
+hydromorphone (dilaudid),D04AA
+combigan,D04AA
+lotemax,D04AA
+potassium chloride,R06AA
+humulin-r insulin,R06AA
+iso-osmotic dextrose,R06AA
+vancomycin hcl,R06AA
+enema disposable,R06AA
+bupivacaine 0.50%,R06AA
+ns epidural bag ,R06AA
+hydromorphone p.f.,R06AA
+lidocaine 1%,R06AA
+hydromorphone (dilaudid),R06AA
+combigan,R06AA
+lotemax,R06AA
+phenobarbital sodium,N03AA
+neo*iv*phenobarbital,N03AA
+neo*po*phenobarbital,N03AA
+prochlorperazine,N05AB
+emend,N05AB
+junel fe 1/20 (28),N05AB
+promethazine hcl,D04AA
+promethazine,D04AA
+ethanol (ethyl alcohol),D04AA
+promethazine hcl,R06AD
+promethazine,R06AD
+ethanol (ethyl alcohol),R06AD
+chlorpromazine,N05AA
+chlorpromazine hcl,N05AA
+digoxin,C01AA
+neo*iv*digoxin,C01AA
+norepinephrine bitartrate,C01CA
+phenylephrine,C01CA
+fentanyl citrate,C01CA
+propofol,C01CA
+calcium chloride,C01CA
+fluorouracil,L01BC
+bleomycin,L01DC
+carboplatin,L01XA
+vincristine (oncovin),L01CA
+vincristine,L01CA
+irinotecan,L01XX
+metoclopramide,A03FA
+dutasteride (avodart),A03FA
+aripiprazole,A03FA
+mitoxantrone,L01DB
+etoposide,L01CB
+haloperidol decanoate,N05AD
+amikacin,D06AX
+amikacin inhalation,D06AX
+amikacin,J01GB
+amikacin inhalation,J01GB
+amikacin,S01AA
+amikacin inhalation,S01AA
+tobramycin sulfate,J01GB
+tobramycin sulfate,S01AA
+sulfameth/trimethoprim,J01EC
+sulfamethoxazole-trimethoprim,J01EC
+sulfameth/trimethoprim,J01EA
+sulfamethoxazole-trimethoprim,J01EA
+sulfameth/trimethoprim,J01EE
+sulfamethoxazole-trimethoprim,J01EE
+istalol,N05AB
+ns,N02BE
+imipenem-cilastatin,N02BE
+d5w,N02BE
+iso-osmotic sodium chloride,N02BE
+potassium chloride,N02BE
+neo*iv*ampicillin sodium,N02BE
+neo*iv*gentamicin,N02BE
+send 500mg vial,N02BE
+syringe (neonatal) *d5w*,N02BE
+dilaudid,N02BE
+acetaminop,N02BE
+metoprolol tartrate,N02BE
+exemestane,N02BE
+protamine sulfate,N02BE
+atropine sulfate,N02BE
+vasopressin,N02BE
+ergotamine-caffeine,N06BC
+ergotamine-caffeine,N02CA
+fluoxetine hcl,N06AB
+fluoxetine,N06AB
+trifluoperazine hcl,N05AB
+perphenazine,N05AB
+methazolamide,S01EC
+isosorbide dinitrate,C01DA
+metronidazole,C01DA
+estazolam,C01DA
+isordil,C01DA
+isosorbide,C01DA
+isosorbide dinitrate,C05AE
+metronidazole,C05AE
+estazolam,C05AE
+isordil,C05AE
+isosorbide,C05AE
+imipramine,N06AA
+diclofenac sodium dr,D11AX
+diclofenac sodium,D11AX
+diclofenac sodium dr,M01AB
+diclofenac sodium,M01AB
+diclofenac sodium dr,M02AA
+diclofenac sodium,M02AA
+diclofenac sodium dr,S01BC
+diclofenac sodium,S01BC
+ranitidine,A02BA
+ranitidine hcl,A02BA
+desipramine,N06AA
+preservision areds,N06AA
+desipramine hcl,N06AA
+clo,N06AA
+clomi,N06AA
+clomipramine,N06AA
+clomipramine hcl,N06AA
+sodium bicarbonate,D11AH
+januvia,D11AH
+pilocarpine 1%,D11AH
+sodium bicarbonate,L04AD
+januvia,L04AD
+pilocarpine 1%,L04AD
+nafcillin desensitization,J01CF
+nafcillin,J01CF
+nicardipine iv,C08CA
+ampicillin sodium,J01CA
+ampicillin sodium,S01AA
+neo*iv*cefazolin,J01DB
+cefazolin desensitization,J01DB
+botulinum toxin type a,J01DB
+ondansetron odt,A04AA
+insulin pump (self administering medication),A04AA
+losartan potassium,C09CA
+metronidazole gel 0.75%-vaginal,A01AB
+metronidazole gel 0.75%-vaginal,D06BX
+metronidazole gel 0.75%-vaginal,G01AF
+metronidazole gel 0.75%-vaginal,J01XD
+metronidazole gel 0.75%-vaginal,P01AB
+benztropine mesylate,N04AC
+pimozide,N04AC
+"preservision( vit a,c,e-zinc-copper)",N02BE
+levemir,A06AA
+isradipine,A06AA
+xopenex hfa,A06AA
+darifenacin,A06AA
+zemplar,A06AA
+nepafenac,A06AA
+vigamox,A06AA
+durezol 0.05% drops,A06AA
+pimecrolimus,A06AA
+heparin sodium,A06AA
+gleevec,A06AA
+metoprolol tartrate,A06AA
+estroven maximum strength,A06AA
+dasatanib (sprycel) **chemo**,A06AA
+lunesta,A06AA
+bumetanide,A06AA
+zantac maximum strength,A06AA
+morphine sulfate,A06AA
+niacin flush free,A06AA
+cortef,A06AA
+sutent,A06AA
+hydromorphone (dilaudid),A06AA
+florastor,A06AA
+sulfameth/trimethoprim ds,J01EC
+d5w,J01EC
+bactrim,J01EC
+sprycel,J01EC
+bactr,J01EC
+furosemide,J01EC
+sulfameth/trimet,J01EC
+bact,J01EC
+sulfamet,J01EC
+sulfameth/trimethoprim suspension,J01EC
+sulfameth/trimethoprim ,J01EC
+sulfa,J01EC
+sulfameth/trimethoprim ss,J01EC
+sulfameth/trimethoprim ds,J01EA
+d5w,J01EA
+bactrim,J01EA
+sprycel,J01EA
+bactr,J01EA
+furosemide,J01EA
+sulfameth/trimet,J01EA
+bact,J01EA
+sulfamet,J01EA
+sulfameth/trimethoprim suspension,J01EA
+sulfameth/trimethoprim ,J01EA
+sulfa,J01EA
+sulfameth/trimethoprim ss,J01EA
+sulfameth/trimethoprim ds,J01EE
+d5w,J01EE
+bactrim,J01EE
+sprycel,J01EE
+bactr,J01EE
+furosemide,J01EE
+sulfameth/trimet,J01EE
+bact,J01EE
+sulfamet,J01EE
+sulfameth/trimethoprim suspension,J01EE
+sulfameth/trimethoprim ,J01EE
+sulfa,J01EE
+sulfameth/trimethoprim ss,J01EE
+oxybutynin,G04BD
+baclofen,M03BX
+aspiri,A01AD
+aspirin desensitization (angioedema),A01AD
+asa,A01AD
+aspir,A01AD
+vesicare,A01AD
+aspi,A01AD
+aspirin ,A01AD
+aspirin childrens,A01AD
+as,A01AD
+avalide,A01AD
+aspirin 81 mg /placebo,A01AD
+aspirin 325 mg or placebo,A01AD
+asa81,A01AD
+aciphex,A01AD
+propofol,A01AD
+budesonide,A01AD
+aspirin 81 mg/ placebo,A01AD
+aspirin 325mg/ placebo,A01AD
+aspirin desensitization (aerd),A01AD
+mirapex er(pramipexole),A01AD
+aspirin 81 mg or placebo,A01AD
+aspirin 81mg or placbo,A01AD
+aspirin 81 mg  or placebo,A01AD
+systane ultra,A01AD
+elidel,A01AD
+humalog mix 75-25 kwikpen,A01AD
+humalog kwikpen,A01AD
+aspirin desensitization,A01AD
+aspirin desens,A01AD
+azilect,A01AD
+aspirin 325mg or placebo,A01AD
+aspirin 81 mg or placebo ,A01AD
+aspiri,B01AC
+aspirin desensitization (angioedema),B01AC
+asa,B01AC
+aspir,B01AC
+vesicare,B01AC
+aspi,B01AC
+aspirin ,B01AC
+aspirin childrens,B01AC
+as,B01AC
+avalide,B01AC
+aspirin 81 mg /placebo,B01AC
+aspirin 325 mg or placebo,B01AC
+asa81,B01AC
+aciphex,B01AC
+propofol,B01AC
+budesonide,B01AC
+aspirin 81 mg/ placebo,B01AC
+aspirin 325mg/ placebo,B01AC
+aspirin desensitization (aerd),B01AC
+mirapex er(pramipexole),B01AC
+aspirin 81 mg or placebo,B01AC
+aspirin 81mg or placbo,B01AC
+aspirin 81 mg  or placebo,B01AC
+systane ultra,B01AC
+elidel,B01AC
+humalog mix 75-25 kwikpen,B01AC
+humalog kwikpen,B01AC
+aspirin desensitization,B01AC
+aspirin desens,B01AC
+azilect,B01AC
+aspirin 325mg or placebo,B01AC
+aspirin 81 mg or placebo ,B01AC
+aspiri,N02BA
+aspirin desensitization (angioedema),N02BA
+asa,N02BA
+aspir,N02BA
+vesicare,N02BA
+aspi,N02BA
+aspirin ,N02BA
+aspirin childrens,N02BA
+as,N02BA
+avalide,N02BA
+aspirin 81 mg /placebo,N02BA
+aspirin 325 mg or placebo,N02BA
+asa81,N02BA
+aciphex,N02BA
+propofol,N02BA
+budesonide,N02BA
+aspirin 81 mg/ placebo,N02BA
+aspirin 325mg/ placebo,N02BA
+aspirin desensitization (aerd),N02BA
+mirapex er(pramipexole),N02BA
+aspirin 81 mg or placebo,N02BA
+aspirin 81mg or placbo,N02BA
+aspirin 81 mg  or placebo,N02BA
+systane ultra,N02BA
+elidel,N02BA
+humalog mix 75-25 kwikpen,N02BA
+humalog kwikpen,N02BA
+aspirin desensitization,N02BA
+aspirin desens,N02BA
+azilect,N02BA
+aspirin 325mg or placebo,N02BA
+aspirin 81 mg or placebo ,N02BA
+pseudoephedrine,R01BA
+fentanyl citrate,R01BA
+hydromorphone (dilaudid),R01BA
+lidocaine 1%,R01BA
+sudafed,R01BA
+nasonex,R01BA
+senna,A06AB
+haloperidol,A06AB
+avodart *nf*,A06AB
+insulin pump (self administering medication),A06AB
+magnesium sulfate,A06AB
+junel 1/20 (21),A06AB
+viibryd,A06AB
+diphenhydramine liquid,D04AA
+diphenhydramine liquid,R06AA
+zolmitriptan,D04AA
+hydralazine,D04AA
+zolmitriptan,R06AA
+hydralazine,R06AA
+metoprolol,C02CA
+magnesium sulfate,C02CA
+lidocaine 1% p.f.,C02CA
+diltiazem,C02CA
+lotrel,C02CA
+naproxen,G02CC
+naproxen,M01AE
+naproxen,M02AA
+levemir flexpen,C02AC
+levemir flexpen,N02CX
+levemir flexpen,S01EA
+paroxetine,N06AB
+paroxetine mesylate,N06AB
+paroxetine hcl,N06AB
+omeprazole,A02BC
+oxymetazoline,R01AA
+oxymetazoline hcl,R01AA
+oxymeta,R01AA
+afrin,R01AA
+oxymetazoline (half strength),R01AA
+potassium chloride,R01AA
+fentanyl citrate,R01AA
+afrin sinus,R01AA
+oxymetazoline,R01AB
+oxymetazoline hcl,R01AB
+oxymeta,R01AB
+afrin,R01AB
+oxymetazoline (half strength),R01AB
+potassium chloride,R01AB
+fentanyl citrate,R01AB
+afrin sinus,R01AB
+oxymetazoline,S01GA
+oxymetazoline hcl,S01GA
+oxymeta,S01GA
+afrin,S01GA
+oxymetazoline (half strength),S01GA
+potassium chloride,S01GA
+fentanyl citrate,S01GA
+afrin sinus,S01GA
+acyclovir suspension,D06BB
+zovirax,D06BB
+acyclovir suspension,J05AB
+zovirax,J05AB
+acyclovir suspension,S01AD
+zovirax,S01AD
+ibuprofen,C01EB
+atripla,C01EB
+ibuprofen suspension,C01EB
+ibuprofen,G02CC
+atripla,G02CC
+ibuprofen suspension,G02CC
+ibuprofen,M01AE
+atripla,M01AE
+ibuprofen suspension,M01AE
+ibuprofen,M02AA
+atripla,M02AA
+ibuprofen suspension,M02AA
+ibuprofen,R02AX
+atripla,R02AX
+ibuprofen suspension,R02AX
+ibup,C01EB
+ibup,G02CC
+ibup,M01AE
+ibup,M02AA
+ibup,R02AX
+theophylline sr,R03DA
+quetiapine fumarate,N05AH
+carbidopa-levodopa (25-100),N04BA
+sinemet,N04BA
+carbidopa-levodopa,N04BA
+clotrimazole cream,A01AB
+clotrimazole cream,D01AC
+clotrimazole cream,G01AF
+pilocarpine 1%,N07AX
+pilocarpine 4%,N07AX
+pilocarpine 1%,S01EB
+pilocarpine 4%,S01EB
+pilocarpine 2%,N07AX
+pilocarpine 2%,S01EB
+tropicamide 1 %,S01FA
+dexamethasone ophthalmic soln 0.1%,A01AC
+dexamethasone ophthalmic soln 0.1%,C05AA
+dexamethasone ophthalmic soln 0.1%,D07AB
+dexamethasone ophthalmic soln 0.1%,D07XB
+dexamethasone ophthalmic soln 0.1%,D10AA
+dexamethasone ophthalmic soln 0.1%,H02AB
+dexamethasone ophthalmic soln 0.1%,R01AD
+dexamethasone ophthalmic soln 0.1%,S01BA
+dexamethasone ophthalmic soln 0.1%,S01CB
+dexamethasone ophthalmic soln 0.1%,S02BA
+dexamethasone ophthalmic soln 0.1%,S03BA
+neomycin/polymyxin/dexameth ophth susp.,A01AC
+neomycin/polymyxin/dexameth ophth susp.,C05AA
+neomycin/polymyxin/dexameth ophth susp.,D07AB
+neomycin/polymyxin/dexameth ophth susp.,D07XB
+neomycin/polymyxin/dexameth ophth susp.,D10AA
+neomycin/polymyxin/dexameth ophth susp.,H02AB
+neomycin/polymyxin/dexameth ophth susp.,R01AD
+neomycin/polymyxin/dexameth ophth susp.,S01BA
+neomycin/polymyxin/dexameth ophth susp.,S01CB
+neomycin/polymyxin/dexameth ophth susp.,S02BA
+neomycin/polymyxin/dexameth ophth susp.,S03BA
+neomycin/polymyxin/dexameth ophth susp.,A01AB
+neomycin/polymyxin/dexameth ophth susp.,A07AA
+neomycin/polymyxin/dexameth ophth susp.,B05CA
+neomycin/polymyxin/dexameth ophth susp.,D06AX
+neomycin/polymyxin/dexameth ophth susp.,J01GB
+neomycin/polymyxin/dexameth ophth susp.,R02AB
+neomycin/polymyxin/dexameth ophth susp.,S01AA
+neomycin/polymyxin/dexameth ophth susp.,S02AA
+neomycin/polymyxin/dexameth ophth susp.,S03AA
+neomycin/polymyxin/dexameth ophth susp.,J01XB
+esmolol,C07AB
+esmolol in saline (iso-osm),C07AB
+scopolamine base,A04AD
+haloperidol,A04AD
+chlorpromazine,A04AD
+scopolamine base,N05CM
+haloperidol,N05CM
+chlorpromazine,N05CM
+scopolamine base,S01FA
+haloperidol,S01FA
+chlorpromazine,S01FA
+cyclophosphamide,L01AA
+galantamine,N06DA
+itraconazole,J02AC
+cetacaine,C05AD
+cetacaine,D04AB
+cetacaine,N01BA
+cetacaine,S01HA
+cetacaine,R02AD
+hydrocortisone (rectal) 2.5% cream,A01AC
+anusol,A01AC
+hydrocortisone (rectal) 2.5% cream,A07EA
+anusol,A07EA
+hydrocortisone (rectal) 2.5% cream,C05AA
+anusol,C05AA
+hydrocortisone (rectal) 2.5% cream,D07AA
+anusol,D07AA
+hydrocortisone (rectal) 2.5% cream,D07XA
+anusol,D07XA
+hydrocortisone (rectal) 2.5% cream,H02AB
+anusol,H02AB
+hydrocortisone (rectal) 2.5% cream,S01BA
+anusol,S01BA
+hydrocortisone (rectal) 2.5% cream,S01CB
+anusol,S01CB
+hydrocortisone (rectal) 2.5% cream,S02BA
+anusol,S02BA
+sulfacetamide 10% ophth soln.,D10AF
+bleph-10 ophth. soln.,D10AF
+sulfacetamide 10% ophth soln.,S01AB
+bleph-10 ophth. soln.,S01AB
+sulfacetamide-prednisolone ophth. susp.,D10AF
+sulfacetamide-prednisolone ophth. susp.,S01AB
+sulfacetamide-prednisolone ophth. susp.,A07EA
+sulfacetamide-prednisolone ophth. susp.,C05AA
+sulfacetamide-prednisolone ophth. susp.,D07AA
+sulfacetamide-prednisolone ophth. susp.,D07XA
+sulfacetamide-prednisolone ophth. susp.,H02AB
+sulfacetamide-prednisolone ophth. susp.,R01AD
+sulfacetamide-prednisolone ophth. susp.,S01BA
+sulfacetamide-prednisolone ophth. susp.,S01CB
+sulfacetamide-prednisolone ophth. susp.,S02BA
+sulfacetamide-prednisolone ophth. susp.,S03BA
+prednisolone acetate 0.12% ophth. susp.,A07EA
+prednisolone acetate 0.12% ophth. susp.,C05AA
+prednisolone acetate 0.12% ophth. susp.,D07AA
+prednisolone acetate 0.12% ophth. susp.,D07XA
+prednisolone acetate 0.12% ophth. susp.,H02AB
+prednisolone acetate 0.12% ophth. susp.,R01AD
+prednisolone acetate 0.12% ophth. susp.,S01BA
+prednisolone acetate 0.12% ophth. susp.,S01CB
+prednisolone acetate 0.12% ophth. susp.,S02BA
+prednisolone acetate 0.12% ophth. susp.,S03BA
+prednisolone acetate 1% ophth. susp.,A07EA
+prednisolone acetate 1% ophth. susp.,C05AA
+prednisolone acetate 1% ophth. susp.,D07AA
+prednisolone acetate 1% ophth. susp.,D07XA
+prednisolone acetate 1% ophth. susp.,H02AB
+prednisolone acetate 1% ophth. susp.,R01AD
+prednisolone acetate 1% ophth. susp.,S01BA
+prednisolone acetate 1% ophth. susp.,S01CB
+prednisolone acetate 1% ophth. susp.,S02BA
+prednisolone acetate 1% ophth. susp.,S03BA
+fluorometholone 0.1% ophth susp.,C05AA
+fluorometholone 0.1% ophth susp.,D07AB
+fluorometholone 0.1% ophth susp.,D07XB
+fluorometholone 0.1% ophth susp.,D10AA
+fluorometholone 0.1% ophth susp.,S01BA
+fluorometholone 0.1% ophth susp.,S01CB
+ofloxacin (ophth),J01MA
+*nffloxin,J01MA
+*nf* ofloxacin 0.3% ophth soln,J01MA
+ocuflox,J01MA
+ofloxacin (ophth),S01AE
+*nffloxin,S01AE
+*nf* ofloxacin 0.3% ophth soln,S01AE
+ocuflox,S01AE
+ofloxacin (ophth),S02AA
+*nffloxin,S02AA
+*nf* ofloxacin 0.3% ophth soln,S02AA
+ocuflox,S02AA
+flurbiprofen 0.03%,M01AE
+betimol,M01AE
+flurbiprofen 0.03%,M02AA
+betimol,M02AA
+flurbiprofen 0.03%,R02AX
+betimol,R02AX
+flurbiprofen 0.03%,S01BC
+silver nitrate applicator,D08AL
+silver nitrate,D08AL
+insulin pump,D08AL
+midazolam,D08AL
+prochlorperazine,D08AL
+fentanyl citrate,D08AL
+colchicine,M04AC
+quinine sulfate,P01BC
+qualaquin,P01BC
+rabies immune globulin,J06BB
+tetanus immune globulin,J06BB
+hepatitis b immune globulin (bayhep b),J06BB
+trimethoprim oral soln,J01EA
+akwa tears,A06AA
+artificial tear,A06AA
+artificial,A06AA
+hydroxypropyl meth. 2.5% ophth,S01KA
+tropicamide 0.5% ophth soln,S01FA
+gentamicin sulfate ophth.,D06AX
+bacitracin & polymyxin b ophth,D06AX
+gentamicin 0.3% ophth. ointment,D06AX
+gentamicin sulfate ophth.,J01GB
+bacitracin & polymyxin b ophth,J01GB
+gentamicin 0.3% ophth. ointment,J01GB
+gentamicin sulfate ophth.,S01AA
+bacitracin & polymyxin b ophth,S01AA
+gentamicin 0.3% ophth. ointment,S01AA
+gentamicin sulfate ophth.,S02AA
+bacitracin & polymyxin b ophth,S02AA
+gentamicin 0.3% ophth. ointment,S02AA
+gentamicin sulfate ophth.,S03AA
+bacitracin & polymyxin b ophth,S03AA
+gentamicin 0.3% ophth. ointment,S03AA
+cromolyn,A07EB
+cromolyn,D11AH
+cromolyn,R01AC
+cromolyn,R03BC
+cromolyn,S01GX
+lidocaine jelly 2%,C01BB
+lidocaine jelly ,C01BB
+naltrexone,C01BB
+lidocaine jelly 2%,C05AD
+lidocaine jelly ,C05AD
+naltrexone,C05AD
+lidocaine jelly 2%,D04AB
+lidocaine jelly ,D04AB
+naltrexone,D04AB
+lidocaine jelly 2%,N01BB
+lidocaine jelly ,N01BB
+naltrexone,N01BB
+lidocaine jelly 2%,R02AD
+lidocaine jelly ,R02AD
+naltrexone,R02AD
+lidocaine jelly 2%,S01HA
+lidocaine jelly ,S01HA
+naltrexone,S01HA
+lidocaine jelly 2%,S02DA
+lidocaine jelly ,S02DA
+naltrexone,S02DA
+ofloxacin,J01MA
+muro 128,J01MA
+ofloxacin,S01AE
+muro 128,S01AE
+ofloxacin,S02AA
+muro 128,S02AA
+betaseron,C02DB
+phenylephrine hcl,A01AD
+d5w,A01AD
+escitalopram,A01AD
+unoprostone isopropyl,A01AD
+advicor,A01AD
+lotrel,A01AD
+heparin sodium,A01AD
+methylprednisolone na succ.,A01AD
+vexol,A01AD
+nitroglycerin,A01AD
+nitroprusside sodium,A01AD
+advair diskus,A01AD
+avodart (dutasteride),A01AD
+phenylephrine hcl,B01AC
+d5w,B01AC
+escitalopram,B01AC
+unoprostone isopropyl,B01AC
+advicor,B01AC
+lotrel,B01AC
+heparin sodium,B01AC
+methylprednisolone na succ.,B01AC
+vexol,B01AC
+nitroglycerin,B01AC
+nitroprusside sodium,B01AC
+advair diskus,B01AC
+avodart (dutasteride),B01AC
+phenylephrine hcl,N02BA
+d5w,N02BA
+escitalopram,N02BA
+unoprostone isopropyl,N02BA
+advicor,N02BA
+lotrel,N02BA
+heparin sodium,N02BA
+methylprednisolone na succ.,N02BA
+vexol,N02BA
+nitroglycerin,N02BA
+nitroprusside sodium,N02BA
+advair diskus,N02BA
+avodart (dutasteride),N02BA
+propofol,D04AA
+sprycel,D04AA
+interferon alfa 2a,D04AA
+nasacort,D04AA
+sutent (sunitinib),D04AA
+nitroglycerin,D04AA
+nitroprusside sodium,D04AA
+phenylephrine hcl,D04AA
+rosuvastatin (crestor),D04AA
+propofol,R06AA
+sprycel,R06AA
+interferon alfa 2a,R06AA
+nasacort,R06AA
+sutent (sunitinib),R06AA
+nitroglycerin,R06AA
+nitroprusside sodium,R06AA
+phenylephrine hcl,R06AA
+rosuvastatin (crestor),R06AA
+gastrocrom,A07EB
+cromol,A07EB
+gastrocrom,D11AH
+cromol,D11AH
+gastrocrom,R01AC
+cromol,R01AC
+gastrocrom,R03BC
+cromol,R03BC
+gastrocrom,S01GX
+cromol,S01GX
+aripiprazole,N05AX
+*nf* sodium chloride 5% (hypertonic),A12CA
+sodium chloride (hypertonic),A12CA
+sodium chloride,A12CA
+*nf* sodium chloride 5% (hypertonic),B05CB
+sodium chloride (hypertonic),B05CB
+sodium chloride,B05CB
+*nf* sodium chloride 5% (hypertonic),B05XA
+sodium chloride (hypertonic),B05XA
+carteolol 1% ophth soln,C07AA
+carteolol 1% ophth soln,S01ED
+levobunolol 0.5%,S01ED
+polysporin,D06AX
+polysporin,J01XX
+polysporin,R02AB
+polysporin,A07AA
+polysporin,J01XB
+polysporin,S01AA
+polysporin,S02AA
+polysporin,S03AA
+gentamicin ,D06AX
+gentamic,D06AX
+gentamicin sulf. ophth. soln,D06AX
+gentamicin ,J01GB
+gentamic,J01GB
+gentamicin sulf. ophth. soln,J01GB
+gentamicin ,S01AA
+gentamic,S01AA
+gentamicin sulf. ophth. soln,S01AA
+gentamicin ,S02AA
+gentamic,S02AA
+gentamicin sulf. ophth. soln,S02AA
+gentamicin ,S03AA
+gentamic,S03AA
+gentamicin sulf. ophth. soln,S03AA
+amnesteem,S01FA
+neomycin-polymyxin-hc otic susp,A01AC
+neomycin-polymyxin-hc otic susp,A07EA
+neomycin-polymyxin-hc otic susp,C05AA
+neomycin-polymyxin-hc otic susp,D07AA
+neomycin-polymyxin-hc otic susp,D07XA
+neomycin-polymyxin-hc otic susp,H02AB
+neomycin-polymyxin-hc otic susp,S01BA
+neomycin-polymyxin-hc otic susp,S01CB
+neomycin-polymyxin-hc otic susp,S02BA
+neomycin-polymyxin-hc otic susp,A01AB
+neomycin-polymyxin-hc otic susp,A07AA
+neomycin-polymyxin-hc otic susp,B05CA
+neomycin-polymyxin-hc otic susp,D06AX
+neomycin-polymyxin-hc otic susp,J01GB
+neomycin-polymyxin-hc otic susp,R02AB
+neomycin-polymyxin-hc otic susp,S01AA
+neomycin-polymyxin-hc otic susp,S02AA
+neomycin-polymyxin-hc otic susp,S03AA
+neomycin-polymyxin-hc otic susp,J01XB
+neomycin-polymyxin-gramicidin,R02AB
+neomycin-polymyxin-gramicidin,A01AB
+neomycin-polymyxin-gramicidin,A07AA
+neomycin-polymyxin-gramicidin,B05CA
+neomycin-polymyxin-gramicidin,D06AX
+neomycin-polymyxin-gramicidin,J01GB
+neomycin-polymyxin-gramicidin,S01AA
+neomycin-polymyxin-gramicidin,S02AA
+neomycin-polymyxin-gramicidin,S03AA
+neomycin-polymyxin-gramicidin,J01XB
+erythromycin 0.5% ophth oint,D10AF
+vancomycin hcl,D10AF
+furosemide,D10AF
+iso-osmotic dextrose,D10AF
+eryth,D10AF
+erythromycin 0.5% ophth oint,J01FA
+vancomycin hcl,J01FA
+furosemide,J01FA
+iso-osmotic dextrose,J01FA
+eryth,J01FA
+erythromycin 0.5% ophth oint,S01AA
+vancomycin hcl,S01AA
+furosemide,S01AA
+iso-osmotic dextrose,S01AA
+eryth,S01AA
+paclitaxel (taxol),L01CD
+metronidazole desensitization,A01AB
+metronidazole desensitization,D06BX
+metronidazole desensitization,G01AF
+metronidazole desensitization,J01XD
+metronidazole desensitization,P01AB
+diazepam,N07BA
+haloperidol,N07BA
+liothyronine,H03AA
+pancrelipase 5000,A09AA
+pancreaze,A09AA
+panc,A09AA
+streptomycin sulfate,A07AA
+streptomycin sulfate,J01GA
+amphotericin b,A01AB
+amphotericin b,A07AA
+amphotericin b,G01AA
+amphotericin b,J02AA
+trimethobenzamide,R06AA
+iloperidone,N05AX
+acetaminophen iv,N02BE
+ketoconazole shampoo,D01AC
+ketoconazole shampoo,G01AF
+ketoconazole shampoo,J02AB
+neo*pr*acetaminophen,N02BE
+neo*po*bicitra,A09AB
+neo*po*bicitra,B05CB
+neo*im*dt  & acellular pertussis,J07AF
+neo*im*dt & acellular pertussis,J07AF
+neo*im*dt  & acellular pertussis,J07AM
+neo*im*dt & acellular pertussis,J07AM
+tetanus-diphtox-acellular pertuss (adacel),J07AF
+tetanus-diphtox-acellular pertuss (adacel),J07AM
+vasopressin,J07AF
+epinephrine,J07AF
+sodium bicarbonate,J07AF
+calcium chloride,J07AF
+fentanyl,J07AF
+phenylephrine,J07AF
+vasopressin,J07AM
+epinephrine,J07AM
+sodium bicarbonate,J07AM
+calcium chloride,J07AM
+fentanyl,J07AM
+phenylephrine,J07AM
+fosamprenavir,J05AE
+amiloride hcl,C03DB
+questran,C10AC
+mege,G03AC
+megestrol ,G03AC
+mega,G03AC
+megestrol,G03AC
+megestr,G03AC
+megestro,G03AC
+megace,G03AC
+megace oral,G03AC
+megestrol oral suspension,G03AC
+megest,G03AC
+meges,G03AC
+mege,G03DB
+megestrol ,G03DB
+mega,G03DB
+megestrol,G03DB
+megestr,G03DB
+megestro,G03DB
+megace,G03DB
+megace oral,G03DB
+megestrol oral suspension,G03DB
+megest,G03DB
+meges,G03DB
+mege,L02AB
+megestrol ,L02AB
+mega,L02AB
+megestrol,L02AB
+megestr,L02AB
+megestro,L02AB
+megace,L02AB
+megace oral,L02AB
+megestrol oral suspension,L02AB
+megest,L02AB
+meges,L02AB
+dapsone,D10AX
+dapsone,J04BA
+amoxicillin oral susp.,J01CA
+amoxicillin,J01CA
+bethanechol,N07AB
+calcipotriene 0.005% cream,D05AX
+alteplase (catheter clearance),B01AD
+alteplase,B01AD
+alteplase 1mg/1ml ( clearance ie. temp tlcl ),B01AD
+halcion,B01AD
+alteplase recombinant,B01AD
+alteplase 1mg/flush volume ( dialysis/pheresis catheters ),B01AD
+alteplase 1mg/5ml ( clearance ie. indwelling port ),B01AD
+acyclovir suspension,B01AD
+alteplase (catheter clearance),S01XA
+alteplase,S01XA
+alteplase 1mg/1ml ( clearance ie. temp tlcl ),S01XA
+halcion,S01XA
+alteplase recombinant,S01XA
+alteplase 1mg/flush volume ( dialysis/pheresis catheters ),S01XA
+alteplase 1mg/5ml ( clearance ie. indwelling port ),S01XA
+acyclovir suspension,S01XA
+~<ind> rituximab,L01XC
+rituximab,L01XC
+synarel nasal spray,L01XC
+rituximab desensitization,L01XC
+bevacizumab,L01XC
+bevacizumab (avastin),L01XC
+*nf* erlotinib,L01XE
+erlotinib (tarceva),L01XE
+trastuzumab,L01XC
+levocarnitine,A16AA
+l-carnitine,A16AA
+dorzolamide,S01EC
+dorzolamide 2%/timolol 0.5% ophth.,C07AA
+dorzolamide 2%/timolol 0.5% ophth.,S01ED
+dorzolamide 2%/timolol 0.5% ophth.,S01EC
+albuterol 0.5%,R03AC
+albuter,R03AC
+albuterol ,R03AC
+albute,R03AC
+albuterol 0.5%,R03CC
+albuter,R03CC
+albuterol ,R03CC
+albute,R03CC
+sulfamethoxazole/trimethoprim,J01EC
+sulfamethoxazole/trimethoprim,J01EA
+sulfamethoxazole/trimethoprim,J01EE
+risperidone,N05AX
+risperidone oral solution,N05AX
+arimidex,N05AX
+risperidone long acting injection,N05AX
+risperidone (disintegrating tablet),N05AX
+risperidone (disintergrating tablet),N05AX
+razadyne,N06DA
+concerta,N06DA
+razadyne er,N06DA
+paliperidone er,N05AX
+rivaroxaban,B01AF
+concerta,N06BA
+keppra,N03AX
+clobazam,N03AX
+*nf* levetiracetam,N03AX
+diltiazem,N03AX
+oxycodone-acetaminophen,N03AX
+metoprolol,N03AX
+magnesium sulfate,N03AX
+temozolomide,N03AX
+prilosec,A02BC
+levemir,A02BC
+iloprost,A02BC
+metolazone,C03BA
+zaroxolyn,C03BA
+chlorthalidone,C03BA
+bystolic,C03CA
+lasix,C03CA
+isoniazid,J04AC
+metoprolol,J04AC
+solifenacin,J04AC
+prednisolone acetate,N06AX
+spironolactone,C03DA
+neo*po*spironolactone,C03DA
+halcion,C03DA
+amiodarone hcl,C03DA
+d5w (excel bag),C03DA
+tarceva,C03DA
+xopenex (levalbuterol),C03DA
+coenzyme q10,C03DA
+hyzaar(losartan/hctz),C03DA
+amitriptyline hcl,N06AA
+amitriptyline,N06AA
+maprotiline hcl,N06AA
+rasagiline,N06AA
+dicyclomine,A03AA
+atrovent,N06AA
+insulin pump,N06AA
+chlordiazepoxide hcl,N05BA
+tylenol-codeine #3,N02BE
+acetaminophen w/codeine elixir,N02BE
+atropine sulfate,R05DA
+tylenol-codeine #3,R05DA
+acetaminophen w/codeine elixir,R05DA
+atropine sulfate,N02AJ
+tylenol-codeine #3,N02AJ
+acetaminophen w/codeine elixir,N02AJ
+indomethacin,C01EB
+indomethacin,M01AB
+indomethacin,M02AA
+indomethacin,S01BC
+methyldopa,C02AB
+allopurinol,M04AA
+gengraf,M04AA
+dexamethasone sod phosphate,M04AA
+d5w,M04AA
+imatinib,M04AA
+alrex,C07AB
+insulin pump,C07AB
+darvocet-n 100,C07AB
+*nf* phenytoin sodium **brand name only**,C07AB
+glucosamine chondroitin smconc,C07AB
+syringe (neonatal) *d5w*,C07AB
+send 500mg vial,C07AB
+neo*iv*gentamicin,C07AB
+oxytrol,C07AB
+hydromorphone pca (dilaudid),C07AB
+lidocaine 2%,C07AB
+lidocaine 1%,C07AB
+propofol,C07AB
+fentanyl,C07AB
+aciphex,C07AB
+polymyxin b /trimethoprim,C07AB
+glucosamine-chondroitin,C07AB
+revlimid,C07AB
+varenicline,C07AB
+nevanac,C07AB
+enablex,C07AB
+mobic,C07AB
+vancocin,C07AB
+insulin pump (self administering medication),C07AB
+lactaid,C07AB
+baclofen,C07AB
+xopenex hfa,C07AB
+lofibra,C07AB
+namenda,C07AB
+aripiprazole,C07AB
+midazolam,C07AB
+preservision areds,C07AB
+azopt,C07AB
+lumigan,C07AB
+patanol,C07AB
+halcion,N05BA
+ceftriaxone,N05BA
+iso-osmotic dextrose,N05BA
+morphine sulfate,N05BA
+ns,N05BA
+clindamycin,N05BA
+d5w,N05BA
+ceftazidime,N05BA
+streptokinase,N05BA
+magnesium sulfate,N05BA
+acetaminophen,N05BA
+menthol,N05BA
+tamsulosin,G04CA
+theophylline,G04CA
+avodart,G04CA
+clonidine hcl,C02AC
+catapres,C02AC
+budesonide ,C02AC
+budesonide (nasal),C02AC
+insulin pump (self administering medication),C02AC
+clonidine hcl,N02CX
+catapres,N02CX
+budesonide ,N02CX
+budesonide (nasal),N02CX
+insulin pump (self administering medication),N02CX
+clonidine hcl,S01EA
+catapres,S01EA
+budesonide ,S01EA
+budesonide (nasal),S01EA
+insulin pump (self administering medication),S01EA
+rozerem (ramelteon),C02AC
+rozerem (ramelteon),N02CX
+rozerem (ramelteon),S01EA
+nitrofurantoin monohyd (macrobid),J01XE
+phenylephrine,N05BA
+norepinephrine,N05BA
+cefazolin,N05BA
+adenosine (diagnostic),N05BA
+flonase,N05BA
+cinryze (c1 estrase inhibitor),N05BA
+loraz,N05BA
+hydromorphone (dilaudid),N05BA
+hydromorphone,N05BA
+sodium bicarbonate,N05BA
+danazol,N05BA
+xopenex,N05BA
+zomig,N05BA
+pantoprazole,N05BA
+cipro hc otic suspension,N05BA
+nevanac,N05BA
+zenpep,N05BA
+ambien cr,N05BA
+temazepam,N05CD
+doxepin hcl,N06AA
+darifenacin,C08CA
+simvastatin,C10AA
+levemir,C10AA
+lorazepam,C10AA
+olmesartan,C10AA
+domperidone ,C10AA
+uroxatral,C10AA
+thyroid,C10AA
+thyroid extract sr,C10AA
+desvenlafaxine,C10AA
+melatonin,C10AA
+pristiq,C10AA
+simvastatin or placebo,C10AA
+simvastatin 40 mg or placebo,C10AA
+simvastatin or placebo ,C10AA
+simvastatin or placebo (*ind*),C10AA
+simvastin or placebo,C10AA
+venlafa,N06AX
+requip xl,C03CA
+prochlorperazine maleate,N05AB
+thioridazine hcl,N05AC
+thioridazine,N05AC
+thiothixene,N05AF
+cet,R06AE
+cetirizine,R06AE
+ce,R06AE
+sulfamylon,D06BA
+prazosin hcl,C02CA
+prazosin,C02CA
+cyclobenzaprine hcl,M03BX
+cyclobenzaprine,M03BX
+lactobacillus acidophilus-pectin,M03BX
+methotrexate,L01BA
+byetta,L01BA
+methotrexate,L04AX
+byetta,L04AX
+atenolol,C07AB
+benicar hct,C07AB
+pulmicort,C07AB
+betaseron,C07AB
+loperamide hcl,A07DA
+loper,A07DA
+imodium,A07DA
+potassium chloride,A07DA
+felodipine,A07DA
+symbicort,A07DA
+zolpidem tartrate,N05CF
+avodart,N05AD
+fentanyl,N05AD
+midazolam,N05AD
+melatonin,N05AD
+glycolax,C05AE
+miglitol,C05AE
+fentanyl citrate,C05AE
+propofol,C05AE
+lidocaine 1%,C05AE
+glycolax,C08DB
+miglitol,C08DB
+fentanyl citrate,C08DB
+propofol,C08DB
+lidocaine 1%,C08DB
+heparin sodium,C05AE
+d5w,C05AE
+heparin sodium,C08DB
+d5w,C08DB
+potassium chloride,C05AE
+calcium gluconate,C05AE
+potassium chloride,C08DB
+calcium gluconate,C08DB
+doxycycline hyclate (periostat),C07AB
+crestor,C07AB
+colesevelam (welchol),C07AB
+neo*iv*fat emulsion,C07AB
+syringe (neonatal),C07AB
+neo*iv*ampicillin sodium,C07AB
+taclonex,C07AB
+pimecrolimus,C07AB
+acidophilus-b.bifidum-b.longum,C07AB
+acetylcysteine,C07AB
+muro 128,C07AB
+lorazepam,N03AX
+alprazolam,N05BA
+betaseron,N05BA
+prozac,N05BA
+zocor,N05BA
+xanax,N05BA
+tobramycin fortified ophth. soln.,C07AB
+vancomycin ophthalmic solution,C07AB
+trandolapril,C07AB
+byetta,C07AB
+levalbuterol (xopenex),C07AB
+tretinoin (emollient) 0.04%,C07AB
+halobetasol propionate,C07AB
+nexium,C07AB
+centrum,C07AB
+glipizide,A10BB
+lumigan *nf*,A10BB
+peg-intron,C07AA
+insulin pump,N03AX
+verapamil sr,C08DA
+vera,C08DA
+carbamazepine chewable tabs,N03AF
+carbamazepine,N03AF
+carbamazepine ,N03AF
+clonazepam,N03AE
+sucralfate,N03AE
+loxapine succinate,N05AH
+lipram-cr5,N03AB
+peg-intron,N03AB
+bosentan (tracleer),N03AB
+buprenorphine hcl,N03AB
+lodosyn,N03AB
+furosemide,N03AB
+ipratropium bromide neb,N03AB
+metoprolol tartrate,N03AB
+aspirin ec,C01BD
+lotemax,C01BD
+avodart,C01BD
+amiodarone oral suspension,C01BD
+sevelamer carbonate,C01BD
+namenda,C01BD
+pacerone,C01BD
+labetalol hcl,C07AG
+renaphro,C07AG
+enalapril maleate,C09AA
+d5w,C09AA
+potassium chloride,C09AA
+buspirone,N05BE
+famotidine (po),A02BA
+requip xl,A02BA
+lidocaine 1% p.f.,A02BA
+vesicare,A02BA
+insulin pump (self administering medication),A02BA
+symbicort,C09AA
+femhrt 1/5,N05BE
+solifenacin,G04BD
+nevanac,G04BD
+vesicare,G04BD
+concerta (methylphenidate),G04BD
+acetazolamide,S01EC
+acetazolamide s.r.,S01EC
+clobetasol,D07AD
+nystatin cream,A01AC
+nystatin cream,C05AA
+nystatin cream,D07AB
+nystatin cream,D07XB
+nystatin cream,H02AB
+nystatin cream,R01AD
+nystatin cream,R03BA
+nystatin cream,S01BA
+clotrimazole 1% vaginal cream,A01AB
+clotrimazole 1% vaginal cream,D01AC
+clotrimazole 1% vaginal cream,G01AF
+xibrom,S01EC
+carbamazepine suspension,N03AF
+fidaxomicin,A07AA
+golytely,B05CB
+premarin,B05CB
+golytely,B05XA
+premarin,B05XA
+golytely,A06AD
+premarin,A06AD
+golytely,A12CA
+premarin,A12CA
+golytely,A12BA
+premarin,A12BA
+testosterone 4 mg patch,G03BA
+estraderm,G03CA
+*nf* estraderm,G03CA
+alora,G03CA
+estradiol transdermal patch,G03CA
+neo*po*ursodiol,A05AA
+doxycycline hyclate,A01AB
+doxycy,A01AB
+atripla,A01AB
+doxycycline monohydrate,A01AB
+vytorin 10-40,A01AB
+doxycycline hyclate,J01AA
+doxycy,J01AA
+atripla,J01AA
+doxycycline monohydrate,J01AA
+vytorin 10-40,J01AA
+imipramine hcl,N06AA
+junel 1.5/30 (21),N06AA
+lactaid,N06AA
+propafenone hcl,C01BC
+rythmol sr,C01BC
+sulfameth/trimeth ss (self med),J01EC
+sulfame,J01EC
+zaditor (ketotifen),J01EC
+sulfameth/trimeth ss (self med),J01EA
+sulfame,J01EA
+zaditor (ketotifen),J01EA
+sulfameth/trimeth ss (self med),J01EE
+sulfame,J01EE
+zaditor (ketotifen),J01EE
+agrylin,L01XX
+anagrelide hcl,L01XX
+carbatrol,N03AF
+carbamazepine er,N03AF
+mesalamine,A07EC
+pentasa,A07EC
+mesalami,A07EC
+lanthanum,V03AE
+procarbazine hcl,L01XB
+levocar,A16AA
+carn,A16AA
+citalopram,N06AB
+thiamine study drug (*ind*),A11DA
+filgrastim,L03AA
+insulin lispro 75/25,A10AB
+insulin lispro 75/25,A10AC
+insulin lispro 75/25,A10AD
+disulfiram,N07BB
+disulfiram,P03AA
+travoprost,S01EE
+darbepoetin alfa in polysorbat,B03XA
+aranesp (polysorbate),B03XA
+cinacalcet,H05BX
+cinacalcet hcl,H05BX
+sensipar,H05BX
+romiplostim,B02BX
+nimodipine,C08CA
+paromomycin sulfate,A07AA
+paromomycin,A07AA
+propofol,N03AE
+infliximab,L04AB
+baclofen intrathecal,M03BX
+enbrel,L04AB
+etanercept,L04AB
+sevelamer,V03AE
+sevelamer hydrochloride,V03AE
+renagel,V03AE
+sevelamer carbonate,V03AE
+sevelame,V03AE
+sevelamer hcl,V03AE
+isradipine,V03AE
+sevela,V03AE
+anti-thymocyte globulin (rabbit),L04AA
+anti-thymocyte globulin (rabbit) desensitization,L04AA
+revatio (sildenafil citrate),L04AA
+doxercalciferol,H05BX
+dutasteride (avodart ),V03AE
+sevelamer ,V03AE
+alemtuzumab,L04AA
+*nf* imiglucerase,A16AB
+mesalamine (rectal),A07EC
+urso forte,A05AA
+oxycodone sr (oxycontin),N02AA
+2,N02AA
+abilify,N05AX
+tolvaptan,C03XA
+busulfan,L01AB
+azacitidine (subcut),L01BC
+thalidomide,L04AX
+darunavir,J05AE
+darunavir 600mg tablet,J05AE
+etravirine,J05AG
+etravirine 100mg tablet,J05AG
+hepatitis b immune globulin (nabi-hb),J06BB
+vigamox,J06BB
+erlotinib (tarceva),J02AC
+insulin pump,J01FA
+ocuvite,J01FA
+zithromax z-pak,J01FA
+bromday,J01FA
+insulin pump,S01AA
+ocuvite,S01AA
+zithromax z-pak,S01AA
+bromday,S01AA
+zaditor,D01AC
+zaditor,J02AC
+sodium fluoride 1.1% (dental gel),A01AA
+sodium fluoride 1.1% (dental gel),A12CD
+clobetasol propionate 0.05% soln,D07AD
+prednisolone,A07EA
+pred,A07EA
+predn,A07EA
+prednisol,A07EA
+prelone,A07EA
+predni,A07EA
+prednis,A07EA
+prednisolone,C05AA
+pred,C05AA
+predn,C05AA
+prednisol,C05AA
+prelone,C05AA
+predni,C05AA
+prednis,C05AA
+prednisolone,D07AA
+pred,D07AA
+predn,D07AA
+prednisol,D07AA
+prelone,D07AA
+predni,D07AA
+prednis,D07AA
+prednisolone,D07XA
+pred,D07XA
+predn,D07XA
+prednisol,D07XA
+prelone,D07XA
+predni,D07XA
+prednis,D07XA
+prednisolone,H02AB
+pred,H02AB
+predn,H02AB
+prednisol,H02AB
+prelone,H02AB
+predni,H02AB
+prednis,H02AB
+prednisolone,R01AD
+pred,R01AD
+predn,R01AD
+prednisol,R01AD
+prelone,R01AD
+predni,R01AD
+prednis,R01AD
+prednisolone,S01BA
+pred,S01BA
+predn,S01BA
+prednisol,S01BA
+prelone,S01BA
+predni,S01BA
+prednis,S01BA
+prednisolone,S01CB
+pred,S01CB
+predn,S01CB
+prednisol,S01CB
+prelone,S01CB
+predni,S01CB
+prednis,S01CB
+prednisolone,S02BA
+pred,S02BA
+predn,S02BA
+prednisol,S02BA
+prelone,S02BA
+predni,S02BA
+prednis,S02BA
+prednisolone,S03BA
+pred,S03BA
+predn,S03BA
+prednisol,S03BA
+prelone,S03BA
+predni,S03BA
+prednis,S03BA
+dexamethasone ,A01AC
+dexamethasone ,C05AA
+dexamethasone ,D07AB
+dexamethasone ,D07XB
+dexamethasone ,D10AA
+dexamethasone ,H02AB
+dexamethasone ,R01AD
+dexamethasone ,S01BA
+dexamethasone ,S01CB
+dexamethasone ,S02BA
+dexamethasone ,S03BA
+sotalol,C07AA
+sotalol af,C07AA
+cefepime,J01DE
+insulin pump (self administering medication),J01DE
+avodart,J01DE
+norepinephrine,J01DE
+calcium gluconate,J01DE
+calcitonin salmon,H05BA
+miacal,H05BA
+cefepime desensitization,J01DE
+citalopram ,N06AB
+risperdal,N05AX
+trazodone,N06AX
+liothyronine sodium,H03AA
+proparacaine hcl 0.5% opth.,S01HA
+trifluridine 1% ophth soln.,S01AD
+timolol maleate 0.25%,C07AA
+timolo,C07AA
+timolol maleate 0.25%,S01ED
+timolo,S01ED
+timolol maleate 0.5%,C07AA
+timolol maleate 0.5% gfs,C07AA
+timolol,C07AA
+thera tears,C07AA
+exelon,C07AA
+timolol maleate 0.5%,S01ED
+timolol maleate 0.5% gfs,S01ED
+timolol,S01ED
+thera tears,S01ED
+exelon,S01ED
+genta,D06AX
+gent,D06AX
+gentamicin 0.3% ophth. soln,D06AX
+genta,J01GB
+gent,J01GB
+gentamicin 0.3% ophth. soln,J01GB
+genta,S01AA
+gent,S01AA
+gentamicin 0.3% ophth. soln,S01AA
+genta,S02AA
+gent,S02AA
+gentamicin 0.3% ophth. soln,S02AA
+genta,S03AA
+gent,S03AA
+gentamicin 0.3% ophth. soln,S03AA
+pred forte,A07EA
+vigamox 0.5%,A07EA
+muro 128,A07EA
+prednisolone acetate,A07EA
+ketorolac,A07EA
+acular ls,A07EA
+pred forte,C05AA
+vigamox 0.5%,C05AA
+muro 128,C05AA
+prednisolone acetate,C05AA
+symbicort,C05AA
+acular ls,C05AA
+pred forte,D07AA
+vigamox 0.5%,D07AA
+muro 128,D07AA
+prednisolone acetate,D07AA
+ketorolac,D07AA
+symbicort,D07AA
+acular ls,D07AA
+pred forte,D07XA
+vigamox 0.5%,D07XA
+muro 128,D07XA
+prednisolone acetate,D07XA
+ketorolac,D07XA
+symbicort,D07XA
+acular ls,D07XA
+pred forte,H02AB
+vigamox 0.5%,H02AB
+muro 128,H02AB
+prednisolone acetate,H02AB
+acular ls,H02AB
+pred forte,R01AD
+vigamox 0.5%,R01AD
+muro 128,R01AD
+prednisolone acetate,R01AD
+acular ls,R01AD
+pred forte,S01BA
+vigamox 0.5%,S01BA
+muro 128,S01BA
+prednisolone acetate,S01BA
+symbicort,S01BA
+acular ls,S01BA
+pred forte,S01CB
+vigamox 0.5%,S01CB
+muro 128,S01CB
+prednisolone acetate,S01CB
+symbicort,S01CB
+acular ls,S01CB
+pred forte,S02BA
+vigamox 0.5%,S02BA
+muro 128,S02BA
+prednisolone acetate,S02BA
+symbicort,S02BA
+acular ls,S02BA
+pred forte,S03BA
+vigamox 0.5%,S03BA
+muro 128,S03BA
+prednisolone acetate,S03BA
+symbicort,S03BA
+acular ls,S03BA
+ciprofloxacin 0.3% ophth soln,J01MA
+cipro hc,J01MA
+ciprofloxacin,J01MA
+insulin pump (self administering medication),J01MA
+ciprofloxacin 0.3% ophth soln,S01AE
+cipro hc,S01AE
+ciprofloxacin,S01AE
+insulin pump (self administering medication),S01AE
+ciprofloxacin 0.3% ophth soln,S02AA
+cipro hc,S02AA
+ciprofloxacin,S02AA
+insulin pump (self administering medication),S02AA
+ciprofloxacin 0.3% ophth soln,S03AA
+cipro hc,S03AA
+ciprofloxacin,S03AA
+insulin pump (self administering medication),S03AA
+neomycin/polymyxin b sulfate,A01AB
+neomycin/polymyxin b sulfate,A07AA
+neomycin/polymyxin b sulfate,B05CA
+neomycin/polymyxin b sulfate,D06AX
+neomycin/polymyxin b sulfate,J01GB
+neomycin/polymyxin b sulfate,R02AB
+neomycin/polymyxin b sulfate,S01AA
+neomycin/polymyxin b sulfate,S02AA
+neomycin/polymyxin b sulfate,S03AA
+neomycin/polymyxin b sulfate,J01XB
+altace,C09AA
+vincristine sulfate,L01CA
+methotrexate sodium p.f.,L01BA
+methotrexate sodium p.f.,L04AX
+vitamin a,A11CA
+vitamin a,D10AD
+vitamin a,R01AX
+vitamin a,S01XA
+pyrazinamide,J04AK
+aminocaproic acid ,B02AA
+aminocaproic acid 25% oral rinse,B02AA
+aminoc,B02AA
+aminocaproic acid oral rinse,B02AA
+aminocaproic acid 25 % oral rinse,B02AA
+aminocaproi,B02AA
+aminocap,B02AA
+dextromethorphan-guaifenesin (sugar free),R05DA
+guaifenesin-dextromethorphan,R05DA
+dextromethorphan-guaifenesin ,R05DA
+dextromethorphan-guaifenesin (sugar free),R05CA
+guaifenesin-dextromethorphan,R05CA
+dextromethorphan-guaifenesin ,R05CA
+cidofovir,J05AB
+cidofovir 0.25% oral soln,J05AB
+cidofovir 1% topical paste,J05AB
+tenofovir disoproxil fum.,J05AF
+tenofovir disoproxil (viread),J05AF
+oxandrolone (oxandrin),J05AF
+tenofovir disoproxil fumarate,J05AF
+adefovir,J05AF
+adefovir dipivoxil,J05AF
+hepsera,J05AF
+emtricitabine,J05AF
+emtriva,J05AF
+emtricitabine oral solution,J05AF
+emtri,J05AF
+emt,J05AF
+emtricitabine-tenofovir (truvada),J05AF
+emtricitabine-tenofovir,J05AR
+emtricitabine-tenofovir (truvada),J05AR
+truvada,J05AR
+tmc125 200mg/placebo po bid per tibotec ,J05AR
+emtricitabine-tenofovir,J05AF
+truvada,J05AF
+tmc125 200mg/placebo po bid per tibotec ,J05AF
+diltiazem extended-release,C05AE
+diltiazem extended-release,C08DB
+folic acid,B03BB
+ond,A04AA
+zofran odt,A04AA
+ondanset,A04AA
+ondanse,A04AA
+decitabine,L01BC
+zonegran,N03AX
+lamictal (brand name),N03AX
+nelfinavir mesylate,J05AE
+viracept,J05AE
+bortezomib,L01XX
+neo*po*midazolam,N05CD
+clorazepate dipotassium,N05BA
+chloramphenicol na succ,D06AX
+chloramphenicol na succ,D10AF
+chloramphenicol na succ,G01AA
+chloramphenicol na succ,J01BA
+chloramphenicol na succ,S01AA
+chloramphenicol na succ,S02AA
+chloramphenicol na succ,S03AA
+thiamine hcl,A11DA
+thiamine,A11DA
+heparin,A11DA
+cisplatin,L01XA
+methotrexate sodium,L01BA
+methotrexate sodium,L04AX
+ifosfamide,L01AA
+octreotide acetate,M01AB
+uroxatral,M01AB
+octreotide acetate,S01BC
+uroxatral,S01BC
+soln.,A01AC
+de,A01AC
+soln.,C05AA
+de,C05AA
+soln.,D07AB
+de,D07AB
+soln.,D07XB
+de,D07XB
+soln.,D10AA
+de,D10AA
+soln.,H02AB
+de,H02AB
+soln.,R01AD
+de,R01AD
+soln.,S01BA
+de,S01BA
+soln.,S01CB
+de,S01CB
+soln.,S02BA
+de,S02BA
+soln.,S03BA
+de,S03BA
+neo*iv*gentamicin,D06AX
+gentamicin intraventricular,D06AX
+neo*iv*gentamicin,J01GB
+gentamicin intraventricular,J01GB
+neo*iv*gentamicin,S01AA
+gentamicin intraventricular,S01AA
+neo*iv*gentamicin,S02AA
+gentamicin intraventricular,S02AA
+neo*iv*gentamicin,S03AA
+gentamicin intraventricular,S03AA
+pyridoxine hcl,A11HA
+pyridoxine,A11HA
+folic ,B03BB
+vancomycin hcl,A07AA
+neo*iv*vancomycin,A07AA
+vancomycin 25mg/ml ophth soln,A07AA
+vancomycin antibiotic lock,A07AA
+vancomycin ,A07AA
+vancomycin intrathecal,A07AA
+send 500mg vial,A07AA
+neo*iv*ampicillin sodium,A07AA
+vancomycin intraventricular,A07AA
+vancomycin hcl,J01XA
+neo*iv*vancomycin,J01XA
+vancomycin 25mg/ml ophth soln,J01XA
+vancomycin antibiotic lock,J01XA
+vancomycin ,J01XA
+vancomycin intrathecal,J01XA
+send 500mg vial,J01XA
+neo*iv*ampicillin sodium,J01XA
+vancomycin intraventricular,J01XA
+heparin,B01AB
+heparin flush (5000 units/ml),B01AB
+heparin (crrt machine priming),B01AB
+bimatoprost  (lumigan),B01AB
+heparin flush crrt (5000 units/ml),B01AB
+leflunomide,B01AB
+insulin pump,B01AB
+fentanyl,B01AB
+diazepam,B01AB
+heparin flush cvl  (100 units/ml),B01AB
+propofol,B01AB
+calcium gluconate,B01AB
+atropine sulfate,B01AB
+zytiga (abiraterone) 250mg,B01AB
+zytiga (abiraterone) ,B01AB
+mirapex,B01AB
+acetylcysteine,B01AB
+lactinex,B01AB
+heparin flush (1000 units/ml),B01AB
+furosemide,B01AB
+atripla,B01AB
+preparation h,B01AB
+levemir,B01AB
+phenylephrine,B01AB
+polyethylene glycol 400 (bulk),B01AB
+mirapex er,B01AB
+fenofibrate,B01AB
+hydromorphone (dilaudid),B01AB
+dakins,B01AB
+lumigan,B01AB
+magnesium sulfate,B01AB
+potassium chloride (powder),B01AB
+haloperidol,B01AB
+metoprolol tartrate,B01AB
+acetaminophen (rectal),B01AB
+lorazepam,B01AB
+albuterol inhalation soln 0.5%,B01AB
+ipratropium bromide neb,B01AB
+heparin crrt,B01AB
+fentanyl citrate,B01AB
+lodosyn,B01AB
+byetta,B01AB
+midazolam,B01AB
+keppra,B01AB
+cortef,B01AB
+morphine sulfate,B01AB
+stalevo 150,B01AB
+oxycodone-acetaminophen,B01AB
+lidocaine 1%,B01AB
+insulin pump (self administering medication),B01AB
+heparin,C05BA
+heparin flush (5000 units/ml),C05BA
+heparin (crrt machine priming),C05BA
+bimatoprost  (lumigan),C05BA
+heparin flush crrt (5000 units/ml),C05BA
+leflunomide,C05BA
+insulin pump,C05BA
+fentanyl,C05BA
+diazepam,C05BA
+heparin flush cvl  (100 units/ml),C05BA
+ondansetron,C05BA
+propofol,C05BA
+calcium gluconate,C05BA
+atropine sulfate,C05BA
+zytiga (abiraterone) 250mg,C05BA
+zytiga (abiraterone) ,C05BA
+mirapex,C05BA
+acetylcysteine,C05BA
+lactinex,C05BA
+heparin flush (1000 units/ml),C05BA
+furosemide,C05BA
+atripla,C05BA
+preparation h,C05BA
+levemir,C05BA
+phenylephrine,C05BA
+polyethylene glycol 400 (bulk),C05BA
+mirapex er,C05BA
+fenofibrate,C05BA
+hydromorphone (dilaudid),C05BA
+dakins,C05BA
+lumigan,C05BA
+magnesium sulfate,C05BA
+potassium chloride (powder),C05BA
+haloperidol,C05BA
+metoprolol tartrate,C05BA
+acetaminophen (rectal),C05BA
+lorazepam,C05BA
+albuterol inhalation soln 0.5%,C05BA
+ipratropium bromide neb,C05BA
+heparin crrt,C05BA
+fentanyl citrate,C05BA
+lodosyn,C05BA
+byetta,C05BA
+midazolam,C05BA
+keppra,C05BA
+cortef,C05BA
+morphine sulfate,C05BA
+stalevo 150,C05BA
+oxycodone-acetaminophen,C05BA
+lidocaine 1%,C05BA
+insulin pump (self administering medication),C05BA
+heparin,S01XA
+heparin flush (5000 units/ml),S01XA
+heparin (crrt machine priming),S01XA
+bimatoprost  (lumigan),S01XA
+heparin flush crrt (5000 units/ml),S01XA
+leflunomide,S01XA
+fentanyl,S01XA
+diazepam,S01XA
+heparin flush cvl  (100 units/ml),S01XA
+ondansetron,S01XA
+calcium gluconate,S01XA
+atropine sulfate,S01XA
+zytiga (abiraterone) 250mg,S01XA
+zytiga (abiraterone) ,S01XA
+mirapex,S01XA
+lactinex,S01XA
+heparin flush (1000 units/ml),S01XA
+furosemide,S01XA
+atripla,S01XA
+preparation h,S01XA
+levemir,S01XA
+phenylephrine,S01XA
+polyethylene glycol 400 (bulk),S01XA
+mirapex er,S01XA
+fenofibrate,S01XA
+hydromorphone (dilaudid),S01XA
+dakins,S01XA
+lumigan,S01XA
+magnesium sulfate,S01XA
+potassium chloride (powder),S01XA
+haloperidol,S01XA
+metoprolol tartrate,S01XA
+acetaminophen (rectal),S01XA
+lorazepam,S01XA
+albuterol inhalation soln 0.5%,S01XA
+ipratropium bromide neb,S01XA
+heparin crrt,S01XA
+fentanyl citrate,S01XA
+lodosyn,S01XA
+byetta,S01XA
+midazolam,S01XA
+keppra,S01XA
+cortef,S01XA
+morphine sulfate,S01XA
+stalevo 150,S01XA
+oxycodone-acetaminophen,S01XA
+lidocaine 1%,S01XA
+propofol,N01AX
+phenylephrine,N01AX
+fentanyl,N01AX
+potassium chloride,N01AX
+levofloxacin,N01AX
+midazolam,N01AX
+calcium gluconate,N01AX
+fentanyl citrate,N01AX
+fluphenazine decanoate,N05AB
+vinblastine (velban),L01CA
+ropivacaine 0.2%,N01BB
+vancomycin oral liquid,A07AA
+telbivudine,A07AA
+midazolam,A07AA
+potassium chloride,A07AA
+vancomycin oral liquid,J01XA
+telbivudine,J01XA
+midazolam,J01XA
+potassium chloride,J01XA
+acyclovir sodium,D06BB
+acyclovir sodium,J05AB
+acyclovir sodium,S01AD
+colistin,A07AA
+colistin,J01XB
+fosphenytoin,N03AB
+heparin dwell (1000 units/ml),B01AB
+heparin (hemodialysis),B01AB
+heparin (porcine),B01AB
+sunitinib,B01AB
+heparin ,B01AB
+hepar,B01AB
+heparin dwell (1000 units/ml),C05BA
+heparin (hemodialysis),C05BA
+heparin (porcine),C05BA
+sunitinib,C05BA
+heparin ,C05BA
+hepar,C05BA
+heparin dwell (1000 units/ml),S01XA
+heparin (hemodialysis),S01XA
+heparin (porcine),S01XA
+sunitinib,S01XA
+heparin ,S01XA
+hepar,S01XA
+isradipine,C02DB
+propofol,C02DB
+milrinone lactate,C01CE
+chlorothiazide sodium,C03AA
+chlorothiazide,C03AA
+mesna,R05CB
+mesna,V03AF
+pentamidine inhalation,P01CX
+pentamidine-inhalation,P01CX
+pentamidine ,P01CX
+pentamidine isethionate,P01CX
+evoxac,N07AX
+cevimeline,N07AX
+latuda,N05AE
+enablex,N05AE
+actiq,N01AH
+actiq,N02AB
+fentora,N01AH
+fentora,N02AB
+arsenic trioxide *nf*,L01XX
+lidocaine 5% patch,C01BB
+lidoderm,C01BB
+*nf* lidocaine patch 5%,C01BB
+adcirca,C01BB
+tyvaso,C01BB
+*nf* lidocaine 5% patch,C01BB
+lidoderm patches,C01BB
+detrol la,C01BB
+stalevo 150,C01BB
+lidocaine 5% patch,C05AD
+lidoderm,C05AD
+*nf* lidocaine patch 5%,C05AD
+adcirca,C05AD
+tyvaso,C05AD
+*nf* lidocaine 5% patch,C05AD
+lidoderm patches,C05AD
+detrol la,C05AD
+stalevo 150,C05AD
+lidocaine 5% patch,D04AB
+lidoderm,D04AB
+*nf* lidocaine patch 5%,D04AB
+adcirca,D04AB
+tyvaso,D04AB
+*nf* lidocaine 5% patch,D04AB
+lidoderm patches,D04AB
+detrol la,D04AB
+stalevo 150,D04AB
+lidocaine 5% patch,N01BB
+lidoderm,N01BB
+*nf* lidocaine patch 5%,N01BB
+adcirca,N01BB
+tyvaso,N01BB
+*nf* lidocaine 5% patch,N01BB
+lidoderm patches,N01BB
+detrol la,N01BB
+stalevo 150,N01BB
+lidocaine 5% patch,R02AD
+lidoderm,R02AD
+*nf* lidocaine patch 5%,R02AD
+adcirca,R02AD
+tyvaso,R02AD
+*nf* lidocaine 5% patch,R02AD
+lidoderm patches,R02AD
+detrol la,R02AD
+stalevo 150,R02AD
+lidocaine 5% patch,S01HA
+lidoderm,S01HA
+*nf* lidocaine patch 5%,S01HA
+adcirca,S01HA
+tyvaso,S01HA
+*nf* lidocaine 5% patch,S01HA
+lidoderm patches,S01HA
+detrol la,S01HA
+stalevo 150,S01HA
+lidocaine 5% patch,S02DA
+lidoderm,S02DA
+*nf* lidocaine patch 5%,S02DA
+adcirca,S02DA
+tyvaso,S02DA
+*nf* lidocaine 5% patch,S02DA
+lidoderm patches,S02DA
+detrol la,S02DA
+stalevo 150,S02DA
+clopidogrel bisulfate,B01AC
+clopidogrel,B01AC
+colazal,B01AC
+apidra,B01AC
+clopidogrel desensitization,B01AC
+iso-osmotic dextrose,B01AC
+dhea,B01AC
+insulin pump,B01AC
+albuterol 0.083% neb soln,B01AC
+neurontin,B01AC
+mirapex er(pramipexole),C05AE
+fenofibrate,C05AE
+mirapex er(pramipexole),C08DB
+fenofibrate,C08DB
+betaseron,A06AA
+avodart,A06AA
+vagifem,A06AA
+xeloda,A06AA
+metformin (fortamet),A06AA
+pioglitazone hcl,A10BG
+pioglitazone,A10BG
+lubiprostone,A06AX
+amitiza,A06AX
+lansoprazole oral disintegrating tab,A02BC
+bosentan,A02BC
+lansoprazole,A02BC
+febuxostat,M04AA
+uloric,M04AA
+triamterene,C03DB
+bivalirudin,B01AE
+aldesleukin,L03AC
+benicar,C09CA
+benicar hct,C09CA
+olmesartan,C09CA
+colesevelam,C10AC
+welchol,C10AC
+acular,C10AC
+zymar,C10AC
+colazal,A07EC
+moviprep,A11GA
+dulera (mometasone-formoterol) 200-5mcg/actuation,A11GA
+moviprep,G01AD
+dulera (mometasone-formoterol) 200-5mcg/actuation,G01AD
+moviprep,S01XA
+dulera (mometasone-formoterol) 200-5mcg/actuation,S01XA
+moviprep,A06AD
+dulera (mometasone-formoterol) 200-5mcg/actuation,A06AD
+moviprep,A12CA
+dulera (mometasone-formoterol) 200-5mcg/actuation,A12CA
+moviprep,A12BA
+dulera (mometasone-formoterol) 200-5mcg/actuation,A12BA
+moviprep,B05XA
+dulera (mometasone-formoterol) 200-5mcg/actuation,B05XA
+moviprep,B05CB
+dulera (mometasone-formoterol) 200-5mcg/actuation,B05CB
+azathioprine,L04AX
+rifaximin,A07AA
+rifaximin,D06AX
+hydrocortisone acetate ointment 1%,A01AC
+hydrocortisone acetate ointment 1%,A07EA
+hydrocortisone acetate ointment 1%,C05AA
+hydrocortisone acetate ointment 1%,D07AA
+hydrocortisone acetate ointment 1%,D07XA
+hydrocortisone acetate ointment 1%,H02AB
+hydrocortisone acetate ointment 1%,S01BA
+hydrocortisone acetate ointment 1%,S01CB
+hydrocortisone acetate ointment 1%,S02BA
+nesiritide,C01DX
+donnatol,A03BA
+donnatol,S01FA
+donnatol,N03AA
+donnatol,A04AD
+donnatol,N05CM
+treprostinil sodium,B01AC
+tyvaso,B01AC
+triamterene-hydrochlorothiazid,N03AA
+ezetimibe,C10AX
+zetia,C10AX
+anakinra,L04AC
+amoxicillin-clavulanic acid,J01CA
+cetuximab,L01XC
+neo*iv*hyaluronidase (ovine),B06AA
+fomepizole,V03AB
+melphalan,L01AA
+povidone iodine,D08AG
+povidone iodine 1/4 strength,D08AG
+povidone iodine 1/2 strength,D08AG
+povidone iodine,D09AA
+povidone iodine 1/4 strength,D09AA
+povidone iodine 1/2 strength,D09AA
+povidone iodine,D11AC
+povidone iodine 1/4 strength,D11AC
+povidone iodine 1/2 strength,D11AC
+povidone iodine,G01AX
+povidone iodine 1/4 strength,G01AX
+povidone iodine 1/2 strength,G01AX
+povidone iodine,R02AA
+povidone iodine 1/4 strength,R02AA
+povidone iodine 1/2 strength,R02AA
+povidone iodine,S01AX
+povidone iodine 1/4 strength,S01AX
+povidone iodine 1/2 strength,S01AX
+theophylline er (uniphyl),R03DA
+daptomycin,J01XX
+ciprofloxacin hcl,J01MA
+vancocin,J01MA
+ciprofloxacin hcl,S01AE
+vancocin,S01AE
+ciprofloxacin hcl,S02AA
+vancocin,S02AA
+ciprofloxacin hcl,S03AA
+vancocin,S03AA
+iloprost,C03DA
+hydroxyurea suspension,L01XX
+insulin pump (self administering medication),C02DB
+ranitidine (liquid),A02BA
+neo*po*carbamazepine 20mg/ml,N03AF
+cephalexin desensitization,J01DB
+*nf* cefixime suspension,J01DD
+hydrocortisone acetate 10%  foam,A01AC
+hydrocortisone acetate 10%  foam,A07EA
+hydrocortisone acetate 10%  foam,C05AA
+hydrocortisone acetate 10%  foam,D07AA
+hydrocortisone acetate 10%  foam,D07XA
+hydrocortisone acetate 10%  foam,H02AB
+hydrocortisone acetate 10%  foam,S01BA
+hydrocortisone acetate 10%  foam,S01CB
+hydrocortisone acetate 10%  foam,S02BA
+nabumetone,M01AX
+rasagiline,N04BD
+glatiramer,L03AX
+copaxone,L03AX
+ethambutol hcl,J04AK
+lidocaine jelly 2% (urojet),C01BB
+lidocaine jelly 2% (urojet),C05AD
+lidocaine jelly 2% (urojet),D04AB
+lidocaine jelly 2% (urojet),N01BB
+lidocaine jelly 2% (urojet),R02AD
+lidocaine jelly 2% (urojet),S01HA
+lidocaine jelly 2% (urojet),S02DA
+silver sulfadiazine 1% cream,D06BA
+atripla,D06BA

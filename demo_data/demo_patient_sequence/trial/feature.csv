@@ -1,0 +1,978 @@
+RUSUBJID,performance status,height,weight,death,AGE,RACE,SEX,SURGERY,num relapse,primary tumor,tumor size,multifocal tumor,num positive axillary lymph nodes,tumor location,histopathologic grade,histopathologic type
+000315-000-999-001,100.0,168.0,56.0,0,66.0,Caucasian,Female,['Lumpectomy' 'Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.4,0.0,1.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-002,100.0,149.0,66.0,0,44.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.5,1.0,1.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-003,100.0,170.0,70.3,0,41.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,2.2,0.0,1.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-004,100.0,141.0,81.0,0,61.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,2.0,0.0,4.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-005,100.0,154.0,57.9,0,51.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,4.7,0.0,4.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-006,90.0,166.0,81.8,0,51.0,Caucasian,Female,['Other'],0,Tumor of <=2cm in its greatest dimension,2.0,0.0,2.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-007,90.0,162.0,72.0,0,48.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,2.0,0.0,8.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-008,100.0,154.0,72.0,0,45.0,Other,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,4.0,0.0,3.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-009,100.0,151.0,54.0,0,47.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.7,0.0,2.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-010,100.0,163.0,76.3,0,50.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.9,0.0,2.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-011,100.0,152.0,56.0,1,52.0,Caucasian,Female,['Mastectomy'],1,Tumor 2cm <> 5cm in greatest dimension,3.3,0.0,20.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-012,100.0,162.0,68.0,0,36.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,4.0,1.0,3.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-013,100.0,166.0,72.5,0,48.0,Caucasian,Female,['Quadrantectomy/Segmental' 'Other'],0,Tumor of <=2cm in its greatest dimension,1.4,1.0,2.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-014,100.0,157.0,64.0,0,47.0,Caucasian,Female,['Mastectomy'],0,Tumor >5cm in its greatest dimension,6.2,0.0,4.0,Left,Differentiation cannot be assessed,Infiltrating lobular carcinoma
+000315-000-999-015,100.0,167.0,71.2,0,39.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.0,0.0,2.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-016,100.0,172.0,51.0,0,39.0,Caucasian,Female,['Other'],0,Tumor of <=2cm in its greatest dimension,2.0,0.0,7.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-017,100.0,168.0,75.0,0,49.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.0,0.0,1.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-018,90.0,160.0,52.0,1,52.0,Caucasian,Female,['Quadrantectomy/Segmental'],1,Tumor 2cm <> 5cm in greatest dimension,2.6,0.0,4.0,Right,Differentiation cannot be assessed,Infiltrating ductal carcinoma
+000315-000-999-019,100.0,152.0,74.7,0,44.0,Caucasian,Female,['Mastectomy'],0,Tumor >5cm in its greatest dimension,5.5,0.0,1.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-020,90.0,165.0,62.0,0,40.0,Caucasian,Female,['Mastectomy' 'Other'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,1.0,1.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-021,100.0,163.0,60.7,0,36.0,Other,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.8,0.0,7.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-022,100.0,162.0,77.0,0,59.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,0.0,6.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-023,100.0,157.0,51.0,0,54.0,Caucasian,Female,['Quadrantectomy/Segmental' 'Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.1,1.0,1.0,Left,Moderately differentiated,Infiltrating lobular carcinoma
+000315-000-999-024,90.0,159.0,80.3,0,56.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.0,0.0,8.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-025,90.0,151.0,43.2,0,50.0,Oriental,Female,['Lumpectomy' 'Mastectomy'],0,Tumor of <=2cm in its greatest dimension,2.0,0.0,3.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-026,100.0,162.0,56.0,0,50.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,0.0,2.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-027,100.0,167.0,64.0,0,49.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,4.0,0.0,1.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-028,100.0,164.0,57.4,0,35.0,Oriental,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.6,0.0,3.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-029,100.0,160.0,69.0,0,60.0,Caucasian,Female,['Lumpectomy'],1,Tumor 2cm <> 5cm in greatest dimension,2.5,0.0,3.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-030,100.0,156.0,85.9,0,49.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.3,0.0,1.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-031,100.0,160.0,79.0,0,66.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.2,0.0,7.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-032,100.0,173.0,79.0,0,62.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,2.0,0.0,6.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-033,100.0,152.0,42.5,0,42.0,Hispanic,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.0,0.0,1.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-034,100.0,153.0,68.5,0,56.0,Caucasian,Female,['Mastectomy'],0,Tumor >5cm in its greatest dimension,7.0,0.0,4.0,Right,Moderately differentiated,Infiltrating lobular carcinoma
+000315-000-999-035,100.0,171.0,69.0,0,52.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.5,0.0,5.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-036,100.0,162.0,61.0,0,39.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.2,1.0,4.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-037,100.0,175.0,67.1,0,34.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.3,0.0,1.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-038,100.0,159.0,62.7,0,47.0,Oriental,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,4.5,1.0,19.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-039,100.0,155.0,58.0,0,61.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.5,1.0,1.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-040,90.0,167.0,72.0,0,56.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,4.2,1.0,6.0,Right,Moderately differentiated,Infiltrating lobular carcinoma
+000315-000-999-041,100.0,159.0,86.1,0,46.0,Caucasian,Female,['Mastectomy' 'Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.5,0.0,1.0,Left,Differentiation cannot be assessed,Infiltrating lobular carcinoma
+000315-000-999-042,100.0,172.0,63.0,0,47.0,Caucasian,Female,['Mastectomy'],1,Tumor 2cm <> 5cm in greatest dimension,3.8,0.0,9.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-043,100.0,160.0,81.0,0,63.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,2.2,0.0,8.0,Left,Moderately differentiated,Other
+000315-000-999-044,100.0,150.0,73.0,0,63.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.3,0.0,1.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-045,100.0,164.0,55.0,0,42.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.2,0.0,1.0,Left,Differentiation cannot be assessed,Other
+000315-000-999-046,100.0,162.0,57.0,0,61.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.3,0.0,2.0,Right,Poorly differentiated / Undifferentiated,Other
+000315-000-999-047,100.0,164.0,68.6,0,55.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,40.0,1.0,1.0,Right,Moderately differentiated,Infiltrating lobular carcinoma
+000315-000-999-048,100.0,162.0,54.0,0,58.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.2,0.0,2.0,Left,Well differentiated,Infiltrating ductal carcinoma
+000315-000-999-049,100.0,158.0,62.0,0,40.0,Oriental,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.9,0.0,2.0,Right,Well differentiated,Infiltrating ductal carcinoma
+000315-000-999-050,100.0,157.0,72.4,0,44.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.0,1.0,6.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-051,100.0,157.0,77.1,0,55.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.0,0.0,10.0,Left,Moderately differentiated,Infiltrating lobular carcinoma
+000315-000-999-052,100.0,168.0,71.0,0,57.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.5,0.0,3.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-053,100.0,170.0,59.0,0,36.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,2.2,0.0,7.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-054,90.0,139.0,53.0,0,51.0,Caucasian,Female,['Mastectomy'],0,Tumor >5cm in its greatest dimension,8.0,0.0,3.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-055,100.0,159.0,78.3,0,47.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.1,1.0,2.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-056,100.0,156.0,69.0,0,48.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,2.0,0.0,1.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-057,100.0,161.0,59.5,0,58.0,Caucasian,Female,['Quadrantectomy/Segmental' 'Mastectomy'],0,Tumor >5cm in its greatest dimension,7.0,1.0,4.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-058,100.0,168.0,72.4,0,35.0,Caucasian,Female,['Other'],0,Tumor 2cm <> 5cm in greatest dimension,3.0,0.0,4.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-059,100.0,160.0,64.5,0,45.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.8,0.0,4.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-060,100.0,152.0,58.0,0,48.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.7,0.0,2.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-061,100.0,165.0,75.0,0,59.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,2.7,0.0,12.0,Left,Moderately differentiated,Infiltrating lobular carcinoma
+000315-000-999-062,100.0,154.0,77.5,0,61.0,Caucasian,Female,['Lumpectomy'],1,Tumor 2cm <> 5cm in greatest dimension,2.5,0.0,2.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-063,100.0,158.0,60.0,0,59.0,Caucasian,Female,['Mastectomy'],2,Tumor 2cm <> 5cm in greatest dimension,2.5,1.0,23.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-064,100.0,161.0,52.0,0,35.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,0.0,2.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-065,100.0,157.0,60.0,0,64.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.2,0.0,3.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-066,100.0,165.0,69.0,0,49.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.6,0.0,2.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-067,90.0,157.0,60.0,0,47.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,2.0,1.0,12.0,Right,Poorly differentiated / Undifferentiated,Other
+000315-000-999-068,100.0,164.0,55.0,0,38.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.2,0.0,4.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-069,100.0,167.0,56.0,0,44.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.5,0.0,3.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-071,100.0,161.0,73.0,0,52.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.5,0.0,2.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-072,100.0,162.0,69.6,0,31.0,Caucasian,Female,['Mastectomy'],1,Tumor 2cm <> 5cm in greatest dimension,3.0,0.0,10.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-073,100.0,152.0,100.0,0,60.0,Caucasian,Female,['Lumpectomy' 'Mastectomy'],1,Tumor 2cm <> 5cm in greatest dimension,2.4,0.0,12.0,Right,Moderately differentiated,Infiltrating lobular carcinoma
+000315-000-999-074,100.0,153.0,59.0,0,50.0,Caucasian,Female,['Mastectomy'],0,Tumor >5cm in its greatest dimension,5.5,0.0,10.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-075,90.0,169.0,79.0,0,64.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.0,0.0,22.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-076,100.0,171.0,55.0,0,32.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,0.0,1.0,Right,Differentiation cannot be assessed,Infiltrating ductal carcinoma
+000315-000-999-077,100.0,160.0,56.6,0,50.0,Caucasian,Female,['Mastectomy'],0,Tumor >5cm in its greatest dimension,6.5,0.0,3.0,Left,Moderately differentiated,Infiltrating lobular carcinoma
+000315-000-999-078,100.0,162.0,75.0,0,54.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.0,0.0,1.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-079,100.0,162.0,85.0,0,52.0,Caucasian,Female,['Other'],0,Tumor 2cm <> 5cm in greatest dimension,2.1,0.0,10.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-080,100.0,162.0,95.0,0,50.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,2.0,1.0,5.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-081,100.0,155.0,53.0,0,37.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.5,0.0,1.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-082,100.0,175.0,74.4,0,66.0,Caucasian,Female,['Quadrantectomy/Segmental' 'Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.0,0.0,10.0,Right,Moderately differentiated,Other
+000315-000-999-083,100.0,163.0,77.0,0,57.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.2,0.0,18.0,Right,Moderately differentiated,Infiltrating lobular carcinoma
+000315-000-999-084,100.0,155.0,80.2,0,40.0,Caucasian,Female,['Lumpectomy'],0,,,,,,,
+000315-000-999-085,100.0,168.0,67.0,0,41.0,Caucasian,Female,['Lumpectomy' 'Mastectomy'],0,Tumor >5cm in its greatest dimension,5.0,0.0,2.0,Left,Moderately differentiated,Infiltrating lobular carcinoma
+000315-000-999-086,100.0,154.0,48.0,0,46.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.0,0.0,1.0,Right,Differentiation cannot be assessed,Infiltrating lobular carcinoma
+000315-000-999-087,100.0,155.0,83.0,1,36.0,Caucasian,Female,['Mastectomy'],1,Tumor 2cm <> 5cm in greatest dimension,4.0,1.0,18.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-088,100.0,168.0,71.0,0,43.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,4.7,0.0,2.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-089,90.0,168.0,70.0,0,53.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,2.3,0.0,2.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-090,100.0,151.0,44.0,0,56.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.2,0.0,4.0,Left,Well differentiated,Other
+000315-000-999-091,100.0,172.0,83.0,0,43.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.2,0.0,4.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-092,100.0,164.0,60.0,0,33.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.6,0.0,6.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-093,100.0,163.0,50.6,0,50.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,0.9,0.0,2.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-094,100.0,154.0,59.0,0,49.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.5,1.0,7.0,Right,Differentiation cannot be assessed,Infiltrating lobular carcinoma
+000315-000-999-095,100.0,169.0,75.0,0,49.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.2,1.0,1.0,Left,Moderately differentiated,Other
+000315-000-999-096,100.0,158.0,54.0,0,55.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.9,0.0,1.0,Left,Well differentiated,Infiltrating ductal carcinoma
+000315-000-999-097,90.0,167.0,74.6,0,57.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,5.0,0.0,11.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-098,100.0,169.0,68.0,0,49.0,Caucasian,Female,['Mastectomy' 'Other'],1,Tumor 2cm <> 5cm in greatest dimension,4.0,0.0,8.0,Right,Well differentiated,Infiltrating ductal carcinoma
+000315-000-999-099,100.0,154.0,62.0,0,57.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.0,0.0,3.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-100,100.0,156.0,58.0,0,38.0,Caucasian,Female,['Mastectomy'],2,Tumor of <=2cm in its greatest dimension,1.5,0.0,15.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-101,100.0,174.0,82.0,0,37.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.6,0.0,3.0,Left,Poorly differentiated / Undifferentiated,Other
+000315-000-999-102,100.0,150.0,57.7,0,54.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.1,0.0,10.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-103,100.0,165.0,58.4,0,45.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.0,0.0,1.0,Right,Well differentiated,Infiltrating ductal carcinoma
+000315-000-999-104,90.0,160.0,74.0,0,40.0,Caucasian,Female,['Other'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,0.0,7.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-105,100.0,168.0,68.0,0,35.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.5,0.0,2.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-106,100.0,168.0,62.0,0,50.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.0,0.0,13.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-107,100.0,159.0,60.0,0,32.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,1.0,5.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-108,100.0,170.0,80.7,0,48.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,2.0,1.0,16.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-109,100.0,165.0,65.0,0,26.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.3,0.0,1.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-110,100.0,153.0,69.0,0,40.0,Hispanic,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.8,0.0,3.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-111,100.0,166.0,63.0,0,58.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.1,0.0,3.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-112,100.0,168.0,55.9,0,50.0,Caucasian,Female,['Lumpectomy'],1,Tumor 2cm <> 5cm in greatest dimension,2.7,0.0,1.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-113,100.0,160.0,75.0,0,49.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.5,1.0,1.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-114,100.0,154.0,70.0,0,44.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,2.0,1.0,3.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-115,100.0,166.0,64.0,0,40.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.2,0.0,1.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-116,100.0,168.0,69.0,0,54.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.3,1.0,9.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-117,100.0,160.0,69.0,0,59.0,Caucasian,Female,['Mastectomy'],1,Tumor 2cm <> 5cm in greatest dimension,5.0,0.0,2.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-118,100.0,170.0,81.9,0,43.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,2.8,0.0,3.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-119,90.0,161.0,86.0,0,53.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.9,1.0,16.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-120,100.0,172.0,78.0,0,52.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.3,0.0,1.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-121,100.0,169.0,73.0,0,38.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.5,1.0,7.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-122,100.0,162.0,55.0,0,31.0,Oriental,Female,['Lumpectomy' 'Other'],0,Tumor of <=2cm in its greatest dimension,1.5,0.0,3.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-123,100.0,169.0,66.0,0,42.0,Caucasian,Female,['Quadrantectomy/Segmental'],1,Tumor of <=2cm in its greatest dimension,1.2,0.0,14.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-124,100.0,155.0,67.4,0,49.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.0,0.0,3.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-125,90.0,170.0,75.0,0,51.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.7,0.0,1.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-126,100.0,160.0,60.0,0,44.0,Caucasian,Female,['Lumpectomy' 'Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.0,0.0,6.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-127,100.0,160.0,59.0,0,44.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,2.0,1.0,2.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-128,100.0,160.0,70.0,0,67.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.1,0.0,7.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-129,100.0,163.0,63.0,0,43.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,5.0,0.0,9.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-130,100.0,159.0,58.0,0,52.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.1,1.0,5.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-131,100.0,156.0,66.5,0,44.0,Hispanic,Female,['Mastectomy'],0,Tumor >5cm in its greatest dimension,12.5,0.0,23.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-132,100.0,162.0,57.0,0,44.0,Caucasian,Female,['Mastectomy' 'Other'],0,Tumor of <=2cm in its greatest dimension,2.0,0.0,6.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-133,100.0,172.0,75.0,1,48.0,Caucasian,Female,['Mastectomy'],1,Tumor 2cm <> 5cm in greatest dimension,4.4,0.0,7.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-134,80.0,156.0,51.0,0,43.0,Caucasian,Female,['Mastectomy' 'Other'],0,Tumor 2cm <> 5cm in greatest dimension,4.0,1.0,2.0,Right,Moderately differentiated,Infiltrating lobular carcinoma
+000315-000-999-135,90.0,168.0,54.0,0,27.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,4.5,0.0,2.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-136,100.0,164.0,73.0,0,51.0,Caucasian,Female,['Quadrantectomy/Segmental'],1,Tumor of <=2cm in its greatest dimension,1.5,0.0,3.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-137,100.0,165.0,68.0,0,55.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.1,0.0,1.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-138,100.0,162.0,64.0,0,41.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.3,0.0,2.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-139,100.0,156.0,69.0,0,60.0,Caucasian,Female,['Lumpectomy' 'Other'],0,Tumor of <=2cm in its greatest dimension,1.6,0.0,6.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-140,100.0,161.0,61.0,0,41.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,4.5,0.0,2.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-141,100.0,164.0,69.0,0,54.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,0.0,1.0,Right,Poorly differentiated / Undifferentiated,Other
+000315-000-999-142,100.0,163.0,54.0,0,44.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.6,0.0,3.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-143,100.0,163.0,124.6,0,49.0,Caucasian,Female,['Mastectomy' 'Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,5.0,1.0,13.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-144,100.0,156.0,55.0,0,60.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.5,0.0,2.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-145,100.0,155.0,67.2,0,54.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,4.7,0.0,3.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-146,100.0,166.0,65.5,0,35.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.5,0.0,5.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-147,100.0,169.0,93.0,0,39.0,Caucasian,Female,['Quadrantectomy/Segmental'],1,Tumor 2cm <> 5cm in greatest dimension,3.5,1.0,1.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-148,100.0,174.0,94.0,0,60.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,3.0,1.0,4.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-149,100.0,168.0,64.0,0,,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.8,0.0,1.0,Right,Well differentiated,Infiltrating ductal carcinoma
+000315-000-999-150,100.0,168.0,75.0,0,42.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.0,0.0,4.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-151,100.0,158.0,49.0,0,31.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor >5cm in its greatest dimension,5.5,0.0,3.0,Right,Well differentiated,Infiltrating ductal carcinoma
+000315-000-999-152,100.0,165.0,78.0,0,40.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,2.0,0.0,3.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-153,100.0,155.0,55.0,0,39.0,Caucasian,Female,['Lumpectomy' 'Other'],1,Tumor 2cm <> 5cm in greatest dimension,2.5,0.0,6.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-154,100.0,149.0,43.5,0,45.0,Black,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.0,0.0,21.0,Left,Differentiation cannot be assessed,Infiltrating lobular carcinoma
+000315-000-999-155,100.0,173.0,85.0,0,33.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,4.0,0.0,5.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-156,100.0,164.0,64.0,0,63.0,Caucasian,Female,['Quadrantectomy/Segmental' 'Other'],0,Tumor 2cm <> 5cm in greatest dimension,3.0,0.0,2.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-157,90.0,167.5,67.0,0,64.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.0,0.0,3.0,Left,Differentiation cannot be assessed,Infiltrating lobular carcinoma
+000315-000-999-158,100.0,164.0,79.0,0,64.0,Caucasian,Female,['Quadrantectomy/Segmental'],1,Tumor 2cm <> 5cm in greatest dimension,3.6,0.0,4.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-159,100.0,154.0,95.3,0,47.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.7,0.0,5.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-160,90.0,147.0,59.0,0,69.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,1.0,14.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-161,100.0,160.0,80.0,0,50.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,4.0,1.0,11.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-162,100.0,162.0,58.4,0,42.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.2,0.0,2.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-163,100.0,163.0,63.2,1,61.0,Caucasian,Female,['Mastectomy'],2,Tumor 2cm <> 5cm in greatest dimension,2.2,1.0,4.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-164,100.0,175.0,91.0,0,40.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.1,0.0,26.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-165,100.0,169.0,75.5,0,49.0,Caucasian,Female,['Lumpectomy' 'Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.0,1.0,1.0,Left,Well differentiated,Infiltrating ductal carcinoma
+000315-000-999-166,100.0,165.0,61.6,0,51.0,Caucasian,Female,['Quadrantectomy/Segmental' 'Mastectomy' 'Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.6,1.0,2.0,Right,Moderately differentiated,Infiltrating lobular carcinoma
+000315-000-999-167,90.0,161.0,75.0,0,41.0,Caucasian,Female,['Lumpectomy' 'Mastectomy'],0,Tumor >5cm in its greatest dimension,6.5,1.0,11.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-168,100.0,170.0,54.3,0,35.0,Caucasian,Female,['Other' 'Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.0,0.0,5.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-169,100.0,151.0,66.4,0,39.0,Caucasian,Female,['Other'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,0.0,4.0,Right,Moderately differentiated,Infiltrating lobular carcinoma
+000315-000-999-170,100.0,153.0,51.4,0,46.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.5,0.0,1.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-171,100.0,167.0,90.0,0,60.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,2.4,0.0,1.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-172,100.0,165.0,75.0,0,45.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.2,1.0,4.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-173,100.0,175.0,70.0,0,40.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.4,0.0,4.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-174,100.0,165.0,77.0,0,45.0,Black,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,2.0,1.0,2.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-175,100.0,159.0,58.0,0,48.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.8,0.0,3.0,Right,Moderately differentiated,Infiltrating lobular carcinoma
+000315-000-999-176,100.0,163.0,66.0,0,62.0,Caucasian,Female,['Mastectomy'],0,Tumor >5cm in its greatest dimension,9.0,0.0,6.0,Left,Moderately differentiated,Other
+000315-000-999-178,100.0,175.0,84.0,0,44.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.8,0.0,3.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-179,100.0,160.0,60.0,0,66.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.0,0.0,20.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-180,100.0,165.0,65.0,0,51.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.3,0.0,6.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-181,100.0,167.0,59.3,0,37.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,4.0,0.0,7.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-182,100.0,164.0,63.0,0,69.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,0.9,1.0,1.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-183,90.0,169.0,53.0,0,39.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,2.0,1.0,12.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-184,100.0,161.0,69.0,0,38.0,Caucasian,Female,['Other'],0,Tumor of <=2cm in its greatest dimension,1.5,0.0,10.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-185,100.0,160.0,56.0,0,47.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.7,0.0,2.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-186,100.0,170.0,66.0,0,55.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.0,1.0,1.0,Right,Well differentiated,Infiltrating ductal carcinoma
+000315-000-999-187,100.0,163.0,72.0,0,26.0,Caucasian,Female,['Lumpectomy' 'Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.0,1.0,1.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-188,90.0,170.0,95.0,0,65.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.5,0.0,5.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-189,100.0,159.0,60.0,0,43.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,2.1,0.0,1.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-190,100.0,158.0,63.0,0,51.0,Caucasian,Female,['Mastectomy'],0,Tumor >5cm in its greatest dimension,5.0,1.0,12.0,Right,Poorly differentiated / Undifferentiated,Other
+000315-000-999-191,100.0,169.0,73.0,0,44.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.5,0.0,13.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-192,100.0,162.0,67.0,0,37.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.8,1.0,2.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-193,100.0,169.0,67.0,0,60.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.8,0.0,1.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-194,100.0,167.0,90.0,0,45.0,Caucasian,Female,['Mastectomy'],1,Tumor 2cm <> 5cm in greatest dimension,5.0,0.0,13.0,Left,Poorly differentiated / Undifferentiated,Other
+000315-000-999-195,100.0,164.0,74.5,0,43.0,Caucasian,Female,['Other'],0,Tumor of <=2cm in its greatest dimension,1.2,0.0,4.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-196,100.0,160.0,57.6,0,47.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.0,0.0,1.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-197,100.0,166.0,66.0,0,45.0,Caucasian,Female,['Other'],0,Tumor of <=2cm in its greatest dimension,1.5,0.0,2.0,Left,Well differentiated,Infiltrating ductal carcinoma
+000315-000-999-198,100.0,162.0,66.0,0,46.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.1,0.0,1.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-199,100.0,164.0,76.0,0,49.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.3,0.0,3.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-200,100.0,154.0,65.0,0,62.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.2,0.0,3.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-201,100.0,152.0,75.6,0,58.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.5,1.0,5.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-202,100.0,160.0,60.0,0,39.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.3,1.0,1.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-203,100.0,158.0,89.2,0,56.0,Other,Female,['Other'],0,Tumor of <=2cm in its greatest dimension,1.5,0.0,11.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-204,100.0,159.0,77.0,0,51.0,Other,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.0,1.0,9.0,Left,Differentiation cannot be assessed,Infiltrating lobular carcinoma
+000315-000-999-205,100.0,162.0,84.1,0,43.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,1.0,5.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-206,90.0,162.0,51.0,0,33.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,4.8,0.0,10.0,Left,Poorly differentiated / Undifferentiated,Other
+000315-000-999-207,100.0,163.0,53.0,0,60.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.5,0.0,5.0,Right,Moderately differentiated,Infiltrating lobular carcinoma
+000315-000-999-208,90.0,159.0,60.0,0,44.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,5.0,0.0,7.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-209,100.0,166.0,94.0,0,30.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.6,0.0,5.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-210,100.0,164.0,86.0,0,47.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,2.1,0.0,1.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-211,100.0,156.0,70.0,0,51.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,2.0,1.0,2.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-212,100.0,172.0,60.0,0,56.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,0.0,5.0,Left,Well differentiated,Infiltrating lobular carcinoma
+000315-000-999-213,100.0,166.0,65.0,0,63.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.3,0.0,18.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-214,90.0,162.5,62.2,0,49.0,Caucasian,Female,['Lumpectomy' 'Mastectomy'],0,Primary tumor cannot be assessed,3.0,1.0,6.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-215,100.0,164.0,71.0,0,49.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,4.3,0.0,3.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-216,100.0,170.0,65.0,0,53.0,Caucasian,Female,['Lumpectomy' 'Mastectomy'],0,Tumor of <=2cm in its greatest dimension,0.8,1.0,9.0,Right,Moderately differentiated,Infiltrating lobular carcinoma
+000315-000-999-217,100.0,152.0,66.0,0,41.0,Caucasian,Female,['Mastectomy'],1,Tumor of <=2cm in its greatest dimension,2.0,1.0,3.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-218,100.0,155.0,77.0,0,40.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,0.8,1.0,3.0,Left,Differentiation cannot be assessed,Infiltrating lobular carcinoma
+000315-000-999-219,100.0,160.0,61.0,0,51.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,0.0,1.0,Left,Moderately differentiated,Infiltrating lobular carcinoma
+000315-000-999-220,100.0,164.0,93.0,0,39.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,2.4,0.0,2.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-221,100.0,165.0,61.0,0,57.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.4,0.0,1.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-222,100.0,153.0,65.0,0,63.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.7,0.0,8.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-223,100.0,159.0,49.7,0,35.0,Caucasian,Female,['Mastectomy'],1,Tumor 2cm <> 5cm in greatest dimension,4.5,0.0,22.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-224,100.0,151.0,50.0,0,50.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.6,0.0,10.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-225,100.0,165.0,77.0,0,33.0,Caucasian,Female,['Other'],1,Tumor 2cm <> 5cm in greatest dimension,3.0,0.0,2.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-226,80.0,149.0,60.0,0,62.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.2,0.0,2.0,Right,Moderately differentiated,Infiltrating lobular carcinoma
+000315-000-999-227,100.0,173.0,82.7,0,53.0,Caucasian,Female,['Lumpectomy' 'Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.0,0.0,10.0,Right,Moderately differentiated,Other
+000315-000-999-228,90.0,166.0,69.0,0,43.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.5,0.0,1.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-229,100.0,159.0,71.2,1,68.0,Caucasian,Female,['Mastectomy'],1,Tumor >5cm in its greatest dimension,5.5,0.0,9.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-230,100.0,163.0,67.0,0,29.0,Caucasian,Female,['Mastectomy'],0,Tumor >5cm in its greatest dimension,5.5,1.0,7.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-231,80.0,164.0,66.0,0,51.0,Caucasian,Female,['Quadrantectomy/Segmental' 'Mastectomy'],0,Tumor of <=2cm in its greatest dimension,0.6,1.0,2.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-232,100.0,171.0,70.7,0,59.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,4.8,0.0,11.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-233,100.0,163.0,74.0,0,50.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.5,1.0,1.0,Right,Differentiation cannot be assessed,Infiltrating lobular carcinoma
+000315-000-999-234,100.0,155.0,79.0,0,48.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.0,0.0,17.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-235,100.0,165.0,98.0,1,48.0,Caucasian,Female,['Quadrantectomy/Segmental'],1,Tumor 2cm <> 5cm in greatest dimension,4.5,0.0,3.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-236,90.0,170.0,108.5,0,52.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.0,1.0,1.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-237,100.0,175.0,81.0,0,66.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.2,0.0,1.0,Left,Moderately differentiated,Infiltrating lobular carcinoma
+000315-000-999-238,100.0,167.0,59.0,0,38.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,0.6,1.0,4.0,Right,Well differentiated,Infiltrating ductal carcinoma
+000315-000-999-239,100.0,167.0,67.3,0,48.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.6,0.0,7.0,.,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-240,100.0,162.0,53.0,0,56.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.2,0.0,7.0,Left,Poorly differentiated / Undifferentiated,Other
+000315-000-999-241,100.0,175.0,69.0,0,40.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.1,0.0,2.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-242,100.0,160.0,68.0,0,31.0,Caucasian,Female,['Mastectomy'],0,Tumor >5cm in its greatest dimension,12.0,1.0,6.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-243,100.0,161.0,65.0,0,49.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.4,0.0,5.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-244,100.0,158.0,57.0,0,51.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.3,0.0,3.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-245,100.0,166.0,57.7,0,38.0,Caucasian,Female,['Mastectomy'],0,Tumor >5cm in its greatest dimension,6.0,1.0,2.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-246,100.0,163.0,51.0,0,54.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.9,1.0,7.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-247,100.0,161.0,71.0,0,61.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.7,0.0,4.0,Right,Well differentiated,Infiltrating ductal carcinoma
+000315-000-999-248,100.0,165.0,75.0,0,47.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,1.0,4.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-249,100.0,165.0,64.0,0,64.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.0,0.0,10.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-250,100.0,170.0,65.0,0,47.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,0.8,1.0,4.0,Left,Well differentiated,Infiltrating ductal carcinoma
+000315-000-999-251,100.0,165.0,66.0,0,44.0,Caucasian,Female,['Other'],0,Tumor of <=2cm in its greatest dimension,1.5,1.0,5.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-252,100.0,156.0,63.0,0,49.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.5,0.0,17.0,Left,Well differentiated,Infiltrating lobular carcinoma
+000315-000-999-253,90.0,155.0,90.3,0,60.0,Other,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,5.0,1.0,6.0,Right,Well differentiated,Infiltrating lobular carcinoma
+000315-000-999-254,100.0,167.0,65.5,0,39.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.5,0.0,2.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-255,100.0,155.0,69.0,0,54.0,Hispanic,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.0,0.0,2.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-256,100.0,163.0,86.0,0,51.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.3,1.0,12.0,Right,Differentiation cannot be assessed,Infiltrating lobular carcinoma
+000315-000-999-257,100.0,167.0,70.0,0,36.0,Caucasian,Female,['Lumpectomy' 'Mastectomy' 'Quadrantectomy/Segmental'],0,,,,,,,
+000315-000-999-258,100.0,170.0,68.0,0,52.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.8,0.0,1.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-259,100.0,169.0,77.0,0,67.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.9,0.0,3.0,Left,Moderately differentiated,Infiltrating lobular carcinoma
+000315-000-999-260,100.0,170.0,67.0,0,34.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,2.0,1.0,2.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-261,100.0,150.0,57.0,0,49.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,2.0,1.0,3.0,Right,Well differentiated,Infiltrating ductal carcinoma
+000315-000-999-262,100.0,157.0,64.0,0,64.0,Caucasian,Female,['Quadrantectomy/Segmental'],1,Tumor >5cm in its greatest dimension,6.0,0.0,5.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-263,100.0,145.0,61.9,0,66.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,4.7,0.0,22.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-264,100.0,169.0,110.0,0,51.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,1.0,3.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-265,100.0,162.0,111.0,0,51.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.0,0.0,14.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-266,80.0,160.0,67.5,0,66.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.8,0.0,3.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-267,100.0,164.0,67.0,0,55.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.2,1.0,2.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-268,100.0,173.0,68.0,0,55.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.3,0.0,1.0,Left,Moderately differentiated,Infiltrating lobular carcinoma
+000315-000-999-269,100.0,172.0,67.0,0,53.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.5,0.0,1.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-270,100.0,164.0,60.0,0,49.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.2,0.0,3.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-271,100.0,147.0,53.0,0,61.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.5,0.0,1.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-272,100.0,173.0,78.0,0,30.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,4.0,1.0,10.0,Left,Well differentiated,Infiltrating ductal carcinoma
+000315-000-999-273,100.0,158.0,59.3,0,40.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.0,0.0,7.0,Right,Well differentiated,Infiltrating ductal carcinoma
+000315-000-999-274,100.0,162.0,68.3,0,62.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,4.0,0.0,8.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-275,100.0,163.0,55.0,0,33.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.7,1.0,2.0,Right,Well differentiated,Infiltrating ductal carcinoma
+000315-000-999-276,100.0,160.0,50.0,0,43.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.5,0.0,14.0,Left,Well differentiated,Other
+000315-000-999-277,100.0,152.0,81.2,0,46.0,Caucasian,Female,['Mastectomy'],0,Tumor >5cm in its greatest dimension,5.7,0.0,1.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-278,100.0,163.0,61.3,0,39.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,3.3,0.0,3.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-279,100.0,154.0,62.0,0,56.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,2.1,0.0,1.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-280,100.0,160.0,59.0,0,48.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,4.0,0.0,14.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-281,100.0,163.0,64.5,0,45.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.2,1.0,10.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-282,100.0,169.0,63.0,0,46.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,4.0,0.0,17.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-283,90.0,156.0,76.5,0,51.0,Caucasian,Female,['Lumpectomy' 'Other'],0,Tumor of <=2cm in its greatest dimension,1.7,0.0,1.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-284,80.0,150.0,77.0,0,56.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,0.8,0.0,5.0,Right,Moderately differentiated,Infiltrating lobular carcinoma
+000315-000-999-285,80.0,172.0,89.0,0,44.0,Caucasian,Female,['Other'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,0.0,2.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-286,100.0,162.0,90.0,0,42.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.5,0.0,4.0,Left,Well differentiated,Infiltrating ductal carcinoma
+000315-000-999-287,90.0,162.0,59.9,0,33.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.4,0.0,9.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-288,100.0,164.0,56.0,0,61.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.5,0.0,1.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-289,100.0,160.0,50.0,0,51.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,0.0,3.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-290,100.0,148.0,61.5,0,61.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.2,0.0,1.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-291,90.0,156.0,51.0,0,40.0,Caucasian,Female,['Lumpectomy' 'Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.2,0.0,2.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-292,100.0,170.0,68.0,0,32.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,4.0,0.0,15.0,Left,Differentiation cannot be assessed,Infiltrating ductal carcinoma
+000315-000-999-293,100.0,172.0,70.0,0,45.0,Caucasian,Female,['Mastectomy'],0,Tumor >5cm in its greatest dimension,5.3,0.0,4.0,Right,Moderately differentiated,Infiltrating lobular carcinoma
+000315-000-999-294,100.0,165.0,96.0,0,58.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.3,0.0,2.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-295,100.0,163.0,64.0,0,48.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.7,0.0,6.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-296,100.0,152.0,62.0,0,36.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.6,0.0,1.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-297,100.0,175.0,63.0,0,34.0,Caucasian,Female,['Lumpectomy' 'Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.5,0.0,1.0,Left,Well differentiated,Infiltrating ductal carcinoma
+000315-000-999-298,100.0,165.0,57.5,0,38.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.5,0.0,1.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-299,100.0,156.0,68.0,0,52.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.2,1.0,10.0,Left,Moderately differentiated,Other
+000315-000-999-300,100.0,170.0,64.0,0,47.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.2,0.0,4.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-301,100.0,151.0,71.6,0,64.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.7,0.0,3.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-302,100.0,160.0,62.0,0,50.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.2,0.0,2.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-303,100.0,168.0,76.0,0,46.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,3.0,0.0,5.0,Right,Poorly differentiated / Undifferentiated,Other
+000315-000-999-304,100.0,165.0,78.0,0,56.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.3,0.0,3.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-305,100.0,159.0,53.0,0,45.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.9,0.0,4.0,Right,Poorly differentiated / Undifferentiated,Other
+000315-000-999-306,100.0,165.0,76.0,0,48.0,Caucasian,Female,['Lumpectomy' 'Other'],0,Tumor of <=2cm in its greatest dimension,1.3,0.0,1.0,Right,Poorly differentiated / Undifferentiated,Other
+000315-000-999-307,90.0,151.0,61.5,0,51.0,Caucasian,Female,['Mastectomy' 'Other'],0,Tumor 2cm <> 5cm in greatest dimension,3.0,1.0,4.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-308,100.0,159.0,60.0,0,41.0,Caucasian,Female,['Lumpectomy' 'Mastectomy' 'Other'],0,Tumor 2cm <> 5cm in greatest dimension,4.2,1.0,3.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-309,100.0,154.0,93.0,0,45.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.2,0.0,4.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-310,100.0,158.0,66.4,0,43.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,0.0,8.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-311,100.0,166.0,64.0,0,52.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,3.5,0.0,9.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-313,100.0,160.0,62.0,0,40.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.0,0.0,4.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-314,100.0,172.0,98.0,0,59.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.3,0.0,3.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-315,100.0,167.0,60.0,0,49.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.0,0.0,2.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-316,100.0,176.0,97.0,0,52.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,3.0,0.0,1.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-317,90.0,157.0,54.5,0,42.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.7,1.0,2.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-318,90.0,165.0,59.0,0,51.0,Caucasian,Female,['Lumpectomy' 'Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.2,1.0,3.0,Left,Moderately differentiated,Infiltrating lobular carcinoma
+000315-000-999-319,100.0,164.0,64.0,0,45.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,2.1,0.0,1.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-320,100.0,159.0,68.0,0,51.0,Caucasian,Female,['Lumpectomy' 'Mastectomy'],0,Tumor >5cm in its greatest dimension,6.0,0.0,1.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-321,90.0,157.0,60.0,0,49.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,4.0,0.0,26.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-322,100.0,164.0,86.0,0,59.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.4,0.0,11.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-323,100.0,162.0,65.0,0,49.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.2,0.0,1.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-324,100.0,165.0,62.0,0,39.0,Caucasian,Female,['Mastectomy' 'Other'],0,Tumor 2cm <> 5cm in greatest dimension,2.8,1.0,4.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-325,100.0,150.0,60.0,0,40.0,Hispanic,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.7,0.0,1.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-326,100.0,147.0,52.0,0,45.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.3,0.0,3.0,Left,Well differentiated,Infiltrating ductal carcinoma
+000315-000-999-327,90.0,167.0,63.0,0,59.0,Caucasian,Female,['Mastectomy' 'Other'],0,Tumor 2cm <> 5cm in greatest dimension,2.7,1.0,1.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-328,80.0,154.0,54.0,0,54.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,0.6,0.0,3.0,Right,Moderately differentiated,Infiltrating lobular carcinoma
+000315-000-999-329,100.0,160.0,76.5,0,52.0,Caucasian,Female,['Lumpectomy' 'Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.2,0.0,27.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-330,90.0,157.0,58.0,0,34.0,Other,Female,['Lumpectomy'],1,Tumor 2cm <> 5cm in greatest dimension,4.3,0.0,6.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-331,100.0,177.0,82.0,0,32.0,Caucasian,Female,['Mastectomy'],0,Tumor >5cm in its greatest dimension,6.0,0.0,3.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-333,100.0,172.0,71.5,0,50.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.5,0.0,2.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-334,90.0,162.0,74.5,0,54.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.4,0.0,7.0,Right,Poorly differentiated / Undifferentiated,Infiltrating lobular carcinoma
+000315-000-999-335,100.0,166.0,96.0,0,62.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,0.8,0.0,1.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-336,90.0,151.0,58.0,0,44.0,Caucasian,Female,['Quadrantectomy/Segmental' 'Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,4.0,0.0,1.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-337,100.0,165.0,63.0,0,37.0,Caucasian,Female,['Quadrantectomy/Segmental'],1,Tumor of <=2cm in its greatest dimension,1.7,0.0,7.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-338,100.0,159.0,48.0,0,42.0,Caucasian,Female,['Lumpectomy' 'Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,1.0,13.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-339,100.0,163.0,58.0,0,42.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.2,0.0,1.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-340,100.0,160.5,70.0,1,29.0,Caucasian,Female,['Lumpectomy' 'Quadrantectomy/Segmental' 'Mastectomy'],1,Tumor >5cm in its greatest dimension,5.3,0.0,3.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-341,90.0,160.0,58.0,0,48.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.3,0.0,5.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-342,90.0,163.0,70.0,0,33.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,0.0,1.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-343,100.0,170.0,60.0,0,41.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.8,0.0,1.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-344,100.0,166.0,85.0,0,38.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,5.0,1.0,8.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-345,100.0,155.0,60.0,0,32.0,Caucasian,Female,['Other'],1,Tumor 2cm <> 5cm in greatest dimension,2.2,1.0,4.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-346,90.0,156.0,75.2,0,34.0,Oriental,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.8,0.0,1.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-347,90.0,170.0,73.0,0,43.0,Caucasian,Female,['Lumpectomy' 'Other'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,0.0,2.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-348,100.0,167.0,54.0,0,43.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,2.0,1.0,2.0,Right,Differentiation cannot be assessed,Infiltrating lobular carcinoma
+000315-000-999-349,100.0,173.0,60.0,0,44.0,Caucasian,Female,['Other' 'Mastectomy'],1,Tumor 2cm <> 5cm in greatest dimension,2.2,1.0,5.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-351,100.0,163.0,68.0,0,57.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,0.0,1.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-352,100.0,167.0,75.0,0,52.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.9,0.0,21.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-353,100.0,161.0,57.0,0,51.0,Oriental,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.2,0.0,3.0,Right,Well differentiated,Infiltrating ductal carcinoma
+000315-000-999-354,100.0,159.0,85.0,0,54.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.5,0.0,13.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-355,100.0,156.0,66.0,1,52.0,Caucasian,Female,['Lumpectomy' 'Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.1,1.0,6.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-356,100.0,172.0,66.0,0,51.0,Caucasian,Female,['Lumpectomy' 'Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,0.0,1.0,Right,Well differentiated,Infiltrating ductal carcinoma
+000315-000-999-357,100.0,165.0,65.0,0,53.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,2.0,1.0,3.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-358,100.0,164.0,53.0,0,42.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.5,0.0,9.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-359,100.0,167.0,75.0,0,67.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,3.0,0.0,3.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-360,100.0,153.0,55.0,0,48.0,Caucasian,Female,['Lumpectomy' 'Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.6,1.0,3.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-361,100.0,159.0,52.8,0,42.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.4,0.0,1.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-362,90.0,155.0,78.0,0,58.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.0,0.0,13.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-363,90.0,154.0,68.7,0,62.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,2.0,0.0,1.0,Right,Poorly differentiated / Undifferentiated,Other
+000315-000-999-364,100.0,165.0,75.0,0,44.0,Other,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.0,1.0,1.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-365,100.0,167.0,94.0,0,26.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.0,0.0,3.0,Left,Moderately differentiated,Infiltrating lobular carcinoma
+000315-000-999-366,100.0,172.0,67.0,0,49.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.2,0.0,1.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-367,100.0,165.0,70.0,0,54.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.2,0.0,8.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-368,100.0,159.0,66.0,0,49.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,0.0,3.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-369,100.0,152.0,60.0,0,66.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.2,0.0,1.0,Right,Differentiation cannot be assessed,Infiltrating ductal carcinoma
+000315-000-999-370,100.0,161.0,61.7,0,46.0,Caucasian,Female,['Lumpectomy' 'Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.8,0.0,3.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-371,100.0,150.0,71.4,0,50.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.2,1.0,13.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-372,100.0,163.0,74.0,0,69.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.5,0.0,18.0,Left,Poorly differentiated / Undifferentiated,Infiltrating lobular carcinoma
+000315-000-999-373,100.0,161.0,69.0,0,66.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.7,0.0,1.0,Right,Well differentiated,Infiltrating ductal carcinoma
+000315-000-999-374,100.0,170.0,92.4,0,44.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,5.0,1.0,7.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-375,100.0,177.0,71.0,0,68.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,2.0,1.0,4.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-376,90.0,159.0,50.0,0,54.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.0,0.0,7.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-377,100.0,161.0,73.1,0,55.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.8,0.0,3.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-379,100.0,159.0,85.5,0,60.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,0.6,1.0,12.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-380,100.0,174.0,75.8,0,46.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,2.2,0.0,2.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-381,100.0,165.0,66.0,0,34.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,2.0,1.0,6.0,Right,Differentiation cannot be assessed,Infiltrating ductal carcinoma
+000315-000-999-382,100.0,155.0,64.0,0,35.0,Other,Female,['Other'],0,Tumor 2cm <> 5cm in greatest dimension,2.6,0.0,2.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-383,100.0,156.0,75.0,0,46.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,3.0,0.0,1.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-384,100.0,168.0,67.0,0,39.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.7,1.0,10.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-385,100.0,164.0,75.4,0,46.0,Caucasian,Female,['Lumpectomy' 'Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.6,1.0,6.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-386,100.0,162.0,90.5,0,34.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.9,1.0,3.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-387,100.0,161.0,52.0,0,64.0,Caucasian,Female,['Mastectomy'],1,Tumor 2cm <> 5cm in greatest dimension,3.5,0.0,10.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-388,100.0,166.0,72.4,0,56.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.5,0.0,1.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-389,100.0,159.0,56.9,0,49.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.8,1.0,14.0,Left,Well differentiated,Infiltrating lobular carcinoma
+000315-000-999-390,90.0,155.0,70.0,0,46.0,Caucasian,Female,['Mastectomy'],0,Tumor >5cm in its greatest dimension,7.0,1.0,6.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-391,90.0,158.0,66.0,0,65.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,2.6,0.0,3.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-392,100.0,158.0,78.0,0,54.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,1.0,1.0,Left,Well differentiated,Infiltrating ductal carcinoma
+000315-000-999-393,100.0,160.0,61.0,0,45.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,2.4,0.0,4.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-394,100.0,160.0,55.3,0,37.0,Caucasian,Female,['Lumpectomy' 'Other'],0,Tumor of <=2cm in its greatest dimension,0.8,1.0,2.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-395,100.0,170.0,60.5,0,49.0,Caucasian,Female,['Lumpectomy' 'Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.9,1.0,15.0,Left,Moderately differentiated,Other
+000315-000-999-396,100.0,158.0,76.0,0,49.0,Caucasian,Female,['Mastectomy'],0,Tumor >5cm in its greatest dimension,6.0,0.0,17.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-397,100.0,171.0,67.0,0,59.0,Caucasian,Female,['Mastectomy'],0,Tumor >5cm in its greatest dimension,5.0,1.0,2.0,Left,Moderately differentiated,Infiltrating lobular carcinoma
+000315-000-999-398,100.0,163.0,55.5,0,43.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.6,0.0,2.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-399,100.0,170.0,90.0,0,57.0,Caucasian,Female,['Quadrantectomy/Segmental' 'Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,0.0,1.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-400,100.0,178.0,93.0,0,43.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.3,0.0,1.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-401,100.0,167.0,70.0,0,44.0,Caucasian,Female,['Mastectomy'],0,Tumor >5cm in its greatest dimension,6.3,1.0,10.0,Right,Well differentiated,Other
+000315-000-999-402,90.0,165.0,77.0,0,46.0,Caucasian,Female,['Mastectomy'],0,Tumor >5cm in its greatest dimension,5.0,0.0,10.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-403,100.0,160.0,69.0,0,59.0,Other,Female,['Lumpectomy' 'Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.5,1.0,2.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-404,100.0,160.0,75.3,0,62.0,Caucasian,Female,['Lumpectomy' 'Other'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,0.0,3.0,Left,Differentiation cannot be assessed,Infiltrating lobular carcinoma
+000315-000-999-405,100.0,155.0,65.0,0,56.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.6,0.0,8.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-406,100.0,170.0,84.0,1,43.0,Caucasian,Female,['Lumpectomy' 'Mastectomy'],1,Tumor >5cm in its greatest dimension,13.4,0.0,19.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-407,100.0,165.0,62.0,0,47.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.5,0.0,5.0,Left,Well differentiated,Infiltrating ductal carcinoma
+000315-000-999-408,90.0,159.0,76.0,0,62.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,2.0,0.0,4.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-409,100.0,155.0,62.0,0,44.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.8,0.0,2.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-410,100.0,156.0,84.0,0,59.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,4.0,0.0,1.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-411,100.0,155.0,77.0,0,54.0,Hispanic,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.6,0.0,26.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-412,100.0,168.0,111.0,0,51.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.0,0.0,8.0,Left,Differentiation cannot be assessed,Infiltrating ductal carcinoma
+000315-000-999-413,100.0,162.0,95.0,0,59.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,4.0,0.0,1.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-414,90.0,169.0,56.0,0,34.0,Caucasian,Female,['Lumpectomy' 'Other'],0,Tumor of <=2cm in its greatest dimension,1.9,0.0,2.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-415,90.0,163.0,53.0,0,50.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.4,0.0,7.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-416,100.0,161.0,68.0,0,51.0,Caucasian,Female,['Quadrantectomy/Segmental' 'Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.2,0.0,3.0,Left,Moderately differentiated,Infiltrating lobular carcinoma
+000315-000-999-417,100.0,170.0,66.0,0,32.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.3,0.0,3.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-418,90.0,172.0,77.5,0,55.0,Other,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.8,0.0,1.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-419,100.0,156.0,64.0,0,48.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.8,0.0,1.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-420,90.0,175.0,69.0,0,63.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.3,1.0,3.0,Right,Moderately differentiated,Other
+000315-000-999-421,100.0,150.0,78.0,0,57.0,Caucasian,Female,['Mastectomy'],1,Tumor 2cm <> 5cm in greatest dimension,3.5,0.0,7.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-422,100.0,160.0,68.0,0,66.0,Caucasian,Female,['Lumpectomy' 'Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.6,1.0,1.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-423,90.0,162.0,88.2,0,63.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,0.0,1.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-424,100.0,162.0,62.2,0,41.0,Caucasian,Female,['Mastectomy' 'Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.0,1.0,1.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-425,100.0,149.0,65.0,0,52.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.8,0.0,1.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-426,100.0,152.0,65.1,0,64.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,4.0,0.0,7.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-427,100.0,162.0,68.0,0,55.0,Caucasian,Female,['Mastectomy'],1,Tumor 2cm <> 5cm in greatest dimension,3.5,0.0,7.0,Left,Differentiation cannot be assessed,Infiltrating lobular carcinoma
+000315-000-999-428,80.0,153.0,95.0,0,51.0,Caucasian,Female,['Other'],0,Tumor 2cm <> 5cm in greatest dimension,3.6,0.0,3.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-429,90.0,160.0,57.5,0,53.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.0,0.0,2.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-430,90.0,164.0,75.0,0,58.0,Caucasian,Female,['Lumpectomy' 'Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,0.0,7.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-431,100.0,171.0,>= 125,0,63.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.7,0.0,2.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-432,100.0,158.0,80.0,0,53.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.5,0.0,1.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-433,100.0,166.0,66.8,0,48.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,1.0,3.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-434,90.0,159.0,73.0,0,53.0,Caucasian,Female,['Lumpectomy' 'Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.6,0.0,3.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-435,100.0,152.0,77.0,0,65.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,1.0,3.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-436,100.0,155.0,60.0,0,60.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.7,0.0,1.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-437,100.0,160.0,70.0,0,43.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,0.0,3.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-438,100.0,158.0,49.0,0,34.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.8,0.0,1.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-439,100.0,162.0,92.0,0,55.0,Caucasian,Female,['Lumpectomy'],1,Tumor 2cm <> 5cm in greatest dimension,2.4,0.0,6.0,Right,Poorly differentiated / Undifferentiated,Other
+000315-000-999-440,100.0,164.0,71.0,0,51.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.5,0.0,11.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-441,100.0,168.0,66.0,0,29.0,Caucasian,Female,['Quadrantectomy/Segmental' 'Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.1,0.0,1.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-442,100.0,156.0,53.0,0,43.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.0,0.0,2.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-443,90.0,173.0,87.0,0,54.0,Caucasian,Female,['Mastectomy' 'Other'],1,Tumor 2cm <> 5cm in greatest dimension,4.0,0.0,14.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-444,90.0,163.0,63.1,0,41.0,Caucasian,Female,['Mastectomy'],0,Tumor >5cm in its greatest dimension,8.0,0.0,10.0,Right,Moderately differentiated,Infiltrating lobular carcinoma
+000315-000-999-445,100.0,166.0,56.0,0,58.0,Caucasian,Female,['Lumpectomy' 'Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.7,0.0,13.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-446,100.0,168.0,91.0,0,48.0,Caucasian,Female,['Mastectomy' 'Other'],1,Tumor of <=2cm in its greatest dimension,1.4,0.0,5.0,Left,Moderately differentiated,Other
+000315-000-999-447,100.0,167.0,59.0,0,64.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,2.0,0.0,6.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-448,100.0,153.0,68.7,0,61.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,2.0,1.0,2.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-449,100.0,162.0,70.0,0,45.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,0.0,6.0,Right,Moderately differentiated,Infiltrating lobular carcinoma
+000315-000-999-450,100.0,160.0,60.0,0,41.0,Caucasian,Female,['Lumpectomy' 'Other'],0,Tumor of <=2cm in its greatest dimension,1.5,0.0,1.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-451,100.0,170.0,105.4,0,49.0,Caucasian,Female,['Mastectomy' 'Other'],0,Tumor >5cm in its greatest dimension,6.5,0.0,16.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-452,100.0,168.0,65.0,0,59.0,Caucasian,Female,['Lumpectomy'],1,Tumor 2cm <> 5cm in greatest dimension,2.1,0.0,2.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-453,100.0,162.0,63.0,0,60.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.1,1.0,3.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-454,100.0,174.0,74.5,0,32.0,Caucasian,Female,['Other'],1,Tumor 2cm <> 5cm in greatest dimension,3.2,1.0,4.0,Left,Moderately differentiated,Infiltrating lobular carcinoma
+000315-000-999-455,100.0,162.0,67.0,0,42.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.2,0.0,1.0,Right,Moderately differentiated,Other
+000315-000-999-456,90.0,163.0,77.5,0,55.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,4.3,0.0,7.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-457,100.0,156.0,76.3,0,50.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,4.0,0.0,16.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-458,100.0,160.0,69.0,0,68.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.2,1.0,9.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-459,100.0,180.0,70.0,0,49.0,Caucasian,Female,['Mastectomy'],1,Tumor 2cm <> 5cm in greatest dimension,4.2,0.0,29.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-460,90.0,161.0,86.5,0,52.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.0,0.0,7.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-461,100.0,165.0,74.0,0,55.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.2,0.0,3.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-462,100.0,163.0,62.0,0,58.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.2,0.0,2.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-463,100.0,153.0,66.0,0,50.0,Other,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.8,0.0,3.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-464,100.0,162.0,88.5,0,52.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.8,0.0,3.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-465,100.0,168.0,60.0,0,39.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.3,1.0,4.0,Right,Moderately differentiated,Infiltrating lobular carcinoma
+000315-000-999-466,100.0,155.0,50.0,0,58.0,Caucasian,Female,['Lumpectomy' 'Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.4,0.0,2.0,Left,Moderately differentiated,Infiltrating lobular carcinoma
+000315-000-999-467,100.0,157.0,80.5,0,50.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.4,0.0,1.0,Right,Well differentiated,Infiltrating ductal carcinoma
+000315-000-999-468,100.0,164.0,90.0,0,33.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,5.0,0.0,2.0,Left,Poorly differentiated / Undifferentiated,Other
+000315-000-999-469,100.0,167.0,73.0,0,41.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.7,0.0,4.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-471,90.0,168.0,100.0,0,31.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,0.0,1.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-472,100.0,163.0,61.5,0,50.0,Caucasian,Female,['Mastectomy'],1,Tumor 2cm <> 5cm in greatest dimension,3.2,0.0,4.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-473,100.0,156.0,76.0,0,51.0,Caucasian,Female,['Quadrantectomy/Segmental' 'Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.1,1.0,2.0,Left,Poorly differentiated / Undifferentiated,Other
+000315-000-999-474,100.0,164.0,71.0,0,38.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.8,1.0,1.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-475,100.0,157.0,48.0,0,43.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,2.0,0.0,2.0,Right,Well differentiated,Infiltrating ductal carcinoma
+000315-000-999-476,100.0,155.0,54.0,0,45.0,Caucasian,Female,['Lumpectomy' 'Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,4.0,1.0,5.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-477,100.0,152.0,57.8,0,62.0,Caucasian,Female,['Mastectomy'],0,Tumor >5cm in its greatest dimension,6.5,1.0,12.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-478,100.0,156.0,55.0,0,35.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,0.0,5.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-479,100.0,150.0,53.0,0,34.0,Other,Female,['Lumpectomy' 'Mastectomy'],0,Tumor of <=2cm in its greatest dimension,2.0,1.0,2.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-480,90.0,156.0,75.0,0,41.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.6,0.0,2.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-481,100.0,169.0,61.1,0,54.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.9,0.0,3.0,Right,Moderately differentiated,Infiltrating lobular carcinoma
+000315-000-999-482,100.0,176.0,81.0,0,58.0,Caucasian,Female,['Mastectomy'],2,Tumor 2cm <> 5cm in greatest dimension,5.0,0.0,4.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-483,100.0,167.0,65.5,0,46.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.5,0.0,2.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-484,100.0,160.0,60.0,0,52.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,2.8,0.0,4.0,Left,Moderately differentiated,Other
+000315-000-999-486,100.0,161.0,73.8,0,52.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,4.3,0.0,1.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-487,100.0,162.0,60.0,0,46.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,4.5,1.0,2.0,Right,Well differentiated,Infiltrating ductal carcinoma
+000315-000-999-488,100.0,160.0,69.2,0,56.0,Caucasian,Female,['Mastectomy' 'Other'],0,Tumor of <=2cm in its greatest dimension,0.6,0.0,3.0,Right,Well differentiated,Other
+000315-000-999-489,100.0,160.0,57.0,0,47.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.0,1.0,2.0,Left,Moderately differentiated,Infiltrating lobular carcinoma
+000315-000-999-490,100.0,167.0,74.0,0,50.0,Caucasian,Female,['Lumpectomy' 'Other'],0,Tumor 2cm <> 5cm in greatest dimension,3.5,0.0,1.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-491,100.0,155.0,60.0,0,59.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.7,0.0,5.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-492,100.0,166.0,90.0,0,51.0,Caucasian,Female,['Mastectomy'],0,Tumor >5cm in its greatest dimension,7.4,0.0,2.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-493,100.0,165.0,81.6,0,64.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,0.0,2.0,Left,Well differentiated,Infiltrating ductal carcinoma
+000315-000-999-494,90.0,172.0,85.4,0,47.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.0,0.0,10.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-495,90.0,168.0,103.0,0,51.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,2.0,0.0,1.0,Left,Poorly differentiated / Undifferentiated,Other
+000315-000-999-496,90.0,158.0,48.0,0,30.0,Caucasian,Female,['Mastectomy'],1,Tumor 2cm <> 5cm in greatest dimension,2.5,1.0,12.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-497,100.0,168.0,70.0,0,49.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.8,0.0,4.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-498,100.0,157.0,62.0,0,39.0,Caucasian,Female,['Lumpectomy' 'Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,2.0,1.0,3.0,Left,Poorly differentiated / Undifferentiated,Other
+000315-000-999-499,100.0,162.0,80.0,0,65.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.7,0.0,2.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-500,100.0,155.0,65.0,0,31.0,Caucasian,Female,['Other'],0,Tumor of <=2cm in its greatest dimension,1.3,0.0,1.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-501,100.0,164.0,66.5,0,56.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,2.0,1.0,4.0,Right,Moderately differentiated,Other
+000315-000-999-502,100.0,158.0,63.0,0,50.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.8,0.0,8.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-503,100.0,156.0,69.0,0,48.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,0.6,0.0,7.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-504,90.0,167.0,90.0,0,43.0,Caucasian,Female,['Mastectomy'],0,Tumor >5cm in its greatest dimension,5.0,0.0,12.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-505,100.0,163.0,53.0,0,46.0,Caucasian,Female,['Mastectomy' 'Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.3,1.0,15.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-506,100.0,151.0,60.0,0,62.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,0.8,0.0,1.0,Right,Differentiation cannot be assessed,Infiltrating lobular carcinoma
+000315-000-999-507,100.0,166.0,75.0,0,41.0,Caucasian,Female,['Other'],0,Tumor of <=2cm in its greatest dimension,2.0,0.0,1.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-508,100.0,165.0,116.0,0,62.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.5,1.0,1.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-509,100.0,150.0,66.0,0,40.0,Hispanic,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.8,0.0,7.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-510,90.0,171.0,82.0,0,54.0,Caucasian,Female,['Lumpectomy' 'Other'],0,Tumor of <=2cm in its greatest dimension,1.2,1.0,5.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-511,100.0,167.0,56.0,0,38.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.8,0.0,1.0,Left,Well differentiated,Other
+000315-000-999-512,100.0,164.0,60.0,0,48.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.3,0.0,2.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-513,100.0,169.0,65.0,0,66.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.8,0.0,3.0,Left,Well differentiated,Other
+000315-000-999-514,100.0,168.0,70.0,0,54.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.2,1.0,3.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-515,100.0,166.0,68.0,0,50.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,1.0,1.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-516,100.0,170.0,67.0,0,44.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,4.5,0.0,2.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-517,100.0,150.0,49.5,0,48.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.0,0.0,4.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-518,100.0,163.0,63.0,0,48.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,0.0,1.0,Left,Differentiation cannot be assessed,Infiltrating lobular carcinoma
+000315-000-999-519,100.0,156.0,56.0,0,56.0,Caucasian,Female,['Quadrantectomy/Segmental' 'Other'],0,Tumor 2cm <> 5cm in greatest dimension,2.7,0.0,1.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-520,90.0,155.0,95.0,0,52.0,Hispanic,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.6,0.0,1.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-521,100.0,172.0,89.0,0,53.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,0.0,3.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-522,80.0,165.0,64.0,0,47.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,2.1,0.0,3.0,Left,Poorly differentiated / Undifferentiated,Other
+000315-000-999-523,100.0,164.0,104.0,0,54.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,5.0,0.0,6.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-524,100.0,166.0,62.6,0,40.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.0,0.0,3.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-525,100.0,174.0,102.9,0,38.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.4,0.0,8.0,Left,Well differentiated,Infiltrating ductal carcinoma
+000315-000-999-526,100.0,157.0,77.0,0,43.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.0,1.0,10.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-527,90.0,162.0,63.0,0,53.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.4,0.0,6.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-528,100.0,158.0,66.5,0,60.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,4.5,0.0,2.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-529,100.0,157.0,78.0,0,43.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.5,1.0,6.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-530,100.0,154.0,58.6,0,44.0,Oriental,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,3.9,0.0,7.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-531,80.0,158.0,>= 125,0,55.0,Caucasian,Female,['Lumpectomy' 'Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,4.0,0.0,3.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-532,100.0,152.0,59.0,0,49.0,Caucasian,Female,['Mastectomy'],1,Tumor of <=2cm in its greatest dimension,2.0,0.0,10.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-533,100.0,167.0,57.0,0,43.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,0.6,0.0,3.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-534,100.0,156.0,62.2,0,43.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.5,0.0,16.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-535,100.0,161.0,51.0,0,61.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.7,0.0,1.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-536,100.0,159.0,70.0,0,48.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.1,0.0,5.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-537,90.0,164.0,61.0,0,57.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,0.0,10.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-538,100.0,165.0,55.0,0,44.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.7,0.0,9.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-539,100.0,161.0,89.4,0,51.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,2.2,0.0,4.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-540,100.0,159.0,65.0,0,57.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.3,1.0,6.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-541,100.0,148.0,49.0,0,40.0,Black,Female,['Mastectomy'],0,Tumor >5cm in its greatest dimension,5.5,0.0,1.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-542,100.0,176.0,95.0,0,49.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.9,0.0,3.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-543,100.0,162.0,51.0,0,44.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.0,0.0,3.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-544,100.0,160.0,73.0,0,44.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.2,1.0,1.0,Left,Differentiation cannot be assessed,Other
+000315-000-999-545,100.0,152.0,49.0,0,42.0,Black,Female,['Other'],0,Tumor of <=2cm in its greatest dimension,2.0,0.0,1.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-546,100.0,158.0,61.0,0,63.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.8,0.0,3.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-547,100.0,153.0,63.0,0,52.0,Caucasian,Female,['Quadrantectomy/Segmental' 'Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.3,0.0,9.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-548,100.0,168.0,70.0,0,53.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,0.9,1.0,5.0,Right,Moderately differentiated,Other
+000315-000-999-549,100.0,167.0,87.5,0,43.0,Caucasian,Female,['Mastectomy'],0,Tumor >5cm in its greatest dimension,9.0,0.0,20.0,Left,Well differentiated,Infiltrating ductal carcinoma
+000315-000-999-550,100.0,168.0,73.9,0,50.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.2,0.0,3.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-551,100.0,165.0,80.0,0,43.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,4.5,0.0,1.0,Left,Well differentiated,Infiltrating ductal carcinoma
+000315-000-999-552,100.0,165.0,58.0,0,46.0,Caucasian,Female,['Lumpectomy' 'Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.5,0.0,5.0,Left,Well differentiated,Infiltrating ductal carcinoma
+000315-000-999-553,90.0,166.0,66.0,0,51.0,Caucasian,Female,['Mastectomy' 'Other'],1,Tumor of <=2cm in its greatest dimension,2.5,0.0,9.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-554,100.0,161.0,85.0,0,58.0,Caucasian,Female,['Mastectomy'],1,Tumor 2cm <> 5cm in greatest dimension,2.2,0.0,7.0,Left,Moderately differentiated,Infiltrating lobular carcinoma
+000315-000-999-555,90.0,162.0,65.5,0,45.0,Caucasian,Female,['Lumpectomy' 'Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.0,1.0,1.0,Right,Poorly differentiated / Undifferentiated,Infiltrating lobular carcinoma
+000315-000-999-556,100.0,155.0,76.5,0,50.0,Caucasian,Female,['Quadrantectomy/Segmental'],1,Tumor 2cm <> 5cm in greatest dimension,2.5,1.0,5.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-557,100.0,170.0,53.0,0,28.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,2.0,0.0,1.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-558,100.0,160.0,80.0,0,39.0,Caucasian,Female,['Mastectomy'],0,Tumor >5cm in its greatest dimension,5.5,0.0,19.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-559,100.0,157.0,71.5,0,57.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.2,0.0,2.0,Right,Moderately differentiated,Infiltrating lobular carcinoma
+000315-000-999-560,90.0,160.0,62.0,0,43.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.2,0.0,3.0,Right,Well differentiated,Infiltrating ductal carcinoma
+000315-000-999-561,100.0,176.0,81.0,0,41.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.2,1.0,4.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-562,90.0,173.0,66.2,0,37.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.5,0.0,2.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-563,100.0,166.0,60.0,0,53.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,0.6,0.0,1.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-564,100.0,170.0,64.0,0,44.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.2,0.0,4.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-565,100.0,152.0,60.0,0,56.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.3,0.0,6.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-566,100.0,158.0,56.1,0,38.0,Caucasian,Female,['Quadrantectomy/Segmental' 'Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.5,0.0,1.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-567,100.0,162.0,98.0,0,60.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,0.0,4.0,Left,Poorly differentiated / Undifferentiated,Other
+000315-000-999-568,100.0,175.0,52.0,0,44.0,Caucasian,Female,['Quadrantectomy/Segmental' 'Mastectomy'],1,Tumor of <=2cm in its greatest dimension,2.0,1.0,1.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-569,100.0,160.5,58.5,0,46.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.8,0.0,2.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-570,90.0,159.0,63.0,0,48.0,Caucasian,Female,['Other'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,0.0,11.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-571,100.0,161.0,54.0,0,44.0,Caucasian,Female,['Lumpectomy' 'Quadrantectomy/Segmental' 'Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.4,0.0,1.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-572,100.0,164.0,57.0,0,54.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.5,0.0,2.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-573,90.0,169.0,90.0,0,52.0,Caucasian,Female,['Mastectomy'],1,Tumor 2cm <> 5cm in greatest dimension,4.0,0.0,3.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-574,100.0,156.0,56.0,0,53.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,4.0,0.0,3.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-575,100.0,170.0,72.0,0,27.0,Caucasian,Female,['Mastectomy'],1,Tumor 2cm <> 5cm in greatest dimension,5.0,0.0,18.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-576,100.0,168.0,54.0,0,41.0,Caucasian,Female,['Lumpectomy' 'Other'],0,Tumor of <=2cm in its greatest dimension,1.3,0.0,1.0,Left,Differentiation cannot be assessed,Infiltrating lobular carcinoma
+000315-000-999-577,100.0,172.0,78.0,0,48.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,0.5,0.0,1.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-578,90.0,160.0,51.5,0,54.0,Caucasian,Female,['Mastectomy' 'Other'],0,Tumor 2cm <> 5cm in greatest dimension,5.0,0.0,4.0,Left,Moderately differentiated,Infiltrating lobular carcinoma
+000315-000-999-579,100.0,150.0,70.0,0,50.0,Hispanic,Female,['Mastectomy'],0,Tumor >5cm in its greatest dimension,8.0,0.0,8.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-580,100.0,152.0,72.0,0,58.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,4.0,0.0,1.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-581,100.0,170.0,88.0,0,52.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.3,0.0,4.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-582,100.0,155.0,62.0,0,58.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.7,0.0,9.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-583,100.0,165.0,82.0,0,50.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.8,0.0,2.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-584,100.0,170.0,58.0,0,46.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.0,0.0,4.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-585,100.0,165.0,65.0,0,54.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,0.8,0.0,1.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-586,90.0,168.0,70.0,0,38.0,Caucasian,Female,['Quadrantectomy/Segmental' 'Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.9,1.0,1.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-587,100.0,163.0,92.0,0,55.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,4.5,0.0,7.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-588,100.0,158.0,71.0,0,50.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.3,0.0,2.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-589,100.0,160.0,58.4,0,54.0,Caucasian,Female,['Quadrantectomy/Segmental' 'Other'],0,Tumor of <=2cm in its greatest dimension,1.6,0.0,2.0,Left,Well differentiated,Infiltrating ductal carcinoma
+000315-000-999-590,90.0,153.0,93.0,0,56.0,Other,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.0,0.0,1.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-591,100.0,161.0,69.5,0,57.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.8,0.0,3.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-592,100.0,150.0,77.5,1,50.0,Caucasian,Female,['Mastectomy'],1,Tumor 2cm <> 5cm in greatest dimension,4.0,0.0,23.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-593,100.0,164.0,62.4,0,49.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.5,0.0,1.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-594,100.0,150.0,52.0,0,42.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,5.0,0.0,21.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-595,100.0,165.0,64.0,0,35.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.3,0.0,1.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-596,90.0,163.0,47.2,0,53.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.5,0.0,23.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-597,90.0,160.0,61.0,0,65.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.6,0.0,5.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-598,100.0,174.0,65.0,0,37.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.6,1.0,3.0,Left,Moderately differentiated,Other
+000315-000-999-599,100.0,166.0,57.0,0,57.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.2,0.0,2.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-600,100.0,160.0,70.0,0,56.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,2.4,0.0,2.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-601,100.0,167.0,70.0,0,59.0,Caucasian,Female,['Lumpectomy' 'Other'],0,Tumor 2cm <> 5cm in greatest dimension,3.2,0.0,4.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-602,100.0,154.0,62.5,0,48.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.5,1.0,1.0,Left,Well differentiated,Other
+000315-000-999-603,100.0,166.0,62.5,0,45.0,Hispanic,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,4.0,0.0,21.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-604,100.0,159.0,70.5,0,60.0,Caucasian,Female,['Mastectomy' 'Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,0.0,2.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-605,100.0,163.0,60.0,0,62.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.5,0.0,8.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-606,100.0,170.0,62.0,0,42.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.0,0.0,2.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-607,100.0,146.0,75.5,0,65.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.5,0.0,1.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-608,100.0,152.0,102.0,0,36.0,Caucasian,Female,['Mastectomy'],0,Tumor >5cm in its greatest dimension,6.0,0.0,19.0,Left,Moderately differentiated,Other
+000315-000-999-609,100.0,180.0,60.0,0,65.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.0,0.0,18.0,Right,Well differentiated,Infiltrating ductal carcinoma
+000315-000-999-610,100.0,167.0,65.0,0,41.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.4,0.0,1.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-611,100.0,150.0,73.0,0,52.0,Caucasian,Female,['Quadrantectomy/Segmental' 'Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,1.0,5.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-612,100.0,169.0,62.0,0,55.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,0.8,0.0,2.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-613,100.0,164.0,66.0,0,53.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,0.0,1.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-614,100.0,162.0,67.0,0,41.0,Caucasian,Female,['Other' 'Mastectomy'],0,Tumor of <=2cm in its greatest dimension,2.0,1.0,7.0,Left,Poorly differentiated / Undifferentiated,Other
+000315-000-999-615,100.0,168.0,74.0,0,56.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.5,0.0,1.0,Right,Well differentiated,Infiltrating ductal carcinoma
+000315-000-999-616,100.0,157.0,75.5,0,46.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.2,0.0,1.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-617,90.0,167.0,84.0,0,52.0,Caucasian,Female,['Lumpectomy'],1,Tumor of <=2cm in its greatest dimension,1.2,1.0,3.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-618,100.0,167.0,60.0,0,44.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.7,1.0,12.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-619,100.0,160.0,73.3,0,55.0,Caucasian,Female,['Lumpectomy' 'Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.4,1.0,3.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-620,90.0,167.0,108.0,0,59.0,Caucasian,Female,['Lumpectomy' 'Mastectomy'],1,Tumor 2cm <> 5cm in greatest dimension,3.5,1.0,9.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-621,100.0,159.0,59.9,0,59.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,2.0,0.0,4.0,Right,Well differentiated,Other
+000315-000-999-622,100.0,166.0,56.5,0,45.0,Oriental,Female,['Lumpectomy' 'Other'],0,Tumor of <=2cm in its greatest dimension,1.6,0.0,2.0,Left,Well differentiated,Infiltrating ductal carcinoma
+000315-000-999-623,100.0,163.0,83.4,0,57.0,Caucasian,Female,['Lumpectomy' 'Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,4.2,1.0,29.0,Right,Well differentiated,Infiltrating ductal carcinoma
+000315-000-999-624,100.0,162.0,95.1,0,50.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.2,0.0,6.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-625,100.0,160.0,55.0,0,46.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.1,0.0,1.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-626,100.0,169.0,57.0,0,38.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,4.0,0.0,1.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-627,100.0,180.0,80.0,0,54.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.8,0.0,2.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-628,90.0,163.0,92.5,0,49.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.5,0.0,4.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-629,80.0,169.0,60.0,0,49.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.1,0.0,2.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-630,100.0,158.0,78.0,0,58.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.8,0.0,2.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-631,100.0,170.0,64.8,0,57.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,2.0,0.0,1.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-632,100.0,170.0,78.5,0,48.0,Caucasian,Female,['Lumpectomy' 'Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,0.0,7.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-633,100.0,156.0,58.6,0,52.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,25.0,1.0,3.0,Right,Moderately differentiated,Infiltrating lobular carcinoma
+000315-000-999-634,100.0,166.0,68.0,0,30.0,Caucasian,Female,['Mastectomy'],1,Tumor 2cm <> 5cm in greatest dimension,5.0,0.0,6.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-635,100.0,153.0,48.0,0,36.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,1.0,1.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-636,100.0,158.0,90.8,0,49.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.2,0.0,3.0,Left,Differentiation cannot be assessed,Infiltrating lobular carcinoma
+000315-000-999-637,100.0,163.0,61.0,0,43.0,Caucasian,Female,['Lumpectomy' 'Other'],0,Tumor 2cm <> 5cm in greatest dimension,2.4,0.0,1.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-638,100.0,153.0,64.0,0,53.0,Other,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.2,0.0,3.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-639,100.0,158.0,85.0,0,61.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.5,0.0,1.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-640,90.0,155.0,66.0,0,42.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.0,1.0,8.0,Right,Poorly differentiated / Undifferentiated,Infiltrating lobular carcinoma
+000315-000-999-641,100.0,160.0,50.0,0,58.0,Caucasian,Female,['Lumpectomy' 'Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.8,1.0,15.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-642,100.0,163.0,93.0,0,46.0,Caucasian,Female,['Lumpectomy' 'Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,0.0,3.0,Right,Poorly differentiated / Undifferentiated,Infiltrating lobular carcinoma
+000315-000-999-643,100.0,165.0,86.0,0,51.0,Caucasian,Female,['Mastectomy'],0,Tumor >5cm in its greatest dimension,5.5,0.0,4.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-644,100.0,169.0,93.3,0,44.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,0.0,3.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-645,100.0,158.0,75.0,0,59.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,2.0,1.0,2.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-646,100.0,157.5,55.5,0,58.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.7,0.0,4.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-647,100.0,160.0,61.0,0,46.0,Caucasian,Female,['Mastectomy' 'Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.8,0.0,1.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-648,100.0,153.0,68.0,0,53.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.7,0.0,2.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-649,100.0,168.0,65.0,1,47.0,Caucasian,Female,['Lumpectomy'],1,Tumor of <=2cm in its greatest dimension,1.5,0.0,12.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-650,100.0,158.0,60.0,0,40.0,Oriental,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,2.0,0.0,1.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-651,100.0,161.0,55.0,0,51.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,2.0,1.0,2.0,Left,Well differentiated,Infiltrating ductal carcinoma
+000315-000-999-652,100.0,177.0,98.0,0,57.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,4.0,0.0,1.0,Right,Well differentiated,Infiltrating lobular carcinoma
+000315-000-999-653,90.0,159.0,67.5,0,39.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,0.0,9.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-654,100.0,150.0,58.0,0,59.0,Caucasian,Female,['Lumpectomy' 'Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.5,1.0,2.0,Left,Differentiation cannot be assessed,Infiltrating lobular carcinoma
+000315-000-999-655,100.0,170.0,68.0,0,35.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.3,0.0,4.0,Right,Well differentiated,Infiltrating ductal carcinoma
+000315-000-999-656,100.0,162.0,58.0,0,45.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.5,0.0,2.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-657,100.0,168.0,63.0,0,52.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.4,0.0,13.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-658,100.0,158.0,68.0,0,62.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,2.9,0.0,9.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-659,100.0,164.0,60.0,0,57.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.1,0.0,6.0,Right,Poorly differentiated / Undifferentiated,Infiltrating lobular carcinoma
+000315-000-999-660,100.0,157.0,64.0,0,56.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,4.0,0.0,2.0,Right,Moderately differentiated,Infiltrating lobular carcinoma
+000315-000-999-661,100.0,168.0,57.0,0,50.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,4.0,1.0,5.0,Right,Differentiation cannot be assessed,Infiltrating lobular carcinoma
+000315-000-999-662,100.0,165.0,63.5,0,55.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.1,0.0,2.0,Right,Well differentiated,Other
+000315-000-999-663,100.0,155.0,60.0,0,61.0,Caucasian,Female,['Quadrantectomy/Segmental' 'Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.9,0.0,3.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-664,100.0,158.0,51.0,0,42.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,5.0,0.0,1.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-665,100.0,169.0,60.0,0,48.0,Caucasian,Female,['Mastectomy'],0,,,,,,,
+000315-000-999-666,100.0,157.0,72.0,0,41.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,2.7,0.0,1.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-667,100.0,156.0,63.0,0,50.0,Caucasian,Female,['Mastectomy'],2,Tumor of <=2cm in its greatest dimension,1.8,1.0,15.0,Left,Poorly differentiated / Undifferentiated,Other
+000315-000-999-668,90.0,163.0,66.0,0,53.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.5,1.0,2.0,Left,Well differentiated,Infiltrating ductal carcinoma
+000315-000-999-669,100.0,168.0,73.8,0,38.0,Caucasian,Female,['Other'],0,Tumor of <=2cm in its greatest dimension,1.5,0.0,1.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-670,100.0,170.0,83.0,0,48.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.0,0.0,3.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-671,100.0,155.0,68.0,0,47.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,2.2,0.0,18.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-672,100.0,166.0,75.5,0,48.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.2,1.0,5.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-673,100.0,146.0,56.0,0,30.0,Caucasian,Female,['Mastectomy'],0,Tumor >5cm in its greatest dimension,9.0,0.0,2.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-674,100.0,163.0,56.0,0,56.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.4,0.0,4.0,Left,Well differentiated,Infiltrating ductal carcinoma
+000315-000-999-675,100.0,158.0,62.5,0,51.0,Caucasian,Female,['Lumpectomy' 'Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,0.0,4.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-676,100.0,172.0,60.0,0,43.0,Caucasian,Female,['Quadrantectomy/Segmental' 'Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.8,0.0,4.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-677,100.0,167.0,67.5,0,49.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.0,0.0,1.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-678,100.0,167.0,69.0,0,59.0,Caucasian,Female,['Lumpectomy' 'Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.8,0.0,2.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-679,100.0,165.0,43.0,0,33.0,Caucasian,Female,['Lumpectomy'],0,Tumor >5cm in its greatest dimension,5.5,0.0,1.0,Right,Differentiation cannot be assessed,Other
+000315-000-999-680,100.0,166.0,65.0,0,31.0,Caucasian,Female,['Lumpectomy'],1,Tumor 2cm <> 5cm in greatest dimension,3.0,0.0,3.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-681,100.0,167.0,73.0,0,50.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.8,0.0,1.0,Left,Poorly differentiated / Undifferentiated,Infiltrating lobular carcinoma
+000315-000-999-682,90.0,153.0,63.6,0,43.0,Caucasian,Female,['Mastectomy' 'Other'],0,Tumor 2cm <> 5cm in greatest dimension,2.6,0.0,37.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-683,100.0,155.0,64.6,0,49.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,2.4,0.0,7.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-684,100.0,168.0,65.0,0,52.0,Caucasian,Female,['Mastectomy'],1,Tumor 2cm <> 5cm in greatest dimension,3.0,0.0,1.0,Right,Well differentiated,Infiltrating lobular carcinoma
+000315-000-999-685,100.0,162.0,69.5,0,39.0,Caucasian,Female,['Other'],0,Tumor of <=2cm in its greatest dimension,1.4,0.0,4.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-686,90.0,161.0,>= 125,0,52.0,Caucasian,Female,['Lumpectomy' 'Other'],0,Tumor of <=2cm in its greatest dimension,1.5,0.0,1.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-687,100.0,156.0,69.5,0,61.0,Caucasian,Female,['Mastectomy'],1,Tumor >5cm in its greatest dimension,7.0,1.0,10.0,Left,Poorly differentiated / Undifferentiated,Infiltrating lobular carcinoma
+000315-000-999-688,100.0,165.0,65.0,0,49.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.0,0.0,5.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-689,100.0,164.0,59.0,0,36.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.4,0.0,2.0,Right,Well differentiated,Infiltrating ductal carcinoma
+000315-000-999-690,100.0,165.0,96.0,0,51.0,Caucasian,Female,['Mastectomy'],0,Tumor >5cm in its greatest dimension,9.0,0.0,10.0,Left,Moderately differentiated,Infiltrating lobular carcinoma
+000315-000-999-691,100.0,162.0,74.5,0,45.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.5,0.0,1.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-692,100.0,149.0,62.0,0,46.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.2,0.0,5.0,Left,Poorly differentiated / Undifferentiated,Infiltrating lobular carcinoma
+000315-000-999-693,100.0,158.0,58.0,0,50.0,Caucasian,Female,['Mastectomy'],0,Tumor >5cm in its greatest dimension,6.5,0.0,1.0,Left,Differentiation cannot be assessed,Infiltrating lobular carcinoma
+000315-000-999-694,100.0,173.0,60.0,0,50.0,Caucasian,Female,['Lumpectomy' 'Mastectomy'],0,Tumor of <=2cm in its greatest dimension,2.0,0.0,4.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-695,100.0,158.0,79.6,0,35.0,Caucasian,Female,['Other'],0,Tumor of <=2cm in its greatest dimension,1.5,0.0,1.0,Left,Well differentiated,Infiltrating ductal carcinoma
+000315-000-999-696,100.0,161.0,59.0,0,37.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.7,1.0,8.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-697,100.0,170.0,63.0,0,41.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.7,0.0,1.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-698,100.0,165.0,76.0,0,68.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.4,0.0,4.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-700,100.0,149.0,55.0,0,49.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.6,0.0,7.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-701,100.0,165.0,61.0,0,58.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.7,0.0,12.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-702,100.0,155.0,70.0,1,67.0,Caucasian,Female,['Quadrantectomy/Segmental'],1,Tumor of <=2cm in its greatest dimension,1.5,0.0,8.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-703,100.0,165.0,79.0,0,46.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,0.0,1.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-704,100.0,161.0,90.0,0,35.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.2,0.0,1.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-705,90.0,163.0,65.5,0,67.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.0,1.0,3.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-707,100.0,170.0,71.0,0,45.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.8,0.0,3.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-708,100.0,164.0,56.0,0,50.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.6,0.0,1.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-709,100.0,168.0,63.0,0,46.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.5,0.0,2.0,Left,Well differentiated,Other
+000315-000-999-710,100.0,155.0,67.0,0,47.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.6,0.0,1.0,Left,Well differentiated,Other
+000315-000-999-711,80.0,159.0,65.0,0,47.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.8,0.0,4.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-712,100.0,172.0,65.6,0,45.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,3.0,0.0,2.0,Right,Well differentiated,Infiltrating ductal carcinoma
+000315-000-999-713,100.0,176.0,67.0,0,35.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,0.0,14.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-714,100.0,165.0,86.0,0,41.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.6,0.0,7.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-715,100.0,172.0,59.0,0,63.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,5.0,1.0,10.0,Right,Moderately differentiated,Infiltrating lobular carcinoma
+000315-000-999-716,100.0,155.0,72.0,0,61.0,Caucasian,Female,['Lumpectomy' 'Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.9,0.0,4.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-717,100.0,159.0,65.0,0,42.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.6,0.0,1.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-718,100.0,167.0,82.0,0,49.0,Caucasian,Female,['Mastectomy'],1,Tumor of <=2cm in its greatest dimension,0.4,0.0,3.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-719,100.0,164.0,53.0,0,32.0,Caucasian,Female,['Mastectomy'],1,Tumor 2cm <> 5cm in greatest dimension,3.5,1.0,6.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-720,90.0,167.0,66.0,0,63.0,Caucasian,Female,['Mastectomy'],0,Tumor >5cm in its greatest dimension,6.0,0.0,7.0,Right,Poorly differentiated / Undifferentiated,Infiltrating lobular carcinoma
+000315-000-999-721,90.0,157.0,66.0,0,45.0,Caucasian,Female,['Other'],0,Tumor 2cm <> 5cm in greatest dimension,2.2,0.0,28.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-722,100.0,161.0,69.0,0,48.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,4.5,0.0,1.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-723,100.0,155.0,56.0,0,60.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.5,0.0,3.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-724,100.0,159.0,70.0,0,59.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.4,0.0,10.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-725,100.0,165.0,61.5,0,56.0,Caucasian,Female,['Lumpectomy' 'Mastectomy'],1,Tumor 2cm <> 5cm in greatest dimension,3.0,0.0,17.0,Right,Moderately differentiated,Other
+000315-000-999-726,100.0,160.0,91.0,0,53.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,4.2,0.0,7.0,Left,Moderately differentiated,Other
+000315-000-999-727,100.0,164.0,88.0,0,54.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.0,0.0,3.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-728,100.0,162.0,62.8,0,43.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,2.0,1.0,2.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-729,100.0,166.0,73.0,0,44.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,0.0,2.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-730,90.0,168.0,59.6,0,45.0,Caucasian,Female,['Lumpectomy' 'Mastectomy'],0,Tumor of <=2cm in its greatest dimension,2.0,0.0,2.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-731,100.0,154.0,85.0,1,62.0,Caucasian,Female,['Mastectomy'],1,Tumor 2cm <> 5cm in greatest dimension,4.0,0.0,11.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-732,100.0,155.0,53.5,0,48.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.1,0.0,2.0,Right,Well differentiated,Infiltrating ductal carcinoma
+000315-000-999-733,100.0,163.0,76.0,0,59.0,Caucasian,Female,['Other'],0,Tumor of <=2cm in its greatest dimension,1.1,0.0,2.0,Left,Poorly differentiated / Undifferentiated,Other
+000315-000-999-734,100.0,168.0,74.4,0,54.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.5,0.0,5.0,Left,Moderately differentiated,Infiltrating lobular carcinoma
+000315-000-999-735,100.0,156.0,73.6,0,56.0,Caucasian,Female,['Other'],0,Tumor 2cm <> 5cm in greatest dimension,2.4,0.0,2.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-736,100.0,157.0,57.0,0,31.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,3.2,0.0,1.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-737,100.0,157.0,53.0,0,33.0,Other,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.0,0.0,1.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-738,100.0,164.0,60.0,0,45.0,Black,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.7,0.0,1.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-739,100.0,157.0,60.0,0,45.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,2.0,1.0,10.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-740,100.0,172.0,68.2,0,52.0,Caucasian,Female,['Other' 'Lumpectomy' 'Mastectomy'],0,Tumor of <=2cm in its greatest dimension,0.5,0.0,1.0,Right,Well differentiated,Infiltrating ductal carcinoma
+000315-000-999-741,100.0,166.0,58.0,0,41.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,0.6,1.0,4.0,Left,Well differentiated,Infiltrating lobular carcinoma
+000315-000-999-742,100.0,158.0,54.0,0,48.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.8,0.0,5.0,Left,Moderately differentiated,Infiltrating lobular carcinoma
+000315-000-999-743,100.0,154.0,75.0,0,50.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,4.0,1.0,3.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-744,100.0,160.0,48.0,0,29.0,Caucasian,Female,['Lumpectomy' 'Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.8,0.0,4.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-745,90.0,167.0,58.8,0,52.0,Hispanic,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.3,0.0,2.0,Left,Differentiation cannot be assessed,Infiltrating lobular carcinoma
+000315-000-999-746,100.0,165.0,89.0,0,49.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,4.5,0.0,3.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-747,90.0,156.0,62.2,0,55.0,Black,Female,['Mastectomy'],0,Tumor >5cm in its greatest dimension,10.0,0.0,5.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-748,100.0,167.0,51.6,0,50.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.7,0.0,8.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-749,100.0,166.0,75.9,0,51.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.5,0.0,10.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-750,100.0,162.0,57.3,0,40.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.8,0.0,2.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-751,100.0,160.0,63.3,0,48.0,Caucasian,Female,['Lumpectomy' 'Mastectomy' 'Other'],0,Tumor of <=2cm in its greatest dimension,1.2,0.0,3.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-752,100.0,172.0,62.0,0,62.0,Caucasian,Female,['Mastectomy'],0,Tumor >5cm in its greatest dimension,5.5,1.0,6.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-754,90.0,154.0,61.0,0,51.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.8,1.0,2.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-755,100.0,167.0,83.0,0,50.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.5,1.0,1.0,Right,Moderately differentiated,Infiltrating lobular carcinoma
+000315-000-999-756,100.0,164.0,55.4,0,48.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.6,0.0,2.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-758,100.0,178.0,63.0,0,51.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,4.9,1.0,5.0,Left,Moderately differentiated,Infiltrating lobular carcinoma
+000315-000-999-759,100.0,163.0,57.0,0,38.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.5,0.0,3.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-760,90.0,161.0,67.0,0,59.0,Caucasian,Female,['Mastectomy' 'Other'],0,Tumor >5cm in its greatest dimension,6.0,0.0,13.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-761,100.0,171.0,102.1,0,58.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.7,1.0,1.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-762,100.0,150.0,53.8,0,45.0,Caucasian,Female,,0,Tumor 2cm <> 5cm in greatest dimension,4.5,0.0,1.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-763,100.0,167.0,68.0,0,54.0,Caucasian,Female,['Other'],0,Tumor 2cm <> 5cm in greatest dimension,2.3,0.0,2.0,Right,Moderately differentiated,Other
+000315-000-999-764,100.0,161.0,83.1,0,62.0,Caucasian,Female,['Other'],0,Tumor of <=2cm in its greatest dimension,1.4,0.0,10.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-765,100.0,166.0,56.0,0,54.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.1,0.0,6.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-766,100.0,165.0,80.0,0,40.0,Caucasian,Female,['Mastectomy'],1,Tumor of <=2cm in its greatest dimension,2.0,0.0,2.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-767,90.0,156.0,62.1,0,52.0,Caucasian,Female,['Mastectomy'],1,Tumor 2cm <> 5cm in greatest dimension,3.0,1.0,10.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-768,100.0,160.0,80.0,0,69.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.5,0.0,2.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-769,100.0,159.0,45.6,0,43.0,Caucasian,Female,['Mastectomy' 'Other'],0,Tumor of <=2cm in its greatest dimension,2.0,0.0,2.0,Right,Poorly differentiated / Undifferentiated,Other
+000315-000-999-771,100.0,165.0,67.0,0,42.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.2,1.0,1.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-772,100.0,158.0,101.0,0,47.0,Caucasian,Female,['Lumpectomy' 'Other'],0,Tumor of <=2cm in its greatest dimension,1.5,0.0,3.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-773,100.0,170.0,58.0,0,38.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,0.9,0.0,1.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-774,100.0,170.0,86.2,0,50.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,0.0,1.0,Left,Differentiation cannot be assessed,Infiltrating lobular carcinoma
+000315-000-999-775,100.0,151.0,49.0,0,62.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.0,0.0,2.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-776,100.0,164.0,55.0,0,34.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.0,0.0,1.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-777,100.0,162.0,63.5,0,42.0,Caucasian,Female,['Mastectomy'],0,Tumor >5cm in its greatest dimension,6.0,1.0,3.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-778,100.0,172.0,75.0,0,34.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.0,0.0,2.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-779,100.0,170.0,69.0,0,40.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.0,0.0,4.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-780,100.0,164.0,80.0,0,46.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.8,0.0,1.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-781,90.0,168.0,69.0,0,61.0,Caucasian,Female,['Mastectomy'],0,Tumor >5cm in its greatest dimension,6.0,0.0,4.0,Right,Differentiation cannot be assessed,Other
+000315-000-999-782,100.0,167.0,92.0,0,39.0,Black,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,0.0,1.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-783,100.0,162.0,57.5,0,41.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.3,0.0,4.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-784,100.0,167.0,55.0,0,45.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.2,0.0,5.0,Left,Well differentiated,Infiltrating ductal carcinoma
+000315-000-999-785,90.0,165.0,62.0,0,37.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,1.0,1.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-786,90.0,171.0,60.0,0,58.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.4,0.0,5.0,Right,Poorly differentiated / Undifferentiated,Other
+000315-000-999-787,90.0,170.0,75.0,0,43.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.5,0.0,4.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-788,100.0,161.0,57.0,0,65.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,4.2,0.0,9.0,Left,Moderately differentiated,Infiltrating lobular carcinoma
+000315-000-999-789,100.0,157.0,73.0,0,42.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,5.0,0.0,4.0,Left,Moderately differentiated,Infiltrating lobular carcinoma
+000315-000-999-790,100.0,170.0,67.2,0,50.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.9,0.0,3.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-791,100.0,168.0,58.0,0,53.0,Caucasian,Female,['Mastectomy'],1,Tumor 2cm <> 5cm in greatest dimension,3.5,0.0,34.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-792,90.0,161.0,55.0,1,59.0,Caucasian,Female,['Lumpectomy'],1,Tumor 2cm <> 5cm in greatest dimension,3.0,0.0,6.0,Left,Poorly differentiated / Undifferentiated,Infiltrating lobular carcinoma
+000315-000-999-793,100.0,162.0,60.0,0,47.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,2.1,0.0,1.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-794,100.0,150.0,72.0,0,49.0,Caucasian,Female,['Mastectomy'],0,Tumor >5cm in its greatest dimension,5.0,0.0,13.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-795,100.0,157.0,68.0,0,41.0,Hispanic,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.0,0.0,2.0,Right,Well differentiated,Infiltrating ductal carcinoma
+000315-000-999-796,100.0,176.0,59.3,0,34.0,Caucasian,Female,['Lumpectomy' 'Mastectomy'],1,,,,,,,
+000315-000-999-797,100.0,166.0,116.9,0,31.0,Caucasian,Female,['Lumpectomy' 'Other'],0,Tumor of <=2cm in its greatest dimension,1.3,1.0,1.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-798,100.0,168.0,74.0,0,51.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.7,0.0,1.0,Left,Well differentiated,Infiltrating ductal carcinoma
+000315-000-999-799,100.0,164.0,55.0,0,51.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,5.0,0.0,9.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-800,100.0,168.0,59.0,0,33.0,Caucasian,Female,['Mastectomy' 'Other'],0,Tumor 2cm <> 5cm in greatest dimension,2.1,0.0,12.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-801,100.0,151.0,63.0,0,46.0,Caucasian,Female,['Lumpectomy' 'Mastectomy'],1,Tumor >5cm in its greatest dimension,5.5,0.0,16.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-802,100.0,158.0,53.0,0,42.0,Caucasian,Female,['Quadrantectomy/Segmental' 'Mastectomy'],0,Tumor of <=2cm in its greatest dimension,0.6,0.0,2.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-803,100.0,168.0,69.0,0,44.0,Caucasian,Female,['Lumpectomy' 'Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,1.0,3.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-804,100.0,147.0,50.0,0,47.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,2.0,1.0,2.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-805,100.0,160.0,85.0,0,56.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,2.2,0.0,4.0,Right,Well differentiated,Infiltrating ductal carcinoma
+000315-000-999-806,100.0,160.0,55.1,0,36.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.3,0.0,5.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-807,100.0,157.0,57.0,0,,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.0,0.0,1.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-808,100.0,158.0,87.0,0,49.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.0,1.0,10.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-809,100.0,176.0,68.0,0,53.0,Caucasian,Female,['Quadrantectomy/Segmental' 'Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.7,1.0,3.0,Left,Well differentiated,Infiltrating ductal carcinoma
+000315-000-999-810,90.0,166.0,95.5,0,37.0,Oriental,Female,['Lumpectomy' 'Mastectomy'],0,Tumor of <=2cm in its greatest dimension,2.0,0.0,1.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-811,100.0,175.0,80.0,0,47.0,Caucasian,Female,['Quadrantectomy/Segmental'],2,Tumor 2cm <> 5cm in greatest dimension,3.0,0.0,10.0,Right,Moderately differentiated,Infiltrating lobular carcinoma
+000315-000-999-812,90.0,164.0,81.0,0,56.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.4,0.0,4.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-813,90.0,161.0,59.0,0,37.0,Caucasian,Female,['Lumpectomy' 'Mastectomy'],1,Tumor of <=2cm in its greatest dimension,1.5,0.0,10.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-814,90.0,169.0,74.5,0,46.0,Other,Female,['Mastectomy'],0,,,,,,,
+000315-000-999-815,100.0,168.0,78.0,0,36.0,Caucasian,Female,['Lumpectomy' 'Mastectomy'],0,Tumor of <=2cm in its greatest dimension,0.9,0.0,1.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-816,100.0,157.0,64.0,0,45.0,Caucasian,Female,['Other'],1,Tumor 2cm <> 5cm in greatest dimension,3.7,1.0,16.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-817,100.0,167.0,70.0,0,51.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.0,0.0,17.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-818,100.0,171.0,72.0,0,52.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,2.0,0.0,3.0,Right,Well differentiated,Infiltrating ductal carcinoma
+000315-000-999-819,100.0,159.0,45.0,0,57.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,2.0,0.0,1.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-820,100.0,163.0,80.0,0,57.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,0.0,1.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-821,100.0,156.0,55.0,0,51.0,Caucasian,Female,['Quadrantectomy/Segmental' 'Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.5,0.0,1.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-822,100.0,160.0,69.0,0,61.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,4.0,0.0,17.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-823,100.0,163.0,76.0,0,47.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,4.0,0.0,11.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-824,100.0,163.0,74.0,0,50.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,4.1,1.0,17.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-826,100.0,172.0,86.0,0,60.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.1,1.0,5.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-827,100.0,167.0,74.0,0,62.0,Caucasian,Female,['Lumpectomy' 'Mastectomy'],1,Tumor 2cm <> 5cm in greatest dimension,2.6,0.0,18.0,Left,Moderately differentiated,Infiltrating lobular carcinoma
+000315-000-999-828,100.0,153.0,60.0,0,45.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,0.0,3.0,Right,Poorly differentiated / Undifferentiated,Other
+000315-000-999-829,100.0,164.0,53.5,0,43.0,Caucasian,Female,['Mastectomy'],0,Tumor >5cm in its greatest dimension,5.5,0.0,2.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-830,100.0,168.0,80.0,0,61.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.1,0.0,2.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-831,100.0,170.0,73.0,0,51.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.2,0.0,4.0,Right,Moderately differentiated,Infiltrating lobular carcinoma
+000315-000-999-832,100.0,159.0,64.0,0,57.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.9,0.0,4.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-833,70.0,179.0,73.0,0,55.0,Caucasian,Female,['Quadrantectomy/Segmental' 'Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,5.0,1.0,4.0,Left,Poorly differentiated / Undifferentiated,Other
+000315-000-999-834,100.0,161.0,65.0,0,53.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.2,1.0,2.0,Right,Moderately differentiated,Other
+000315-000-999-835,100.0,163.0,52.0,0,55.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,2.4,0.0,2.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-836,90.0,168.0,90.0,0,50.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.0,0.0,3.0,Right,Moderately differentiated,Infiltrating lobular carcinoma
+000315-000-999-837,100.0,160.0,69.0,0,42.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.7,0.0,7.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-838,100.0,153.0,92.0,0,55.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,0.4,0.0,1.0,Left,Well differentiated,Infiltrating ductal carcinoma
+000315-000-999-839,100.0,160.0,61.0,0,51.0,Caucasian,Female,['Other'],0,Tumor of <=2cm in its greatest dimension,1.0,0.0,2.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-840,100.0,167.0,59.8,0,46.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.0,0.0,3.0,Right,Poorly differentiated / Undifferentiated,Other
+000315-000-999-841,100.0,163.0,60.5,0,39.0,Caucasian,Female,['Lumpectomy'],1,Tumor 2cm <> 5cm in greatest dimension,2.6,0.0,8.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-842,100.0,157.0,74.0,0,42.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.8,0.0,3.0,Left,Moderately differentiated,Other
+000315-000-999-843,100.0,156.0,49.0,0,43.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,2.0,0.0,7.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-844,100.0,153.0,56.0,0,33.0,Caucasian,Female,['Mastectomy'],0,Tumor >5cm in its greatest dimension,5.3,0.0,4.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-845,100.0,168.0,67.0,0,49.0,Caucasian,Female,['Quadrantectomy/Segmental' 'Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.5,1.0,1.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-846,100.0,172.0,85.0,0,43.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.4,0.0,3.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-847,100.0,149.0,52.0,0,46.0,Caucasian,Female,['Mastectomy'],0,Tumor >5cm in its greatest dimension,7.0,1.0,33.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-848,100.0,162.0,77.1,0,41.0,Caucasian,Female,['Lumpectomy' 'Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.0,0.0,3.0,Right,Poorly differentiated / Undifferentiated,Infiltrating lobular carcinoma
+000315-000-999-849,90.0,171.0,84.0,0,47.0,Caucasian,Female,['Mastectomy'],0,Tumor >5cm in its greatest dimension,7.5,0.0,19.0,Right,Well differentiated,Infiltrating ductal carcinoma
+000315-000-999-850,100.0,168.0,85.0,0,53.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,2.2,0.0,3.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-851,90.0,164.0,71.5,0,52.0,Caucasian,Female,['Quadrantectomy/Segmental'],1,Tumor 2cm <> 5cm in greatest dimension,2.1,0.0,23.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-852,90.0,161.0,67.7,0,33.0,Other,Female,['Lumpectomy' 'Mastectomy'],0,Tumor >5cm in its greatest dimension,5.5,0.0,4.0,Left,Poorly differentiated / Undifferentiated,Other
+000315-000-999-853,100.0,175.0,89.0,0,64.0,Caucasian,Female,['Quadrantectomy/Segmental' 'Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.0,0.0,7.0,Left,Moderately differentiated,Infiltrating lobular carcinoma
+000315-000-999-854,100.0,154.0,66.0,0,47.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.2,0.0,8.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-855,100.0,159.0,64.0,0,22.0,Caucasian,Female,['Quadrantectomy/Segmental'],1,Tumor 2cm <> 5cm in greatest dimension,3.5,1.0,5.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-856,90.0,164.0,94.8,0,50.0,Other,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,0.7,0.0,1.0,Left,Well differentiated,Infiltrating ductal carcinoma
+000315-000-999-857,100.0,160.0,57.0,0,45.0,Caucasian,Female,['Lumpectomy' 'Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,2.2,0.0,2.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-858,100.0,158.0,75.0,0,58.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.9,0.0,4.0,Left,Poorly differentiated / Undifferentiated,Other
+000315-000-999-860,100.0,155.0,77.0,0,57.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.2,0.0,2.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-861,90.0,161.0,61.2,1,31.0,Caucasian,Female,['Lumpectomy' 'Mastectomy'],1,Tumor 2cm <> 5cm in greatest dimension,4.0,0.0,1.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-862,100.0,171.0,63.0,0,45.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.5,0.0,3.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-863,100.0,166.0,56.0,0,50.0,Caucasian,Female,['Lumpectomy' 'Mastectomy'],0,Tumor >5cm in its greatest dimension,8.0,1.0,2.0,Right,Moderately differentiated,Infiltrating lobular carcinoma
+000315-000-999-864,90.0,162.0,77.1,0,34.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,4.0,1.0,4.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-865,100.0,166.0,72.0,0,50.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,5.0,1.0,2.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-866,90.0,172.0,79.0,0,45.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,2.0,0.0,2.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-867,100.0,155.0,54.0,0,50.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,0.0,1.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-868,100.0,162.0,82.9,0,44.0,Other,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.1,0.0,14.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-869,90.0,161.0,64.3,0,50.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.3,1.0,2.0,Right,Differentiation cannot be assessed,Infiltrating lobular carcinoma
+000315-000-999-870,100.0,160.0,65.5,0,43.0,Caucasian,Female,['Other'],0,Tumor of <=2cm in its greatest dimension,1.5,0.0,1.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-871,100.0,168.0,70.0,0,54.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.2,0.0,1.0,Right,Moderately differentiated,Infiltrating lobular carcinoma
+000315-000-999-872,100.0,164.0,61.0,0,36.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.5,0.0,4.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-873,100.0,164.0,76.6,0,34.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,5.0,0.0,4.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-874,100.0,150.0,74.5,0,42.0,Hispanic,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.8,0.0,1.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-875,100.0,170.0,63.0,0,39.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,4.5,1.0,7.0,Right,Well differentiated,Infiltrating ductal carcinoma
+000315-000-999-876,100.0,156.0,66.0,0,59.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.5,0.0,4.0,Right,Well differentiated,Infiltrating ductal carcinoma
+000315-000-999-877,90.0,165.0,63.0,0,49.0,Caucasian,Female,['Other'],1,Tumor 2cm <> 5cm in greatest dimension,3.1,0.0,12.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-878,100.0,173.0,69.0,0,39.0,Caucasian,Female,['Quadrantectomy/Segmental'],1,Tumor of <=2cm in its greatest dimension,1.5,1.0,18.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-879,100.0,161.0,53.0,0,35.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.8,1.0,4.0,Left,Differentiation cannot be assessed,Infiltrating ductal carcinoma
+000315-000-999-880,100.0,165.0,69.9,0,43.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,2.0,0.0,3.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-881,100.0,158.0,68.8,0,51.0,Oriental,Female,['Mastectomy'],0,Tumor >5cm in its greatest dimension,5.5,0.0,8.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-882,100.0,164.0,77.5,0,45.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,4.0,0.0,2.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-883,100.0,159.0,53.0,0,33.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,4.0,0.0,2.0,Left,Well differentiated,Infiltrating ductal carcinoma
+000315-000-999-884,100.0,168.0,66.0,0,38.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.6,0.0,11.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-885,100.0,157.0,52.6,0,48.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.3,0.0,3.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-886,100.0,163.0,53.5,0,60.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.7,0.0,1.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-887,100.0,167.0,62.6,0,32.0,Caucasian,Female,['Other'],0,Tumor 2cm <> 5cm in greatest dimension,2.2,0.0,7.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-888,100.0,165.0,94.0,0,60.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,4.6,1.0,4.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-889,100.0,177.0,66.5,0,53.0,Caucasian,Female,['Lumpectomy' 'Mastectomy'],0,Tumor >5cm in its greatest dimension,5.0,0.0,4.0,Left,Moderately differentiated,Infiltrating lobular carcinoma
+000315-000-999-890,90.0,158.0,73.5,0,57.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,2.0,0.0,3.0,Right,Moderately differentiated,Infiltrating lobular carcinoma
+000315-000-999-891,90.0,166.0,58.0,0,24.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,0.8,1.0,1.0,Right,Poorly differentiated / Undifferentiated,Other
+000315-000-999-892,100.0,152.0,56.0,0,56.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,2.0,0.0,9.0,Left,Well differentiated,Infiltrating lobular carcinoma
+000315-000-999-893,100.0,170.0,64.0,0,56.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,2.2,0.0,2.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-894,100.0,162.0,61.0,0,58.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.2,0.0,1.0,Right,Poorly differentiated / Undifferentiated,Other
+000315-000-999-895,90.0,165.0,62.9,0,38.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,4.0,0.0,8.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-896,100.0,160.0,53.0,0,40.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.0,0.0,5.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-897,90.0,162.0,65.0,0,61.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,2.2,0.0,1.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-898,100.0,172.0,62.0,0,32.0,Caucasian,Female,['Lumpectomy' 'Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,0.7,0.0,1.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-899,100.0,149.0,57.0,0,60.0,Caucasian,Female,['Quadrantectomy/Segmental' 'Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,4.5,1.0,3.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-900,90.0,170.0,79.0,0,51.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.6,1.0,1.0,Right,Differentiation cannot be assessed,Infiltrating lobular carcinoma
+000315-000-999-901,100.0,158.0,55.0,0,38.0,Caucasian,Female,['Lumpectomy' 'Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,0.0,2.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-902,100.0,164.0,71.0,0,49.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,4.0,0.0,2.0,Right,Differentiation cannot be assessed,Infiltrating lobular carcinoma
+000315-000-999-903,100.0,170.0,60.0,0,36.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.1,0.0,1.0,Right,Poorly differentiated / Undifferentiated,Other
+000315-000-999-904,90.0,150.0,62.8,0,41.0,Hispanic,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,4.5,1.0,2.0,Right,Differentiation cannot be assessed,Infiltrating lobular carcinoma
+000315-000-999-905,100.0,157.0,109.0,0,54.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,0.7,0.0,1.0,Left,Well differentiated,Infiltrating ductal carcinoma
+000315-000-999-906,100.0,163.0,60.0,0,57.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.2,0.0,4.0,Right,Moderately differentiated,Infiltrating lobular carcinoma
+000315-000-999-907,100.0,150.0,69.0,0,54.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,0.0,3.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-908,100.0,166.0,83.0,0,54.0,Caucasian,Female,['Lumpectomy' 'Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.0,1.0,3.0,Left,Well differentiated,Infiltrating ductal carcinoma
+000315-000-999-909,100.0,172.0,90.0,0,42.0,Caucasian,Female,['Mastectomy'],0,Tumor >5cm in its greatest dimension,6.0,0.0,16.0,Right,Differentiation cannot be assessed,Infiltrating lobular carcinoma
+000315-000-999-910,100.0,161.0,60.8,0,61.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.2,0.0,2.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-911,100.0,154.0,60.0,0,59.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,3.8,0.0,12.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-912,100.0,160.0,60.0,0,41.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.0,0.0,1.0,Right,Well differentiated,Infiltrating ductal carcinoma
+000315-000-999-913,100.0,169.0,54.0,0,42.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,0.9,0.0,4.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-914,100.0,161.0,56.0,0,62.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,4.0,0.0,4.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-915,100.0,157.0,60.0,0,60.0,Caucasian,Female,['Mastectomy'],1,Tumor 2cm <> 5cm in greatest dimension,2.5,0.0,8.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-916,100.0,167.0,64.2,0,59.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,2.0,0.0,1.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-917,100.0,153.0,53.0,0,37.0,Caucasian,Female,['Mastectomy' 'Other'],0,Tumor of <=2cm in its greatest dimension,2.0,0.0,5.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-918,100.0,166.0,60.0,0,55.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.2,0.0,2.0,Left,Well differentiated,Other
+000315-000-999-919,100.0,152.0,49.0,0,49.0,Oriental,Female,['Lumpectomy' 'Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,5.0,1.0,1.0,Right,Moderately differentiated,Other
+000315-000-999-920,100.0,153.0,79.8,0,47.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,5.0,0.0,2.0,Left,Differentiation cannot be assessed,Infiltrating lobular carcinoma
+000315-000-999-921,100.0,162.0,63.5,0,69.0,Caucasian,Female,['Quadrantectomy/Segmental'],1,Tumor 2cm <> 5cm in greatest dimension,2.5,0.0,9.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-922,100.0,162.0,82.0,0,43.0,Caucasian,Female,['Mastectomy'],1,Tumor 2cm <> 5cm in greatest dimension,4.3,0.0,3.0,Right,Differentiation cannot be assessed,Other
+000315-000-999-923,100.0,156.5,60.0,0,33.0,Caucasian,Female,['Quadrantectomy/Segmental' 'Mastectomy'],0,,,,,,,
+000315-000-999-924,100.0,155.0,68.2,0,52.0,Caucasian,Female,['Quadrantectomy/Segmental' 'Mastectomy'],0,Tumor >5cm in its greatest dimension,6.0,0.0,27.0,Right,Poorly differentiated / Undifferentiated,Infiltrating lobular carcinoma
+000315-000-999-925,100.0,155.0,60.0,0,42.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,0.0,15.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-926,100.0,161.0,65.0,0,37.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.5,0.0,3.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-927,100.0,159.0,73.3,0,61.0,Caucasian,Female,['Lumpectomy' 'Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.5,1.0,2.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-928,100.0,165.0,72.9,0,60.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.5,0.0,2.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-929,100.0,168.0,74.0,0,50.0,Caucasian,Female,['Mastectomy'],0,Tumor >5cm in its greatest dimension,8.8,1.0,3.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-930,100.0,179.0,83.0,0,47.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,4.0,1.0,1.0,Right,Differentiation cannot be assessed,Infiltrating lobular carcinoma
+000315-000-999-931,100.0,164.0,62.0,0,49.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,4.0,0.0,1.0,Left,Well differentiated,Infiltrating ductal carcinoma
+000315-000-999-932,100.0,165.0,54.0,0,31.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.8,0.0,2.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-933,100.0,162.0,63.0,0,58.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,1.0,10.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-934,100.0,153.0,52.9,0,55.0,Caucasian,Female,['Lumpectomy' 'Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.1,1.0,2.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-935,100.0,159.0,58.0,0,47.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,4.3,0.0,18.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-936,100.0,168.0,103.2,0,54.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.2,0.0,3.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-937,100.0,156.5,62.0,0,62.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.6,0.0,2.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-938,100.0,165.0,84.0,0,62.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,0.0,4.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-939,100.0,159.0,82.0,0,53.0,Caucasian,Female,['Lumpectomy' 'Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.9,0.0,1.0,Right,Well differentiated,Other
+000315-000-999-940,80.0,162.0,81.0,0,48.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,0.8,0.0,1.0,Left,Moderately differentiated,Other
+000315-000-999-941,100.0,175.0,94.0,0,48.0,Caucasian,Female,['Other'],0,Tumor 2cm <> 5cm in greatest dimension,2.8,0.0,1.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-942,100.0,172.0,75.0,0,57.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.9,0.0,2.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-943,100.0,159.0,49.0,0,36.0,Caucasian,Female,['Lumpectomy' 'Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.2,1.0,1.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-944,90.0,165.0,71.4,0,61.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.5,1.0,23.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-945,100.0,154.0,54.5,0,53.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,2.0,0.0,1.0,Left,Well differentiated,Infiltrating ductal carcinoma
+000315-000-999-946,100.0,158.0,95.5,0,48.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.2,0.0,3.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-947,90.0,162.0,79.0,0,46.0,Caucasian,Female,['Mastectomy'],1,Tumor 2cm <> 5cm in greatest dimension,3.5,0.0,8.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-948,100.0,164.0,75.4,1,36.0,Caucasian,Female,['Quadrantectomy/Segmental'],1,Tumor 2cm <> 5cm in greatest dimension,2.4,0.0,6.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-949,100.0,150.0,55.0,0,44.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.5,0.0,2.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-950,100.0,157.0,66.0,0,39.0,Caucasian,Female,['Quadrantectomy/Segmental' 'Other'],0,Tumor 2cm <> 5cm in greatest dimension,2.8,0.0,6.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-951,90.0,169.0,83.0,0,59.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,3.0,0.0,12.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-953,100.0,160.0,61.5,0,43.0,Caucasian,Female,['Mastectomy'],1,Tumor of <=2cm in its greatest dimension,1.8,0.0,3.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-954,100.0,167.0,63.0,0,37.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,0.7,0.0,2.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-955,100.0,156.0,61.0,0,43.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.2,0.0,5.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-956,100.0,167.0,62.0,0,51.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,2.0,0.0,15.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-957,100.0,166.5,71.5,0,64.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,2.0,0.0,6.0,Right,Moderately differentiated,Other
+000315-000-999-958,100.0,163.0,73.8,0,66.0,Caucasian,Female,['Quadrantectomy/Segmental'],1,Tumor 2cm <> 5cm in greatest dimension,3.8,1.0,11.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-959,100.0,153.0,67.0,0,63.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,0.0,12.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-960,100.0,157.0,57.0,0,39.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.2,1.0,5.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-961,100.0,157.0,50.0,0,49.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,1.0,13.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-962,100.0,152.0,72.0,0,47.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,0.0,7.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-963,100.0,152.0,58.0,0,47.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,2.4,0.0,1.0,Right,Poorly differentiated / Undifferentiated,Infiltrating lobular carcinoma
+000315-000-999-964,90.0,156.0,73.5,0,58.0,Other,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,4.4,0.0,15.0,Right,Well differentiated,Infiltrating ductal carcinoma
+000315-000-999-965,100.0,169.0,75.5,0,39.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.0,0.0,1.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-966,100.0,160.0,75.0,0,62.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.3,0.0,2.0,Right,Moderately differentiated,Other
+000315-000-999-967,100.0,157.0,51.7,0,31.0,Caucasian,Female,['Lumpectomy' 'Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,0.0,1.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-968,100.0,161.0,65.7,0,28.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.5,0.0,10.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-969,100.0,160.0,77.2,0,39.0,Caucasian,Female,['Lumpectomy' 'Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.0,1.0,3.0,Right,Poorly differentiated / Undifferentiated,Infiltrating lobular carcinoma
+000315-000-999-970,100.0,154.0,70.0,0,48.0,Caucasian,Female,['Mastectomy'],0,Tumor >5cm in its greatest dimension,5.5,0.0,27.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-971,100.0,167.0,95.0,0,48.0,Caucasian,Female,['Mastectomy'],0,Tumor >5cm in its greatest dimension,6.0,0.0,15.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-972,100.0,156.0,69.8,0,48.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,0.0,4.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-973,80.0,154.0,73.3,0,57.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.1,0.0,2.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-974,100.0,160.0,90.0,1,56.0,Caucasian,Female,['Mastectomy'],1,Tumor 2cm <> 5cm in greatest dimension,3.0,0.0,8.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-976,100.0,162.0,74.0,0,44.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.0,0.0,1.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-977,100.0,165.0,55.0,0,49.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,3.5,0.0,3.0,Left,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-978,90.0,157.0,64.8,0,59.0,Caucasian,Female,['Mastectomy'],0,Tumor >5cm in its greatest dimension,8.0,0.0,2.0,Left,Differentiation cannot be assessed,Infiltrating lobular carcinoma
+000315-000-999-979,90.0,153.0,42.0,0,42.0,Oriental,Female,['Lumpectomy' 'Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.7,0.0,1.0,Right,Well differentiated,Infiltrating ductal carcinoma
+000315-000-999-980,100.0,153.0,60.5,0,55.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.5,0.0,10.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-981,100.0,175.0,74.1,0,34.0,Caucasian,Female,['Mastectomy'],1,Tumor 2cm <> 5cm in greatest dimension,4.0,0.0,2.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-982,100.0,155.0,61.0,1,62.0,Caucasian,Female,['Mastectomy'],2,Tumor 2cm <> 5cm in greatest dimension,3.0,0.0,2.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-983,100.0,152.0,61.0,0,63.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.7,0.0,5.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-984,100.0,167.0,68.0,0,65.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.4,1.0,17.0,Left,Moderately differentiated,Infiltrating lobular carcinoma
+000315-000-999-985,100.0,163.0,66.0,0,46.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,5.0,0.0,10.0,Right,Well differentiated,Other
+000315-000-999-986,100.0,160.0,78.0,0,61.0,Caucasian,Female,['Mastectomy'],0,Tumor of <=2cm in its greatest dimension,1.8,1.0,19.0,Right,Poorly differentiated / Undifferentiated,Other
+000315-000-999-987,100.0,165.0,55.0,0,56.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,4.0,0.0,7.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-988,100.0,160.0,71.4,0,49.0,Caucasian,Female,['Mastectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,0.0,1.0,Left,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma
+000315-000-999-989,90.0,156.0,51.0,0,42.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.6,0.0,1.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-990,100.0,174.0,83.0,0,36.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor 2cm <> 5cm in greatest dimension,2.5,0.0,1.0,Right,Poorly differentiated / Undifferentiated,Other
+000315-000-999-991,100.0,160.0,60.0,0,49.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.6,0.0,6.0,Right,Well differentiated,Infiltrating lobular carcinoma
+000315-000-999-992,90.0,159.0,61.0,0,38.0,Caucasian,Female,['Lumpectomy'],0,Tumor of <=2cm in its greatest dimension,1.3,0.0,2.0,Right,Well differentiated,Infiltrating ductal carcinoma
+000315-000-999-993,100.0,167.0,81.5,0,54.0,Caucasian,Female,['Lumpectomy'],0,Tumor 2cm <> 5cm in greatest dimension,2.1,0.0,1.0,Right,Moderately differentiated,Infiltrating ductal carcinoma
+000315-000-999-994,90.0,158.0,54.1,0,48.0,Caucasian,Female,['Quadrantectomy/Segmental'],0,Tumor of <=2cm in its greatest dimension,1.8,0.0,3.0,Right,Poorly differentiated / Undifferentiated,Infiltrating ductal carcinoma

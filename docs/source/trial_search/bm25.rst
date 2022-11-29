@@ -1,0 +1,7 @@
+trial_search.BM25
+=================
+
+.. autoclass:: pytrial.tasks.trial_search.models.bm25.BM25
+    :members:
+    :no-undoc-members:
+    :show-inheritance:
