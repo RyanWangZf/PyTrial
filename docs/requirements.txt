@@ -25,6 +25,7 @@ tqdm==4.64.0
 transformers==4.24.0
 wget==3.2
 icd10-cm
+xgboost
 git+https://github.com/RyanWangZf/transtab.git@main # transtab
 git+https://github.com/RyanWangZf/promptehr.git@main # promptehr
 git+https://github.com/RyanWangZf/trial2vec.git@main # trial2vec
