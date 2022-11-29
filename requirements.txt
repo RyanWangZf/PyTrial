@@ -20,6 +20,7 @@ textaugment==1.3.4
 tqdm==4.64.0
 transformers==4.24.0
 wget==3.2
+xgboost
 icd10-cm
 git+https://github.com/RyanWangZf/transtab.git@main # transtab
 git+https://github.com/RyanWangZf/promptehr.git@main # promptehr
