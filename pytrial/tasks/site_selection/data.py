@@ -3,7 +3,7 @@ Provide data functions for trial data simulation.
 '''
 from collections import defaultdict
 from pytrial.data.trial_data import TrialDatasetStructured, TrialDataCollator
-from pytrial.data.site_data import SiteBase,  SiteBaseDemographics, ModalitySiteBase, SiteDataCollator
+from pytrial.data.site_data import SiteBase,  SiteBaseDemographics, ModalitySiteBase
 from torch.utils.data import Dataset
 import numpy as np
 import torch

@@ -6,7 +6,6 @@ import json
 
 from pytrial.utils.check import check_model_dir
 from pytrial.utils.check import make_dir_if_not_exist
-from pytrial.tasks.site_selection.data import TrialSite
 
 class SiteSelectionBase(abc.ABC):
     '''Abstract class for all sequential patient data simulations.
@@ -28,32 +27,80 @@ class SiteSelectionBase(abc.ABC):
     
     @abc.abstractmethod
     def fit(self, train_data):
+        '''
+        Fit function needs to be implemented after subclass.
+
+        Parameters
+        ----------
+        train_data: Any
+            Training data.
+        '''
         raise NotImplementedError
 
     @abc.abstractmethod
     def predict(self, test_data):
+        '''
+        Prediction function needs to be implemented after subclass.
+
+        Parameters
+        ----------
+        test_data: Any
+            Testing data.
+        '''
         raise NotImplementedError
 
     @abc.abstractmethod
     def save_model(self, output_dir):
+        '''
+        Save the model to disk, needs to be implemented after subclass.
+
+        Parameters
+        ----------
+        output_dir: str
+            The path to the output directory.
+        '''
         raise NotImplementedError
 
     @abc.abstractmethod
     def load_model(self, checkpoint):
+        '''
+        Load the pretrained model from disk, needs to be implemented after subclass.
+        
+        Parameters
+        ----------
+        checkpoint: str
+            The path to the checkpoint file.
+        '''
         raise NotImplementedError
 
     def train(self, mode=True):
+        '''
+        Swith the model to the `training` mode. Work samely as `model.train()` in pytorch.
+
+        Parameters
+        ----------
+        mode: bool, optional (default = True)
+            If True, switch to the `training` mode.
+        '''
         self.training = mode
         self.model.train()
         return self
     
     def eval(self, mode=False):
+        '''
+        Swith the model to the `validation` mode. Work samely as `model.eval()` in pytorch.
+
+        Parameters
+        ----------
+        mode: bool, optional (default = False)
+            If False, switch to the `validation` mode.
+        '''
         self.training = mode
         self.model.eval()
         return self
 
     def _input_data_check(self, inputs):
-        assert isinstance(inputs, TrialSite), 'Wrong input type.'
+        assert isinstance(inputs, TrialSiteSimple), 'Wrong input type.'
     
     def _save_checkpoint(self, state,
                         epoch_id=0,

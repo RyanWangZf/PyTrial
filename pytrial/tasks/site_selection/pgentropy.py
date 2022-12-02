@@ -108,6 +108,10 @@ class PolicyGradientEntropy(SiteSelectionBase):
         self._fit_model(train_data)
 
     def predict(self, test_data):
+        '''
+        Make prediction for site selection.
+        ZW: [TODO]
+        '''
         self.model(**test_data) # TODO
 
     def save_model(self, output_dir):
