@@ -57,12 +57,12 @@ hence all tasks are defined the *input* and *output*. All we need to do is to pr
 
 ### Tutorials for each task
 
-- [Task 1: Individual Patient Outcome Prediction (`tasks.indiv_outcome`)](https://pytrial.readthedocs.io/en/latest/tutorials/indiv_outcome/indiv_outcome.html)
-- [Task 2: Clinical Trial Site Selection (`tasks.site_selection`)](https://pytrial.readthedocs.io/en/latest/tutorials/site_selection/site_selection.html)
-- [Task 3: Trial Outcome Prediction (`tasks.trial_outcome`)](https://pytrial.readthedocs.io/en/latest/tutorials/trial_outcome/trial_outcome.html)
-- [Task 4: Patient-Trial Matching (`tasks.trial_patient_match`)](https://pytrial.readthedocs.io/en/latest/tutorials/trial_patient_match/trial_patient_match.html)
-- [Task 5: Trial Similarity Search (`tasks.trial_search`)](https://pytrial.readthedocs.io/en/latest/tutorials/trial_search/trial_search.html)
-- [Task 6: Trial Patient Records Simulation (`tasks.trial_simulation`)](https://pytrial.readthedocs.io/en/latest/tutorials/trial_simulation/trial_simulation.html)
+- [Task 1: Individual Patient Outcome Prediction](https://pytrial.readthedocs.io/en/latest/tutorials/indiv_outcome/indiv_outcome.html) 
+- [Task 2: Clinical Trial Site Selection](https://pytrial.readthedocs.io/en/latest/tutorials/site_selection/site_selection.html)
+- [Task 3: Trial Outcome Prediction](https://pytrial.readthedocs.io/en/latest/tutorials/trial_outcome/trial_outcome.html)
+- [Task 4: Patient-Trial Matching](https://pytrial.readthedocs.io/en/latest/tutorials/trial_patient_match/trial_patient_match.html)
+- [Task 5: Trial Similarity Search](https://pytrial.readthedocs.io/en/latest/tutorials/trial_search/trial_search.html)
+- [Task 6: Trial Patient Records Simulation](https://pytrial.readthedocs.io/en/latest/tutorials/trial_simulation/trial_simulation.html)
 
 ### Additional utilities
 
@@ -83,7 +83,7 @@ hence all tasks are defined the *input* and *output*. All we need to do is to pr
     author = {Wang, Zifeng and Theodorou, Brandon and Fu, Tianfan and Sun, Jimeng},
     year = {2022},
     month = {11},
-    organization = {SunLab@UIUC},
+    organization = {SunLab, UIUC},
     note = {Version 0.0.1},
 }
 ```
