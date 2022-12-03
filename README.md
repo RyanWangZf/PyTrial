@@ -6,18 +6,28 @@ for a series of clinical trial tasks. [[Tutorial]](https://pytrial.readthedocs.i
 ---
 
 **PyTrial** is featured for:
+- Off-the-shelf pipelines for various clinical trial tasks: *patient outcome prediction*, *trial site selection*, *trial outcome prediction*, *patient-trial matching*, *trial similarity search*, and *trial data simulation*.
 
 - Unified APIs, detailed documentation, and interactive examples with preprocessed demo data for every implemented algorithm.
 
 - Cutting-edge AI4Trial algorithms reproduced from the most recent top-venue papers.
 
-- Off-the-shelf pipelines for various clinical trial tasks: *patient outcome prediction*, *trial site selection*, *trial outcome prediction*, *patient-trial matching*, *trial similarity search*, and *trial data simulation*.
-
 - Scalability to future research and development based on the PyTrial's architecture.
+
+<figure>
+<img src = "docs/images/pytrial_tasks.png">
+<figcaption align = "center"> 
+<b>Figure 1:</b> A series of clinical trial tasks that are supported by PyTrial.
+</figcaption>
+</figure>
+
+
 
 ## Installation
 
-- It is easy to install PyTrial from github source:
+- Before install PyTrial, we need to install pytorch first. Please refer to [install PyTorch](https://pytorch.org/get-started/locally/) for a version that suits your device.
+
+- Then, it is easy to install PyTrial from github source:
 
 ```bash
 pip install git+https://github.com/RyanWangZf/pytrial.git@main
@@ -47,6 +57,8 @@ hence all tasks are defined the *input* and *output*. All we need to do is to pr
 ## Documentation
 
 >We provide the following tutorials to help users get started with our PyTrial. After go through all these chapters, you will become the expert in AI for clinical trials and are ready to explore the frontier of this field.
+
+The full documentation is at [PyTrial-docs](https://pytrial.readthedocs.io/en/latest/).
 
 ### The principle of PyTrial
 
