@@ -27,7 +27,7 @@ If you find this package useful, please consider citing it in your scientific pu
 
     @misc{pytrial2022,
         title = {PyTrial: AI-driven In Silico Clinical Trial Optimization},
-        author = {Wang, Zifeng and Theodorou, Brandon and Fu, Tianfan and Ma, Jingtang and Sun, Jimeng},
+        author = {Wang, Zifeng and Theodorou, Brandon and Fu, Tianfan and Sun, Jimeng},
         year = {2022},
         month = {11},
         organization = {SunLab@UIUC},
