@@ -110,9 +110,24 @@ class PolicyGradientEntropy(SiteSelectionBase):
     def predict(self, test_data):
         '''
         Make prediction for site selection.
-        ZW: [TODO]
         '''
-        self.model(**test_data) # TODO
+        selections = []
+        dataloader = DataLoader(test_data,
+            batch_size=self.config['batch_size'],
+            num_workers=self.config['num_worker'],
+            pin_memory=True,
+            shuffle=False,
+            collate_fn=SiteSelectionBaseCollator(
+                config={
+                    'has_demographics':isinstance(test_data.sites, SiteBaseDemographics)
+                    }
+                ),
+            )
+        for data in dataloader:
+            inputs = self._prepare_input(data)
+            scores = self.model(inputs)
+            selections += [l[:self.config['K']] for l in scores.argsort(dim=1, descending=True).tolist()]
+        return selections
 
     def save_model(self, output_dir):
         '''
