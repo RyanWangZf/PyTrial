@@ -34,10 +34,10 @@ class TrialSiteSimple(Dataset):
 
     def __getitem__(self, idx):
         sitesPerTrial = self.mappings[idx]
-        sample = {"trial": self.trial_features[idx], 
-                  "site": [self.sites[sites] for sites in sitesPerTrial],
+        sample = {"trial": self.trials[idx], 
+                  "site": [self.sites[int(s)] for s in sitesPerTrial],
                   "label": self.enrollments[idx], 
-                  "eth_label": None if isinstance(self.sites, SiteBase) else [self.sites.getLabel(sites) for sites in sitesPerTrial],
+                  "eth_label": None if isinstance(self.sites, SiteBase) else [self.sites.get_label(sites) for sites in sitesPerTrial],
                  }
         return sample
     
@@ -99,13 +99,13 @@ class SiteSelectionBaseCollator:
         
     '''
     has_demographics = False
-    config = {'has_demographics':'false'} 
+    config = {'has_demographics':'False'} 
 
     def __init__(self, config=None):
         if config is not None:
             self.config.update(config)
             
-        if self.config['has_demographics'] == 'true': self.has_demographics = True
+        if str(self.config['has_demographics']) == 'True': self.has_demographics = True
         else: self.has_demographics = False
 
     def __call__(self, inputs):
@@ -137,14 +137,14 @@ class SiteSelectionBaseCollator:
         # init output dict
         return_data = defaultdict(list)
 
-        return_data['trial'] = torch.FloatTensor(np.array(inputs['trial']))
-        return_data['site'] = torch.FloatTensor(np.array(inputs['site']))
-        return_data['label'] = torch.FloatTensor(np.array(inputs['label']))
+        return_data['trial'] = torch.FloatTensor(np.array([i['trial'] for i in inputs])).squeeze(1)
+        return_data['site'] = torch.FloatTensor(np.array([i['site'] for i in inputs])).squeeze(2)
+        return_data['label'] = torch.FloatTensor(np.array([i['label'] for i in inputs]))
 
         # processing all
         if self.has_demographics:
-            return_data['eth_label'] = torch.FloatTensor(inputs['eth_label'])
-        
+            return_data['eth_label'] = torch.FloatTensor(np.array([i['eth_label'] for i in inputs]))
+
         return return_data
     
 class SiteSelectionModalitiesCollator:
