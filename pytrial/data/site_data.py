@@ -290,7 +290,7 @@ class SiteBaseDemographics(Dataset):
         index: int or list[int]
             Retrieve the corresponding rows in the data.
         '''
-        return self.eth_label[index]
+        return self.eth_labels[index]
 
     def __len__(self):
         return len(self.df)

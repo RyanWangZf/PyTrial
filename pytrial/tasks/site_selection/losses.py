@@ -67,7 +67,7 @@ def loss_function(score, relevance, eth_list, lam, K):
 	delta_f_values = fairness_loss(rank_samples, eth_list, relevance, num_MC_samples, K)
 	rewards = delta_values + lam*delta_f_values
 	loss = -1 * torch.sum(importance_prob_values * rewards, 1)
-	return loss/num_MC_samples, torch.mean(rewards), torch.mean(delta_values), torch.mean(delta_f_values)
+	return loss/num_MC_samples #, torch.mean(rewards), torch.mean(delta_values), torch.mean(delta_f_values)
 
 def loss_function_enrollment(score, relevance, K):	
 	num_MC_samples = 25
@@ -80,7 +80,7 @@ def loss_function_enrollment(score, relevance, K):
 	delta_values = ranking_loss(rank_samples, relevance, num_MC_samples, K)
 	rewards = delta_values
 	loss = -1 * torch.sum(importance_prob_values * rewards, 1)
-	return loss/num_MC_samples, torch.mean(rewards), torch.mean(delta_values)
+	return loss/num_MC_samples #, torch.mean(rewards), torch.mean(delta_values)
 
 def loss_function_fairness(score, relevance, eth_list, K):
 	num_MC_samples = 25
@@ -104,8 +104,8 @@ class PolicyGradientLossEnrollment(nn.Module):
 
     def forward(self, inputs):
         scores = self.model(inputs)
-        loss = self.loss(scores, inputs['labels'], self.K)
-        return {'loss_value':loss}
+        loss = self.loss(scores, inputs['label'], self.K)
+        return {'loss_value':loss.mean()}
     
 class PolicyGradientLossFairness(nn.Module):
     def __init__(self, model, K) -> None:
@@ -116,8 +116,8 @@ class PolicyGradientLossFairness(nn.Module):
 
     def forward(self, inputs):
         scores = self.model(inputs)
-        loss = self.loss(scores, inputs['labels'], inputs['eth_label'], self.K)
-        return {'loss_value':loss}
+        loss = self.loss(scores, inputs['label'], inputs['eth_label'], self.K)
+        return {'loss_value':loss.mean()}
     
 class PolicyGradientLossCombined(nn.Module):
     def __init__(self, model, K, lam) -> None:
@@ -129,5 +129,5 @@ class PolicyGradientLossCombined(nn.Module):
 
     def forward(self, inputs):
         scores = self.model(inputs)
-        loss = self.loss(scores, inputs['labels'], inputs['eth_label'], self.lam, self.K)
-        return {'loss_value':loss}
+        loss = self.loss(scores, inputs['label'], inputs['eth_label'], self.lam, self.K)
+        return {'loss_value':loss.mean()}

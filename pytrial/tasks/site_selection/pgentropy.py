@@ -20,8 +20,9 @@ class BuildModel(nn.Module):
     def __init__(self, 
         trial_dim,
         site_dim,
-        embedding_dim):
-        super(BuildModel).__init__()
+        embedding_dim
+        ) -> None:
+        super().__init__()
         
         self.site_encoder = nn.Linear(site_dim, embedding_dim)
         self.trial_encoder = nn.Linear(trial_dim, embedding_dim)
@@ -35,14 +36,12 @@ class BuildModel(nn.Module):
         trial = inputs['trial']
         investigators = inputs['site']
         num_inv = investigators.size(1)
-        # Trial is (bs, trial_dim)
-        # All other inputs are (bs, M, *) where * is either a sequence or single input
-        site_encoding = torch.relu(self.stat_fc(torch.relu(self.static_encoder(investigators))))
+        site_encoding = torch.relu(self.site_fc(torch.relu(self.site_encoder(investigators))))
         trial_encoding = torch.relu(self.trial_fc(torch.relu(self.trial_encoder(trial))))
         trial_encoding = trial_encoding.unsqueeze(1).repeat(1, num_inv, 1)
         network_input = torch.cat((site_encoding, trial_encoding), dim=-1)
         network_input = torch.relu(self.score_encoder(network_input))
-        score = self.output(torch.relu(self.fc(network_input)))
+        score = self.output(torch.relu(self.fc(network_input))).squeeze(-1)
         return score
 
 class PolicyGradientEntropy(SiteSelectionBase):
@@ -76,8 +75,8 @@ class PolicyGradientEntropy(SiteSelectionBase):
         num_worker=0,
         device='cuda:0',
         experiment_id='test',
-        ):
-        super(SiteSelectionBase, self).__init__(experiment_id)
+        ) -> None:
+        super().__init__(experiment_id)
         self.config = {
             'trial_dim':trial_dim,
             'site_dim':site_dim,
@@ -93,6 +92,7 @@ class PolicyGradientEntropy(SiteSelectionBase):
             'device':device,
             'experiment_id':experiment_id,
             }
+        self.device = device
         self._build_model()
 
     def fit(self, train_data):
@@ -112,6 +112,7 @@ class PolicyGradientEntropy(SiteSelectionBase):
         Make prediction for site selection.
         '''
         selections = []
+        self._input_data_check(test_data)
         dataloader = DataLoader(test_data,
             batch_size=self.config['batch_size'],
             num_workers=self.config['num_worker'],
@@ -174,7 +175,7 @@ class PolicyGradientEntropy(SiteSelectionBase):
             shuffle=True,
             collate_fn=SiteSelectionBaseCollator(
                 config={
-                    'has_demographics':isinstance(train_data.sites, SiteBaseDemographics)
+                    'has_demographics': isinstance(train_data.sites, SiteBaseDemographics)
                     }
                 ),
             )
