@@ -115,7 +115,7 @@ def smiles_lst2fp(smiles_lst):
 
 #################  for data loader  #################
 def clean_protocol(protocol):
-	protocol = protocol.lower()
+	protocol = str(protocol).lower()
 	protocol_split = protocol.split('\n')
 	filter_out_empty_fn = lambda x: len(x.strip())>0
 	strip_fn = lambda x:x.strip()

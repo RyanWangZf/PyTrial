@@ -2,6 +2,7 @@ import pickle
 from copy import deepcopy 
 import os
 import json
+import joblib
 
 from sklearn.metrics import roc_auc_score, f1_score, average_precision_score, precision_score, recall_score, accuracy_score
 import matplotlib.pyplot as plt
@@ -510,11 +511,14 @@ class HINT(HINT_nograph):
                 opt.step()
                 print('epoch: {}, loss: {}'.format(ep, loss.item()))
             
-            valid_loss = self.test(valid_loader, return_loss=True)
-            valid_loss_record.append(valid_loss)
-            if valid_loss < best_valid_loss:
-                best_valid_loss = valid_loss 
-                best_model = deepcopy(self)
+            if valid_data is not None:
+                # only check valid loss when valid_data is not None
+                valid_loss = self.test(valid_loader, return_loss=True)
+                valid_loss_record.append(valid_loss)
+                if valid_loss < best_valid_loss:
+                    print('best valid loss: {} -> {}'.format(best_valid_loss, valid_loss))
+                    best_valid_loss = valid_loss 
+                    best_model = deepcopy(self)
 
         # self.plot_learning_curve(train_loss_record, valid_loss_record)
         self = deepcopy(best_model)
@@ -528,13 +532,15 @@ class HINT(HINT_nograph):
         ----------
         output_dir: str or None
             The output folder to save the learned model.
-            If set None, will save model to `save_model/model.ckpt`.
+            If set None, will save model to `checkpoints/model.ckpt`.
         '''
         if output_dir is None:
-            output_dir = 'save_model'
+            output_dir = 'checkpoints'
         if not os.path.exists(output_dir): os.makedirs(output_dir)
-        filename = os.path.join(output_dir, 'model.ckpt')
-        torch.save(self, filename)
+        filename = os.path.join(output_dir, 'model.pkl')
+
+        # save self using joblib
+        joblib.dump(self, filename)
 
         config_filename = os.path.join(output_dir, 'config.json')
         with open(config_filename, 'w') as f:
@@ -551,17 +557,44 @@ class HINT(HINT_nograph):
             The checkpoint under this folder should be `model.ckpt`.
         '''
         if checkpoint is None:
-            ckpt_dir = 'save_model'
-            checkpoint = os.path.join(ckpt_dir, 'model.ckpt')
+            ckpt_dir = 'checkpoints'
+            checkpoint = os.path.join(ckpt_dir, 'model.pkl')
         else:
-            checkpoint = os.path.join(checkpoint, 'model.ckpt')
+            checkpoint = os.path.join(checkpoint, 'model.pkl')
         
-        self = torch.load(checkpoint)
+        # load model using joblib
+        self = joblib.load(checkpoint)
 
         ckpt_dir = os.path.dirname(checkpoint)
         config_filename = os.path.join(ckpt_dir, 'config.json')
         with open(config_filename, 'r') as f:
             self.config = json.load(f)
+
+    @staticmethod
+    def from_pretrained(checkpoint=None):
+        '''
+        Load the learned HINT model from the disk.
+
+        Parameters
+        ----------
+        checkpoint: str 
+            The checkpoint folder to load the learned model.
+            The checkpoint under this folder should be `model.ckpt`.
+        '''
+        if checkpoint is None:
+            ckpt_dir = 'checkpoints'
+            checkpoint = os.path.join(ckpt_dir, 'model.pkl')
+        else:
+            checkpoint = os.path.join(checkpoint, 'model.pkl')
+        
+        # load model using joblib
+        self = joblib.load(checkpoint)
+
+        ckpt_dir = os.path.dirname(checkpoint)
+        config_filename = os.path.join(ckpt_dir, 'config.json')
+        with open(config_filename, 'r') as f:
+            self.config = json.load(f)
+        return self
 
     def generate_adj(self):        								
         ##### consistent with HINT_nograph.forward
@@ -876,30 +909,29 @@ class ADMET(nn.Sequential):
     def test(self, valid_loader):
         pass 
 
+    # def fit(self, train_loader, valid_loader, idx):
+    #     opt = torch.optim.Adam(self.parameters(), lr = self.lr, weight_decay = self.weight_decay)
+    #     train_loss_record = [] 
+    #     valid_loss = self.test(valid_loader, return_loss=True)
+    #     valid_loss_record = [valid_loss]
+    #     best_valid_loss = valid_loss
+    #     best_model = deepcopy(self)
 
-    def fit(self, train_loader, valid_loader, idx):
-        opt = torch.optim.Adam(self.parameters(), lr = self.lr, weight_decay = self.weight_decay)
-        train_loss_record = [] 
-        valid_loss = self.test(valid_loader, return_loss=True)
-        valid_loss_record = [valid_loss]
-        best_valid_loss = valid_loss
-        best_model = deepcopy(self)
+    #     for ep in tqdm(range(self.epoch)):
+    #         for smiles_lst in train_loader:
+    #             output = self.forward(smiles_lst).view(-1)  #### 32, 1 -> 32, ||  label_vec 32,
+    #             loss = self.loss(output, label_vec.float())
+    #             train_loss_record.append(loss.item())
+    #             opt.zero_grad() 
+    #             loss.backward() 
+    #             opt.step()
+    #         valid_loss = self.test(valid_loader, return_loss=True)
+    #         valid_loss_record.append(valid_loss)
+    #         if valid_loss < best_valid_loss:
+    #             best_valid_loss = valid_loss 
+    #             best_model = deepcopy(self)
 
-        for ep in tqdm(range(self.epoch)):
-            for smiles_lst in train_loader:
-                output = self.forward(smiles_lst).view(-1)  #### 32, 1 -> 32, ||  label_vec 32,
-                loss = self.loss(output, label_vec.float())
-                train_loss_record.append(loss.item())
-                opt.zero_grad() 
-                loss.backward() 
-                opt.step()
-            valid_loss = self.test(valid_loader, return_loss=True)
-            valid_loss_record.append(valid_loss)
-            if valid_loss < best_valid_loss:
-                best_valid_loss = valid_loss 
-                best_model = deepcopy(self)
-
-        self = deepcopy(best_model)
+    #     self = deepcopy(best_model)
 
 
 
