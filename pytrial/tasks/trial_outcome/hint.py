@@ -450,7 +450,6 @@ class HINT(HINT_nograph):
             'prefix_name': prefix_name,            
             }
 
-
     def predict(self, test_data):
         '''
         Make trial outcome prediction for test data.
@@ -552,7 +551,7 @@ class HINT(HINT_nograph):
 
         Parameters
         ----------
-        checkpoint: str 
+        checkpoint: str
             The checkpoint folder to load the learned model.
             The checkpoint under this folder should be `model.ckpt`.
         '''
@@ -563,12 +562,15 @@ class HINT(HINT_nograph):
             checkpoint = os.path.join(checkpoint, 'model.pkl')
         
         # load model using joblib
-        self = joblib.load(checkpoint)
+        model = joblib.load(checkpoint)
 
         ckpt_dir = os.path.dirname(checkpoint)
         config_filename = os.path.join(ckpt_dir, 'config.json')
         with open(config_filename, 'r') as f:
-            self.config = json.load(f)
+            model.config = json.load(f)
+        
+        # replace self with the loaded object
+        self.__dict__.update(model.__dict__)
 
     @staticmethod
     def from_pretrained(checkpoint=None):
