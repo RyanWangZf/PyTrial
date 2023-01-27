@@ -107,6 +107,9 @@ class RNN(SequenceIndivBase):
     epochs: int
         Maximum number of iterations taken for the solvers to converge.
 
+    evaluation_steps: int
+        Number of steps to evaluate the model on validation set or report the training loss.
+
     num_worker: int
         Number of workers used to do dataloading during training.
 

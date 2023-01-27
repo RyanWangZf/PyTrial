@@ -43,7 +43,7 @@ class PromptEHR(SequenceSimulationBase):
     eval_batch_size: int
         Evaluation batch size.
     
-    eval_step: int
+    evaluation_steps: int
         How many steps of updates then try to evaluate the trained models.
     
     learning_rate: float
@@ -83,7 +83,7 @@ class PromptEHR(SequenceSimulationBase):
         epoch=50,
         batch_size=16,
         eval_batch_size=16,
-        eval_step=1000,
+        evaluation_steps=1000,
         learning_rate=5e-5,
         weight_decay=1e-4,
         num_worker=8,
@@ -98,7 +98,7 @@ class PromptEHR(SequenceSimulationBase):
             'epoch':epoch,
             'batch_size':batch_size,
             'eval_batch_size':eval_batch_size,
-            'eval_step':eval_step,
+            'eval_step':evaluation_steps,
             'learning_rate':learning_rate,
             'weight_decay':weight_decay,
             'num_worker':num_worker,
