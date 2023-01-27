@@ -130,6 +130,7 @@ class RNN(SequenceIndivBase):
         weight_decay=1e-4,
         batch_size=64,
         epochs=10,
+        evaluation_steps=100,
         num_worker=0,
         device='cuda:0',
         experiment_id='test',
@@ -151,6 +152,7 @@ class RNN(SequenceIndivBase):
             'epochs':epochs,
             'num_worker':num_worker,
             'orders':orders,
+            'evaluation_steps':evaluation_steps,
             }
         self.config['total_vocab_size'] = sum(vocab_size)
         self.device = device
