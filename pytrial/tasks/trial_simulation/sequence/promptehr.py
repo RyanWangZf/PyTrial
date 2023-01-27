@@ -34,7 +34,7 @@ class PromptEHR(SequenceSimulationBase):
         The number of categories for each categorical patient baseline features.
         The input baseline ``feature = [num1, num2, .., num_n, cat1, cat2,...]``.
 
-    epoch: int
+    epochs: int
         Num training epochs in total.
 
     batch_size: int
@@ -80,7 +80,7 @@ class PromptEHR(SequenceSimulationBase):
         code_type=None,
         n_num_feature=None,
         cat_cardinalities=None,
-        epoch=50,
+        epochs=50,
         batch_size=16,
         eval_batch_size=16,
         evaluation_steps=1000,
@@ -95,7 +95,7 @@ class PromptEHR(SequenceSimulationBase):
             'code_type': code_type,
             'n_num_feature':n_num_feature,
             'cat_cardinalities':cat_cardinalities,
-            'epoch':epoch,
+            'epoch':epochs,
             'batch_size':batch_size,
             'eval_batch_size':eval_batch_size,
             'eval_step':evaluation_steps,
