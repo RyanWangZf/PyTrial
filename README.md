@@ -97,6 +97,7 @@ The full documentation is at [PyTrial-docs](https://pytrial.readthedocs.io/en/la
     month = {11},
     organization = {SunLab, UIUC},
     note = {Version 0.0.1},
+    url = {https://pytrial.readthedocs.io/en/latest/},
 }
 ```
 
