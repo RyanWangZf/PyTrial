@@ -1,4 +1,22 @@
-# PyTrial: AI-Driven In Silico Clinical Trial Optimization
+<h2 align='center'>
+    PyTrial
+</h2>
+
+<h4 align='center'>
+A python package for AI-driven in silico clinical trial optimization.
+</h4>
+
+
+<div align='center'>
+
+[![Doc]()]*()
+
+[![License](https://img.shields.io/badge/License-BSD_2--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)
+[![Python 3.7+](https://img.shields.io/badge/python-3.7+-blue.svg)](https://www.python.org/downloads/release/python-370/)
+[![Sunlab](https://img.shields.io/badge/About-SunLab%40UIUC-orange)](https://www.sunlab.org/)
+
+
+</div>
 
 **PyTrial** is designed for both ML researchers and medical practioners. We provide a comprehensive collection of AI methods
 for a series of clinical trial tasks. [[Tutorial]](https://pytrial.readthedocs.io/en/latest/tutorial.html).
