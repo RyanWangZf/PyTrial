@@ -43,52 +43,52 @@ class CTGAN(TabularSimulationBase):
 
     Parameters
     ----------
-    embedding_dim (int):
+    embedding_dim: int
         Size of the random sample passed to the Generator. Defaults to 128.
 
-    generator_dim (tuple or list of ints):
+    generator_dim: tuple or list of ints
         Size of the output samples for each one of the Residuals. A Residual Layer
         will be created for each one of the values provided. Defaults to (256, 256).
     
-    discriminator_dim (tuple or list of ints):
+    discriminator_dim: tuple or list of ints
         Size of the output samples for each one of the Discriminator Layers. A Linear Layer
         will be created for each one of the values provided. Defaults to (256, 256).
     
-    generator_lr (float):
+    generator_lr: float
         Learning rate for the generator. Defaults to 2e-4.
     
-    generator_decay (float):
+    generator_decay: float
         Generator weight decay for the Adam Optimizer. Defaults to 1e-6.
     
-    discriminator_lr (float):
+    discriminator_lr: float
         Learning rate for the discriminator. Defaults to 2e-4.
     
-    discriminator_decay (float):
+    discriminator_decay: float
         Discriminator weight decay for the Adam Optimizer. Defaults to 1e-6.
     
-    batch_size (int):
+    batch_size: int
         Number of data samples to process in each step.
     
-    discriminator_steps (int):
+    discriminator_steps: int
         Number of discriminator updates to do for each generator update.
         From the WGAN paper: https://arxiv.org/abs/1701.07875. WGAN paper
         default is 5. Default used is 1 to match original CTGAN implementation.
     
-    log_frequency (boolean):
+    log_frequency: bool
         Whether to use log frequency of categorical levels in conditional
         sampling. Defaults to ``True``.
     
-    verbose (boolean):
+    verbose: bool
         Whether to have print statements for progress results. Defaults to ``True``.
     
-    epochs (int):
+    epochs: int
         Number of training epochs. Defaults to 300.
     
-    pac (int):
+    pac: int
         Number of samples to group together when applying the discriminator.
         Defaults to 10.
     
-    cuda (bool or str):
+    cuda: bool or str
         If ``True``, use CUDA. If a ``str``, use the indicated device.
         If ``False``, do not use cuda at all.
 
