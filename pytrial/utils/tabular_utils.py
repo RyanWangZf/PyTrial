@@ -19,8 +19,11 @@ from sklearn.preprocessing import StandardScaler as sk_standardscaler
 from sklearn.preprocessing import MinMaxScaler as sk_minmaxscaler
 import rdt
 from rdt.hyper_transformer import Config
+from rdt.errors import InvalidConfigError
+from rdt.transformers import BaseTransformer
 from rdt.transformers import LabelEncoder, BinaryEncoder, UnixTimestampEncoder
 from rdt.transformers.numerical import FloatFormatter
+from rdt.transformers.categorical import OneHotEncoder, FrequencyEncoder
 
 class StandardScaler(FloatFormatter):
     '''Transformer for numerical data.
@@ -56,6 +59,7 @@ class StandardScaler(FloatFormatter):
     _dtype = None
     _min_value = None
     _max_value = None
+    random_states = None
 
     def __init__(self,
         missing_value_replacement=None,
@@ -64,6 +68,7 @@ class StandardScaler(FloatFormatter):
         model_missing_values=None,
         computer_representation='Float'
         ):
+        self.output_properties = {None: {'sdtype': 'float', 'next_transformer': None}}
         self.missing_value_replacement = missing_value_replacement
         self.enforce_min_max_values=enforce_min_max_values
         self.learn_rounding_scheme=learn_rounding_scheme
@@ -248,6 +253,36 @@ class HyperTransformer(rdt.HyperTransformer):
             self._user_message('Config:')
             self._user_message(config)
 
+    @staticmethod
+    def _validate_transformers(column_name_to_transformer):
+        """Validate the given transformers are valid.
+        Args:
+            column_name_to_transformer (dict):
+                Dict mapping column names to transformers to be used for that column.
+        Raises:
+            Error:
+                Raises an error if ``column_name_to_transformer`` contains one or more
+                invalid transformers.
+        """
+        invalid_transformers_columns = []
+        update_transformers = {}
+        for column_name, transformer in column_name_to_transformer.items():
+            if transformer and not isinstance(transformer, BaseTransformer):
+                if isinstance(transformer, str):
+                    if get_transformer(transformer) is None:
+                        invalid_transformers_columns.append(column_name)
+                    else:
+                        # update the column_name_to_transformer dict with str inputs
+                        update_transformers[column_name] = get_transformer(transformer)()
+
+        if invalid_transformers_columns:
+            raise InvalidConfigError(
+                f'Invalid transformers for columns: {invalid_transformers_columns}. '
+                'Please assign an rdt transformer instance to each column name.'
+            )
+        
+        column_name_to_transformer.update(update_transformers)
+
 
 def read_csv_to_df(file_loc, header_lower=True, usecols=None, dtype=None,
                    low_memory=True, encoding=None, index_col=None):
@@ -370,3 +405,17 @@ def load_table_config(data_dir, discriminate_bin_feat=False):
         'cat_feat': cat_feat_list,
         'cat_cardinalities': cat_cardinalities,
     }
+
+def get_transformer(name):
+    mapping = {
+        'labelencoder':LabelEncoder,
+        'onehotencoder':OneHotEncoder,
+        'binaryencoder':BinaryEncoder,
+        'floatformatter':FloatFormatter,
+        'frequencyencoder':FrequencyEncoder,
+        'unixtimeformatter':UnixTimestampEncoder,
+    }
+    if isinstance(name, str):
+        return mapping.get(name.lower(), None)
+    else:
+        raise ValueError('The input transformer name must be a string. Get {} instead.'.format(type(name)))

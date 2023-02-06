@@ -218,8 +218,7 @@ class BuildModel:
 
 class CopulaGAN(TabularSimulationBase):
     '''
-    Implement CopulaGAN model for tabular simulation
-    prediction in clinical trials.
+    Implement CopulaGAN model for tabular patient data simulation [1]_.
 
     Parameters
     ----------
@@ -274,6 +273,10 @@ class CopulaGAN(TabularSimulationBase):
         
     experiment_id: str, optional
         The name of current experiment. Decide the saved model checkpoint name.
+
+    Notes
+    -----
+    .. [1] Xu, L., Skoularidou, M., Cuesta-Infante, A., & Veeramachaneni, K. (2019). Modeling tabular data using conditional gan. Advances in Neural Information Processing Systems, 32.
     '''
     def __init__(
         self,
@@ -335,13 +338,13 @@ class CopulaGAN(TabularSimulationBase):
         self.metadata = train_data.metadata
         self.raw_dataset = train_data
         
-    def predict(self, number_of_predictions=200):
+    def predict(self, n=200):
         '''
         Simulate new tabular data with number_of_predictions.
 
         Parameters
         ----------
-        number_of_predictions: int
+        n: int
             The number of synthetic data to generate.
 
         Returns
@@ -349,7 +352,7 @@ class CopulaGAN(TabularSimulationBase):
         ypred: TabularPatientBase
             A new tabular data simulated by the model
         '''
-        ypred = self.model.sample(number_of_predictions)  # build df
+        ypred = self.model.sample(n)  # build df
         ypred = self.raw_dataset.reverse_transform(ypred) # transform back
         return ypred # output: dataset, same as the input dataset
 

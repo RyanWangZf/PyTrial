@@ -39,8 +39,7 @@ class BuildModel:
 
 class CTGAN(TabularSimulationBase):
     '''
-    Implement CTGAN model for tabular simulation
-    prediction in clinical trials.
+    Implement CTGAN model for patient level tabular data generation [1]_.
 
     Parameters
     ----------
@@ -95,6 +94,10 @@ class CTGAN(TabularSimulationBase):
 
     experiment_id: str, optional (default='trial_simulation.tabular.ctgan')
         The name of current experiment. Decide the saved model checkpoint name.
+
+    Notes
+    -----
+    .. [1] Xu, L., Skoularidou, M., Cuesta-Infante, A., & Veeramachaneni, K. (2019). Modeling tabular data using conditional gan. Advances in Neural Information Processing Systems, 32.
     '''
     def __init__(
             self,
@@ -137,12 +140,12 @@ class CTGAN(TabularSimulationBase):
 
     def fit(self, train_data):
         '''
-        Train CTGAN model to simulate patient outcome
-        with tabular input data.
+        Train CTGAN model to simulate tabular patient data.
         
         Parameters
         ----------
-        train_data: tabular data
+        train_data: TabularPatientBase
+            The training data.
         '''
         self._input_data_check(train_data)
         self._build_model()
@@ -165,20 +168,21 @@ class CTGAN(TabularSimulationBase):
                     categoricals.append(field)
         self._fit_model(dataset, categoricals)
 
-    def predict(self, number_of_predictions=200):
+    def predict(self, n=200):
         '''
         simulate a new tabular data with number_of_predictions.
 
         Parameters
         ----------
-        number_of_predictions: number of predictions
+        n: int
+            number of synthetic records going to generate.
 
         Returns
         -------
         ypred: dataset, same as the input dataset
             A new tabular data simulated by the model
         '''
-        ypred = self.model.sample(number_of_predictions)  # build df
+        ypred = self.model.sample(n)  # build df
         return ypred  # output: dataset, same as the input dataset, don't need to transform back
 
     def save_model(self, output_dir=None):
@@ -187,7 +191,6 @@ class CTGAN(TabularSimulationBase):
 
         Parameters
         ----------
-
         output_dir: str or None
             The dir to save the learned model.
             If set None, will save model to `self.checkout_dir`.
@@ -207,7 +210,6 @@ class CTGAN(TabularSimulationBase):
 
         Parameters
         ----------
-        
         checkpoint: str or None
             If a directory, the only checkpoint file `.model` will be loaded.
             If a filepath, will load from this file;
