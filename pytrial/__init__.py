@@ -1,3 +1,6 @@
+name = 'PyTrial'
+version = '0.0.1'
+
 import random
 import numpy as np
 import torch

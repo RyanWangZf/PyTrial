@@ -20,8 +20,7 @@ class BuildModel:
 
 class GaussianCopula(TabularSimulationBase):
     '''
-    Implement Gaussian Copula model for tabular simulation
-    prediction in clinical trials.
+    Implement Gaussian Copula model for tabular patient simulation.
 
     Parameters
     ----------
@@ -55,13 +54,13 @@ class GaussianCopula(TabularSimulationBase):
         self.metadata = train_data.metadata
         self.raw_dataset = train_data
 
-    def predict(self, number_of_predictions=200):
+    def predict(self, n=200):
         '''
         simulate a new tabular data with number_of_predictions.
 
         Parameters
         ----------
-        number_of_predictions: int
+        n: int
             The number of synthetic samples to generation.
 
         Returns
@@ -69,7 +68,7 @@ class GaussianCopula(TabularSimulationBase):
         ypred: TabularPatientBase
             A new tabular data simulated by the model
         '''
-        ypred = self.model.sample(number_of_predictions) # build df
+        ypred = self.model.sample(n) # build df
         ypred = self.raw_dataset.reverse_transform(ypred) # transform back
         return ypred # output: dataset, same as the input dataset
 

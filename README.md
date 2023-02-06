@@ -1,25 +1,50 @@
-# PyTrial: AI-Driven In Silico Clinical Trial Optimization
+<h2 align='center'>
+    PyTrial
+</h2>
 
-**PyTrial** is designed for both ML researchers and medical practioners. We provide a comprehensive collection of AI methods
-for a series of clinical trial tasks. [[Tutorial]](https://pytrial.readthedocs.io/en/latest/tutorial.html).
+<h4 align='center'>
+A python package for AI-driven in silico clinical trial optimization.
+</h4>
 
----
+<div align='center'>
 
-**PyTrial** is featured for:
-- Off-the-shelf pipelines for various clinical trial tasks: *patient outcome prediction*, *trial site selection*, *trial outcome prediction*, *patient-trial matching*, *trial similarity search*, and *trial data simulation*.
+[![Doc](https://img.shields.io/badge/Doc-PyTrial-brightgreen)](https://pytrial.readthedocs.io/en/latest/)
+[![Tutorial](https://img.shields.io/badge/Tutotrial-PyTrial-brightgreen)](https://pytrial.readthedocs.io/en/latest/tutorial.html)
 
-- Unified APIs, detailed documentation, and interactive examples with preprocessed demo data for every implemented algorithm.
+[![License](https://img.shields.io/badge/License-BSD_2--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)
+[![Python 3.7+](https://img.shields.io/badge/python-3.7+-blue.svg)](https://www.python.org/downloads/release/python-370/)
+[![Sunlab](https://img.shields.io/badge/About-SunLab%40UIUC-orange)](https://www.sunlab.org/)
 
-- Cutting-edge AI4Trial algorithms reproduced from the most recent top-venue papers.
-
-- Scalability to future research and development based on the PyTrial's architecture.
+</div>
 
 <figure>
 <img src = "docs/images/pytrial_tasks.png">
 <figcaption align = "center"> 
-<b>Figure 1:</b> A series of clinical trial tasks that are supported by PyTrial.
+A series of clinical trial tasks that are supported by PyTrial.
 </figcaption>
 </figure>
+
+
+
+## Features:
+
+**PyTrial** is designed for both ML researchers and medical practioners, which is featured for
+
+- :key: Off-the-shelf pipelines for various clinical trial tasks proposed in the most recent top-venue papers.
+
+- :fire: A comprehensive implementation of many AI for drug development tasks:
+	- [Patient outcome prediction](https://pytrial.readthedocs.io/en/latest/pytrial.tasks.indiv_outcome.html).
+	- [Trial site selection](https://pytrial.readthedocs.io/en/latest/pytrial.tasks.site_selection.html).
+	- [Trial outcome prediction](https://pytrial.readthedocs.io/en/latest/pytrial.tasks.trial_outcome.html).
+	- [Patient-trial matching](https://pytrial.readthedocs.io/en/latest/pytrial.tasks.trial_patient_match.html).
+	- [Trial similarity search](https://pytrial.readthedocs.io/en/latest/pytrial.tasks.trial_search.html).
+	- [Trial data simulation](https://pytrial.readthedocs.io/en/latest/pytrial.tasks.trial_simulation.html).
+
+- :book: Unified APIs, detailed [documentation](https://pytrial.readthedocs.io/en/latest/index.html), and [interactive examples](https://pytrial.readthedocs.io/en/latest/tutorial.html) with preprocessed demo data for every implemented algorithm.
+
+- :bulb: Cutting-edge AI4Trial algorithms reproduced from the most recent top-venue papers.
+
+- :airplane: Scalability to future research and development based on the **PyTrial**'s architecture.
 
 
 
@@ -36,6 +61,8 @@ pip install git+https://github.com/RyanWangZf/pytrial.git@main
 The package is tested on ``python==3.7``.
 
 We **DO NOT** recommend downloading from PyPI temporarily because PyTrial is undergoing development swiftly.
+
+
 
 ## Philosophy
 > In PyTrial, performing a task boils down to three steps: load data -> define model -> fit and predict.
@@ -54,11 +81,15 @@ model.load_model(load_dir)
 
 hence all tasks are defined the *input* and *output*. All we need to do is to prepare for the input following the protocol.
 
+
+
 ## Documentation
 
 >We provide the following tutorials to help users get started with our PyTrial. After go through all these chapters, you will become the expert in AI for clinical trials and are ready to explore the frontier of this field.
 
 The full documentation is at [PyTrial-docs](https://pytrial.readthedocs.io/en/latest/).
+
+
 
 ### The principle of PyTrial
 
@@ -66,6 +97,8 @@ The full documentation is at [PyTrial-docs](https://pytrial.readthedocs.io/en/la
 - [Intro 2: PyTrial API & Pipeline](https://pytrial.readthedocs.io/en/latest/tutorials/pipeline.html)
 - [Intro 3: Basic Patient Data Class](https://pytrial.readthedocs.io/en/latest/tutorials/inputdata.patient.html)
 - [Intro 4: Basic Trial Data Class](https://pytrial.readthedocs.io/en/latest/tutorials/inputdata.trial.html)
+
+
 
 ### Tutorials for each task
 
@@ -76,6 +109,8 @@ The full documentation is at [PyTrial-docs](https://pytrial.readthedocs.io/en/la
 - [Task 5: Trial Similarity Search](https://pytrial.readthedocs.io/en/latest/tutorials/trial_search/trial_search.html)
 - [Task 6: Trial Patient Records Simulation](https://pytrial.readthedocs.io/en/latest/tutorials/trial_simulation/trial_simulation.html)
 
+
+
 ### Additional utilities
 
 - [Misc 1: Load Preprocessed Demo Data](https://pytrial.readthedocs.io/en/latest/tutorials/load_demo_data.html)
@@ -85,9 +120,10 @@ The full documentation is at [PyTrial-docs](https://pytrial.readthedocs.io/en/la
 - [Misc 5: Drug Knowledge Graph](https://pytrial.readthedocs.io/en/latest/tutorials/drug_kg.html)
 
 
-## Citing PyTrial
 
- If you use PyTrial in a scientific publication, we would appreciate citations to:
+## Citing 
+
+If you use PyTrial in a scientific publication, we would appreciate citations to:
 
 ```bibtex
 @misc{pytrial2022,

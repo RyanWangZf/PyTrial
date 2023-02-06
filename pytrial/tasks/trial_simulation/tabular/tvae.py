@@ -104,8 +104,7 @@ class BuildModel:
 
 class TVAE(TabularSimulationBase):
     '''
-    Implement TVAE model for tabular simulation
-    prediction in clinical trials.
+    Implement TVAE model for tabular patient data simulation [1]_.
 
     Parameters
     ----------
@@ -136,6 +135,10 @@ class TVAE(TabularSimulationBase):
 
     experiment_id: str, optional
         The name of current experiment. Decide the saved model checkpoint name.
+
+    Notes
+    -----
+    .. [1] Xu, L., Skoularidou, M., Cuesta-Infante, A., & Veeramachaneni, K. (2019). Modeling tabular data using conditional gan. Advances in Neural Information Processing Systems, 32.
     '''
     def __init__(
         self,
@@ -198,13 +201,13 @@ class TVAE(TabularSimulationBase):
 
         self._fit_model(dataset, categoricals) 
 
-    def predict(self, number_of_predictions=200):
+    def predict(self, n=200):
         '''
-        simulate a new tabular data with number_of_predictions.
+        simulate a new tabular data with n.
 
         Parameters
         ----------
-        number_of_predictions: int
+        n: int
             The number of new data to simulate.
 
         Returns
@@ -212,7 +215,7 @@ class TVAE(TabularSimulationBase):
         ypred: TanularPatientBase
             A new tabular data simulated by the model
         '''
-        ypred = self.model.sample(number_of_predictions) # build df
+        ypred = self.model.sample(n) # build df
         return ypred # output: dataset, same as the input dataset not transform back
 
     def save_model(self, output_dir=None):

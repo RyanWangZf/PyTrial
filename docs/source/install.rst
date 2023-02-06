@@ -6,7 +6,7 @@ torch version and CUDA device you are using:
 
 `PyTorch Installation Instructions <https://pytorch.org/get-started/locally/>`_.
 
-After that, *transtab* can be downloaded directly using **pip**.
+After that, **PyTrial** can be downloaded directly using **pip**.
 
 .. code-block:: bash
 

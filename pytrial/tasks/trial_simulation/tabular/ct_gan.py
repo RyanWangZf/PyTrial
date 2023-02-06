@@ -39,62 +39,65 @@ class BuildModel:
 
 class CTGAN(TabularSimulationBase):
     '''
-    Implement CTGAN model for tabular simulation
-    prediction in clinical trials.
+    Implement CTGAN model for patient level tabular data generation [1]_.
 
     Parameters
     ----------
-    embedding_dim (int):
+    embedding_dim: int
         Size of the random sample passed to the Generator. Defaults to 128.
 
-    generator_dim (tuple or list of ints):
+    generator_dim: tuple or list of ints
         Size of the output samples for each one of the Residuals. A Residual Layer
         will be created for each one of the values provided. Defaults to (256, 256).
     
-    discriminator_dim (tuple or list of ints):
+    discriminator_dim: tuple or list of ints
         Size of the output samples for each one of the Discriminator Layers. A Linear Layer
         will be created for each one of the values provided. Defaults to (256, 256).
     
-    generator_lr (float):
+    generator_lr: float
         Learning rate for the generator. Defaults to 2e-4.
     
-    generator_decay (float):
+    generator_decay: float
         Generator weight decay for the Adam Optimizer. Defaults to 1e-6.
     
-    discriminator_lr (float):
+    discriminator_lr: float
         Learning rate for the discriminator. Defaults to 2e-4.
     
-    discriminator_decay (float):
+    discriminator_decay: float
         Discriminator weight decay for the Adam Optimizer. Defaults to 1e-6.
     
-    batch_size (int):
+    batch_size: int
         Number of data samples to process in each step.
     
-    discriminator_steps (int):
+    discriminator_steps: int
         Number of discriminator updates to do for each generator update.
         From the WGAN paper: https://arxiv.org/abs/1701.07875. WGAN paper
         default is 5. Default used is 1 to match original CTGAN implementation.
     
-    log_frequency (boolean):
+    log_frequency: bool
         Whether to use log frequency of categorical levels in conditional
         sampling. Defaults to ``True``.
     
-    verbose (boolean):
+    verbose: bool
         Whether to have print statements for progress results. Defaults to ``True``.
     
-    epochs (int):
+    epochs: int
         Number of training epochs. Defaults to 300.
     
-    pac (int):
+    pac: int
         Number of samples to group together when applying the discriminator.
         Defaults to 10.
     
-    cuda (bool or str):
+    cuda: bool or str
         If ``True``, use CUDA. If a ``str``, use the indicated device.
         If ``False``, do not use cuda at all.
 
     experiment_id: str, optional (default='trial_simulation.tabular.ctgan')
         The name of current experiment. Decide the saved model checkpoint name.
+
+    Notes
+    -----
+    .. [1] Xu, L., Skoularidou, M., Cuesta-Infante, A., & Veeramachaneni, K. (2019). Modeling tabular data using conditional gan. Advances in Neural Information Processing Systems, 32.
     '''
     def __init__(
             self,
@@ -137,12 +140,12 @@ class CTGAN(TabularSimulationBase):
 
     def fit(self, train_data):
         '''
-        Train CTGAN model to simulate patient outcome
-        with tabular input data.
+        Train CTGAN model to simulate tabular patient data.
         
         Parameters
         ----------
-        train_data: tabular data
+        train_data: TabularPatientBase
+            The training data.
         '''
         self._input_data_check(train_data)
         self._build_model()
@@ -165,20 +168,21 @@ class CTGAN(TabularSimulationBase):
                     categoricals.append(field)
         self._fit_model(dataset, categoricals)
 
-    def predict(self, number_of_predictions=200):
+    def predict(self, n=200):
         '''
         simulate a new tabular data with number_of_predictions.
 
         Parameters
         ----------
-        number_of_predictions: number of predictions
+        n: int
+            number of synthetic records going to generate.
 
         Returns
         -------
         ypred: dataset, same as the input dataset
             A new tabular data simulated by the model
         '''
-        ypred = self.model.sample(number_of_predictions)  # build df
+        ypred = self.model.sample(n)  # build df
         return ypred  # output: dataset, same as the input dataset, don't need to transform back
 
     def save_model(self, output_dir=None):
@@ -187,7 +191,6 @@ class CTGAN(TabularSimulationBase):
 
         Parameters
         ----------
-
         output_dir: str or None
             The dir to save the learned model.
             If set None, will save model to `self.checkout_dir`.
@@ -207,7 +210,6 @@ class CTGAN(TabularSimulationBase):
 
         Parameters
         ----------
-        
         checkpoint: str or None
             If a directory, the only checkpoint file `.model` will be loaded.
             If a filepath, will load from this file;

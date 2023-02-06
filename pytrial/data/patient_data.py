@@ -6,13 +6,14 @@ import pdb
 import json
 import pickle
 import dill
-from collections import defaultdict
+from collections import defaultdict, OrderedDict
 import torch
 
 from torch.utils.data import Dataset, DataLoader
 import numpy as np
 
 from ..utils.tabular_utils import HyperTransformer
+from ..utils.tabular_utils import get_transformer
 
 class TabularPatientBase(Dataset):
     '''
@@ -35,6 +36,8 @@ class TabularPatientBase(Dataset):
         (2) `transformers`: dict, the transformers to be used for each column. The keys are the column
             names and the values are the transformer names. The transformer names can be one in
             https://docs.sdv.dev/rdt/transformers-glossary/browse-transformers.
+            In addition, we also support inputting a transformer string name, e.g., {'column1': 'OneHotEncoder'}.
+
 
         metadata = {
 
@@ -177,6 +180,13 @@ class TabularPatientBase(Dataset):
 
         self.ht.fit(self.df)
         self.metadata.update(self.ht.get_config())
+
+        # create transformed column id to the original columns
+        transformed_col2col = OrderedDict()
+        for idx, col in enumerate(self.df.columns):
+            col_transformer = self.metadata['transformers'][col]
+            transformed_col2col[col] = col_transformer.output_columns
+        self.metadata['transformed_col2col'] = transformed_col2col
 
 
 class SequencePatientBase(Dataset):
