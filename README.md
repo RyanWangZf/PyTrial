@@ -7,6 +7,7 @@ A python package for AI-driven in silico clinical trial optimization.
 </h4>
 
 <div align='center'>
+
 [![Doc](https://img.shields.io/badge/Doc-PyTrial-brightgreen)](https://pytrial.readthedocs.io/en/latest/)
 [![Tutorial](https://img.shields.io/badge/Tutotrial-PyTrial-brightgreen)](https://pytrial.readthedocs.io/en/latest/tutorial.html)
 
