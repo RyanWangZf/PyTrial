@@ -27,7 +27,7 @@ A series of clinical trial tasks that are supported by PyTrial.
 
 
 
-## Features:
+## :star: Features
 
 **PyTrial** is designed for both ML researchers and medical practioners, which is featured for
 
@@ -49,7 +49,7 @@ A series of clinical trial tasks that are supported by PyTrial.
 
 
 
-## Installation
+## :rocket: Installation
 
 - Before install PyTrial, we need to install pytorch first. Please refer to [install PyTorch](https://pytorch.org/get-started/locally/) for a version that suits your device.
 
@@ -65,7 +65,7 @@ We **DO NOT** recommend downloading from PyPI temporarily because PyTrial is und
 
 
 
-## Philosophy
+## :sunny: Philosophy
 > In PyTrial, performing a task boils down to three steps: load data -> define model -> fit and predict.
 
 To minimize the efforts learning to use PyTrial, we keep a consistent user interface for all tasks all models, i.e.,
@@ -84,7 +84,7 @@ hence all tasks are defined the *input* and *output*. All we need to do is to pr
 
 
 
-## Documentation
+## :book: Documentation
 
 >We provide the following tutorials to help users get started with our PyTrial. After go through all these chapters, you will become the expert in AI for clinical trials and are ready to explore the frontier of this field.
 
@@ -122,7 +122,7 @@ The full documentation is at [PyTrial-docs](https://pytrial.readthedocs.io/en/la
 
 
 
-## Citing 
+## :smiley: Citing 
 
 If you use PyTrial in a scientific publication, we would appreciate citations to:
 
@@ -133,7 +133,6 @@ If you use PyTrial in a scientific publication, we would appreciate citations to
     year = {2022},
     month = {11},
     organization = {SunLab, UIUC},
-    note = {Version 0.0.1},
     url = {https://pytrial.readthedocs.io/en/latest/},
 }
 ```
