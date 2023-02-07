@@ -11,6 +11,7 @@ A python package for AI-driven in silico clinical trial optimization.
 [![Doc](https://img.shields.io/badge/Doc-PyTrial-brightgreen)](https://pytrial.readthedocs.io/en/latest/)
 [![Tutorial](https://img.shields.io/badge/Tutotrial-PyTrial-brightgreen)](https://pytrial.readthedocs.io/en/latest/tutorial.html)
 
+[![Downloads](https://static.pepy.tech/badge/pytrial)](https://pepy.tech/project/pytrial)
 [![License](https://img.shields.io/badge/License-BSD_2--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)
 [![Python 3.7+](https://img.shields.io/badge/python-3.7+-blue.svg)](https://www.python.org/downloads/release/python-370/)
 [![Sunlab](https://img.shields.io/badge/About-SunLab%40UIUC-orange)](https://www.sunlab.org/)
