@@ -3,7 +3,7 @@
 </h2>
 
 <h4 align='center'>
-A python package for AI-driven in silico clinical trial optimization.
+PyTrial: A Python Package for Artificial Intelligence in Drug Development
 </h4>
 
 <div align='center'>
