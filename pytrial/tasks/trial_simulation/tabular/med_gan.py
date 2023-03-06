@@ -401,12 +401,12 @@ class MedGAN(TabularSimulationBase):
         return self.model.sample(n)
     
     def load_model(self, checkpoint):
-        pdb.set_trace()
-        pass
+        # TODO
+        raise NotImplementedError
 
     def save_model(self, output_dir):
-        pdb.set_trace()
-        pass
+        # TODO
+        raise NotImplementedError
 
     def _build_model(self):
         self.model = BuildModel(self.config)
