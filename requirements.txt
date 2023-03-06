@@ -24,6 +24,6 @@ icd10-cm
 transtab
 promptehr
 trial2vec
-#git+git://github.com/RyanWangZf/transtab.git@main # transtab
-#git+git://github.com/RyanWangZf/promptehr.git@main # promptehr
-#git+git://github.com/RyanWangZf/trial2vec.git@main # trial2vec
+transtab
+promptehr
+trial2vec
