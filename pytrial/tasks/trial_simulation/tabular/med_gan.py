@@ -1,5 +1,6 @@
 import os
 import pdb
+import joblib
 
 import numpy as np
 import pandas as pd
@@ -13,6 +14,8 @@ from torch.utils.data import DataLoader, TensorDataset
 from pytrial.data.patient_data import TabularPatientBase
 # from pytrial.utils.check import check_checkpoint_file, check_model_dir, check_model_config_file, make_dir_if_not_exist
 from pytrial.utils.tabular_utils import get_transformer
+from pytrial.utils.check import check_checkpoint_file, check_model_dir, check_model_config_file, make_dir_if_not_exist
+
 
 from .base import TabularSimulationBase
 
@@ -401,12 +404,41 @@ class MedGAN(TabularSimulationBase):
         return self.model.sample(n)
     
     def load_model(self, checkpoint):
-        # TODO
-        raise NotImplementedError
+        '''
+        Load model from checkpoint.
+
+        Parameters
+        ----------
+        checkpoint : str
+            Path to checkpoint.
+            If a directory is given, will load the latest checkpoint in the directory.
+            If a filepath is given, will load the checkpoint from the filepath.
+            If set None, will load from default directory `self.checkpoint_dir`.
+        '''
+        if checkpoint is None:
+            checkpoint = self.checkpoint_dir
+        
+        checkpoint_filename = check_checkpoint_file(checkpoint, suffix='model')
+        config_filename = check_model_config_file(checkpoint)
+        self.model = joblib.load(checkpoint_filename)
+        self.config = self._load_config(config_filename)
 
     def save_model(self, output_dir):
-        # TODO
-        raise NotImplementedError
+        '''
+        Save model to checkpoint.
+
+        Parameters
+        ----------
+        output_dir : str
+            Output directory. If set None, will save to default directory `self.checkpoint_dir`.
+        '''
+        if output_dir is None:
+            output_dir = self.checkpoint_dir
+
+        make_dir_if_not_exist(output_dir)
+        self._save_config(self.config, output_dir=output_dir)
+        ckpt_path = os.path.join(output_dir, 'ctgan.model')
+        joblib.dump(self.model, ckpt_path)
 
     def _build_model(self):
         self.model = BuildModel(self.config)

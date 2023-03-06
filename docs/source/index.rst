@@ -26,7 +26,7 @@ If you find this package useful, please consider citing it in your scientific pu
 .. code:: latex
 
     @misc{pytrial2022,
-        title = {PyTrial: AI-driven In Silico Clinical Trial Optimization},
+        title = {PyTrial: A Python Package for Artificial Intelligence in Drug Development},
         author = {Wang, Zifeng and Theodorou, Brandon and Fu, Tianfan and Sun, Jimeng},
         year = {2022},
         month = {11},
