@@ -195,10 +195,10 @@ class CTGAN(TabularSimulationBase):
             The dir to save the learned model.
             If set None, will save model to `self.checkout_dir`.
         '''
-        if output_dir is not None:
-            make_dir_if_not_exist(output_dir)
-        else:
+        if output_dir is None:
             output_dir = self.checkout_dir
+
+        make_dir_if_not_exist(output_dir)
 
         self._save_config(self.config, output_dir=output_dir)
         ckpt_path = os.path.join(output_dir, 'ctgan.model')

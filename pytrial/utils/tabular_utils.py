@@ -30,7 +30,7 @@ class StandardScaler(FloatFormatter):
 
     This transformer scales all numerical values within the same column using
     `sklearn.preprocessing.StandardScaler`.
-
+    
     Null values are replaced using a `NullTransformer` from rdt.
 
     Parameters
