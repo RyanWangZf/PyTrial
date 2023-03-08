@@ -396,7 +396,8 @@ class Trainer:
     def _save_log(self, output_dir):
         log_filename = os.path.join(output_dir, 'train_logs.json')
         with open(log_filename, 'w') as f:
-            f.write(json.dumps(self.score_logs))
+            score_logs = str(self.score_logs)
+            f.write(json.dumps(score_logs, indent=4, sort_keys=True))
 
     def _wrap_model(self, model):
         # wrap model to be paralleled

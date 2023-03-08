@@ -378,5 +378,5 @@ class RNN(SequenceIndivBase):
         if mode == 'multilabel':
             return [MultilabelBinaryXentLoss(self.model)]
 
-        if mode == 'binary':
+        if mode == 'regression':
             return [MSELoss(self.model)]

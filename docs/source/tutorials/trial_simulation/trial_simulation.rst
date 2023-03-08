@@ -29,6 +29,8 @@ Here is the list of colab examples on each model for this task.
 
 - `Model 4: TVAE <https://colab.research.google.com/drive/1HKmpwi2VosqYJion9vmRnW5s77jHaCxA?usp=sharing>`_
 
+- `Model 5: MedGAN <https://drive.google.com/file/d/1w5e2VZ8j-FQlWCYjmEhLVBcbfVHVPFqy/view?usp=sharing>`_
+
 
 Sequential Patient: Index
 -------------------------
