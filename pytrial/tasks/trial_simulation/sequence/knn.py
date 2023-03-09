@@ -2,6 +2,7 @@ import pdb
 from collections import defaultdict
 import joblib
 import random
+import os
 
 from tqdm import tqdm
 import pandas as pd
@@ -11,6 +12,7 @@ from sklearn.manifold import TSNE
 import numpy as np
 
 from pytrial.data.patient_data import SequencePatientBase, SeqPatientCollator
+from pytrial.utils.check import check_checkpoint_file, check_model_dir, check_model_config_file, make_dir_if_not_exist
 from ..data import SequencePatient
 from .base import SequenceSimulationBase
 from .base import transform_sequence_to_table
@@ -94,11 +96,38 @@ class KNNSampler(SequenceSimulationBase):
         self._input_data_check(train_data)
         self._fit_model(train_data)
 
-    def load_model(self):
-        raise NotImplementedError
+    def load_model(self, checkpoint=None):
+        '''
+        Load the learned model from the disk.
 
-    def save_model(self):
-        raise NotImplementedError
+        Parameters
+        ----------
+        checkpoint: str
+            - If a directory, the only checkpoint file `.model` will be loaded.
+            - If a filepath, will load from this file;
+            - If None, will load from `self.checkout_dir`.
+        '''
+        if checkpoint is None:
+            checkpoint = self.checkout_dir
+        checkpoint_filename = check_checkpoint_file(checkpoint, suffix='model')
+        model = joblib.load(checkpoint_filename)
+        self.__dict__.update(model.__dict__)
+
+    def save_model(self, output_dir=None):
+        '''
+        Save the fitted model and the raw data to the disk for later use.
+
+        Parameters
+        ----------
+        output_dir: str
+            The directory to save the model and data. If `None`, save to the default directory.
+            `self.checkout_dir`.
+        '''
+        if output_dir is None:
+            output_dir = self.checkout_dir
+        make_dir_if_not_exist(output_dir)
+        ckpt_path = os.path.join(output_dir, 'knnsampler.model')
+        joblib.dump(self, ckpt_path)
     
     def predict(self, n_per_sample=None, return_tensor=False):
         '''
