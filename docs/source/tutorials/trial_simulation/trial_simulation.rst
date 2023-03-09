@@ -46,6 +46,8 @@ Here is the list of colab examples on each model for this task.
 
 - `Model 4: PromptEHR <https://colab.research.google.com/drive/1EbzLdSwTrbgsEgz8z70qzTLQWiPWlyRm?usp=sharing>`_
 
+- `Model 5: KNNSampler <https://drive.google.com/file/d/1RCUtzyitcidI32To7pb5klNYuynM0ACL/view?usp=sharing>`_
+
 
 Tabular Patient: Example
 ------------------------
