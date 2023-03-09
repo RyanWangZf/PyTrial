@@ -232,19 +232,15 @@ class Trainer:
                             model = unwrap_model(self.model)
                             model.save_model(self.best_dir)
                             self.best_score = best_score
+                            print(f'Best checkpoint is updated at {global_step} with {self.test_metric} {self.best_score}.')
 
-                            best_score = self._update_best_metric(self.best_score, metric_value, self.less_is_better)
-                            if best_score != self.best_score:
-                                self.score_logs['best_global_step'] = global_step
-                                model = unwrap_model(self.model)
-                                model.save_model(self.best_dir)
-                                self.best_score = best_score
-
-                    # save model checkpoint
-                    output_dir = os.path.join(self.output_dir, f'./{global_step}')
-                    make_dir_if_not_exist(output_dir)
-                    model = unwrap_model(self.model)
-                    model.save_model(output_dir)
+                    else:
+                        # save model checkpoint
+                        output_dir = os.path.join(self.output_dir, f'./{global_step}')
+                        make_dir_if_not_exist(output_dir)
+                        model = unwrap_model(self.model)
+                        model.save_model(output_dir)
+                        print("Checkpoint saved in {} at {} steps.".format(output_dir, global_step))
 
         # after training
         self._save_log(self.output_dir)
@@ -384,11 +380,13 @@ class Trainer:
     def _update_best_metric(self, best_score, metric_value, less_is_better):
         if less_is_better:
             if metric_value < best_score:
+                print("New best score: from {} to {}".format(best_score, metric_value))
                 return metric_value
             else:
                 return best_score
         else:
             if metric_value > best_score:
+                print("New best score: from {} to {}".format(best_score, metric_value))
                 return metric_value
             else:
                 return best_score
