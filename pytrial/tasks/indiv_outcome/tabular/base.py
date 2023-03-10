@@ -163,11 +163,17 @@ class TabularIndivBase(abc.ABC):
             'multilabel': 'f1', # take average of F1 scores
         }
 
+        if mode == 'regression':
+            less_is_better = True
+        else:
+            less_is_better = False
+
         trainer = IndivTabTrainer(
             model=self,
             train_objectives=train_objectives,
             test_data=valid_data,
             test_metric=test_metric_dict[mode],
+            less_is_better=less_is_better,
         )
 
         trainer.train(

@@ -60,5 +60,7 @@ class MSELoss(nn.Module):
 
     def forward(self, inputs):
         logits = self.model(inputs)
-        loss = self.loss(logits, inputs['y'])
+        # transform the inputs['y'] to the float type
+        y = inputs['y'].float()
+        loss = self.loss(logits, y)
         return {'loss_value':loss}

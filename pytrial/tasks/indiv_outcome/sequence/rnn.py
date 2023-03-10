@@ -360,10 +360,17 @@ class RNN(SequenceIndivBase):
         train_dataloader = self.get_train_dataloader(train_data)
         loss_models = self._build_loss_model()
         train_objectives = [(train_dataloader, loss_model) for loss_model in loss_models]
+
+        if self.config['mode'] == 'regression':
+            less_is_better = True
+        else:
+            less_is_better = False
+
         trainer = IndivSeqTrainer(model=self,
             train_objectives=train_objectives,
             test_data=valid_data,
             test_metric=test_metric_dict[self.config['mode']],
+            less_is_better=less_is_better,
             )
         trainer.train(**self.config)
 
@@ -378,5 +385,5 @@ class RNN(SequenceIndivBase):
         if mode == 'multilabel':
             return [MultilabelBinaryXentLoss(self.model)]
 
-        if mode == 'binary':
+        if mode == 'regression':
             return [MSELoss(self.model)]

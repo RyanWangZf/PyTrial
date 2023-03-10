@@ -29,6 +29,8 @@ Here is the list of colab examples on each model for this task.
 
 - `Model 4: TVAE <https://colab.research.google.com/drive/1HKmpwi2VosqYJion9vmRnW5s77jHaCxA?usp=sharing>`_
 
+- `Model 5: MedGAN <https://drive.google.com/file/d/1w5e2VZ8j-FQlWCYjmEhLVBcbfVHVPFqy/view?usp=sharing>`_
+
 
 Sequential Patient: Index
 -------------------------
@@ -43,6 +45,8 @@ Here is the list of colab examples on each model for this task.
 - `Model 3: SynTEG <https://colab.research.google.com/drive/1S3dPkonI4c0A7uBf-1c9RIMEWA231T_u?usp=sharing>`_
 
 - `Model 4: PromptEHR <https://colab.research.google.com/drive/1EbzLdSwTrbgsEgz8z70qzTLQWiPWlyRm?usp=sharing>`_
+
+- `Model 5: KNNSampler <https://drive.google.com/file/d/1RCUtzyitcidI32To7pb5klNYuynM0ACL/view?usp=sharing>`_
 
 
 Tabular Patient: Example

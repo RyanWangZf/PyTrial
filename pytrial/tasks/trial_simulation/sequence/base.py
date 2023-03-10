@@ -3,10 +3,14 @@ import pdb
 import os
 import json
 import math
+from collections import defaultdict
 
+import numpy as np
+import pandas as pd
 import torch
 from torch import nn
 from torch.nn.utils.rnn import pad_sequence
+from tqdm import tqdm
 
 from pytrial.utils.check import check_model_dir
 from pytrial.utils.check import make_dir_if_not_exist
@@ -320,3 +324,58 @@ class RNN(nn.Module):
     def forward(self, x):
         outputs = self.model(x)[0]
         return outputs
+
+
+def transform_sequence_to_table(data, order, voc):
+    # init the outputs
+    outputs = defaultdict(list)
+    outputs['pid'] = []
+    outputs['vid'] = []
+    columns = []
+    for od in order:
+        for k in voc[od].word2idx.keys():
+            columns.append(f'{od}_{k}')
+
+    output_list = []
+    for pid, sample in tqdm(enumerate(data),desc='Transforming sequence to tabular format', total=len(data)):
+        for vid, visit in enumerate(sample):
+            visit_ = []
+            for i, event_type in enumerate(order):
+                visit_.extend([columns.index(f'{event_type}_{voc[event_type].idx2word[v]}') for v in visit[i]])
+
+            visit_mh = np.zeros(len(columns))
+            visit_mh[visit_] = 1
+            outputs['pid'].append(pid)
+            outputs['vid'].append(vid)
+            output_list.append(visit_mh)
+
+    output_df = pd.DataFrame(output_list, columns=columns)
+    index_df = pd.DataFrame(outputs)
+    output_df = pd.concat([index_df, output_df], axis=1)
+    return output_df
+
+def transform_table_to_sequence(data, order, voc):
+    '''
+    data: pd.DataFrame
+    one column for each event type
+    one row for each visit
+    pid: patient id
+    vid: visit id
+    transform the outputs to the original format
+    v = [[event1, event2, ...], [event1, event2, ...], ], [event1, event2, ...], ...]
+    each v[i] is a patient
+    each v[i][j] is a visit
+    each v[i][j][k] is a list of that type of events
+    '''
+    outputs = []
+    pid_list = []
+    for pid, sample in tqdm(data.groupby('pid'), desc='Transforming tabular format to sequence', total=len(data['pid'].unique())):
+        output = []
+        for vid, visit in sample.groupby('vid'):
+            visit_ = []
+            for i, event_type in enumerate(order):
+                visit_.append([voc[event_type].word2idx[k.split('_')[-1]] for k in visit.columns if k.startswith(event_type) and visit[k].values[0]==1])
+            output.append(visit_)
+        outputs.append(output)
+        pid_list.append(pid)
+    return outputs, pid_list

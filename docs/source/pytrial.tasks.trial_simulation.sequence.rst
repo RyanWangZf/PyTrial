@@ -7,3 +7,4 @@ tasks.trial_simulation.sequence
     EVA<trial_simulation/sequence/eva>
     SynTEG<trial_simulation/sequence/synteg>
     PromptEHR<trial_simulation/sequence/promptehr>
+    KNNSampler<trial_simulation/sequence/knn>
