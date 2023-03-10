@@ -15,3 +15,8 @@ trial_simulation.sequence.evaluation
     :members:
     :no-undoc-members:
     :show-inheritance:
+
+.. autoclass:: pytrial.tasks.trial_simulation.sequence.evaluation.PresenceDisclosurePrivacy
+    :members:
+    :no-undoc-members:
+    :show-inheritance:

@@ -18,7 +18,7 @@ from .base import transform_sequence_to_table
 from .base import transform_table_to_sequence
 
 
-__all__ = ['RNNPrivacyDetection', 'RNNUtilityDetection', 'DimWiseFidelity']
+__all__ = ['RNNPrivacyDetection', 'RNNUtilityDetection', 'DimWiseFidelity', 'PresenceDisclosurePrivacy']
 
 
 class SequenceMetric:
@@ -160,6 +160,118 @@ class RNNPrivacyDetection(SequencePrivacyMetric):
             )
         model.fit(train_data=train_data, valid_data=test_data)
         return model
+
+
+class PresenceDisclosurePrivacy(SequencePrivacyMetric):
+    '''
+    Try to evaluate the presence disclosure risk of the synthetic patient records.
+    '''
+    @classmethod
+    def compute(self, real_data, syn_data, known_patient=[1,5], confidence=1, prior=1, device=None):
+        '''
+        Compute the presence disclosure risk. Assume the attacker knows the real patient records with `known_patient` percentage.
+        The attacker will try to match the synthetic patient records with the known real patient records to check
+        if the synthetic patient records disclose the presence of the real patient records the attacker knows.
+
+        Parameters
+        ----------
+        real_data: pytrial.data.patient_sequence.PatientSequence
+            A PatientSequence object that contains real patient records.
+        
+        syn_data: pytrial.data.patient_sequence.PatientSequence
+            A PatientSequence data structure containing the synthetic patient data.
+        
+        known_patient: list[int] or int
+            The percentage of patient records known to the attacker.
+
+        confidence: float
+            The confidence level of the attacker. Default is 1.0, meaning the attacker decides to disclose the synthetic record
+            when the synthetic record fully matches the real record (100% columns overlap). Lower confidence means the higher recall.
+
+        prior: float
+            The prior probability of the attacker. Default is 1.0, meaning all the real records owned by the attacker are
+            in the training set of the generator. If the prior is less than 1.0, e.g., 0.5, it means the 50% of attacker owned records
+            are in the training set of the generator, and the other 50% are not. The prior probability will affect the disclosure risk.
+            Larger prior means higher disclosure risk.
+
+        device: str
+            Not used. For compatibility with other metrics.
+
+        Usage
+        -----
+        >>> from pytrial.tasks.trial_simulation.sequence.evaluation import PresenceDisclosurePrivacy
+        >>> score = PresenceDisclosurePrivacy.compute(real_data, syn_data)
+        '''
+        assert isinstance(real_data, SequencePatient), '`real_data` must be a `SequencePatient` object.'
+        assert isinstance(syn_data, SequencePatient), '`syn_data` must be a `SequencePatient` object.'
+
+        if isinstance(known_patient, int):
+            known_patient = [known_patient]
+
+        # build dataset
+        real_df, syn_df = self._build_dataset(real_data, syn_data)
+
+        # select from pids with the ration in known_patient
+        pids = real_df['pid'].unique()
+
+        if prior == 1:
+            known_patient_indices = [np.random.choice(pids, size=int(len(pids)*k/100), replace=False) for k in known_patient]
+        else:
+            # if the prior is less than 1, we need to split the pids into two groups
+            # get 1/prior of pids as the known pids
+            known_patient_indices = [np.random.choice(pids, size=int(len(pids)*k/100/prior), replace=False) for k in known_patient]
+            # randomly select prior ratio of pids held out from the real_df
+            held_out_pids = [np.random.choice(k, size=int(prior*len(k)), replace=False) for k in known_patient_indices]
+
+        comp_syn = syn_df.drop(['vid'], axis=1)
+        scores = {}
+
+        for i, indices in enumerate(known_patient_indices):
+            comp_train = real_df[real_df['pid'].isin(indices)]
+            if prior < 1:
+                # should remove the held out pids from the training set
+                # comp_train_tp is the number of true positive matches in the attacker dataset
+                comp_train_tp = comp_train[~comp_train['pid'].isin(held_out_pids[i])]
+
+                # find attacker records similar to the synthetic records
+                matched = comp_train.isin(comp_syn).mean(1) >= confidence
+                
+                # compute precision: how many matched records are true positive
+                prec = comp_train[matched]['pid'].isin(comp_train_tp['pid']).mean()
+                scores[f'precision_known_{known_patient[i]}_conf_{confidence}_prior_{prior}'] = prec
+
+                # compute recall: how many true positive records are matched
+                rec = comp_train[matched]['pid'].isin(comp_train_tp['pid']).sum() / len(comp_train_tp)
+                scores[f'recall_known_{known_patient[i]}_conf_{confidence}_prior_{prior}'] = rec
+
+            else:
+                comp_train = comp_train.drop(['vid'], axis=1)
+                matched = comp_train.isin(comp_syn).mean(1) >= confidence
+                match_count =  comp_train[matched]['pid'].isin(comp_syn['pid']).sum()
+                scores[f'recall_known_{known_patient[i]}_conf_{confidence}_prior_{prior}'] = match_count / len(comp_train)
+                scores[f'precision_known_{known_patient[i]}_conf_{confidence}_prior_{prior}'] = 1 # prior = 1, so all attacker data are in the training set, if matched, it is a true positive
+
+        return scores
+
+    @staticmethod
+    def _build_dataset(real_data, syn_data):
+        '''
+        BUild a dataset for comparing the distribution of real and synthetic patient records.
+
+        Parameters
+        ----------
+        real_data: pytrial.tasks.trial_simulation.data.PatientSequence
+            A PatientSequence object that contains real patient records.
+
+        syn_data: pytrial.tasks.trial_simulation.data.PatientSequence
+            A PatientSequence data structure containing the synthetic patient data.
+        '''
+        order = real_data.metadata['visit']['order']
+        voc = real_data.metadata['voc']
+        # build tabular format out of real and syn data
+        real_df = transform_sequence_to_table(real_data.visit, order, voc)
+        syn_df = transform_sequence_to_table(syn_data.visit, order, voc)
+        return real_df, syn_df
 
 
 class SequenceUtilityMetric(SequenceMetric):
@@ -306,7 +418,7 @@ class DimWiseFidelity(SequenceFidelityMetric):
     of the real and synthetic patient records. Overall results shown as the r-value.
     '''
     @classmethod
-    def compute(self, real_data, syn_data, event_type=None, plot=False, save_path=None):
+    def compute(self, real_data, syn_data, event_type=None, plot=False, save_path=None, device=None):
         '''
         Compute the fidelity score. Report the r-value of the dimension-wise probability distributions of real and synthetic patient records.
 
@@ -327,6 +439,9 @@ class DimWiseFidelity(SequenceFidelityMetric):
 
         save_path: str
             The path to save the plot. Default is None. Only used when `plot` is True.
+
+        device: str
+            Not used. For compatibility with other metrics.
 
         Usage
         -----
