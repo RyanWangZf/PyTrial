@@ -1,5 +1,5 @@
 name = 'PyTrial'
-version = '0.0.2'
+version = '0.0.3'
 
 import random
 import numpy as np

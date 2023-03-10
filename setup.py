@@ -13,10 +13,10 @@ with open(os.path.join(this_directory, 'requirements.txt'),
 
 setuptools.setup(
     name = 'PyTrial',
-    version = '0.0.2',
+    version = '0.0.3',
     author = 'Zifeng Wang, Brandon Theodoru, Tianfan Fu, Jingtang Ma, Jimeng Sun',
     author_email = 'zifengw2@illinois.edu',
-    description = 'PyTrial: AI-driven In Silico Clinical Trial Optimization',
+    description = 'PyTrial: A Python Package for Artificial Intelligence in Drug Development',
     url = 'https://github.com/RyanWangZf/pytrial',
     keywords=['drug development', 'clinical trial', 'artificial intelligence', 'deep learning', 'machine learning'],
     long_description=long_description,
