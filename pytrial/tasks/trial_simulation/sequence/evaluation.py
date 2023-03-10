@@ -6,14 +6,19 @@ from copy import deepcopy
 
 from torch.utils.data import DataLoader
 from sklearn.metrics import roc_auc_score
+import numpy as np
 
 from pytrial.tasks.indiv_outcome.sequence import RNN
 from pytrial.data.patient_data import SeqPatientCollator
 from pytrial.data.utils import concat_dataset, split_dataset
 from pytrial.tasks.indiv_outcome.trainer import IndivSeqTrainer
-from ..data import SequencePatient
 
-__all__ = ['RNNPrivacyDetection', 'RNNUtilityDetection']
+from ..data import SequencePatient
+from .base import transform_sequence_to_table
+from .base import transform_table_to_sequence
+
+
+__all__ = ['RNNPrivacyDetection', 'RNNUtilityDetection', 'DimWiseFidelity']
 
 
 class SequenceMetric:
@@ -268,3 +273,129 @@ class RNNUtilityDetection(SequenceUtilityMetric):
         outputs['syn-data-model-auc'] = auc
 
         return outputs
+
+
+class SequenceFidelityMetric(SequenceMetric):
+    '''
+    Base class for evaluating the fidelity of synthetic patient records.
+    '''
+    @staticmethod
+    def _build_dataset(real_data, syn_data):
+        '''
+        BUild a dataset for comparing the distribution of real and synthetic patient records.
+
+        Parameters
+        ----------
+        real_data: pytrial.tasks.trial_simulation.data.PatientSequence
+            A PatientSequence object that contains real patient records.
+
+        syn_data: pytrial.tasks.trial_simulation.data.PatientSequence
+            A PatientSequence data structure containing the synthetic patient data.
+        '''
+        order = real_data.metadata['visit']['order']
+        voc = real_data.metadata['voc']
+        # build tabular format out of real and syn data
+        real_df = transform_sequence_to_table(real_data.visit, order, voc)
+        syn_df = transform_sequence_to_table(syn_data.visit, order, voc)
+        return real_df, syn_df
+
+
+class DimWiseFidelity(SequenceFidelityMetric):
+    '''
+    Evaluate the fidelity of synthetic patient records by computing the dimension-wise probability distributions 
+    of the real and synthetic patient records. Overall results shown as the r-value.
+    '''
+    @classmethod
+    def compute(self, real_data, syn_data, event_type=None, plot=False, save_path=None):
+        '''
+        Compute the fidelity score. Report the r-value of the dimension-wise probability distributions of real and synthetic patient records.
+
+        Parameters
+        ----------
+        real_data: pytrial.tasks.trial_simulation.data.PatientSequence
+            A PatientSequence object that contains real patient records.
+        
+        syn_data: pytrial.tasks.trial_simulation.data.PatientSequence
+            A PatientSequence data structure containing the synthetic patient data.
+        
+        event_type: str or list[str] or None
+            The type of event to compute the fidelity score. Default is None, which means all events are considered.
+            If `event_type` is not None, then the fidelity score is computed for the specified event type list.
+
+        plot: bool
+            Whether to plot the scatters distribution. Default is False.
+
+        save_path: str
+            The path to save the plot. Default is None. Only used when `plot` is True.
+
+        Usage
+        -----
+        >>> from pytrial.tasks.trial_simulation.metrics import DimWiseFidelity
+        >>> # real_data and syn_data are PatientSequence objects for all types of events
+        >>> fidelity_score = DimWiseFidelity.compute(real_data, syn_data)
+        >>> # real_data and syn_data are PatientSequence objects for medication events
+        >>> fidelity_score = DimWiseFidelity.compute(real_data, syn_data, event_type='medication', plot=True)
+        '''
+        # build a dataset with labeled real and syndata
+        real_df, syn_df = self._build_dataset(real_data, syn_data)
+        
+        if event_type is None or event_type == 'all':
+            event_types = list(real_data.metadata['voc'].keys())
+        else:
+            event_types = event_type if isinstance(event_type, list) else [event_type]
+
+        outputs = {}
+        syn_prob_outputs = {}
+        real_prob_outputs = {}
+        for etype in event_types:
+            # compute the real marginal probability distribution
+            real_probs = self._compute_marginal_probability(real_df, event_type=etype)
+            # compute the synthetic marginal probability distribution
+            syn_probs = self._compute_marginal_probability(syn_df, event_type=etype)
+            # compute the r-value
+            r_value = np.corrcoef(real_probs, syn_probs)[0, 1]
+            # save the r-value
+            outputs[etype] = r_value
+            # save the real and synthetic probability distributions
+            syn_prob_outputs[etype] = syn_probs
+            real_prob_outputs[etype] = real_probs
+
+        # plot the distribution
+        if plot:
+            for etype in event_types:
+                r_value = outputs[etype]
+                real_probs = real_prob_outputs[etype]
+                syn_probs = syn_prob_outputs[etype]
+                self._plot_scatter(real_probs, syn_probs, r_value)
+                if save_path is not None:
+                    plt.savefig(save_path + f'/{etype}.png')
+                plt.show()
+        return outputs
+
+    @staticmethod
+    def _compute_marginal_probability(df, event_type=None):
+        '''
+        Compute the marginal probability distribution of a dataframe.
+        '''
+        binary_probability = []
+        if event_type is not None:
+            columns = [c for c in df.columns if event_type in c]
+        else:
+            columns = df.columns
+        for c in columns:
+            binary_probability.append(df[c].mean())
+        return binary_probability
+    
+    @staticmethod
+    def _plot_scatter(real_probs, syn_probs, r_value):
+        '''
+        Plot the scatter distribution of real and synthetic data.
+        '''
+        import matplotlib.pyplot as plt
+        import matplotlib
+        plt.rcParams["figure.figsize"] = (3,3)
+        SMALL_SIZE = 14
+        matplotlib.rc('font', size=SMALL_SIZE)
+        matplotlib.rc('axes', titlesize=SMALL_SIZE)
+        plt.scatter(real_probs, syn_probs, label=f'r = {np.round(r_value, 2)}')
+        plt.legend(loc=1)
