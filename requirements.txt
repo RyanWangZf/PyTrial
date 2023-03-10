@@ -24,6 +24,3 @@ icd10-cm
 transtab
 promptehr
 trial2vec
-transtab
-promptehr
-trial2vec
