@@ -7,7 +7,8 @@ output:
 	protocol_embedding 
 '''
 
-import csv, pickle 
+import csv, pickle
+import pandas as pd
 from functools import reduce
 from tqdm import tqdm 
 import torch 
@@ -61,6 +62,27 @@ def collect_cleaned_sentence_set():
 		if len(result)==2:
 			cleaned_sentence_lst.extend(result[1])
 	return set(cleaned_sentence_lst)
+
+def save_trial_criteria_bert_dict_pkl():
+    from pytrial.model_utils.bert import BERT
+    bertmodel = BERT(device='cuda:0')
+    inc_nct_2_embedding = dict()
+    exc_nct_2_embedding = dict()
+    input_file = constants.RAW_DATA_FILENAME
+    df = pd.read_csv(input_file)
+    df['criteria'] = df['criteria'].apply(str)
+    ecs = df['criteria'].apply(split_protocol)
+    df['inclusion_criteria'] = ecs.apply(lambda x: x[0])
+    df['exclusion_criteria'] = ecs.apply(lambda x: x[1] if len(x) > 1 else ['[PAD]'])
+    df.drop(columns=['criteria'], inplace=True)
+
+    # encode inclusion
+    for i, row in tqdm(df.iterrows(), total=df.shape[0]):
+        inc_nct_2_embedding[row['nctid']] = bertmodel.encode(row['inclusion_criteria']).mean(axis=0).cpu().numpy()
+        exc_nct_2_embedding[row['nctid']] = bertmodel.encode(row['exclusion_criteria']).mean(axis=0).cpu().numpy()
+    pickle.dump(inc_nct_2_embedding, open(constants.INC_EMB_FILENAME, 'wb'))
+    pickle.dump(exc_nct_2_embedding, open(constants.EXC_EMB_FILENAME, 'wb'))
+    return
 
 
 def save_sentence_bert_dict_pkl():
