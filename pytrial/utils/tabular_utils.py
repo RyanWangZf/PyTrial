@@ -290,28 +290,12 @@ class HyperTransformer(rdt.HyperTransformer):
             )
         
         column_name_to_transformer.update(update_transformers)
-
-
-    def _learn_config(self, data):
-        """Unfit the HyperTransformer and learn the sdtypes and transformers of the data."""
-        self._unfit()
-        for field in data:
-            if field not in self.field_sdtypes:
-                # initialize the self.field_sdtypes using the data
-                self._set_field_sdtype(data, field)
-            if field not in self.field_transformers:
-                sdtype = self.field_sdtypes[field]
-                if sdtype in self._default_sdtype_transformers:
-                    self.field_transformers[field] = deepcopy(
-                        self._default_sdtype_transformers[sdtype])
-                else:
-                    self.field_transformers[field] = deepcopy(get_default_transformer(sdtype))
     
     def _set_field_sdtype(self, data, field):
         clean_data = data[field].dropna()
         kind = clean_data.infer_objects().dtype.kind
         if kind == 'i':
-            # decide if it is categorical or binary
+            # decide if it is categorical or binary for input integers
             if len(clean_data.unique()) <= 2:
                 kind = 'b'
             else:

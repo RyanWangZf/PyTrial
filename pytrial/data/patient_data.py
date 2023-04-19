@@ -102,6 +102,9 @@ class TabularPatientBase(Dataset):
             else:
                 # parse the metadata and update hypertransformer's config
                 self._parse_metadata()
+            
+            # create a mapping from column name before to column name after transformation
+            self._create_transformed_col2col()
 
             # replace data with the transformed one
             self.df = self.transform(df)
@@ -181,6 +184,7 @@ class TabularPatientBase(Dataset):
         self.ht.fit(self.df)
         self.metadata.update(self.ht.get_config())
 
+    def _create_transformed_col2col(self):
         # create transformed column id to the original columns
         transformed_col2col = OrderedDict()
         for idx, col in enumerate(self.df.columns):
