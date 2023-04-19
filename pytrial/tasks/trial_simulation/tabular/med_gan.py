@@ -166,6 +166,7 @@ class MedGANSynthesizer:
 
     def _get_metadata(self, data):
         self.output_info = []
+        pdb.set_trace()
         for k, v in data.metadata['transformed_col2col'].items():
             if len(v) == 1:
                 self.output_info.append(
