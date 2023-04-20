@@ -14,10 +14,11 @@ from trial2vec import Trial2Vec
 from trial2vec import download_embedding
 warnings.filterwarnings('ignore')
 
-from spot.dataset import Trial, Topic, SequenceTrial
 from .data_utils import icdcode_text_2_lst_of_lst, list_text_2_list, smiles_txt_to_lst
 from .data_utils import flatten_stacked_list
 from .data_utils import split_protocol
+from .data_structure import Trial, Topic, SequenceTrial
+
 
 class TrialTopicDiscovery:
     '''

@@ -6,6 +6,7 @@ import os
 import pickle
 import math
 import json
+import wget
 from collections import defaultdict
 
 import torch
@@ -40,7 +41,7 @@ class constants:
     ICDCODE_ANCESTOR_URL = 'https://storage.googleapis.com/pytrial/HINT-benchmark-data/icdcode2ancestor_dict.pkl'
     INC_EMB_URL = 'https://storage.googleapis.com/pytrial/HINT-benchmark-data/nct2inc_embedding.pkl'
     EXC_EMB_URL = 'https://storage.googleapis.com/pytrial/HINT-benchmark-data/nct2exc_embedding.pkl'
-
+    ADMET_MODEL_URL = 'https://storage.googleapis.com/pytrial/HINT-benchmark-data/admet_model_state_dict.ckpt'
 
 class MoleculeEncoder(nn.Module):
     '''
@@ -52,11 +53,20 @@ class MoleculeEncoder(nn.Module):
             input_dir = './pretrained_models/molecule_encoder'
         if not os.path.exists(input_dir):
             os.makedirs(input_dir)
+            # download pretrained model if not exist from the url ADMET_MODEL_URL
+            self._download_pretrained(input_dir)
         
         # load pretrained admet model and mpnn model
         state_dict = torch.load(os.path.join(input_dir, 'admet_model_state_dict.ckpt'))
-        self.mpnn = MPNN(device=device)
-        self.admet = ADMET(molecule_encoder=self.mpnn)
+        self.mpnn = MPNN(mpnn_hidden_size=50, mpnn_depth=3, device=device)
+        self.admet = ADMET(molecule_encoder=self.mpnn,
+            highway_num=2,
+            device=device,
+            epoch=None,
+            lr=None,
+            weight_decay=None,
+            save_name=None,
+            )
         self.admet.load_state_dict(state_dict)
         self.pk_fc = nn.Linear(50 * 5, 50)
         self.pk_highway = Highway(50, 2)
@@ -67,14 +77,15 @@ class MoleculeEncoder(nn.Module):
         # if w/o admet, return mpnn features
         return res
 
-    def _download_pretrained(self, output_dir):
-        # TODO: download pretrained model
-        raise NotImplementedError
+    def _download_pretrained(self, input_dir):
+        wget.download(constants.ADMET_MODEL_URL, input_dir)
 
 class DiseaseEncoder(nn.Module):
     def __init__(self, device) -> None:
         super().__init__()
-        self.gram = GRAM()
+        self.gram = GRAM(
+            embedding_dim=50, icdcode2ancestor=None, device=device,
+        )
         self.device = device
     
     def forward(self, icdcode):
@@ -83,12 +94,10 @@ class DiseaseEncoder(nn.Module):
         return res
 
 class ProtocolEncoder(nn.Module):
-    def __init__(self, input_dir=None, output_dim=50) -> None:
+    def __init__(self, output_dim=50) -> None:
         super().__init__()
-        # init embs
         self.nct2incemb = None
         self.nct2excemb = None
-        self._init_criteria_emb(input_dir)
         self.fc = nn.Linear(768, output_dim)
         self.activation = nn.ReLU()
 
@@ -104,9 +113,11 @@ class ProtocolEncoder(nn.Module):
         emb = self.activation(emb) # [2, 50]
         return emb
 
-    def _init_criteria_emb(self, input_dir): 
-        if input_dir is None:
-            input_dir = './demo_data/criteria_data'
+    def init_criteria_emb(self, input_dir): 
+        '''need to be called before fit the main model.
+        '''
+
+        pdb.set_trace()
 
         if not os.path.exists(input_dir):
             os.makedirs(input_dir)
@@ -372,6 +383,11 @@ class SPOTModel(nn.Module):
             x = self.activation(single_module(x))
         return x
 
+    def init_criteria_embedding(self, train_data):
+        # initialize the criteria embedding
+        
+        pdb.set_trace()
+
     def _generate_square_subsequent_mask(self, sz):
         mask = (torch.triu(torch.ones(sz, sz)) == 1).transpose(0, 1)
         mask = mask.float().masked_fill(mask == 0, float('-inf')).masked_fill(mask == 1, float(0.0))
@@ -395,6 +411,10 @@ class SPOT(TrialOutcomeBase):
     
     n_rnn_layer: int
         Number of layers in the RNN for encoding ontology & smiles strings.
+        
+    pretrained_criteria_emb: bool
+        Whether to use pretrained BERT to encode criteria to get the criteria embedding. It takes some time to encode the criteria.
+        Set to False if you want to train the criteria embedding from scratch.
     
     batch_size: int
         Batch size for training.
@@ -429,6 +449,7 @@ class SPOT(TrialOutcomeBase):
         n_trial_projector=2,
         n_timestemp_projector=2,
         n_rnn_layer=1,
+        pretrained_criteria_emb=False,
         batch_size=1,
         n_trial_per_batch=None,
         learning_rate=1e-4,
@@ -444,6 +465,7 @@ class SPOT(TrialOutcomeBase):
             'n_trial_projector': n_trial_projector,
             'n_timestemp_projector': n_timestemp_projector,
             'n_rnn_layer': n_rnn_layer,
+            'pretrained_criteria_emb': pretrained_criteria_emb,
             'batch_size': batch_size,
             'n_trial_per_batch':n_trial_per_batch,
             'learning_rate': learning_rate,
@@ -458,7 +480,6 @@ class SPOT(TrialOutcomeBase):
         self.topic_discover = TrialTopicDiscovery(num_topics=num_topics, random_seed=seed)
         self.training = False
         print(self.config)
-
 
     def fit_topic(self, df_train):
         '''
@@ -496,15 +517,27 @@ class SPOT(TrialOutcomeBase):
         return {'seqtrain':seqtrain, 'seqval':seqval, 'seqtest':seqtest}
 
     def fit(self, train_data, valid_data=None):
-        '''
-        Train a spot model.
+        '''Train the SPOT model. It has two/three steps:
+        1. Encode the criteria using pretrained BERT to get the criteria embedding (optional).
+        2. Discover topics from the training data and transform the data into a SequenceTrial object.
+        3. Train the SPOT model.
+
         Parameters
         ----------
-        train_data: SequenceTrial
-            A dataset consisting of multiple topics of clinical trials. Each topic is a list of clinical trials under this topic ordered with their timestamps.        
-        valid_data: SequenceTrial
-            A dataset consisting of multiple topics of clinical trials. Each topic is a list of clinical trials under this topic ordered with their timestamps.
+        train_data: TrialOutcomeDatasetBase
+            Training data, should be a `TrialOutcomeDatasetBase` object.
+
+        valid_data: TrialOutcomeDatasetBase
+            Validation data, should be a `TrialOutcomeDatasetBase` object.
         '''
+
+        if self.config['pretrained_criteria_emb']:
+            # initialize the criteria embedding using pretrained language models
+            self.model.init_criteria_embedding(train_data)
+
+        # initialize the topics using the topic discovery model
+        pdb.set_trace()
+
         self._fit_model(train_data, valid_data)
 
     def predict(self, data, target_trials=None):
