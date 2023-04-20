@@ -21,15 +21,18 @@ class TrialDatasetBase(Dataset):
     ----------
     data: pd.DataFrame
         Contain the trial document in tabular format.
+
+    criteria_column: str
+        The column name of eligibility criteria in the dataframe.
     '''
     inc_ec_embedding = None # inclusion criteria embedding
     inc_vocab = None # inclusion criteria vocab
     exc_ec_embedding = None # exclusion criteria embedding
     exc_vocab = None # exclusion criteria vocab
 
-    def __init__(self, data):
+    def __init__(self, data, criteria_column='criteria'):
         self.df = data
-        self._process_ec()
+        self._process_ec(criteria_column=criteria_column)
         self._collect_cleaned_sentence_set()
     
     def __len__(self):
@@ -42,11 +45,19 @@ class TrialDatasetBase(Dataset):
         '''
         Process the eligibility criteria of each trial,
         get the criterion-level emebddings stored in dict.
-        '''
-        self._get_ec_emb()
 
-    def _process_ec(self):
-        res = self.df['criteria'].apply(lambda x: self._split_protocol(x))
+        Parameters
+        ----------
+        criteria_column: str
+            The column name of eligibility criteria in the dataframe.
+        '''
+        if self.inc_ec_embedding is None or self.exc_ec_embedding is None:
+            self._get_ec_emb()
+        
+        return self.inc_ec_embedding, self.exc_ec_embedding
+
+    def _process_ec(self, criteria_column):
+        res = self.df[criteria_column].apply(lambda x: self._split_protocol(x))
         self.df['inclusion_criteria'] = res.apply(lambda x: x[0])
         self.df['exclusion_criteria'] = res.apply(lambda x: x[1])
 
@@ -58,7 +69,6 @@ class TrialDatasetBase(Dataset):
         self.exc_ec_embedding = bert_model.encode(self.exc_vocab.words, batch_size=64)
         self.inc_ec_embedding = self.inc_ec_embedding.cpu()
         self.exc_ec_embedding = self.exc_ec_embedding.cpu()
-        
 
     def _collect_cleaned_sentence_set(self):
         # create a vocab for ec sentences
@@ -162,7 +172,7 @@ class TrialDataCollator:
         return batch_df
 
 
-class TrialOutcomeDatasetBase(Dataset):
+class TrialOutcomeDatasetBase(TrialDatasetBase):
     '''
     Basic trial outcome datasets loader.
 

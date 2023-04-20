@@ -9,10 +9,12 @@ import json
 import wget
 from collections import defaultdict
 
+import numpy as np
 import torch
 from torch import nn
 import torch.nn.init as nn_init
 from torch.nn.utils.rnn import pad_sequence
+from torch.utils.data import DataLoader
 
 from .base import TrialOutcomeBase
 from .model_utils.topic_discovery import TrialTopicDiscovery
@@ -96,8 +98,8 @@ class DiseaseEncoder(nn.Module):
 class ProtocolEncoder(nn.Module):
     def __init__(self, output_dim=50) -> None:
         super().__init__()
-        self.nct2incemb = None
-        self.nct2excemb = None
+        self.nct2incemb = nn.ParameterDict({})
+        self.nct2excemb = nn.ParameterDict({})
         self.fc = nn.Linear(768, output_dim)
         self.activation = nn.ReLU()
 
@@ -112,27 +114,18 @@ class ProtocolEncoder(nn.Module):
         emb = self.fc(emb)
         emb = self.activation(emb) # [2, 50]
         return emb
-
-    def init_criteria_emb(self, input_dir): 
-        '''need to be called before fit the main model.
+    
+    def update_criteria_emb(self, inc_emb_dict=None, exc_emb_dict=None):
         '''
+        Update the nct2incemb and nct2excemb dict.
+        '''
+        if inc_emb_dict is not None:
+            self.nct2incemb.update(inc_emb_dict)
+            self._disable_grad(self.nct2incemb)
 
-        pdb.set_trace()
-
-        if not os.path.exists(input_dir):
-            os.makedirs(input_dir)
-            # get the nct2criteria embeddings dict
-            save_trial_criteria_bert_dict_pkl()
-        
-        # load the nct2inc and nct2exc embeddings dict
-        nct2incemb = pickle.load(open(constants.INC_EMB_FILENAME, 'rb'))
-        nct2excemb = pickle.load(open(constants.EXC_EMB_FILENAME, 'rb'))
-        
-        for k,v in nct2excemb.items(): nct2excemb[k] = torch.tensor(v)
-        for k,v in nct2incemb.items(): nct2incemb[k] = torch.tensor(v)
-
-        self.nct2incemb = self._disable_grad(nn.ParameterDict(nct2incemb))
-        self.nct2excemb = self._disable_grad(nn.ParameterDict(nct2excemb))
+        if exc_emb_dict is not None:
+            self.nct2excemb.update(exc_emb_dict)
+            self._disable_grad(self.nct2excemb)
 
     def _disable_grad(self, nct2incemb):
         for k,v in nct2incemb.items():
@@ -245,6 +238,7 @@ class SPOTModel(nn.Module):
         self.activation = nn.ReLU()
 
         self.loss_fn = nn.BCEWithLogitsLoss(reduction='none')
+
         self.to(device)
 
     def forward(self, inputs, return_loss=True):
@@ -308,6 +302,7 @@ class SPOTModel(nn.Module):
         generate the embeddings of molecule, disease, protocol serving for the sequential predictive model
         return labels for each topic
         return nctids for each topic
+
         Parameters
         ----------
         inputs: dict
@@ -376,17 +371,25 @@ class SPOTModel(nn.Module):
         # flatten the tensor of the loss
         return loss[loss!=0]
 
-
     def feed_lst_of_module(self, input_feature, lst_of_module):
         x = input_feature
         for single_module in lst_of_module:
             x = self.activation(single_module(x))
         return x
 
-    def init_criteria_embedding(self, train_data):
+    def init_criteria_embedding(
+        self, 
+        input_data,
+        criteria_column="criteria"
+        ):
         # initialize the criteria embedding
-        
-        pdb.set_trace()
+        _ = input_data.get_ec_sentence_embedding(criteria_column)
+        # build nctid2criteria_emb assigning to self.protocol_encoder
+        nct2emb = input_data.get_nct_to_ec_emb()
+        self.protocol_encoder.update_criteria_emb(
+            inc_emb_dict=nct2emb['nct2incemb'],
+            exc_emb_dict=nct2emb['nct2excemb'],
+            )
 
     def _generate_square_subsequent_mask(self, sz):
         mask = (torch.triu(torch.ones(sz, sz)) == 1).transpose(0, 1)
@@ -484,6 +487,7 @@ class SPOT(TrialOutcomeBase):
     def fit_topic(self, df_train):
         '''
         Discover topics from the training data.
+
         Parameters
         ----------
         df_train: pandas.DataFrame
@@ -524,18 +528,27 @@ class SPOT(TrialOutcomeBase):
 
         Parameters
         ----------
-        train_data: TrialOutcomeDatasetBase
-            Training data, should be a `TrialOutcomeDatasetBase` object.
+        train_data: TrialOutcomeDataset
+            Training data, should be a `TrialOutcomeDataset` object.
 
-        valid_data: TrialOutcomeDatasetBase
-            Validation data, should be a `TrialOutcomeDatasetBase` object.
+        valid_data: TrialOutcomeDataset
+            Validation data, should be a `TrialOutcomeDataset` object.
         '''
-
         if self.config['pretrained_criteria_emb']:
             # initialize the criteria embedding using pretrained language models
             self.model.init_criteria_embedding(train_data)
+            if valid_data is not None:
+                # will add the criteria embedding for the validation data
+                self.model.init_criteria_embedding(valid_data)
 
         # initialize the topics using the topic discovery model
+        self.fit_topic(train_data.df)
+
+        seqdatas = self.transform_topic(train_data.df, valid_data.df if valid_data is not None else None)
+        train_seq_data = seqdatas['seqtrain']
+        valid_seq_data = seqdatas['seqval'] if valid_data is not None else None
+
+        
         pdb.set_trace()
 
         self._fit_model(train_data, valid_data)
@@ -543,6 +556,7 @@ class SPOT(TrialOutcomeBase):
     def predict(self, data, target_trials=None):
         '''
         Predict the outcome of a clinical trial.
+
         Parameters
         ----------
         data: SequenceTrial
