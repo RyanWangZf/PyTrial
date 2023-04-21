@@ -64,7 +64,12 @@ class TrialDatasetBase(Dataset):
     def _get_ec_emb(self):
         # create EC embedding with indexed ECs
         from pytrial.model_utils.bert import BERT
-        bert_model = BERT(device='cuda:0')
+        # check if cuda is available
+        if torch.cuda.is_available():
+            device = 'cuda:0'
+        else:
+            device = 'cpu'
+        bert_model = BERT(device=device)
         self.inc_ec_embedding = bert_model.encode(self.inc_vocab.words, batch_size=64)
         self.exc_ec_embedding = bert_model.encode(self.exc_vocab.words, batch_size=64)
         self.inc_ec_embedding = self.inc_ec_embedding.cpu()
