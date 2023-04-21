@@ -382,38 +382,6 @@ class ADMET(nn.Sequential):
 			loss_lst.append(np.mean(single_loss_lst))
 		return np.mean(loss_lst)
 
-	def train(self, train_loader_lst, valid_loader_lst):
-		opt = torch.optim.Adam(self.parameters(), lr = self.lr, weight_decay = self.weight_decay)
-		train_loss_record = [] 
-		valid_loss = self.test(valid_loader_lst, return_loss=True)
-		valid_loss_record = [valid_loss]
-		best_valid_loss = valid_loss 
-		best_model = deepcopy(self)
-		for ep in tqdm(range(self.epoch)):
-			data_iterator_lst = [iter(train_loader_lst[idx]) for idx in range(5)]
-			try: 
-				while True:
-					for idx in range(1):
-						smiles_lst, label_vec = next(data_iterator_lst[idx])
-						output = self.forward_smiles_lst_pred(smiles_lst, idx).view(-1)
-						loss = self.loss(output, label_vec.float()) 
-						opt.zero_grad() 
-						loss.backward()
-						opt.step()	
-			except:
-				pass 
-			valid_loss = self.test(valid_loader_lst, return_loss = True)
-			valid_loss_record.append(valid_loss)						
-
-			if valid_loss < best_valid_loss:
-				best_valid_loss = valid_loss 
-				best_model = deepcopy(self)
-
-		self = deepcopy(best_model)
-
-
-
-
 
 if __name__ == "__main__":
 	model = MPNN(mpnn_hidden_size = 50, mpnn_depth = 3)

@@ -168,7 +168,7 @@ def load_trial_patient_sequence(input_dir=None):
 
 def load_trial_outcome_data(input_dir=None, phase='I', split='train'):
     '''
-    Load trial outcome prediction (TOP) benchmark data from https://github.com/futianfan/clinical-trial-outcome-prediction.
+    Load trial outcome prediction (TOP) benchmark data.
 
     Parameters
     ----------
@@ -182,23 +182,26 @@ def load_trial_outcome_data(input_dir=None, phase='I', split='train'):
     split: {'train', 'test', 'valid'}
         The split of the trial data. Can be 'train', 'test', 'valid'.
     '''
-    if input_dir is None:
-        input_dir = './demo_data/demo_trial_data'
-    
-    filename = 'phase_{}_{}.csv'.format(phase, split)
 
-    if not os.path.exists(os.path.join(input_dir, filename)):
-        if not os.path.exists(input_dir):
-            os.makedirs(input_dir)
-        url = TOP_URL + filename
-        df = pd.read_csv(url)
-        df.to_csv(os.path.join(input_dir, filename))
+    BENCHMARK_DATA_URL = 'https://storage.googleapis.com/pytrial/HINT-benchmark-data/hint_benchmark_dataset_w_date.zip'
+
+    if input_dir is None:
+        input_dir = './demo_data/demo_trial_outcome_data'
+
+    if not os.path.exists(input_dir):
+        os.makedirs(input_dir)
+        # download the benchmark data
+        wget.download(BENCHMARK_DATA_URL, out=input_dir)
+        # unzip filename
+        import zipfile
+        with zipfile.ZipFile(os.path.join(input_dir, 'hint_benchmark_dataset_w_date.zip'), 'r') as zip_ref:
+            zip_ref.extractall(input_dir)
         print(f'\n Download trial data to {input_dir}.')
     
-    else:
-        filename = os.path.join(input_dir, filename)
-        # load patient data
-        df = pd.read_csv(filename)
+    filename = 'phase_{}_{}.csv'.format(phase, split)
+    filename = os.path.join(input_dir, filename)
+    # load patient data
+    df = pd.read_csv(filename)
     return {'data':df}
 
 def load_trial_document_data(input_dir=None, 

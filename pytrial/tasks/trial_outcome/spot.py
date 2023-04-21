@@ -15,14 +15,16 @@ from torch import nn
 import torch.nn.init as nn_init
 from torch.nn.utils.rnn import pad_sequence
 from torch.utils.data import DataLoader
+from torch.cuda.amp import autocast
 
+from pytrial.utils.trainer import Trainer
 from .base import TrialOutcomeBase
 from .model_utils.topic_discovery import TrialTopicDiscovery
 from .model_utils.molecule_encode import MPNN, ADMET
 from .model_utils.icdcode_encode import GRAM
 from .model_utils.module import Highway
-from .model_utils.protocol_encode import save_trial_criteria_bert_dict_pkl
-
+from .model_utils.data_utils import collect_trials_from_topic
+from .evaluation import evaluate
 
 __all__ = ['SPOT']
 
@@ -45,6 +47,26 @@ class constants:
     EXC_EMB_URL = 'https://storage.googleapis.com/pytrial/HINT-benchmark-data/nct2exc_embedding.pkl'
     ADMET_MODEL_URL = 'https://storage.googleapis.com/pytrial/HINT-benchmark-data/admet_model_state_dict.ckpt'
 
+class SPOTCollator:
+    def __call__(self, inputs):
+        '''
+        Parameters
+        ----------
+        inputs: List[Topic]
+            A list of `Topic` objects.
+        '''
+        return_data = defaultdict(list)
+        return_data['topic'] = inputs
+        # create mask list, (bs, n_ts, max_n_trial)
+        for input in inputs:
+            mask = []
+            for trial_step in input.trials:
+                mask.append(torch.tensor([1] * len(trial_step)))
+            # pad mask
+            mask = pad_sequence(mask, batch_first=True, padding_value=0)
+            return_data['mask'].append(mask)
+        return return_data
+
 class MoleculeEncoder(nn.Module):
     '''
     Load pretrained MPNN and ADMET models.
@@ -52,7 +74,7 @@ class MoleculeEncoder(nn.Module):
     def __init__(self, input_dir=None, device='cuda:0'):
         super(MoleculeEncoder, self).__init__()
         if input_dir is None:
-            input_dir = './pretrained_models/molecule_encoder'
+            input_dir = './pretrained_model/molecule_encoder'
         if not os.path.exists(input_dir):
             os.makedirs(input_dir)
             # download pretrained model if not exist from the url ADMET_MODEL_URL
@@ -199,6 +221,97 @@ class CLSToken(nn.Module):
         outputs['attention_mask'] = attention_mask
         return outputs
 
+
+class SPOTTrainer(Trainer):
+    '''
+    Make supervised sequential modeling (no meta learning).
+    '''
+    def prepare_input(self, data):
+        return self.model.prepare_input(data, return_label=True)
+    
+    def evaluate(self):
+        res = self.model._predict_on_dataloader(self.test_dataloader)
+        pred, label, nctid = res['pred'], res['label'], res['nctid']
+        bool_idx = np.isin(nctid, self.test_data.new_trials[-1]) # 0: valids, 1: testids
+
+        eval_label = label[bool_idx]
+        eval_pred = pred[bool_idx]
+
+        eval_res = evaluate(eval_pred, eval_label, find_best_threshold=True)
+        return eval_res
+    
+    def get_test_dataloader(self, test_data):
+        '''
+        Build a dataloader for testing a spot model.
+        Parameters
+        ----------
+        test_data: SequenceTrial
+            A dataset consisting of multiple topics of clinical trials. Each topic is a list of clinical trials under this topic ordered with their timestamps.
+        '''
+        self.test_data = test_data
+        loader = self.model.get_test_dataloader(test_data)
+        return loader
+
+    def train_one_iteration(self, 
+        max_grad_norm=None,
+        warmup_steps=None,
+        use_amp=None, 
+        scaler=None,
+        train_loss_dict=None):
+        '''
+        Default training one iteration steps, can be subclass can reimplemented.
+        '''
+        skip_scheduler = False
+        num_train_objectives = len(self.train_dataloader)
+        for train_idx in range(num_train_objectives):
+            data_iterator = self.data_iterators[train_idx]
+            loss_model = self.loss_models[train_idx]
+            loss_model.zero_grad()
+            loss_model.train()
+            optimizer = self.optimizers[train_idx]
+            scheduler = self.schedulers[train_idx]
+
+            # get a batch of data from the target data_iterator
+            data = self._get_a_train_batch(data_iterator=data_iterator, train_idx=train_idx)
+            data = self.prepare_input(data)
+
+            # update model by backpropagation
+            if use_amp:
+                loss_value, skip_scheduler, scale_before_step = self._update_one_iteration_amp(loss_model=loss_model, data=data, optimizer=optimizer, scaler=scaler, max_grad_norm=max_grad_norm)
+            else:
+                loss_value = self._update_one_iteration(loss_model=loss_model, data=data, optimizer=optimizer, max_grad_norm=max_grad_norm)
+
+            train_loss_dict[train_idx].append(loss_value.item())
+
+            if use_amp:
+                skip_scheduler = scaler.get_scale() != scale_before_step
+
+            if not skip_scheduler and warmup_steps > 0:
+                scheduler.step()
+
+    def _update_one_iteration(self, loss_model, data, optimizer, max_grad_norm):
+        loss_model_return = loss_model(data)
+        loss_value = loss_model_return['loss_value']
+        loss_value.backward()
+        torch.nn.utils.clip_grad_norm_(loss_model.parameters(), max_grad_norm)
+        optimizer.step()
+        return loss_value
+
+    def _update_one_iteration_amp(self, loss_model, data, optimizer, scaler, max_grad_norm):
+        with autocast():
+            loss_return = loss_model(data)
+        loss_value = loss_return['loss_value']
+        scale_before_step = scaler.get_scale()
+        scaler.scale(loss_value).backward()
+        scaler.unscale_(optimizer)
+        torch.nn.utils.clip_grad_norm_(loss_model.parameters(), max_grad_norm)
+        scaler.step(optimizer)
+        scaler.update()
+        skip_scheduler = scaler.get_scale() != scale_before_step
+        return loss_value, skip_scheduler, scale_before_step
+
+
+
 class SPOTModel(nn.Module):
     '''
     SPOT model that encodes the input data and predicts the trial outcome.
@@ -214,7 +327,7 @@ class SPOTModel(nn.Module):
         n_timestemp_projector=2,
         n_rnn_layer=1,
         n_trial_per_batch=None,
-        checkpoint='./pretrained_models', 
+        checkpoint='./pretrained_model', 
         device='cuda:0',
         **kwargs) -> None:
         super().__init__()
@@ -461,7 +574,7 @@ class SPOT(TrialOutcomeBase):
         evaluation_steps=50,
         warmup_ratio=0,
         seed=42,
-        output_dir=None,
+        output_dir="./checkpoints/spot",
         ):
         self.config = {
             'num_topics': num_topics,
@@ -520,6 +633,11 @@ class SPOT(TrialOutcomeBase):
                 seqtest = self.topic_discover.add_trials(seqval, df_test)        
         return {'seqtrain':seqtrain, 'seqval':seqval, 'seqtest':seqtest}
 
+    def add_trials(self, seqtrain, df):
+        '''Add new trials to the SequenceTrial object. It is used for the validation and test data.
+        '''
+        return self.topic_discover.add_trials(seqtrain, df)
+
     def fit(self, train_data, valid_data=None):
         '''Train the SPOT model. It has two/three steps:
         1. Encode the criteria using pretrained BERT to get the criteria embedding (optional).
@@ -547,11 +665,7 @@ class SPOT(TrialOutcomeBase):
         seqdatas = self.transform_topic(train_data.df, valid_data.df if valid_data is not None else None)
         train_seq_data = seqdatas['seqtrain']
         valid_seq_data = seqdatas['seqval'] if valid_data is not None else None
-
-        
-        pdb.set_trace()
-
-        self._fit_model(train_data, valid_data)
+        self._fit_model(train_seq_data, valid_seq_data)
 
     def predict(self, data, target_trials=None):
         '''
@@ -667,7 +781,7 @@ class SPOT(TrialOutcomeBase):
     def _fit_model(self, train_data, valid_data):
         trainloader = self.get_train_dataloader(train_data)
         train_objectives = [(trainloader, self.model)]
-        trainer = SuperviseTrainer(
+        trainer = SPOTTrainer(
             model = self,
             train_objectives = train_objectives,
             test_data=valid_data,

@@ -223,24 +223,3 @@ class SequenceTrial(Dataset):
             new_trials.extend(trial_ids)
             self.trials[topic.topic_id].extend(trial_ids)
         self.new_trials.append(new_trials)
-
-
-class SPOTCollator:
-    def __call__(self, inputs):
-        '''
-        Parameters
-        ----------
-        inputs: List[Topic]
-            A list of `Topic` objects.
-        '''
-        return_data = defaultdict(list)
-        return_data['topic'] = inputs
-        # create mask list, (bs, n_ts, max_n_trial)
-        for input in inputs:
-            mask = []
-            for trial_step in input.trials:
-                mask.append(torch.tensor([1] * len(trial_step)))
-            # pad mask
-            mask = pad_sequence(mask, batch_first=True, padding_value=0)
-            return_data['mask'].append(mask)
-        return return_data
