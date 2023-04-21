@@ -11,15 +11,17 @@ output:
 import csv, re, pickle, os
 import pdb
 from functools import reduce 
-import icd10
+import wget
 from collections import defaultdict
 
 import pandas as pd
 import torch 
 from torch import nn 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+import icd10
 
 ICDCODE_ANCESTOR_URL = 'https://github.com/futianfan/clinical-trial-outcome-prediction/raw/main/data/raw_data.csv'
+icdcode2ancestor_dict_url = "https://storage.googleapis.com/pytrial/HINT-benchmark-data/icdcode2ancestor_dict.pkl"
 
 def text_2_lst_of_lst(text):
 	"""
@@ -78,7 +80,12 @@ def find_ancestor_for_icdcode(icdcode, icdcode2ancestor):
 
 
 def build_icdcode2ancestor_dict():
-	pkl_file = "demo_data/demo_trial_outcome_data/icdcode2ancestor_dict.pkl"
+	pkl_file = "pretrained_model/icdcode2ancestor/icdcode2ancestor_dict.pkl"
+
+	if not os.path.exists('pretrained_model/icdcode2ancestor'):
+		os.makedirs('pretrained_model/icdcode2ancestor')
+		wget.download(icdcode2ancestor_dict_url, pkl_file)
+
 	if os.path.exists(pkl_file):
 		icdcode2ancestor = pickle.load(open(pkl_file, 'rb'))
 		return icdcode2ancestor
@@ -115,7 +122,10 @@ class GRAM(nn.Sequential):
 	"""
 
 	def __init__(self, embedding_dim, icdcode2ancestor, device):
-		super(GRAM, self).__init__()		
+		super(GRAM, self).__init__()
+		if icdcode2ancestor is None: 
+			icdcode2ancestor = build_icdcode2ancestor_dict()
+
 		self.icdcode2ancestor = icdcode2ancestor 
 		self.all_code_lst = GRAM.codedict_2_allcode(self.icdcode2ancestor)
 		self.code_num = len(self.all_code_lst)

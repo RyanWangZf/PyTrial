@@ -12,6 +12,7 @@ import pickle
 from pathlib import Path
 import pdb
 import os
+from copy import deepcopy
 
 import pandas as pd
 import numpy as np
@@ -199,6 +200,13 @@ class HyperTransformer(rdt.HyperTransformer):
     '''
     A subclass of `rdt.HyperTransformer` to set special setups.
     '''
+    _DTYPES_TO_SDTYPES = {
+        'i': 'categorical', # change the default from numerical to categorical for integers
+        'f': 'numerical',
+        'O': 'categorical',
+        'b': 'boolean',
+        'M': 'datetime',
+    }
     def __init__(self):
         self._default_sdtype_transformers = {
             'numerical': StandardScaler(missing_value_replacement='mean'),
@@ -282,6 +290,17 @@ class HyperTransformer(rdt.HyperTransformer):
             )
         
         column_name_to_transformer.update(update_transformers)
+    
+    def _set_field_sdtype(self, data, field):
+        clean_data = data[field].dropna()
+        kind = clean_data.infer_objects().dtype.kind
+        if kind == 'i':
+            # decide if it is categorical or binary for input integers
+            if len(clean_data.unique()) <= 2:
+                kind = 'b'
+            else:
+                kind = 'O'
+        self.field_sdtypes[field] = self._DTYPES_TO_SDTYPES[kind]
 
 
 def read_csv_to_df(file_loc, header_lower=True, usecols=None, dtype=None,

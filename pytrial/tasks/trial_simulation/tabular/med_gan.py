@@ -193,6 +193,8 @@ class MedGANSynthesizer:
         )
 
         for i in range(self.pretrain_epoch):
+            if self.verbose:
+                print('Pretrain Epoch: {} / {}'.format(i+1, self.pretrain_epoch))
             for id_, data in enumerate(loader):
                 optimizerAE.zero_grad()
                 real = data[0].to(self.device)

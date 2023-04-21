@@ -46,7 +46,7 @@ class BuildModel(nn.Module):
 
 class PolicyGradientEntropy(SiteSelectionBase):
     '''
-    Implement Policy Gradient Entropy model for selecting clinical trial sites based on possibly missing multi-model site features.
+    Implement Policy Gradient Entropy model for selecting clinical trial sites based on possibly missing multi-model site features. [1]_
     
     Parameters
     ----------
@@ -59,7 +59,11 @@ class PolicyGradientEntropy(SiteSelectionBase):
 
     embedding_dim: int
         Size of all of the modality and other intermediate embeddings
-        
+    
+    Notes
+    -----
+    .. [1] Srinivasa, R. S., Qian, C., Theodorou, B., Spaeder, J., Xiao, C., Glass, L., & Sun, J. (2022). Clinical trial site matching with improved diversity using fair policy learning. arXiv preprint arXiv:2204.06501.
+
     '''
     def __init__(self, 
         trial_dim=211, 

@@ -41,9 +41,6 @@ class Interaction(nn.Sequential, TrialOutcomeBase):
         self.disease_encoder = GRAM(embedding_dim = disease_embedding_dim, icdcode2ancestor = icdcode2ancestor_dict, device = device)
         self.protocol_encoder = Protocol_Embedding(output_dim = protocol_output_dim, highway_num=3, device = device)
         self.molecule_encoder = MPNN(mpnn_hidden_size = molecule_embedding_dim, mpnn_depth=3, device = device)
-        # self.molecule_encoder = molecule_encoder 
-        # self.disease_encoder = disease_encoder 
-        # self.protocol_encoder = protocol_encoder 
         self.global_embed_size = global_embed_size 
         self.highway_num_layer = highway_num_layer 
         self.feature_dim = self.molecule_encoder.embedding_size + self.disease_encoder.embedding_size + self.protocol_encoder.embedding_size
