@@ -5,6 +5,7 @@ import os
 from typing import Any, Callable, Dict, List, NewType, Optional, Tuple, Union
 
 import pandas as pd
+import torch
 from torch.utils.data import Dataset, DataLoader
 
 from ..utils.trial_utils import ClinicalTrials
