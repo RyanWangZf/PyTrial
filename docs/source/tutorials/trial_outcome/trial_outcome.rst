@@ -31,8 +31,11 @@ Here is the list of colab examples on each model for this task.
 
 - `Model 4: HINT <https://colab.research.google.com/drive/1RVVHjQYOaV2LnL7ugoF860XRCGmK6hMQ?usp=sharing>`_
 
+- `Model 5: SPOT <https://colab.research.google.com/drive/1FE0Bd_q2IxBRLu9CYxY9lr0hPx1GCEnY?usp=sharing>`_
 
 Trial Outcome Prediction: Example
 ---------------------------------
 
 Here, we highlight the usage of ``trial_outcome.hint`` model for this task.
+
+**TODO**
