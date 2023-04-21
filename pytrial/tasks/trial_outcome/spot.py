@@ -666,6 +666,14 @@ class SPOT(TrialOutcomeBase):
 
     def add_trials(self, seqtrain, df):
         '''Add new trials to the SequenceTrial object. It is used for the validation and test data.
+
+        Parameters
+        ----------
+        seqtrain: model_utils.data_structure.SequenceTrial
+            The sequence of clinical trials represented by SequenceTrial object.
+
+        df: pd.DataFrame
+            The dataframe of new trials that should be added to the input seqtrain.
         '''
         return self.topic_discover.add_trials(seqtrain, df)
 
