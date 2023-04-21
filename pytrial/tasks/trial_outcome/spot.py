@@ -345,7 +345,8 @@ class SPOTModel(nn.Module):
         self.num_topics = num_topics
         self.n_trial_per_batch = n_trial_per_batch
 
-        self.molecule_encoder = MoleculeEncoder(input_dir=os.path.join(checkpoint, 'molecule_encoder'))
+        self.molecule_encoder = MoleculeEncoder(input_dir=os.path.join(checkpoint, 'molecule_encoder'),
+                                                    device=device)
         self.disease_encoder = DiseaseEncoder(device=device)
         self.protocol_encoder = ProtocolEncoder()
         self.feature_encoder = FeatureEncoder(1, 50)
@@ -578,6 +579,9 @@ class SPOT(TrialOutcomeBase):
     warmup_ratio: float
         Warmup ratio for learning rate scheduler.
     
+    device: str
+        Device to use for training and inference.
+
     seed: int
         Random seed.
 
@@ -598,6 +602,7 @@ class SPOT(TrialOutcomeBase):
         epochs=10,
         evaluation_steps=50,
         warmup_ratio=0,
+        device="cuda:0",
         seed=42,
         output_dir="./checkpoints/spot",
         ):
@@ -616,6 +621,7 @@ class SPOT(TrialOutcomeBase):
             'warmup_ratio':warmup_ratio,
             'seed': seed,
             'output_dir': output_dir,
+            'device': device,
             }
         self.model = SPOTModel(**self.config)
         self.topic_discover = TrialTopicDiscovery(num_topics=num_topics, random_seed=seed)
