@@ -47,8 +47,11 @@ class TrialOutcomeDataset(TrialOutcomeDatasetBase):
             self.nct2exc_emb = {}
             self.nct2inc_emb = {}
             for idx, row in self.df.iterrows():
-                self.nct2inc_emb[row['nctid']] = self.inc_ec_embedding[row['inclusion_criteria_index']].mean(axis=0)
-                self.nct2exc_emb[row['nctid']] = self.exc_ec_embedding[row['exclusion_criteria_index']].mean(axis=0)
+                if len(row['inclusion_criteria_index']) > 0:
+                    self.nct2inc_emb[row['nctid']] = self.inc_ec_embedding[row['inclusion_criteria_index']].mean(axis=0)
+                
+                if len(row['exclusion_criteria_index']) > 0:
+                    self.nct2exc_emb[row['nctid']] = self.exc_ec_embedding[row['exclusion_criteria_index']].mean(axis=0)
 
         return {
             "nct2incemb": self.nct2inc_emb,

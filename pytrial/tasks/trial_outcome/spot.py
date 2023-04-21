@@ -26,6 +26,8 @@ from .model_utils.module import Highway
 from .model_utils.data_utils import collect_trials_from_topic
 from .evaluation import evaluate
 
+
+
 __all__ = ['SPOT']
 
 class constants:
@@ -39,6 +41,7 @@ class constants:
     CONFIG_NAME = 'config.json'
     TOPIC_DISCOVER_NAME = 'topic_discover.pkl'
     MODEL_OBJECT_NAME = 'spot_model.pkl'
+    SEQDATA_NAME = 'seqtrial_data.pkl'
     TRAINING_PARAMETERS = ['batch_size','learning_rate','epochs','weight_decay','warmup_ratio','evaluation_steps','seed']
     # used for downloading pretrained embeddings / preprocessed data
     BENCHMARK_DATA_URL = 'https://storage.googleapis.com/pytrial/HINT-benchmark-data/hint_benchmark_dataset_w_date.zip'
@@ -46,6 +49,11 @@ class constants:
     INC_EMB_URL = 'https://storage.googleapis.com/pytrial/HINT-benchmark-data/nct2inc_embedding.pkl'
     EXC_EMB_URL = 'https://storage.googleapis.com/pytrial/HINT-benchmark-data/nct2exc_embedding.pkl'
     ADMET_MODEL_URL = 'https://storage.googleapis.com/pytrial/HINT-benchmark-data/admet_model_state_dict.ckpt'
+
+def check_nan(inputs):
+    # check nan for debugging
+    if torch.isnan(inputs).any():
+        pdb.set_trace()
 
 class SPOTCollator:
     def __call__(self, inputs):
@@ -92,6 +100,11 @@ class MoleculeEncoder(nn.Module):
             save_name=None,
             )
         self.admet.load_state_dict(state_dict)
+
+        # freeze admet model
+        # for param in self.admet.parameters():
+        #     param.requires_grad = False
+             
         self.pk_fc = nn.Linear(50 * 5, 50)
         self.pk_highway = Highway(50, 2)
     
@@ -108,7 +121,9 @@ class DiseaseEncoder(nn.Module):
     def __init__(self, device) -> None:
         super().__init__()
         self.gram = GRAM(
-            embedding_dim=50, icdcode2ancestor=None, device=device,
+            embedding_dim=50, 
+            icdcode2ancestor=None, 
+            device=device,
         )
         self.device = device
     
@@ -130,8 +145,18 @@ class ProtocolEncoder(nn.Module):
         Get the pre-encoded protocol embeddings.
         '''
         device = self.fc.weight.device
-        inc_emb = self.nct2incemb[nctid][None].to(device)
-        exc_emb = self.nct2excemb[nctid][None].to(device)
+        # say if nctid in the dict, return the embedding
+        # else return an all zero embedding
+        if nctid in self.nct2incemb:
+            inc_emb = self.nct2incemb[nctid][None].to(device)
+        else:
+            inc_emb = torch.zeros(1, 768).to(device)
+
+        if nctid in self.nct2excemb:
+            exc_emb = self.nct2excemb[nctid][None].to(device)
+        else:
+            exc_emb = torch.zeros(1, 768).to(device)
+
         emb = torch.cat([inc_emb, exc_emb], dim=0) # [2, 768]
         emb = self.fc(emb)
         emb = self.activation(emb) # [2, 50]
@@ -144,7 +169,7 @@ class ProtocolEncoder(nn.Module):
         if inc_emb_dict is not None:
             self.nct2incemb.update(inc_emb_dict)
             self._disable_grad(self.nct2incemb)
-
+                
         if exc_emb_dict is not None:
             self.nct2excemb.update(exc_emb_dict)
             self._disable_grad(self.nct2excemb)
@@ -196,31 +221,6 @@ class TopicEncoder(nn.Module):
         x = self.embed(x)[None]
         return x
 
-class CLSToken(nn.Module):
-    '''
-    Prepend CLS token embedding to the input embedding.
-    '''
-    def __init__(self, hidden_dim):
-        super().__init__()
-        self.weight = nn.Parameter(torch.Tensor(hidden_dim))
-        nn_init.uniform_(self.weight, a=-1/math.sqrt(hidden_dim),b=1/math.sqrt(hidden_dim))
-
-    def expand(self, *leading_dimensions):
-        new_dims = (1,) * (len(leading_dimensions)-1)
-        return self.weight.view(*new_dims, -1).expand(*leading_dimensions, -1)
-
-    def forward(self, embedding, attention_mask=None, **kwargs):
-        '''
-        embeddings: [batch_size, seq_len, hidden_dim]
-        '''
-        embedding = torch.cat([self.expand(len(embedding), 1), embedding], dim=1)
-        outputs = {'embedding': embedding}
-
-        if attention_mask is not None:
-            attention_mask = torch.cat([torch.ones(attention_mask.shape[0],1).to(attention_mask.device), attention_mask], 1)
-        outputs['attention_mask'] = attention_mask
-        return outputs
-
 
 class SPOTTrainer(Trainer):
     '''
@@ -260,7 +260,7 @@ class SPOTTrainer(Trainer):
         train_loss_dict=None):
         '''
         Default training one iteration steps, can be subclass can reimplemented.
-        '''
+        '''        
         skip_scheduler = False
         num_train_objectives = len(self.train_dataloader)
         for train_idx in range(num_train_objectives):
@@ -279,7 +279,7 @@ class SPOTTrainer(Trainer):
             if use_amp:
                 loss_value, skip_scheduler, scale_before_step = self._update_one_iteration_amp(loss_model=loss_model, data=data, optimizer=optimizer, scaler=scaler, max_grad_norm=max_grad_norm)
             else:
-                loss_value = self._update_one_iteration(loss_model=loss_model, data=data, optimizer=optimizer, max_grad_norm=max_grad_norm)
+                loss_value = self._update_one_iteration(loss_model=loss_model, data=data, optimizer=optimizer, max_grad_norm=max_grad_norm)                
 
             train_loss_dict[train_idx].append(loss_value.item())
 
@@ -293,6 +293,17 @@ class SPOTTrainer(Trainer):
         loss_model_return = loss_model(data)
         loss_value = loss_model_return['loss_value']
         loss_value.backward()
+
+        print('loss_value', loss_value.item())
+
+        # check if nan in the gradients of all modules in the loss_model
+        # for debugging
+        # for i, (name, param) in enumerate(loss_model.named_parameters()):
+        #     if param.grad is not None:
+        #         if torch.isnan(param.grad).any():
+        #             pdb.set_trace()
+        #             raise ValueError(f'Gradient of {name} is nan.')
+
         torch.nn.utils.clip_grad_norm_(loss_model.parameters(), max_grad_norm)
         optimizer.step()
         return loss_value
@@ -351,6 +362,7 @@ class SPOTModel(nn.Module):
         self.activation = nn.ReLU()
 
         self.loss_fn = nn.BCEWithLogitsLoss(reduction='none')
+
 
         self.to(device)
 
@@ -446,6 +458,10 @@ class SPOTModel(nn.Module):
             for trial in trials:
                 # embed the molecule, disease, protocol
                 trial_emb = self.embed_trial(trial) # [1, 50]
+                # check if isnan in the embedding
+                if torch.isnan(trial_emb).any():
+                    pdb.set_trace()
+
                 topic_emb = self.topic_encoder(topic.topic_id) # [1, 50]
                 ts_embs.append(trial_emb+topic_emb)
             ts_embs = torch.cat(ts_embs, dim=0) # [num_trials, 50]
@@ -458,8 +474,15 @@ class SPOTModel(nn.Module):
         # embed the trial into the trial embedding
         # trial: Trial object
         mol_emb = self.molecule_encoder(trial.attr_dict['smiless']) # [1, 50] molecule + [1, 50] pharamakinetics
+        # check if isnan in the embedding
+        if torch.isnan(mol_emb).any():
+            pdb.set_trace()        
         protocol_emb = self.protocol_encoder(trial.attr_dict['nctid']) # [2, 50]
+        if torch.isnan(protocol_emb).any():
+            pdb.set_trace()
         disease_emb = self.disease_encoder(trial.attr_dict['icdcodes']) # [1, 50]
+        if torch.isnan(disease_emb).any():
+            pdb.set_trace()
         year_emb = self.feature_encoder(trial.attr_dict['year']) # [1, 50]
 
         trial_emb = torch.cat([mol_emb, protocol_emb, disease_emb, year_emb], dim=0) # [4, 50]
@@ -495,6 +518,9 @@ class SPOTModel(nn.Module):
         input_data,
         criteria_column="criteria"
         ):
+        # check if the criteria column in the input data
+        assert criteria_column in input_data.df.columns, f"{criteria_column} is not in the input data."
+
         # initialize the criteria embedding
         _ = input_data.get_ec_sentence_embedding(criteria_column)
         # build nctid2criteria_emb assigning to self.protocol_encoder
@@ -528,10 +554,9 @@ class SPOT(TrialOutcomeBase):
     n_rnn_layer: int
         Number of layers in the RNN for encoding ontology & smiles strings.
         
-    pretrained_criteria_emb: bool
-        Whether to use pretrained BERT to encode criteria to get the criteria embedding. It takes some time to encode the criteria.
-        Set to False if you want to train the criteria embedding from scratch.
-    
+    criteria_column: str
+        The column name of the criteria in the input data.
+
     batch_size: int
         Batch size for training.
     
@@ -565,7 +590,7 @@ class SPOT(TrialOutcomeBase):
         n_trial_projector=2,
         n_timestemp_projector=2,
         n_rnn_layer=1,
-        pretrained_criteria_emb=False,
+        criteria_column='criteria',
         batch_size=1,
         n_trial_per_batch=None,
         learning_rate=1e-4,
@@ -581,7 +606,7 @@ class SPOT(TrialOutcomeBase):
             'n_trial_projector': n_trial_projector,
             'n_timestemp_projector': n_timestemp_projector,
             'n_rnn_layer': n_rnn_layer,
-            'pretrained_criteria_emb': pretrained_criteria_emb,
+            'criteria_column': criteria_column,
             'batch_size': batch_size,
             'n_trial_per_batch':n_trial_per_batch,
             'learning_rate': learning_rate,
@@ -652,12 +677,11 @@ class SPOT(TrialOutcomeBase):
         valid_data: TrialOutcomeDataset
             Validation data, should be a `TrialOutcomeDataset` object.
         '''
-        if self.config['pretrained_criteria_emb']:
-            # initialize the criteria embedding using pretrained language models
-            self.model.init_criteria_embedding(train_data)
-            if valid_data is not None:
-                # will add the criteria embedding for the validation data
-                self.model.init_criteria_embedding(valid_data)
+        # initialize the criteria embedding using pretrained language models
+        self.model.init_criteria_embedding(train_data, self.config['criteria_column'])
+        if valid_data is not None:
+            # will add the criteria embedding for the validation data
+            self.model.init_criteria_embedding(valid_data, self.config['criteria_column'])
 
         # initialize the topics using the topic discovery model
         self.fit_topic(train_data.df)
@@ -667,28 +691,41 @@ class SPOT(TrialOutcomeBase):
         valid_seq_data = seqdatas['seqval'] if valid_data is not None else None
         self._fit_model(train_seq_data, valid_seq_data)
 
+        # save the seqdata
+        self.seqdata = train_seq_data if valid_seq_data is None else valid_seq_data
+
     def predict(self, data, target_trials=None):
         '''
         Predict the outcome of a clinical trial.
 
         Parameters
         ----------
-        data: SequenceTrial
-            A dataset consisting of multiple topics of clinical trials. Each topic is a list of clinical trials under this topic ordered with their timestamps.
+        data: TrialOutcomeDataset
+            A `TrialOutcomeDataset` object containing the data to predict.
         
         target_trials: list
-            A list of trial ids to predict. If None, all trials will be predicted.
+            A list of trial ids to predict. If None, all trials in `data` will be predicted.
         '''
         self.eval()
-        loader = self.get_test_dataloader(data)
+        if target_trials is not None:
+            target_trials = data.df['nctid'].tolist()
+
+        # need to initialize the criteria embedding for the test data
+        self.model.init_criteria_embedding(data, self.config['criteria_column'])
+
+        # add test data to the seqtrain stored in the model
+        seqtest = self.add_trials(self.seqdata, data.df)
+
+        loader = self.get_test_dataloader(seqtest)
         result = self._predict_on_dataloader(loader)
         pred, label, nctid = result['pred'], result['label'], result['nctid']
         if target_trials is not None:
             bool_idx = np.isin(nctid, target_trials)
             nctid = np.array(nctid)
             result = {'pred': pred[bool_idx], 'label': label[bool_idx], 'nctid': nctid[bool_idx]}
+        
         return result
-    
+
     def save_model(self, output_dir=None):
         '''
         Save the model to a directory.
@@ -715,6 +752,10 @@ class SPOT(TrialOutcomeBase):
         # save topic discover
         with open(os.path.join(output_dir, constants.TOPIC_DISCOVER_NAME), 'wb') as f:
             pickle.dump(self.topic_discover, f)
+
+        # save the seqdata object
+        with open(os.path.join(output_dir, constants.SEQDATA_NAME), 'wb') as f:
+            pickle.dump(self.seqdata, f)
 
         print('save model to {}'.format(output_dir))
 

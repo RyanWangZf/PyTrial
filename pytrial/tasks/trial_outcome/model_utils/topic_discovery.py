@@ -19,7 +19,6 @@ from .data_utils import flatten_stacked_list
 from .data_utils import split_protocol
 from .data_structure import Trial, Topic, SequenceTrial
 
-
 class TrialTopicDiscovery:
     '''
     Input a csv of clinical trial data, output a dataset consisting of multiple sequences of 

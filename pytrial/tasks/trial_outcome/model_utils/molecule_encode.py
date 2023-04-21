@@ -230,6 +230,11 @@ class MPNN(nn.Sequential):
 		self.W_h = nn.Linear(self.mpnn_hidden_size, self.mpnn_hidden_size, bias=False)
 		self.W_o = nn.Linear(ATOM_FDIM + self.mpnn_hidden_size, self.mpnn_hidden_size)
 
+		# initialize weights
+		nn.init.xavier_uniform_(self.W_i.weight)
+		nn.init.xavier_uniform_(self.W_h.weight)
+		nn.init.xavier_uniform_(self.W_o.weight)
+
 		self.device = device
 		self = self.to(self.device)
 
@@ -356,7 +361,6 @@ class ADMET(nn.Sequential):
 	def set_device(self, device):
 		self.device = device 
 		self.molecule_encoder.set_device(device)
-
 
 	def forward_smiles_lst_embedding(self, smiles_lst, idx):
 		embed_all = self.molecule_encoder.forward_smiles_lst(smiles_lst)
