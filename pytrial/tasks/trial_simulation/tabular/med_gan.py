@@ -1,6 +1,7 @@
 import os
 import pdb
 import joblib
+import warnings
 
 import numpy as np
 import pandas as pd
@@ -179,7 +180,7 @@ class MedGANSynthesizer:
     def fit(self, data):
         data_val = data.df.values
         dataset = TensorDataset(torch.from_numpy(data_val.astype('float32')).to(self.device))
-        loader = DataLoader(dataset, batch_size=self.batch_size, shuffle=True, drop_last=True)
+        loader = DataLoader(dataset, batch_size=self.batch_size, shuffle=True, drop_last=False)
         
         self._get_metadata(data)
         
@@ -216,9 +217,23 @@ class MedGANSynthesizer:
 
         mean = torch.zeros(self.batch_size, self.random_dim, device=self.device)
         std = mean + 1
+        bs_larger_than_n_sample = False
         for i in range(self.epochs):
             n_d = 2
             n_g = 1
+            
+            if len(loader) < n_d:
+                # batch size is larger than all samples
+                # so we have to update discriminator each iteration
+                bs_larger_than_n_sample = True
+                warnings.warn(
+                    f"""
+                    Batch size is larger than all samples.
+                    Discriminator will be updated each iteration instead of each {n_d} iterations.
+                    Consider using a smaller batch size.
+                    """
+                )
+            
             for id_, data in enumerate(loader):
                 real = data[0].to(self.device)
                 noise = torch.normal(mean=mean, std=std)
@@ -234,7 +249,7 @@ class MedGANSynthesizer:
                 loss_d.backward()
                 optimizerD.step()
 
-                if i % n_d == 0:
+                if id_ % n_d == 0 or bs_larger_than_n_sample:
                     for _ in range(n_g):
                         noise = torch.normal(mean=mean, std=std)
                         emb = self.generator(noise)
