@@ -13,8 +13,8 @@ with open(os.path.join(this_directory, 'requirements.txt'),
 
 setuptools.setup(
     name = 'PyTrial',
-    version = '0.0.4',
-    author = 'Zifeng Wang, Brandon Theodoru, Tianfan Fu, Jingtang Ma, Jimeng Sun',
+    version = '0.0.5',
+    author = 'Zifeng Wang, Brandon Theodoru, Tianfan Fu, Jimeng Sun',
     author_email = 'zifengw2@illinois.edu',
     description = 'PyTrial: A Python Package for Artificial Intelligence in Drug Development',
     url = 'https://github.com/RyanWangZf/pytrial',
@@ -26,6 +26,8 @@ setuptools.setup(
     classifiers=[
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
         "License :: OSI Approved :: BSD License",
         "Operating System :: OS Independent",
     ],
