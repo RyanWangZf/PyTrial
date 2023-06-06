@@ -254,6 +254,9 @@ class TWIN(SequenceSimulationBase):
         The order of event types in each visits, e.g., ``['treatment', 'medication', 'adverse event']``.
         Visit = [treatment_events, medication_events, adverse_events], each event is a list of codes.
 
+    event_type: str
+        The type of event to be modeled, e.g., ``'medication'`` or ``'adverse event'``.
+
     max_visit: int
         Maximum number of visits.
 
@@ -326,39 +329,40 @@ class TWIN(SequenceSimulationBase):
         self.model = self.model.to(self.device)
 
     def fit(self, train_data, out_dir):
-      '''
-      Train model with sequential patient records.
-      Parameters
-      ----------
-      train_data: SequencePatientBase
-          A `SequencePatientBase` contains patient records where 'v' corresponds to 
-          visit sequence of different events.
-      '''
-      self._input_data_check(train_data)
-      df_train_data = self.SequencePatientBase_to_df(train_data)
-      self._fit_model(df_train_data, out_dir)
+        '''
+        Train model with sequential patient records.
+
+        Parameters
+        ----------
+        train_data: SequencePatientBase
+            A `SequencePatientBase` contains patient records where 'v' corresponds to 
+            visit sequence of different events.
+        '''
+        self._input_data_check(train_data)
+        df_train_data = self.SequencePatientBase_to_df(train_data)
+        self._fit_model(df_train_data, out_dir)
 
     def next_step_df(self, data):
-      if self.config['event_type']== 'medication':
-        ae_columns = [col for col in data if col.startswith('adverse events_')]
-        for a in ae_columns:
-            data[a[0:15]+'nxt_'+ a[15:]]= data[a].shift(-1)
+        if self.config['event_type'] == 'medication':
+            ae_columns = [col for col in data if col.startswith('adverse events_')]
+            for a in ae_columns:
+                data[a[0:15]+'nxt_'+ a[15:]]= data[a].shift(-1)
 
-        #create a new column by shifting up
-        data['Visit_']= data['Visit'].shift(-1)
-        data.iloc[len(data)-1,-1]=-1
-        data = data[data['Visit_']-data['Visit']==1]
-        data = data.drop(columns =['Visit_'])
+            #create a new column by shifting up
+            data['Visit_']= data['Visit'].shift(-1)
+            data.iloc[len(data)-1,-1]=-1
+            data = data[data['Visit_']-data['Visit']==1]
+            data = data.drop(columns =['Visit_'])
 
-        label_cols=[col for col in data if col.startswith('adverse events_nxt_')]
-        y = data[label_cols]
+            label_cols=[col for col in data if col.startswith('adverse events_nxt_')]
+            y = data[label_cols]
 
-        med_cols=[col for col in data if col.startswith('medication_')]
-        treat_cols=[col for col in data if col.startswith('treatment_')]
-        cols=med_cols+treat_cols
-        X = data[cols]
-        
-      if self.config['event_type']== 'adverse events':
+            med_cols=[col for col in data if col.startswith('medication_')]
+            treat_cols=[col for col in data if col.startswith('treatment_')]
+            cols=med_cols+treat_cols
+            X = data[cols]
+
+        if self.config['event_type'] == 'adverse events':
             med_columns = [col for col in data if col.startswith('medication_')]
             for a in med_columns:
                 data[a[0:11]+'nxt_'+ a[11:]]= data[a].shift(-1)
@@ -376,7 +380,7 @@ class TWIN(SequenceSimulationBase):
             treat_cols=[col for col in data if col.startswith('treatment_')]
             cols=ae_cols+treat_cols
             X = data[cols]
-      return X, y
+        return X, y
 
     def train(self, train_dl, device, optimizer, vocab_size, batch_size, model,out_dir):
       print("...Start training VAE...")
@@ -385,8 +389,6 @@ class TWIN(SequenceSimulationBase):
       best_train_auc = 0
 
       for epoch in range(self.config['epochs']):
-
-          #model.train()
           overall_loss = 0
           for batch_idx, (x, y) in enumerate(train_dl):
                 x = x.to(device)
@@ -428,7 +430,6 @@ class TWIN(SequenceSimulationBase):
         assert isinstance(inputs, SequencePatientBase), f'`trial_simulation.sequence` models require input training data in `SequencePatientBase`, find {type(inputs)} instead.'
 
     def SequencePatientBase_to_df(self, inputs):
-    #convert SequencePatientBase to dataframe for training twin
         '''
         returns dataframe from SeqPatientBase
         '''
@@ -443,7 +444,6 @@ class TWIN(SequenceSimulationBase):
         for i in range(len(inputs)):#each patient
             for j in range(len(inputs[i])): #each visit
                 binary_visit = [i, j]
-                #print(inputs[i])
                 for k in range(len(inputs[i][j])): #k=3 types of events
                     event_binary= [0]*self.config['vocab_size'][k]
                     for l in inputs[i][j][k]: #multihot from dense
@@ -546,7 +546,7 @@ class TWIN(SequenceSimulationBase):
             f.write(
                 json.dumps(config, indent=4)
             )
-            
+
     def save_model(self, output_dir):
         '''
         Save the learned simulation model to the disk.

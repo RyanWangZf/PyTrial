@@ -127,11 +127,11 @@ The full documentation is at [PyTrial-docs](https://pytrial.readthedocs.io/en/la
 If you use PyTrial in a scientific publication, we would appreciate citations to:
 
 ```bibtex
-@misc{pytrial2022,
-    title = {PyTrial: A Python Package for Artificial Intelligence in Drug Development},
-    author = {Wang, Zifeng and Theodorou, Brandon and Fu, Tianfan and Sun, Jimeng},
-    year = {2022},
-    month = {11},
+@misc{pytrial2023,
+    title = {PyTrial: A Comprehensive Platform for Artificial Intelligence for Drug Development},
+    author = {Wang, Zifeng and Theodorou, Brandon and Fu, Tianfan and Xiao, Cao and Sun, Jimeng},
+    year = {2023},
+    month = {06},
     organization = {SunLab, UIUC},
     url = {https://pytrial.readthedocs.io/en/latest/},
 }
