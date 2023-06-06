@@ -88,46 +88,46 @@ class Decoder(nn.Module):
         return x_hat
 
 class AE_pred_module(nn.Module):
-  def __init__(self, latent_dim, hidden_dim, vocab_size, treatment_order, event_order):
-     super(AE_pred_module, self).__init__()
-     treatment_dim = vocab_size[treatment_order]
-     ae_dim = vocab_size[event_order]
-     self.FC_hidden = nn.Linear(latent_dim+treatment_dim, latent_dim+10)
-     self.FC_hidden2 = nn.Linear(latent_dim +10, hidden_dim)
-     self.FC_hidden3 = nn.Linear(hidden_dim, hidden_dim)
-     self.FC_output = nn.Linear(hidden_dim, ae_dim)
-     self.FC_output1 = nn.Linear(ae_dim, ae_dim)
-     self.LeakyReLU= nn.ReLU()
-     self.bn1 = nn.BatchNorm1d(hidden_dim)
+    def __init__(self, latent_dim, hidden_dim, vocab_size, treatment_order, event_order):
+        super(AE_pred_module, self).__init__()
+        treatment_dim = vocab_size[treatment_order]
+        ae_dim = vocab_size[event_order]
+        self.FC_hidden = nn.Linear(latent_dim+treatment_dim, latent_dim+10)
+        self.FC_hidden2 = nn.Linear(latent_dim +10, hidden_dim)
+        self.FC_hidden3 = nn.Linear(hidden_dim, hidden_dim)
+        self.FC_output = nn.Linear(hidden_dim, ae_dim)
+        self.FC_output1 = nn.Linear(ae_dim, ae_dim)
+        self.LeakyReLU= nn.ReLU()
+        self.bn1 = nn.BatchNorm1d(hidden_dim)
     
-  def forward(self, x):
-      h     = self.LeakyReLU(self.FC_hidden(x))
-      h     = self.bn1(self.LeakyReLU(self.FC_hidden2(h)))
-      h     = self.LeakyReLU(self.FC_hidden3(h))
-      h     = self.LeakyReLU(self.FC_output(h))
-      next_time_ae = torch.sigmoid(self.FC_output1(h))
-      return next_time_ae
+    def forward(self, x):
+        h     = self.LeakyReLU(self.FC_hidden(x))
+        h     = self.bn1(self.LeakyReLU(self.FC_hidden2(h)))
+        h     = self.LeakyReLU(self.FC_hidden3(h))
+        h     = self.LeakyReLU(self.FC_output(h))
+        next_time_ae = torch.sigmoid(self.FC_output1(h))
+        return next_time_ae
 
 class Med_pred_module(nn.Module):
-  def __init__(self, latent_dim, hidden_dim, vocab_size, treatment_order, event_order):
-     super(Med_pred_module, self).__init__()
-     treatment_dim = vocab_size[treatment_order]
-     med_dim = vocab_size[event_order]
-     self.FC_hidden = nn.Linear(latent_dim+treatment_dim, latent_dim+10)
-     self.FC_hidden2 = nn.Linear(latent_dim +10, hidden_dim)
-     self.FC_hidden3 = nn.Linear(hidden_dim, hidden_dim)
-     self.FC_output = nn.Linear(hidden_dim, med_dim)
-     self.FC_output1 = nn.Linear(med_dim, med_dim)
-     self.LeakyReLU= nn.ReLU()
-     self.bn1 = nn.BatchNorm1d(hidden_dim)
+    def __init__(self, latent_dim, hidden_dim, vocab_size, treatment_order, event_order):
+        super(Med_pred_module, self).__init__()
+        treatment_dim = vocab_size[treatment_order]
+        med_dim = vocab_size[event_order]
+        self.FC_hidden = nn.Linear(latent_dim+treatment_dim, latent_dim+10)
+        self.FC_hidden2 = nn.Linear(latent_dim +10, hidden_dim)
+        self.FC_hidden3 = nn.Linear(hidden_dim, hidden_dim)
+        self.FC_output = nn.Linear(hidden_dim, med_dim)
+        self.FC_output1 = nn.Linear(med_dim, med_dim)
+        self.LeakyReLU= nn.ReLU()
+        self.bn1 = nn.BatchNorm1d(hidden_dim)
     
-  def forward(self, x):
-      h     = self.LeakyReLU(self.FC_hidden(x))
-      h     = self.bn1(self.LeakyReLU(self.FC_hidden2(h)))
-      h     = self.LeakyReLU(self.FC_hidden3(h))
-      h     = self.LeakyReLU(self.FC_output(h))
-      next_time_med = torch.sigmoid(self.FC_output1(h))
-      return next_time_med
+    def forward(self, x):
+        h     = self.LeakyReLU(self.FC_hidden(x))
+        h     = self.bn1(self.LeakyReLU(self.FC_hidden2(h)))
+        h     = self.LeakyReLU(self.FC_hidden3(h))
+        h     = self.LeakyReLU(self.FC_output(h))
+        next_time_med = torch.sigmoid(self.FC_output1(h))
+        return next_time_med
 
 class DotProductAttention(nn.Module):
     """
@@ -175,16 +175,16 @@ class BuildModel(nn.Module):
 
         if( event_type == 'medication'):
         #encoders for medications and adverse events
-          self.Encoder_med = Encoder(vocab_size, self.med_order, hidden_dim, latent_dim)
-          #decoders for medications and adverse events
-          self.Decoder_med = Decoder(latent_dim, hidden_dim, vocab_size, self.med_order)
-          #predictive modules for next time steps
-          self.AE_pred = AE_pred_module(latent_dim, hidden_dim, vocab_size, self.treatment_order, self.ae_order)
+            self.Encoder_med = Encoder(vocab_size, self.med_order, hidden_dim, latent_dim)
+            #decoders for medications and adverse events
+            self.Decoder_med = Decoder(latent_dim, hidden_dim, vocab_size, self.med_order)
+            #predictive modules for next time steps
+            self.AE_pred = AE_pred_module(latent_dim, hidden_dim, vocab_size, self.treatment_order, self.ae_order)
 
         if(event_type == 'adverse events'):
-          self.Encoder_ae = Encoder(vocab_size, self.ae_order, hidden_dim, latent_dim)
-          self.Decoder_ae = Decoder(latent_dim, hidden_dim, vocab_size, self.ae_order)
-          self.Med_pred = Med_pred_module(latent_dim, hidden_dim, vocab_size, self.treatment_order, self.med_order)
+            self.Encoder_ae = Encoder(vocab_size, self.ae_order, hidden_dim, latent_dim)
+            self.Decoder_ae = Decoder(latent_dim, hidden_dim, vocab_size, self.ae_order)
+            self.Med_pred = Med_pred_module(latent_dim, hidden_dim, vocab_size, self.treatment_order, self.med_order)
 
         #attention module
         self.Att = DotProductAttention()
@@ -342,7 +342,8 @@ class TWIN(SequenceSimulationBase):
       if self.config['event_type']== 'medication':
         ae_columns = [col for col in data if col.startswith('adverse events_')]
         for a in ae_columns:
-          data[a[0:15]+'nxt_'+ a[15:]]= data[a].shift(-1)
+            data[a[0:15]+'nxt_'+ a[15:]]= data[a].shift(-1)
+
         #create a new column by shifting up
         data['Visit_']= data['Visit'].shift(-1)
         data.iloc[len(data)-1,-1]=-1
@@ -358,23 +359,23 @@ class TWIN(SequenceSimulationBase):
         X = data[cols]
         
       if self.config['event_type']== 'adverse events':
-        med_columns = [col for col in data if col.startswith('medication_')]
-        for a in med_columns:
-          data[a[0:11]+'nxt_'+ a[11:]]= data[a].shift(-1)
-        #create a new column by shifting up
-        data['Visit_']= data['Visit'].shift(-1)
-        data.iloc[len(data)-1,-1]=-1
-        data = data[data['Visit_']-data['Visit']==1]
-        data = data.drop(columns =['Visit_'])
+            med_columns = [col for col in data if col.startswith('medication_')]
+            for a in med_columns:
+                data[a[0:11]+'nxt_'+ a[11:]]= data[a].shift(-1)
 
-        label_cols=[col for col in data if col.startswith('medication_nxt_')]
-        y = data[label_cols]
+            #create a new column by shifting up
+            data['Visit_']= data['Visit'].shift(-1)
+            data.iloc[len(data)-1,-1]=-1
+            data = data[data['Visit_']-data['Visit']==1]
+            data = data.drop(columns =['Visit_'])
 
-        ae_cols=[col for col in data if col.startswith('adverse events_')]
-        treat_cols=[col for col in data if col.startswith('treatment_')]
-        cols=ae_cols+treat_cols
-        X = data[cols]
-        #print(X.columns)
+            label_cols=[col for col in data if col.startswith('medication_nxt_')]
+            y = data[label_cols]
+
+            ae_cols=[col for col in data if col.startswith('adverse events_')]
+            treat_cols=[col for col in data if col.startswith('treatment_')]
+            cols=ae_cols+treat_cols
+            X = data[cols]
       return X, y
 
     def train(self, train_dl, device, optimizer, vocab_size, batch_size, model,out_dir):
@@ -388,32 +389,32 @@ class TWIN(SequenceSimulationBase):
           #model.train()
           overall_loss = 0
           for batch_idx, (x, y) in enumerate(train_dl):
-              
-              x = x.to(device)
-              optimizer.zero_grad()
-              n_cross_n = torch.matmul(x, x.T)
-              top_5_index = torch.topk(n_cross_n, 4)
-              ext_x=[]
+                x = x.to(device)
+                optimizer.zero_grad()
+                n_cross_n = torch.matmul(x, x.T)
+                top_5_index = torch.topk(n_cross_n, 4)
+                ext_x=[]
 
-              for i in range(x.shape[0]):
-                x_=[]
-                x_.append(x[i].tolist())
-                x_.extend(x[top_5_index.indices[i]].tolist())
-                ext_x.append(x_)
+                for i in range(x.shape[0]):
+                    x_=[]
+                    x_.append(x[i].tolist())
+                    x_.extend(x[top_5_index.indices[i]].tolist())
+                    ext_x.append(x_)
 
-              ext_x= torch.as_tensor(ext_x)
-              #print(ext_x[:,:, :-5])
+                ext_x= torch.as_tensor(ext_x)
+                #print(ext_x[:,:, :-5])
 
-              x_hat, mean, log_var , out = model(ext_x)
+                x_hat, mean, log_var , out = model(ext_x)
 
-              loss= loss_function(x[:, :-5], x_hat, mean, log_var, out, y)
-              
-              overall_loss += loss.item() 
-              
-              loss.backward()
-              optimizer.step()
+                loss= loss_function(x[:, :-5], x_hat, mean, log_var, out, y)
+
+                overall_loss += loss.item() 
+
+                loss.backward()
+                optimizer.step()
                 
           print("\tEpoch", epoch + 1, "complete!", "\tAverage Loss: ", overall_loss / (batch_idx*batch_size))
+
       self.save_model(output_dir=out_dir)
       print("Finish!!")
 
@@ -425,7 +426,6 @@ class TWIN(SequenceSimulationBase):
 
     def _input_data_check(self, inputs):
         assert isinstance(inputs, SequencePatientBase), f'`trial_simulation.sequence` models require input training data in `SequencePatientBase`, find {type(inputs)} instead.'
-
 
     def SequencePatientBase_to_df(self, inputs):
     #convert SequencePatientBase to dataframe for training twin
@@ -441,77 +441,77 @@ class TWIN(SequenceSimulationBase):
 
         df = pd.DataFrame(columns=column_names)
         for i in range(len(inputs)):#each patient
-          for j in range(len(inputs[i])): #each visit
-            binary_visit = [i, j]
-            #print(inputs[i])
-            for k in range(len(inputs[i][j])): #k=3 types of events
-              event_binary= [0]*self.config['vocab_size'][k]
-              for l in inputs[i][j][k]: #multihot from dense
-                event_binary[l]=1
-              binary_visit.extend(event_binary)
-            df.loc[len(df)] = binary_visit
+            for j in range(len(inputs[i])): #each visit
+                binary_visit = [i, j]
+                #print(inputs[i])
+                for k in range(len(inputs[i][j])): #k=3 types of events
+                    event_binary= [0]*self.config['vocab_size'][k]
+                    for l in inputs[i][j][k]: #multihot from dense
+                        event_binary[l]=1
+                    binary_visit.extend(event_binary)
+                df.loc[len(df)] = binary_visit
         return df
 
     def df_to_SequencePatientBase(self, df, inputs):
-      '''
-      returns SeqPatientBase from df
-      '''
-      visits = []
-      columns=[]
-      for k in self.config['orders']:
-        columns.extend([col for col in df if col.startswith('k')])
-      for i in df.People.unique():
-        sample=[]
-        temp = df[df['People']==i]
-        for index, row in temp.iterrows():
-          visit=[]
-          visit.append(np.nonzero(row[columns].to_list())[0].tolist())
-          sample.append(visit)
-        visits.append(sample)
-        seqdata = SequencePatient(
-        data={'v':visits, 'y': inputs.label, 'x':None},
-        metadata={
-            'visit':seqdata.metadata['visit'],
-            'label':{'mode':'tensor'},
-            'voc':seqdata.metadata['voc'],
-            'max_visit':seqdata.metadata['max_visit'],
-            }
-        )
-      return seqdata
+        '''
+        returns SeqPatientBase from df
+        '''
+        visits = []
+        columns=[]
+        for k in self.config['orders']:
+            columns.extend([col for col in df if col.startswith('k')])
+        for i in df.People.unique():
+            sample=[]
+            temp = df[df['People']==i]
+            for index, row in temp.iterrows():
+                visit=[]
+                visit.append(np.nonzero(row[columns].to_list())[0].tolist())
+                sample.append(visit)
+            visits.append(sample)
+            seqdata = SequencePatient(
+                data={'v':visits, 'y': inputs.label, 'x':None},
+                metadata={
+                    'visit':seqdata.metadata['visit'],
+                    'label':{'mode':'tensor'},
+                    'voc':seqdata.metadata['voc'],
+                    'max_visit':seqdata.metadata['max_visit'],
+                }
+            )
+        return seqdata
 
     def predict(self, data ):
-      self._input_data_check(data)
-      df_data = self.SequencePatientBase_to_df(data)
-      X, y = self.next_step_df(df_data)
-      dl= prepare_data(X, y, self.config['batch_size'])
-      self.model.eval()
-      x_hats, ins= list(), list()
-      for i, (x, y) in enumerate(dl):
-          # evaluate the model on the test set
-          n_cross_n = torch.matmul(x, x.T)
+        self._input_data_check(data)
+        df_data = self.SequencePatientBase_to_df(data)
+        X, y = self.next_step_df(df_data)
+        dl= prepare_data(X, y, self.config['batch_size'])
+        self.model.eval()
+        x_hats, ins= list(), list()
+        for i, (x, y) in enumerate(dl):
+            # evaluate the model on the test set
+            n_cross_n = torch.matmul(x, x.T)
+    
+            #print(x.shape)
+            top_5_index = torch.topk(n_cross_n, 4)
+    
+            ext_x=[]
+            for j in range(x.shape[0]):
+                x_=[]
+                x_.append(x[j].tolist())
+                x_.extend(x[top_5_index.indices[j]].tolist())
+                ext_x.append(x_)
+    
+            ext_x= torch.as_tensor(ext_x)
+    
+            x_hat, mean, log_var, yhat= self.model(ext_x)
+    
+            inp = x.detach().numpy()
+            x_hat = x_hat.detach().numpy()
+            x_hat = x_hat.round()
+            x_hats.append(x_hat)
+            ins.append(inp)
 
-          #print(x.shape)
-          top_5_index = torch.topk(n_cross_n, 4)
-
-          ext_x=[]
-          for j in range(x.shape[0]):
-            x_=[]
-            x_.append(x[j].tolist())
-            x_.extend(x[top_5_index.indices[j]].tolist())
-            ext_x.append(x_)
-
-          ext_x= torch.as_tensor(ext_x)
-
-          x_hat, mean, log_var, yhat= self.model(ext_x)
-
-          inp = x.detach().numpy()
-          x_hat = x_hat.detach().numpy()
-          x_hat = x_hat.round()
-          x_hats.append(x_hat)
-          ins.append(inp)
-
-      x_hats, ins=  vstack(x_hats), vstack(ins)
-      return x_hats
+        x_hats, ins=  vstack(x_hats), vstack(ins)
+        return x_hats
 
     def load_model(self, checkpoint):
         '''
@@ -532,13 +532,13 @@ class TWIN(SequenceSimulationBase):
             config = self._load_config(config_filename)
             self.config = config
         if self.config['event_type']=='medication':
-          self.model.Encoder_med.load_state_dict(state_dict['encoder'])
-          self.model.Decoder_med.load_state_dict(state_dict['decoder'])
-          self.model.AE_pred.load_state_dict(state_dict['predictor'])
+            self.model.Encoder_med.load_state_dict(state_dict['encoder'])
+            self.model.Decoder_med.load_state_dict(state_dict['decoder'])
+            self.model.AE_pred.load_state_dict(state_dict['predictor'])
         if self.config['event_type']=='adverse events':
-          self.model.Encoder_ae.load_state_dict(state_dict['encoder'])
-          self.model.Decoder_ae.load_state_dict(state_dict['decoder'])
-          self.model.Med_pred.load_state_dict(state_dict['predictor'])
+            self.model.Encoder_ae.load_state_dict(state_dict['encoder'])
+            self.model.Decoder_ae.load_state_dict(state_dict['decoder'])
+            self.model.Med_pred.load_state_dict(state_dict['predictor'])
 
     def _save_config(self, config, output_dir=None):
         temp_path = os.path.join(output_dir, self.config['event_type']+'_twin_config.json')
@@ -546,6 +546,7 @@ class TWIN(SequenceSimulationBase):
             f.write(
                 json.dumps(config, indent=4)
             )
+            
     def save_model(self, output_dir):
         '''
         Save the learned simulation model to the disk.
@@ -557,13 +558,13 @@ class TWIN(SequenceSimulationBase):
         make_dir_if_not_exist(output_dir)
         self._save_config(config=self.config, output_dir=output_dir)
         if (self.config['event_type']=='medication'):
-          self._save_checkpoint({
+            self._save_checkpoint({
                     'encoder': self.model.Encoder_med.state_dict(),
                     'decoder': self.model.Decoder_med.state_dict(),
                     'predictor': self.model.AE_pred.state_dict()
                 },output_dir=output_dir, filename='checkpoint_med.pth.tar')
         if (self.config['event_type']=='adverse events'):
-                    self._save_checkpoint({
+            self._save_checkpoint({
                     'encoder': self.model.Encoder_ae.state_dict(),
                     'decoder': self.model.Decoder_ae.state_dict(),
                     'predictor': self.model.Med_pred.state_dict()
