@@ -56,44 +56,44 @@ def fairness_loss(rank_samples, eth_list, relevance, num_MC, K):
 # eth_list = bs * M * num_cat
 # rank_samples = bs * MC * M
 def loss_function(score, relevance, eth_list, lam, K):	
-	num_MC_samples = 25
-	M = len(score[0])
-	score = F.softmax(score, dim=1)
+		num_MC_samples = 25
+		M = len(score[0])
+		score = F.softmax(score, dim=1)
 
-	rank_samples = torch.stack([torch.multinomial(score, num_samples=M, replacement=False).to(score.device) for _ in range(num_MC_samples)], axis=1)
+		rank_samples = torch.stack([torch.multinomial(score, num_samples=M, replacement=False).to(score.device) for _ in range(num_MC_samples)], axis=1)
 
-	importance_prob_values = compute_log_prob(rank_samples, score, num_MC_samples, K)
-	delta_values = ranking_loss(rank_samples, relevance, num_MC_samples, K)
-	delta_f_values = fairness_loss(rank_samples, eth_list, relevance, num_MC_samples, K)
-	rewards = delta_values + lam*delta_f_values
-	loss = -1 * torch.sum(importance_prob_values * rewards, 1)
-	return loss/num_MC_samples #, torch.mean(rewards), torch.mean(delta_values), torch.mean(delta_f_values)
+		importance_prob_values = compute_log_prob(rank_samples, score, num_MC_samples, K)
+		delta_values = ranking_loss(rank_samples, relevance, num_MC_samples, K)
+		delta_f_values = fairness_loss(rank_samples, eth_list, relevance, num_MC_samples, K)
+		rewards = delta_values + lam*delta_f_values
+		loss = -1 * torch.sum(importance_prob_values * rewards, 1)
+		return loss/num_MC_samples #, torch.mean(rewards), torch.mean(delta_values), torch.mean(delta_f_values)
 
 def loss_function_enrollment(score, relevance, K):	
-	num_MC_samples = 25
-	M = len(score[0])
-	score = F.softmax(score, dim=1)
+		num_MC_samples = 25
+		M = len(score[0])
+		score = F.softmax(score, dim=1)
 
-	rank_samples = torch.stack([torch.multinomial(score, num_samples=M, replacement=False).to(score.device) for _ in range(num_MC_samples)], axis=1)
+		rank_samples = torch.stack([torch.multinomial(score, num_samples=M, replacement=False).to(score.device) for _ in range(num_MC_samples)], axis=1)
 
-	importance_prob_values = compute_log_prob(rank_samples, score, num_MC_samples, K)
-	delta_values = ranking_loss(rank_samples, relevance, num_MC_samples, K)
-	rewards = delta_values
-	loss = -1 * torch.sum(importance_prob_values * rewards, 1)
-	return loss/num_MC_samples #, torch.mean(rewards), torch.mean(delta_values)
+		importance_prob_values = compute_log_prob(rank_samples, score, num_MC_samples, K)
+		delta_values = ranking_loss(rank_samples, relevance, num_MC_samples, K)
+		rewards = delta_values
+		loss = -1 * torch.sum(importance_prob_values * rewards, 1)
+		return loss/num_MC_samples #, torch.mean(rewards), torch.mean(delta_values)
 
 def loss_function_fairness(score, relevance, eth_list, K):
-	num_MC_samples = 25
-	M = len(score[0])
-	score = F.softmax(score, dim=1)
+		num_MC_samples = 25
+		M = len(score[0])
+		score = F.softmax(score, dim=1)
 
-	rank_samples = torch.stack([torch.multinomial(score,num_samples=M, replacement=False).to(score.device) for _ in range(num_MC_samples)], axis=1)
-	
-	importance_prob_values = compute_log_prob(rank_samples, score, num_MC_samples, K)
-	delta_f_values = fairness_loss(rank_samples, eth_list, relevance, num_MC_samples, K)
+		rank_samples = torch.stack([torch.multinomial(score,num_samples=M, replacement=False).to(score.device) for _ in range(num_MC_samples)], axis=1)
+		
+		importance_prob_values = compute_log_prob(rank_samples, score, num_MC_samples, K)
+		delta_f_values = fairness_loss(rank_samples, eth_list, relevance, num_MC_samples, K)
 
-	loss = -1 * torch.sum(importance_prob_values * (delta_f_values), 1)
-	return loss/num_MC_samples
+		loss = -1 * torch.sum(importance_prob_values * (delta_f_values), 1)
+		return loss/num_MC_samples
 
 class PolicyGradientLossEnrollment(nn.Module):
     def __init__(self, model, K) -> None:

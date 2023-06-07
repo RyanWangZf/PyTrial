@@ -24,24 +24,24 @@ class DiagnosisEncoder(nn.Module):
     Build a site's diagnosis history encoder.
     '''
     def __init__(self, 
-        claim_dim, 
+        dx_dim, 
         lstm_dim, 
         embedding_dim, 
         num_layers):
         super(DiagnosisEncoder, self).__init__()
         
-        self.claim_dim = claim_dim
+        self.dx_dim = dx_dim
         self.lstm_dim = lstm_dim
         self.embedding_dim = embedding_dim
         self.num_layers = num_layers
-        self.biLSTM = nn.LSTM(claim_dim, lstm_dim, num_layers, batch_first=True, bidirectional=True)
+        self.biLSTM = nn.LSTM(dx_dim, lstm_dim, num_layers, batch_first=True, bidirectional=True)
         self.fc = nn.Linear(2*lstm_dim, embedding_dim)
-        self.firstInput = nn.Parameter(torch.rand(1,1,1,claim_dim, dtype=torch.float))
+        self.firstInput = nn.Parameter(torch.rand(1,1,1,dx_dim, dtype=torch.float))
 
     def forward(self, input, lengths, num_inv):
         bs = input.size(0)
         input = torch.cat((self.firstInput.repeat(bs, num_inv, 1, 1), input), -2)
-        input = torch.reshape(input, (bs * num_inv, -1, self.claim_dim))
+        input = torch.reshape(input, (bs * num_inv, -1, self.dx_dim))
         lengths = torch.reshape(lengths, (bs * num_inv,))
         packed_input = pack_padded_sequence(input, lengths+1, batch_first=True, enforce_sorted=False)
         packed_output, _ = self.biLSTM(packed_input)
@@ -55,24 +55,24 @@ class PrescriptionEncoder(nn.Module):
     Build a site's prescription history encoder.
     '''
     def __init__(self, 
-        claim_dim, 
+        rx_dim, 
         lstm_dim, 
         embedding_dim, 
         num_layers):
         super(PrescriptionEncoder, self).__init__()
         
-        self.claim_dim = claim_dim
+        self.rx_dim = rx_dim
         self.lstm_dim = lstm_dim
         self.embedding_dim = embedding_dim
         self.num_layers = num_layers
-        self.biLSTM = nn.LSTM(claim_dim, lstm_dim, num_layers, batch_first=True, bidirectional=True)
+        self.biLSTM = nn.LSTM(rx_dim, lstm_dim, num_layers, batch_first=True, bidirectional=True)
         self.fc = nn.Linear(2*lstm_dim, embedding_dim)
-        self.firstInput = nn.Parameter(torch.rand(1,1,1,claim_dim, dtype=torch.float))
+        self.firstInput = nn.Parameter(torch.rand(1,1,1,rx_dim, dtype=torch.float))
 
     def forward(self, input, lengths, num_inv):
         bs = input.size(0)
         input = torch.cat((self.firstInput.repeat(bs, num_inv, 1, 1), input), -2)
-        input = torch.reshape(input, (bs * num_inv, -1, self.claim_dim))
+        input = torch.reshape(input, (bs * num_inv, -1, self.rx_dim))
         lengths = torch.reshape(lengths, (bs * num_inv,))
         packed_input = pack_padded_sequence(input, lengths+1, batch_first=True, enforce_sorted=False)
         packed_output, _ = self.biLSTM(packed_input)
@@ -96,14 +96,14 @@ class PastTrialEncoder(nn.Module):
         self.lstm_dim = lstm_dim
         self.embedding_dim = embedding_dim
         self.num_layers = num_layers
-        self.biLSTM = nn.LSTM(trial_dim+1-(2*768), lstm_dim, num_layers, batch_first=True, bidirectional=True)
+        self.biLSTM = nn.LSTM(trial_dim+1, lstm_dim, num_layers, batch_first=True, bidirectional=True)
         self.fc = nn.Linear(2*lstm_dim, embedding_dim)
-        self.firstInput = nn.Parameter(torch.rand(1,1,1,trial_dim+1-(2*768), dtype=torch.float))
+        self.firstInput = nn.Parameter(torch.rand(1,1,1,trial_dim+1, dtype=torch.float))
 
     def forward(self, input, lengths, num_inv):
         bs = input.size(0)
         input = torch.cat((self.firstInput.repeat(bs, num_inv, 1, 1), input), -2)
-        input = torch.reshape(input, (bs * num_inv, -1, self.trial_dim+1-(2*768)))
+        input = torch.reshape(input, (bs * num_inv, -1, self.trial_dim+1))
         lengths = torch.reshape(lengths, (bs * num_inv,))
         packed_input = pack_padded_sequence(input, lengths+1, batch_first=True, enforce_sorted=False)
         packed_output, _ = self.biLSTM(packed_input)
@@ -118,20 +118,20 @@ class AttentionEncoder(nn.Module):
     '''
     def __init__(self, 
         embed_dim, 
-        n_keys, 
-        n_heads):
+        n_modalities,
+        n_heads=4):
         super(AttentionEncoder, self).__init__()
-        
         self.embed_dim = embed_dim
-        self.attention = nn.MultiheadAttention(embed_dim, n_heads)#, batch_first=True)
+        self.n_modalities = n_modalities
+        self.attention = nn.MultiheadAttention(embed_dim, n_heads)
 
     def forward(self, query, values, attention_mask):
         values = torch.stack(values, dim=2)
         bs = values.size(0)
         num_inv = values.size(1)
         query = torch.reshape(query, (bs * num_inv, 1, self.embed_dim)).transpose(0,1)
-        values = torch.reshape(values, (bs * num_inv, -1, self.embed_dim)).transpose(0,1)
-        attention_mask = torch.reshape(attention_mask, (bs * num_inv, -1)).bool()
+        values = torch.reshape(values, (bs * num_inv, self.n_modalities, self.embed_dim)).transpose(0,1)
+        attention_mask = torch.reshape(attention_mask, (bs * num_inv, self.n_modalities)).bool()
         embeddings, _ = self.attention(query, values, values, attention_mask, need_weights=False)
         embeddings = torch.reshape(embeddings.transpose(0,1), (bs, num_inv, self.embed_dim))
         return embeddings
@@ -142,10 +142,8 @@ class ModalityDropoutEncoder(nn.Module):
     '''
     def __init__(self, 
         embed_dim, 
-        n_modalities, 
-        n_heads):
-        super(AttentionEncoder, self).__init__()
-        
+        n_modalities):
+        super(ModalityDropoutEncoder, self).__init__()
         self.embed_dim = embed_dim
         self.n_modalities = n_modalities
         self.encoder = nn.Linear(n_modalities*embed_dim, embed_dim)
@@ -181,7 +179,7 @@ class BuildModel(nn.Module):
         n_heads,
         missing_type='MCAT',
         scoring_type='Transformer'):
-        super(BuildModel).__init__()
+        super().__init__()
         
         self.static_encoder = nn.Linear(static_dim, embedding_dim)
         self.diagnosis_encoder = DiagnosisEncoder(dx_dim, lstm_dim, embedding_dim, num_layers)
@@ -211,27 +209,27 @@ class BuildModel(nn.Module):
     def forward(self, inputs):
         trial = inputs['trial']
         investigators = inputs['inv_static']
-        inv_dx = inputs['inv_dx']
-        inv_dx_lens = inputs['inv_dx_len']
-        inv_rx = inputs['inv_rx']
-        inv_rx_lens = inputs['inv_rx_len']
-        past_trials = inputs['inv_enroll']
-        past_trials_lengths = inputs['inv_enroll_len']
+        dx = inputs['dx']
+        dx_lens = inputs['dx_len']
+        rx = inputs['rx']
+        rx_lens = inputs['rx_len']
+        past_trials = inputs['enroll_hist']
+        past_trials_lengths = inputs['enroll_hist_len']
         inv_mask = inputs['inv_mask']
         num_inv = investigators.size(1)
         # Trial is (bs, trial_dim)
         # All other inputs are (bs, M, *) where * is either a sequence or single input
         investigator_encoding = self.stat_fc(torch.relu(self.static_encoder(investigators)))
-        dx_encoding = self.dx_fc(torch.relu(self.diagnosis_encoder(inv_dx, inv_dx_lens, num_inv)))
-        rx_encoding = self.rx_fc(torch.relu(self.prescription_encoder(inv_rx, inv_rx_lens, num_inv)))
+        dx_encoding = self.dx_fc(torch.relu(self.diagnosis_encoder(dx, dx_lens, num_inv)))
+        rx_encoding = self.rx_fc(torch.relu(self.prescription_encoder(rx, rx_lens, num_inv)))
         history_encoding = self.hist_fc(torch.relu(self.history_encoder(past_trials, past_trials_lengths, num_inv)))
         trial_encoding = self.trial_fc(torch.relu(self.trial_encoder(trial)))
-        trial_encoding = trial_encoding.unsqueeze(1).repeat(1, num_inv, 1)
+        trial_encoding = trial_encoding.repeat(1, num_inv, 1)
         inv_representation = self.missing_modality_encoder(trial_encoding, [investigator_encoding, dx_encoding, rx_encoding, history_encoding], inv_mask)
         inv_site_representation = torch.cat((inv_representation, trial_encoding), dim=-1)
         network_input = self.score_encoder(inv_site_representation)
         score = self.output(torch.relu(self.fc(network_input)))
-        return score
+        return score.squeeze(-1)
 
 class FRAMM(SiteSelectionBase):
     '''
@@ -300,8 +298,8 @@ class FRAMM(SiteSelectionBase):
         num_worker=0,
         device='cuda:0',
         experiment_id='test',
-        ):
-        super(SiteSelectionBase, self).__init__(experiment_id)
+        ) -> None:
+        super().__init__(experiment_id)
         self.config = {
             'trial_dim':trial_dim,
             'static_dim':static_dim,
@@ -325,6 +323,7 @@ class FRAMM(SiteSelectionBase):
             'device':device,
             'experiment_id':experiment_id,
             }
+        self.device = device
         self._build_model()
 
     def fit(self, train_data):
@@ -340,7 +339,17 @@ class FRAMM(SiteSelectionBase):
         self._fit_model(train_data)
 
     def predict(self, test_data):
-        self.model(**test_data) # TODO
+        self._input_data_check(test_data)
+        test_dataloader = self.get_train_dataloader(test_data)
+        selections = []
+        for batch in test_dataloader:
+            batch = self._prepare_input(batch)
+            scores = self.model(batch)
+            batch_selections = torch.argsort(scores, dim=1, descending=True)[:, :self.config['K']].tolist()
+            for selection in batch_selections:
+                selections.append(selection)
+                
+        return selections
 
     def save_model(self, output_dir):
         '''
@@ -389,7 +398,7 @@ class FRAMM(SiteSelectionBase):
                 config={
                     'visit_mode':train_data.sites.metadata['visit']['mode'],
                     'trial_mode':train_data.sites.metadata['hist']['mode'],
-                    'has_demographics':train_data.sites.get_label() is not None
+                    'has_demographics':'true' if train_data.sites.get_label() is not None else 'false'
                     }
                 ),
             )
@@ -440,16 +449,16 @@ class FRAMM(SiteSelectionBase):
             'label': data['label'].to(self.device),
             'eth_label': None if data['eth_label'] is None else data['eth_label'].to(self.device),
             'inv_static': data['inv_static'].to(self.device),
-            'inv_dx': data['inv_dx'].to(self.device),
-            'inv_dx_len': data['inv_dx_len'].to('cpu'),
-            'inv_rx': data['inv_rx'].to(self.device),
-            'inv_rx_len': data['inv_rx_len'].to('cpu'),
-            'inv_enroll': data['inv_enroll'].to(self.device),
-            'inv_enroll_len': data['inv_enroll_len'].to('cpu'),
-            'inv_mask': data['inv_static'].to(self.device),
+            'dx': data['dx'].to(self.device),
+            'dx_len': data['dx_len'].to('cpu'),
+            'rx': data['rx'].to(self.device),
+            'rx_len': data['rx_len'].to('cpu'),
+            'enroll_hist': data['enroll_hist'].to(self.device),
+            'enroll_hist_len': data['enroll_hist_len'].to('cpu'),
+            'inv_mask': data['inv_mask'].to(self.device),
             }
 
         return inputs
 
     def _input_data_check(self, inputs):
-        assert isinstance(inputs, TrialSiteModalities), f'`site_selection` models require input training data in `SiteSelectionBase`, find {type(inputs)} instead.'
+        assert isinstance(inputs, TrialSiteModalities), f'`site_selection` models with multi-modality support require input training data in `TrialSiteModalities`, find {type(inputs)} instead.'
