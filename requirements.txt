@@ -6,7 +6,7 @@ pandas>=1.3.5
 scikit_learn>=1.0.2
 rdkit>=2022.9.1
 sdmetrics==0.6.0
-ctgan==0.5.2
+ctgan>=0.5.2
 seaborn
 dill
 requests
@@ -23,3 +23,4 @@ icd10-cm
 transtab
 promptehr
 trial2vec
+accelerate

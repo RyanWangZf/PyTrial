@@ -51,8 +51,23 @@ class StandardScaler(FloatFormatter):
         If ``True``, the data returned by ``reverse_transform`` will be rounded to that place.
         Defaults to ``False``.
 
+    missing_value_generation (str or None):
+        The way missing values are being handled. There are three strategies:
+
+            * ``random``: Randomly generates missing values based on the percentage of
+                missing values.
+            * ``from_column``: Creates a binary column that describes whether the original
+                value was missing. Then use it to recreate missing values.
+            * ``None``: Do nothing with the missing values on the reverse transform. Simply
+                pass whatever data we get through.
+
+    computer_representation (dtype):
+        Accepts ``'Int8'``, ``'Int16'``, ``'Int32'``, ``'Int64'``, ``'UInt8'``, ``'UInt16'``,
+        ``'UInt32'``, ``'UInt64'``, ``'Float'``.
+        Defaults to ``'Float'``.
+
     model_missing_values (bool):
-        Whether to create a new column to indicate which values were null or not. The column
+        **Deprecated** Whether to create a new column to indicate which values were null or not. The column
         will be created only if there are null values. If ``True``, create the new column if
         there are null values. If ``False``, do not create the new column even if there
         are null values. Defaults to ``False``.
@@ -66,15 +81,19 @@ class StandardScaler(FloatFormatter):
         missing_value_replacement=None,
         enforce_min_max_values=False,
         learn_rounding_scheme=False,
+        computer_representation='Float',
+        missing_value_generation="random",
         model_missing_values=None,
-        computer_representation='Float'
         ):
         self.output_properties = {None: {'sdtype': 'float', 'next_transformer': None}}
-        self.missing_value_replacement = missing_value_replacement
-        self.enforce_min_max_values=enforce_min_max_values
-        self.learn_rounding_scheme=learn_rounding_scheme
-        self.model_missing_values = model_missing_values
-        self.computer_representation = computer_representation
+        super().__init__(
+            missing_value_replacement=missing_value_replacement,
+            model_missing_values=model_missing_values,
+            learn_rounding_scheme=learn_rounding_scheme,
+            enforce_min_max_values=enforce_min_max_values,
+            computer_representation=computer_representation,
+            missing_value_generation=missing_value_generation,
+        )
         self.standard_transformer = sk_standardscaler()
 
     def _fit(self, data):
