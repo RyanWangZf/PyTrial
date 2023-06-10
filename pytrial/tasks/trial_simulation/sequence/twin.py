@@ -9,17 +9,18 @@ from pytrial.data.patient_data import SequencePatientBase, SeqPatientCollator
 from pytrial.utils.check import (
     check_checkpoint_file, check_model_dir, check_model_config_file, make_dir_if_not_exist
 )
-from pytrial.tasks.trial_simulation.sequence.base import SequenceSimulationBase
-from pytrial.tasks.trial_simulation.data import SequencePatient
 import os
 import pdb
 import json
+import copy
 import torch.nn.functional as F
 import random
 from torch.utils.data import Dataset
-from torch.utils.data import DataLoader
 from numpy import vstack
 from torch.optim import Adam
+
+from pytrial.tasks.trial_simulation.sequence.base import SequenceSimulationBase
+from pytrial.tasks.trial_simulation.data import SequencePatient
 
 class trial_data(Dataset):
     # load the dataset
@@ -42,17 +43,13 @@ class trial_data(Dataset):
 def prepare_data(X_train, y_train, batch_size =64):
     # load the dataset
     train = trial_data(X_train, y_train)
-    #test = trial_data(X_test, y_test)
-    
-    batch_size =batch_size
     # prepare data loaders. cannot shuffle during training
     train_dl = DataLoader(train, batch_size=batch_size, shuffle=False)#, drop_last=True)
-    #test_dl = DataLoader(test, batch_size=batch_size, shuffle=False)
-    return train_dl#, test_dl
+    return train_dl
 
 class Encoder(nn.Module):
     
-    def __init__(self, vocab_size, event_order, hidden_dim, latent_dim):
+    def __init__(self, vocab_size, event_order, freeze_order, hidden_dim, latent_dim):
         super(Encoder, self).__init__()
         input_dim = vocab_size[event_order]
         self.FC_input = nn.Linear(input_dim, hidden_dim)
@@ -86,48 +83,7 @@ class Decoder(nn.Module):
         h     = self.LeakyReLU(self.FC_hidden(x))
         x_hat = torch.sigmoid(self.FC_output(h))
         return x_hat
-
-class AE_pred_module(nn.Module):
-    def __init__(self, latent_dim, hidden_dim, vocab_size, treatment_order, event_order):
-        super(AE_pred_module, self).__init__()
-        treatment_dim = vocab_size[treatment_order]
-        ae_dim = vocab_size[event_order]
-        self.FC_hidden = nn.Linear(latent_dim+treatment_dim, latent_dim+10)
-        self.FC_hidden2 = nn.Linear(latent_dim +10, hidden_dim)
-        self.FC_hidden3 = nn.Linear(hidden_dim, hidden_dim)
-        self.FC_output = nn.Linear(hidden_dim, ae_dim)
-        self.FC_output1 = nn.Linear(ae_dim, ae_dim)
-        self.LeakyReLU= nn.ReLU()
-        self.bn1 = nn.BatchNorm1d(hidden_dim)
     
-    def forward(self, x):
-        h     = self.LeakyReLU(self.FC_hidden(x))
-        h     = self.bn1(self.LeakyReLU(self.FC_hidden2(h)))
-        h     = self.LeakyReLU(self.FC_hidden3(h))
-        h     = self.LeakyReLU(self.FC_output(h))
-        next_time_ae = torch.sigmoid(self.FC_output1(h))
-        return next_time_ae
-
-class Med_pred_module(nn.Module):
-    def __init__(self, latent_dim, hidden_dim, vocab_size, treatment_order, event_order):
-        super(Med_pred_module, self).__init__()
-        treatment_dim = vocab_size[treatment_order]
-        med_dim = vocab_size[event_order]
-        self.FC_hidden = nn.Linear(latent_dim+treatment_dim, latent_dim+10)
-        self.FC_hidden2 = nn.Linear(latent_dim +10, hidden_dim)
-        self.FC_hidden3 = nn.Linear(hidden_dim, hidden_dim)
-        self.FC_output = nn.Linear(hidden_dim, med_dim)
-        self.FC_output1 = nn.Linear(med_dim, med_dim)
-        self.LeakyReLU= nn.ReLU()
-        self.bn1 = nn.BatchNorm1d(hidden_dim)
-    
-    def forward(self, x):
-        h     = self.LeakyReLU(self.FC_hidden(x))
-        h     = self.bn1(self.LeakyReLU(self.FC_hidden2(h)))
-        h     = self.LeakyReLU(self.FC_hidden3(h))
-        h     = self.LeakyReLU(self.FC_output(h))
-        next_time_med = torch.sigmoid(self.FC_output1(h))
-        return next_time_med
 
 class DotProductAttention(nn.Module):
     """
@@ -151,8 +107,41 @@ def loss_function(x, x_hat, mean, log_var, AE_out, AE_true):
     reproduction_loss = nn.functional.binary_cross_entropy(x_hat, x, reduction='sum')
     ae_loss = nn.functional.binary_cross_entropy(AE_out, AE_true, reduction='sum')
     KLD      = - 0.5 * torch.sum(1+ log_var - mean.pow(2) - log_var.exp())
-
     return (reproduction_loss + KLD) + ae_loss
+
+class Predictor(nn.Module):
+    def __init__(self, latent_dim, hidden_dim, vocab_size, freeze_order, event_order):
+        super(Predictor, self).__init__()
+        freeze_dim = 0
+        freeze_dim_range = [] # from where to where to freeze
+        if freeze_order is not None:
+            if isinstance(freeze_order, int):
+                freeze_order = [freeze_order]
+            for i in freeze_order:
+                freeze_dim += vocab_size[i]
+                start_idx = sum(vocab_size[:i])
+                end_idx = sum(vocab_size[:i+1])
+                freeze_dim_range.append([start_idx, end_idx])
+        self.freeze_dim = freeze_dim
+        self.freeze_dim_range = freeze_dim_range
+
+        target_dim = sum(vocab_size) - vocab_size[event_order] - self.freeze_dim        
+        self.FC_hidden = nn.Linear(latent_dim+freeze_dim, latent_dim+10)
+        self.FC_hidden2 = nn.Linear(latent_dim +10, hidden_dim)
+        self.FC_hidden3 = nn.Linear(hidden_dim, hidden_dim)
+        self.FC_output = nn.Linear(hidden_dim, target_dim)
+        self.FC_output1 = nn.Linear(target_dim, target_dim)
+        self.LeakyReLU= nn.ReLU()
+        self.bn1 = nn.BatchNorm1d(hidden_dim)
+    
+    def forward(self, x):
+        h     = self.LeakyReLU(self.FC_hidden(x))
+        h     = self.bn1(self.LeakyReLU(self.FC_hidden2(h)))
+        h     = self.LeakyReLU(self.FC_hidden3(h))
+        h     = self.LeakyReLU(self.FC_output(h))
+        next_time = torch.sigmoid(self.FC_output1(h))
+        return next_time
+
 class BuildModel(nn.Module):
     def __init__(self,
         hidden_dim,
@@ -160,31 +149,35 @@ class BuildModel(nn.Module):
         vocab_size,
         orders,
         event_type,
+        freeze_type,
         device,
         epochs
         ) -> None:
         super().__init__()
         self.event_type = event_type # either medication or adverse event
         self.device = device
-        self.ae_order=2
-        self.med_order=1
-        self. treatment_order = 0
         self.epochs = epochs
 
+        # find event_tpye's index in orders
+        target_order = orders.index(event_type)
+      
         if not isinstance(vocab_size, list): vocab_size = [vocab_size]
 
-        if( event_type == 'medication'):
-        #encoders for medications and adverse events
-            self.Encoder_med = Encoder(vocab_size, self.med_order, hidden_dim, latent_dim)
-            #decoders for medications and adverse events
-            self.Decoder_med = Decoder(latent_dim, hidden_dim, vocab_size, self.med_order)
-            #predictive modules for next time steps
-            self.AE_pred = AE_pred_module(latent_dim, hidden_dim, vocab_size, self.treatment_order, self.ae_order)
+        freeze_order = None
+        if freeze_type is not None:
+            if isinstance(freeze_type, str):
+                freeze_type = [freeze_type]
+            freeze_order = [orders.index(i) for i in freeze_type]
 
-        if(event_type == 'adverse events'):
-            self.Encoder_ae = Encoder(vocab_size, self.ae_order, hidden_dim, latent_dim)
-            self.Decoder_ae = Decoder(latent_dim, hidden_dim, vocab_size, self.ae_order)
-            self.Med_pred = Med_pred_module(latent_dim, hidden_dim, vocab_size, self.treatment_order, self.med_order)
+        self.freeze_order = freeze_order
+
+        self.Encoder = Encoder(vocab_size=vocab_size, event_order=target_order, freeze_order=freeze_order, hidden_dim=hidden_dim, latent_dim=latent_dim)
+        self.Decoder = Decoder(latent_dim, hidden_dim, vocab_size, target_order)
+
+        # predictor modules predicting all the other events except the freeze ones
+        self.Predictor = Predictor(latent_dim, hidden_dim, vocab_size, freeze_order, target_order)
+        self.freeze_dim = self.Predictor.freeze_dim
+        self.freeze_dim_range = self.Predictor.freeze_dim_range
 
         #attention module
         self.Att = DotProductAttention()
@@ -194,51 +187,32 @@ class BuildModel(nn.Module):
         z = mean + var*epsilon                          # reparameterization trick
         return z
 
-    def forward_med(self, med_x):#forward for medication reconstruction
-        x = med_x[:,:, :-5]
-        
-        query = x[:, 0, :]
-        keys = x[:, 1:, :]
+    def forward(self, x):
+        #last columns are freezed
+        if self.freeze_dim > 0:
+            all_indexes = self._create_non_freeze_indexes(x, self.freeze_dim_range)
+            x_input = x[:,:, all_indexes].contiguous()
+        else:
+            x_input = x
 
-        context, attn = self.Att(query, keys)
-
-        med_mean, med_log_var = self.Encoder_med(context[:,0, :])
-        z = self.reparameterization(med_mean, torch.exp(0.5 * med_log_var)) # takes exponential function (log var -> var)
-
-        z_1= torch.cat((z, med_x[:,0, -5:]), 1)
-
-        AE_out = self.AE_pred(z_1)
-
-        med_x_hat  = self.Decoder_med(z)
-        
-        return med_x_hat, med_mean, med_log_var , AE_out
-
-    def forward_ae(self, ae_x): #forward for adverse event reconstruction
-        x = ae_x[:,:, :-5]
-        
-        
-        query = x[:, 0, :]
-        keys = x[:, 1:, :]
+        query = x_input[:, 0, :]
+        keys = x_input[:, 1:, :]
         context, _ = self.Att(query , keys )
 
-        #print(context.shape, x.shape, query.shape, keys.shape)
-        ae_mean, ae_log_var = self.Encoder_ae(context[:,0, :])
-        z = self.reparameterization(ae_mean, torch.exp(0.5 * ae_log_var)) # takes exponential function (log var -> var)
+        out_mean, out_log_var = self.Encoder(context[:,0, :])
+        z = self.reparameterization(out_mean, torch.exp(0.5 * out_log_var)) # takes exponential function (log var -> var)
 
-
-        z_1= torch.cat((z, ae_x[:,0, -5:]), 1)
-        Med_out = self.Med_pred(z_1)
-        ae_x_hat = self.Decoder_ae(z)
+        z_1= torch.cat((z, x[:, 0, -self.freeze_dim:]), 1)
+        pred_out = self.Predictor(z_1)
+        x_hat = self.Decoder(z)
         
-        return ae_x_hat, ae_mean, ae_log_var , Med_out
+        return x_hat, out_mean, out_log_var , pred_out
 
-    def forward(self, x): #last five columns are treatments
-        if( self.event_type == 'medication'):
-          x_hat, mean, log_var , out = self.forward_med(x)
-        if (self.event_type == 'adverse events'):
-          x_hat, mean, log_var , out = self.forward_ae( x)
-
-        return x_hat, mean, log_var , out
+    def _create_non_freeze_indexes(self, x, freeze_dim_range):
+        all_indexes = list(range(x.shape[-1]))
+        for freeze_dim_range_ in freeze_dim_range:
+            all_indexes = list(set(all_indexes) - set(range(freeze_dim_range_[0], freeze_dim_range_[1])))
+        return all_indexes
 
 
 class TWIN(SequenceSimulationBase):
@@ -254,8 +228,8 @@ class TWIN(SequenceSimulationBase):
         The order of event types in each visits, e.g., ``['treatment', 'medication', 'adverse event']``.
         Visit = [treatment_events, medication_events, adverse_events], each event is a list of codes.
 
-    event_type: str
-        The type of event to be modeled, e.g., ``'medication'`` or ``'adverse event'``.
+    freeze_event: str or list[str]
+        The type(s) of event to be frozen during training and generation, e.g., ``['treatment']``.
 
     max_visit: int
         Maximum number of visits.
@@ -278,6 +252,199 @@ class TWIN(SequenceSimulationBase):
     num_worker: int
         Number of workers used to do dataloading during training.
 
+    device: str
+        Device to use for training, e.g., ``'cpu'`` or ``'cuda:0'``.
+
+    experiment_id: str
+        A unique identifier for the experiment.
+
+    verbose: bool
+        If True, print out training progress.
+
+    Notes
+    -----
+    .. [1] Trisha Das*, Zifeng Wang*, and Jimeng Sun. TWIN: Personalized Clinical Trial Digital Twin Generation. KDD'23.
+    '''
+    def __init__(self,
+        vocab_size,
+        order,
+        freeze_event = None,
+        max_visit=13,
+        emb_size=64,
+        hidden_dim = 36,
+        latent_dim=32,
+        learning_rate=5e-5,
+        batch_size=64,
+        epochs=20,
+        num_worker=0,
+        device='cpu',# 'cuda:0',
+        experiment_id='trial_simulation.sequence.twin',
+        verbose=False,
+        ):
+        super().__init__(experiment_id)
+
+        if isinstance(freeze_event, str):
+            assert freeze_event in order, f'The specified freeze_event {freeze_event} is not in order {order}!'
+            freeze_event = [freeze_event]
+
+        if freeze_event is not None:
+            for et in freeze_event:
+                assert et in order, f'The specified freeze_event {et} is not in order {order}!'
+        
+        # build perturbing events
+        if len(freeze_event) == 0 or freeze_event is None:
+            perturb_event = copy.deepcopy(order)
+        else:
+            perturb_event = [et for et in order if et not in freeze_event]
+
+        self.config = {
+            'vocab_size':vocab_size,
+            'max_visit':max_visit,
+            'emb_size':emb_size,
+            'hidden_dim': hidden_dim,
+            'latent_dim':latent_dim,
+            'device':device,
+            'learning_rate':learning_rate,
+            'batch_size':batch_size,
+            'epochs':epochs,
+            'num_worker':num_worker,
+            'orders':order,
+            'output_dir': self.checkout_dir,
+            'verbose': verbose,
+            'freeze_event': freeze_event,
+            'perturb_event': perturb_event,
+            }
+        self.config['total_vocab_size'] = sum(vocab_size)
+        self.device = device
+        self._build_model()
+    
+    def _build_model(self):
+        # build unimodal TWIN for the given event types
+        self.models = {}
+        for et in self.config['perturb_event']:
+            self.models[et] = TWIN_unimodal(
+                vocab_size=self.config['vocab_size'],
+                order=self.config['orders'],
+                event_type=et,
+                freeze_event=self.config['freeze_event'],
+                max_visit=self.config['max_visit'],
+                emb_size=self.config['emb_size'],
+                hidden_dim=self.config['hidden_dim'],
+                latent_dim=self.config['latent_dim'],
+                device=self.config['device'],
+                verbose=self.config['verbose'],
+                )
+
+    def _input_data_check(self, inputs):
+        assert isinstance(inputs, SequencePatientBase), f'`trial_simulation.sequence` models require input training data in `SequencePatientBase`, find {type(inputs)} instead.'
+
+    def fit(self, train_data):
+        '''
+        Fit the model with training data.
+
+        Parameters
+        ----------
+        train_data: SequencePatientBase
+            Training data.
+        '''
+        self._input_data_check(train_data)
+        df_train_data = self._translate_sequence_to_df(train_data)
+
+        # train the model for each event type
+        for et in self.config['perturb_event']:
+            model = self.models[et]
+            model._fit_model(df_train_data)
+
+        pdb.set_trace()
+
+    def load_model(self, checkpoint):
+        pass
+
+    def save_model(self, checkpoint):
+        pass
+
+    def predict(self, number_of_predictions):
+        pass
+
+    def _translate_sequence_to_df(self, inputs):
+        '''
+        returns dataframe from SeqPatientBase
+        '''
+        inputs= inputs.visit
+        column_names = ['People', 'Visit']
+        for i in range(len(self.config['orders'])):
+            for j in range(self.config['vocab_size'][i]):
+              column_names.append(self.config['orders'][i]+'_'+str(j))
+
+        visits = []
+        for i in range(len(inputs)):#each patient
+            if self.config['verbose'] and i % 100 == 0:
+                print(f'Translating Data: Sample {i}/{len(inputs)}')
+
+            for j in range(len(inputs[i])): #each visit
+                binary_visit = [i, j]
+                for k in range(len(self.config["orders"])): #orders indicate the order of events
+                    event_binary= np.array([0]*self.config['vocab_size'][k])
+                    event_binary[inputs[i][j][k]] = 1 #multihot from dense
+                    binary_visit.extend(event_binary.tolist())
+
+                visits.append(binary_visit)
+        df = pd.DataFrame(visits, columns=column_names)
+        return df
+
+
+
+
+class TWIN_unimodal(SequenceSimulationBase):
+    '''
+    Implement a VAE based model for clinical trial patient digital twin simulation [1]_.
+    
+    Parameters
+    ----------
+    vocab_size: list[int]
+        A list of vocabulary size for different types of events, e.g., for diagnosis, procedure, medication.
+
+    order: list[str]
+        The order of event types in each visits, e.g., ``['treatment', 'medication', 'adverse event']``.
+        Visit = [treatment_events, medication_events, adverse_events], each event is a list of codes.
+
+    event_type: str or list[str]
+        The type(s) of event to be modeled, e.g., ``'medication'`` or ``'adverse event'``.
+        If a list is provided, then the model will be trained to model all event types in the list.
+
+    freeze_event: str or list[str]
+        The event type(s) that will be frozen during training, e.g., ``'medication'`` or ``'adverse event'``.
+
+    max_visit: int
+        Maximum number of visits.
+
+    emb_size: int
+        Embedding size for encoding input event codes.
+        
+    latent_dim: int
+        Size of final latent dimension between the encoder and decoder
+
+    learning_rate: float
+        Learning rate for optimization based on SGD. Use torch.optim.Adam by default.
+
+    batch_size: int
+        Batch size when doing SGD optimization.
+
+    epochs: int
+        Maximum number of iterations taken for the solvers to converge.
+
+    num_worker: int
+        Number of workers used to do dataloading during training.
+
+    device: str
+        Device to use for training, e.g., ``'cpu'`` or ``'cuda:0'``.
+
+    experiment_id: str
+        A unique identifier for the experiment.
+
+    verbose: bool
+        If True, print out training progress.
+
     Notes
     -----
     .. [1] Trisha Das*, Zifeng Wang*, and Jimeng Sun. TWIN: Personalized Clinical Trial Digital Twin Generation. KDD'23.
@@ -286,6 +453,7 @@ class TWIN(SequenceSimulationBase):
         vocab_size,
         order,
         event_type= 'medication',
+        freeze_event= None,
         max_visit=13,
         emb_size=64,
         hidden_dim = 36,
@@ -296,8 +464,19 @@ class TWIN(SequenceSimulationBase):
         num_worker=0,
         device='cpu',# 'cuda:0',
         experiment_id='trial_simulation.sequence.twin',
+        verbose=False,
         ):
         super().__init__(experiment_id)
+
+        assert isinstance(event_type, str), "TWIN_unimodal only supports one event type! Got {} instead.".format(event_type)
+
+        if isinstance(freeze_event, str):
+            freeze_event = [freeze_event]
+        
+        if freeze_event is not None:
+            for et in freeze_event:
+                assert et in order, "Event type {} not found in order {}.".format(et, order)
+
         self.config = {
             'vocab_size':vocab_size,
             'max_visit':max_visit,
@@ -311,6 +490,9 @@ class TWIN(SequenceSimulationBase):
             'num_worker':num_worker,
             'orders':order,
             'event_type': event_type,
+            'freeze_event': freeze_event,
+            'output_dir': self.checkout_dir,
+            'verbose': verbose,
             }
         self.config['total_vocab_size'] = sum(vocab_size)
         self.device = device
@@ -323,12 +505,13 @@ class TWIN(SequenceSimulationBase):
             vocab_size=self.config['vocab_size'],
             orders=self.config['orders'],
             event_type = self.config['event_type'],
+            freeze_type=self.config['freeze_event'],
             device=self.device,
             epochs = self.config['epochs']
             )
         self.model = self.model.to(self.device)
 
-    def fit(self, train_data, out_dir):
+    def fit(self, train_data):
         '''
         Train model with sequential patient records.
 
@@ -338,60 +521,56 @@ class TWIN(SequenceSimulationBase):
             A `SequencePatientBase` contains patient records where 'v' corresponds to 
             visit sequence of different events.
         '''
-        self._input_data_check(train_data)
-        df_train_data = self.SequencePatientBase_to_df(train_data)
-        self._fit_model(df_train_data, out_dir)
+        raise NotImplementedError("TWIN_unimodal does not support fit method! Use `TWIN` instead.")
 
     def next_step_df(self, data):
-        if self.config['event_type'] == 'medication':
-            ae_columns = [col for col in data if col.startswith('adverse events_')]
-            for a in ae_columns:
-                data[a[0:15]+'nxt_'+ a[15:]]= data[a].shift(-1)
+        columns = pd.Series(data.columns)
+        target_columns = columns[columns.str.startswith(self.config["event_type"])]
+        if self.config["freeze_event"] is not None:
+            freeze_type = self.config["freeze_event"]
+            for t in freeze_type:
+                add_target_columns = columns[columns.str.startswith(t)]
+                target_columns = target_columns.append(add_target_columns)
+        
+        other_columns = columns[~columns.isin(target_columns)]
+        other_columns = other_columns[~other_columns.isin(["Visit","People"])]
 
-            #create a new column by shifting up
-            data['Visit_']= data['Visit'].shift(-1)
-            data.iloc[len(data)-1,-1]=-1
-            data = data[data['Visit_']-data['Visit']==1]
-            data = data.drop(columns =['Visit_'])
+        def _create_new_col(x): 
+            splits = x.split("_")
+            num = int(splits[-1])
+            return "###nxt###_{}_{}".format("_".join(splits[:-1]), num)
 
-            label_cols=[col for col in data if col.startswith('adverse events_nxt_')]
-            y = data[label_cols]
+        nxt_target_columns = other_columns.apply(lambda x: _create_new_col(x))
+        column_map = dict(zip(other_columns, nxt_target_columns))
 
-            med_cols=[col for col in data if col.startswith('medication_')]
-            treat_cols=[col for col in data if col.startswith('treatment_')]
-            cols=med_cols+treat_cols
-            X = data[cols]
+        # create a new column by shifting up
+        nxt_data = data[other_columns].shift(-1).rename(columns=column_map)
+        data = pd.concat([data, nxt_data], axis=1)
 
-        if self.config['event_type'] == 'adverse events':
-            med_columns = [col for col in data if col.startswith('medication_')]
-            for a in med_columns:
-                data[a[0:11]+'nxt_'+ a[11:]]= data[a].shift(-1)
+        # remove NaN rows
+        data['Visit_']= data['Visit'].shift(-1)
+        data.iloc[len(data)-1,-1]=-1
+        data = data[data['Visit_']-data['Visit']==1]
+        data = data.drop(columns =['Visit_'])
 
-            #create a new column by shifting up
-            data['Visit_']= data['Visit'].shift(-1)
-            data.iloc[len(data)-1,-1]=-1
-            data = data[data['Visit_']-data['Visit']==1]
-            data = data.drop(columns =['Visit_'])
-
-            label_cols=[col for col in data if col.startswith('medication_nxt_')]
-            y = data[label_cols]
-
-            ae_cols=[col for col in data if col.startswith('adverse events_')]
-            treat_cols=[col for col in data if col.startswith('treatment_')]
-            cols=ae_cols+treat_cols
-            X = data[cols]
+        # build X and y
+        y = data[nxt_target_columns]
+        X = data[target_columns]
         return X, y
 
-    def train(self, train_dl, device, optimizer, vocab_size, batch_size, model,out_dir):
-      print("...Start training VAE...")
-      print('--- event type: ', self.config['event_type'], '---')
-      best_auc=0
-      best_train_auc = 0
+    def _train(self, train_dl, device, optimizer, vocab_size, batch_size, model, out_dir):
+        if self.config["verbose"]:
+            print("...Start training VAE...")
+            print('--- event type: ', self.config['event_type'], '---')
+            print('--- order: ', self.config['orders'], '---')
+            print('--- freeze_event: ', self.config['freeze_event'], '---')
+            print('--- vocab_size: ', vocab_size, '---')
 
-      for epoch in range(self.config['epochs']):
-          overall_loss = 0
-          for batch_idx, (x, y) in enumerate(train_dl):
+        for epoch in range(self.config['epochs']):
+            overall_loss = 0
+            for batch_idx, (x, y) in enumerate(train_dl):
                 x = x.to(device)
+                y = y.to(device)
                 optimizer.zero_grad()
                 n_cross_n = torch.matmul(x, x.T)
                 top_5_index = torch.topk(n_cross_n, 4)
@@ -404,27 +583,34 @@ class TWIN(SequenceSimulationBase):
                     ext_x.append(x_)
 
                 ext_x= torch.as_tensor(ext_x)
-                #print(ext_x[:,:, :-5])
+                ext_x = ext_x.to(self.config["device"])
+                x_hat, out_mean, log_var , out = model(ext_x)
 
-                x_hat, mean, log_var , out = model(ext_x)
+                # x_hat should be the event_type reconstruction
+                # y should be the other events to predict
 
-                loss= loss_function(x[:, :-5], x_hat, mean, log_var, out, y)
+                if self.config["freeze_event"] is not None:
+                    x_indexes = model._create_non_freeze_indexes(x, model.freeze_dim_range)
+                    x_tgt = x[:, x_indexes]
+                else:
+                    x_tgt = x
 
-                overall_loss += loss.item() 
-
+                loss = loss_function(x_tgt, x_hat, out_mean, log_var, out, y)
+                overall_loss += loss.item()
                 loss.backward()
                 optimizer.step()
-                
-          print("\tEpoch", epoch + 1, "complete!", "\tAverage Loss: ", overall_loss / (batch_idx*batch_size))
 
-      self.save_model(output_dir=out_dir)
-      print("Finish!!")
+            if self.config["verbose"]:
+                print("\tEpoch", epoch + 1, "complete!", "\tAverage Loss: ".format(self.config["event_type"]), overall_loss / (batch_idx*batch_size))
 
-    def _fit_model(self, df, out_dir):
+        if self.config["verbose"]:
+            print("Finish!!")
+
+    def _fit_model(self, df, out_dir=None):
         X, y = self.next_step_df(df)
         train_dl= prepare_data(X, y, self.config['batch_size'])
         optimizer = Adam(self.model.parameters(), lr=self.config['learning_rate'])
-        self.train(train_dl, self.device, optimizer, self.config['vocab_size'], self.config['batch_size'], self.model, out_dir)
+        self._train(train_dl, self.device, optimizer, self.config['vocab_size'], self.config['batch_size'], self.model, out_dir)
 
     def _input_data_check(self, inputs):
         assert isinstance(inputs, SequencePatientBase), f'`trial_simulation.sequence` models require input training data in `SequencePatientBase`, find {type(inputs)} instead.'
@@ -433,7 +619,6 @@ class TWIN(SequenceSimulationBase):
         '''
         returns dataframe from SeqPatientBase
         '''
-        #voc1 = inputs.voc
         inputs= inputs.visit
         column_names = ['People', 'Visit']
         for i in range(len(self.config['orders'])):
@@ -444,7 +629,7 @@ class TWIN(SequenceSimulationBase):
         for i in range(len(inputs)):#each patient
             for j in range(len(inputs[i])): #each visit
                 binary_visit = [i, j]
-                for k in range(len(inputs[i][j])): #k=3 types of events
+                for k in range(len(self.config["orders"])): #orders indicate the order of events
                     event_binary= [0]*self.config['vocab_size'][k]
                     for l in inputs[i][j][k]: #multihot from dense
                         event_binary[l]=1
