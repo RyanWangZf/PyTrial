@@ -25,14 +25,12 @@ If you find this package useful, please consider citing it in your scientific pu
 
 .. code:: latex
 
-    @misc{pytrial2022,
-        title = {PyTrial: A Python Package for Artificial Intelligence in Drug Development},
-        author = {Wang, Zifeng and Theodorou, Brandon and Fu, Tianfan and Sun, Jimeng},
-        year = {2022},
-        month = {11},
-        organization = {SunLab@UIUC},
-        note = {Version 0.0.1},
-    }
+   @article{wang2023pytrial,
+     title={PyTrial: A Comprehensive Platform for Artificial Intelligence for Drug Development},
+     author={Wang, Zifeng and Theodorou, Brandon and Fu, Tianfan and Xiao, Cao and Sun, Jimeng},
+     journal={arXiv preprint arXiv:2306.04018},
+     year={2023}
+   }
 
 
 ----
