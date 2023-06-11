@@ -13,7 +13,7 @@ with open(os.path.join(this_directory, 'requirements.txt'),
 
 setuptools.setup(
     name = 'PyTrial',
-    version = '0.0.5',
+    version = '0.0.6',
     author = 'Zifeng Wang, Brandon Theodoru, Tianfan Fu, Jimeng Sun',
     author_email = 'zifengw2@illinois.edu',
     description = 'PyTrial: A Python Package for Artificial Intelligence in Drug Development',
