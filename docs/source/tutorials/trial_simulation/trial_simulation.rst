@@ -46,7 +46,9 @@ Here is the list of colab examples on each model for this task.
 
 - `Model 4: PromptEHR <https://colab.research.google.com/drive/1EbzLdSwTrbgsEgz8z70qzTLQWiPWlyRm?usp=sharing>`_
 
-- `Model 5: KNNSampler <https://drive.google.com/file/d/1RCUtzyitcidI32To7pb5klNYuynM0ACL/view?usp=sharing>`_
+- `Model 5: KNNSampler <https://colab.research.google.com/drive/1RCUtzyitcidI32To7pb5klNYuynM0ACL>`_
+
+- `Model 6: TWIN <https://colab.research.google.com/drive/1f0ALOTkEdjRT1t5IntSXIgTlfYape7mX?usp=sharing>`_
 
 
 Tabular Patient: Example
@@ -57,4 +59,4 @@ Here, we highlight the usage of ``trial_simulation.tabular.CTGAN`` model for thi
 
 Sequential Patient: Example
 ---------------------------
-Here, we highlight the usage of ``trial_simulation.sequence.PromptEHR`` model for this task.
+Here, we highlight the usage of ``trial_simulation.sequence.TWIN`` model for this task.

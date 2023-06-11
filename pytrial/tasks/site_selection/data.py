@@ -67,18 +67,19 @@ class TrialSiteModalities(Dataset):
 
     def __getitem__(self, idx):
         sitesPerTrial = self.mappings[idx]
-        siteFeatures = [self.sites[sites] for sites in sitesPerTrial]
-        sample = {"trial": self.trial_features[idx], 
+        siteFeatures = [self.sites[trialSites] for trialSites in sitesPerTrial]
+        siteFeatures = {k: np.stack([d[k] for d in siteFeatures]) for k in siteFeatures[0]}
+        sample = {"trial": self.trials[idx], 
                   "label": self.enrollments[idx], 
                   "eth_label": siteFeatures['eth_label'],
                   "inv_static": siteFeatures['x'],
-                  "inv_dx": siteFeatures['dx'],
-                  "inv_dx_len": siteFeatures['dx_lens'],
-                  "inv_rx": siteFeatures['rx'],
-                  "inv_rx_len": siteFeatures['rx_lens'],
-                  "inv_enroll": siteFeatures['hist'],
-                  "inv_enroll_len": siteFeatures['hist_lens'],
-                  "inv_mask": np.ones((len(sitesPerTrial), max([len(s) for s in sitesPerTrial], 4)), dtype=np.int8)
+                  "dx": siteFeatures['dx'],
+                  "dx_len": siteFeatures['dx_lens'],
+                  "rx": siteFeatures['rx'],
+                  "rx_len": siteFeatures['rx_lens'],
+                  "enroll_hist": siteFeatures['hist'],
+                  "enroll_hist_len": siteFeatures['hist_lens'],
+                  "inv_mask": np.zeros((len(sitesPerTrial), 4), dtype=np.int8)
                  }
         return sample
 
@@ -179,7 +180,7 @@ class SiteSelectionModalitiesCollator:
         if self.config['visit_mode'] == 'tensor': self.is_tensor_visit = True
         else: self.is_tensor_visit = False
 
-        if self.config['trial_model'] == 'tensor': self.is_tensor_trial = True
+        if self.config['trial_mode'] == 'tensor': self.is_tensor_trial = True
         else: self.is_tensor_trial = False
         
         if self.config['has_demographics'] == 'true': self.has_demographics = True
@@ -198,17 +199,17 @@ class SiteSelectionModalitiesCollator:
             
             'inv_static': list[list[np.ndarray]]
             
-            'inv_dx': list[list[np.ndarray]]
+            'dx': list[list[np.ndarray]]
             
-            'inv_dx_len': list[list[int]]
+            'dx_len': list[list[int]]
             
-            'inv_rx': list[list[np.ndarray]]
+            'rx': list[list[np.ndarray]]
             
-            'inv_rx_len': list[list[int]]
+            'rx_len': list[list[int]]
             
-            'inv_enroll': list[list[np.ndarray]]
+            'enroll_hist': list[list[np.ndarray]]
             
-            'inv_enroll_len': list[list[int]]
+            'enroll_hist_len': list[list[int]]
             
             'inv_mask': list[list[np.ndarray]]
         }
@@ -224,17 +225,17 @@ class SiteSelectionModalitiesCollator:
             
             'inv_static': tensor
             
-            'inv_dx': tensor
+            'dx': tensor
             
-            'inv_dx_len': tensor
+            'dx_len': tensor
             
-            'inv_rx': tensor
+            'rx': tensor
             
-            'inv_rx_len': tensor
+            'rx_len': tensor
             
-            'inv_enroll': tensor
+            'enroll_hist': tensor
             
-            'inv_enroll_len': tensor
+            'enroll_hist_len': tensor
             
             'inv_mask': tensor
         }
@@ -243,16 +244,18 @@ class SiteSelectionModalitiesCollator:
         # init output dict
         return_data = defaultdict(list)
         
+        inputs = {k: np.stack([d[k] for d in inputs]) for k in inputs[0]}
+        
         return_data['trial'] = torch.FloatTensor(np.array(inputs['trial']))
         return_data['label'] = torch.FloatTensor(np.array(inputs['label']))
         return_data['inv_static'] = torch.FloatTensor(np.array(inputs['inv_static']))
-        return_data['inv_dx'] = torch.FloatTensor(np.array(inputs['inv_dx']))
-        return_data['inv_dx_len'] = torch.IntTensor(np.array(inputs['inv_dx_len']))
-        return_data['inv_rx'] = torch.FloatTensor(np.array(inputs['inv_rx']))
-        return_data['inv_rx_len'] = torch.IntTensor(np.array(inputs['inv_rx_len']))
-        return_data['inv_enroll'] = torch.FloatTensor(np.array(inputs['inv_enroll']))
-        return_data['inv_enroll_len'] = torch.IntTensor(np.array(inputs['inv_enroll_len']))
-        return_data['inv_mask'] = torch.IntTensor(np.array(inputs['inv_mask']))
+        return_data['dx'] = torch.FloatTensor(np.array(inputs['dx']))
+        return_data['dx_len'] = torch.LongTensor(np.array(inputs['dx_len']))
+        return_data['rx'] = torch.FloatTensor(np.array(inputs['rx']))
+        return_data['rx_len'] = torch.LongTensor(np.array(inputs['rx_len']))
+        return_data['enroll_hist'] = torch.FloatTensor(np.array(inputs['enroll_hist']))
+        return_data['enroll_hist_len'] = torch.LongTensor(np.array(inputs['enroll_hist_len']))
+        return_data['inv_mask'] = torch.LongTensor(np.array(inputs['inv_mask']))
 
         # processing all
         if self.has_demographics:

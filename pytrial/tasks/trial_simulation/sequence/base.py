@@ -165,7 +165,7 @@ class SequenceSimulationBase(abc.ABC):
                 n_total = min(n_total, n)
             return n_total, n_per_sample
         else:
-            return n, math.ceil(n_test_sample / n)
+            return n, math.ceil(n / n_test_sample)
 
     def _get_num_visit(self, data, idx):
         visits = data['v']

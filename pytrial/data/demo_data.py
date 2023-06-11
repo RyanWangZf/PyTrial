@@ -69,7 +69,7 @@ def load_synthetic_ehr_sequence(input_dir=None, n_sample=None):
 
 def load_mimic_ehr_sequence(input_dir=None, n_sample=None):
     '''
-    Load real EHR patient sequence data, which needs to be accessed via https://physionet.org/content/mimiciii/1.4/.
+    Load EHR patient sequence data, which needs to be accessed via https://physionet.org/content/mimiciii/1.4/.
 
     Parameters
     ----------

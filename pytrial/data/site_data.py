@@ -456,7 +456,10 @@ class ModalitySiteBase(Dataset):
     visit_voc_size = None
 
     metadata = {
-        'voc': {},
+        'voc': {
+            'dx': 100,
+            'rx': 100
+            },
         
         'feature':{
             'mode': 'tensor',
@@ -485,8 +488,8 @@ class ModalitySiteBase(Dataset):
         return_data = {}
         if self.dx_hist is not None:
             dx_hist = self.dx_hist[index]
-            if self.metadata['dx']['mode'] == 'tensor':
-                dx_ts, dx_len = self._dense_visit_to_tensor(dx_hist, self.metadata['dx']['voc'])
+            if self.metadata['visit']['mode'] == 'tensor':
+                dx_ts, dx_len = self._dense_visit_to_tensor(dx_hist, self.metadata['voc']['dx'])
                 return_data['dx'] = dx_ts
                 return_data['dx_lens'] = dx_len
             else:
@@ -496,8 +499,8 @@ class ModalitySiteBase(Dataset):
                 
         if self.rx_hist is not None:
             rx_hist = self.rx_hist[index]
-            if self.metadata['rx']['mode'] == 'tensor':
-                rx_ts, rx_len = self._dense_visit_to_tensor(rx_hist, self.metadata['rx']['voc'])
+            if self.metadata['visit']['mode'] == 'tensor':
+                rx_ts, rx_len = self._dense_visit_to_tensor(rx_hist, self.metadata['voc']['rx'])
                 return_data['rx'] = rx_ts
                 return_data['rx_lens'] = rx_len
             else:
