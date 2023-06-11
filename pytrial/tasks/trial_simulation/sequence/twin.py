@@ -322,10 +322,11 @@ class TWIN(SequenceSimulationBase):
         # build unimodal TWIN for the given event types
         self.models = {}
         for et in self.config['perturb_event']:
-            self.models[et] = TWIN_unimodal(
+            self.models[et] = UnimodalTWIN(
+                event_type=et,
+                epochs=self.config['epochs'],
                 vocab_size=self.config['vocab_size'],
                 order=self.config['orders'],
-                event_type=et,
                 freeze_event=self.config['freeze_event'],
                 max_visit=self.config['max_visit'],
                 emb_size=self.config['emb_size'],
@@ -354,8 +355,9 @@ class TWIN(SequenceSimulationBase):
         for et in self.config['perturb_event']:
             model = self.models[et]
             model._fit_model(df_train_data)
-
-        pdb.set_trace()
+        
+        if self.config["verbose"]:
+            print("Training finished.")
 
     def load_model(self, checkpoint):
         pass
@@ -363,8 +365,99 @@ class TWIN(SequenceSimulationBase):
     def save_model(self, checkpoint):
         pass
 
-    def predict(self, number_of_predictions):
-        pass
+    def predict(self, test_data, n_per_sample=None, n=None, verbose=False):
+        '''
+        Generate synthetic data for the given real data.
+        
+        Parameters
+        ----------
+        test_data: SequencePatient
+            A `SequencePatient` contains patient records where 'v' corresponds to 
+            visit sequence of different events.
+                
+        n_per_sample: int
+            How many samples generated based on each indivudals.
+
+        n: int
+            How many samples in total will be generated. If None, then `n_per_sample` should be provided.
+            Will be rounded to the closest multiple of `n_per_sample`.
+
+        verbose: bool
+            If True, print out generation progress.
+        
+        Returns
+        -------
+        fake_data: SequencePatient
+            A `SequencePatient` contains generated patient records where 'v' corresponds to visit sequence of different events.
+        '''
+        self._input_data_check(test_data)
+
+        if n is not None: assert isinstance(n, int), 'Input `n` should be integer.'
+        if n_per_sample is not None: assert isinstance(n_per_sample, int), 'Input `n_per_sample` should be integer.'
+        assert (not n_per_sample is None) or (not n is None), 'Either `n` or `n_per_sample` should be provided to generate.'
+        n, n_per_sample = self._compute_n_per_sample(len(test_data), n, n_per_sample)
+
+        # translate data
+        df_data = self._translate_sequence_to_df(test_data)
+
+        verbose = self.config['verbose'] or verbose
+        if verbose:
+            print(f"Generating {n} samples for {len(test_data)} individuals with {n_per_sample} samples per individual.")
+
+        # generate data for each event type
+        fake_data = {k:[] for k in self.config['orders']}
+        for et in self.config['perturb_event']:
+            model = self.models[et]
+            pred = model.predict(df_data, n_per_sample=n_per_sample, verbose=verbose)
+            fake_data[et] = pred
+        
+        # merge data
+        fake_data = self._merge_generated_data(fake_data, df_data, n_per_sample)
+
+        # build `SequencePatient`
+        fake_data = self._translate_df_to_sequence(fake_data, test_data, n_per_sample=n_per_sample)
+        return fake_data
+
+    def _merge_generated_data(self, fake_data, df_data, n_per_sample):
+        '''
+        Merge generated data for each event type into a single `SequencePatient`.
+        '''
+        merged_data = []
+        for et in self.config["orders"]:
+            if et in self.config["perturb_event"]:
+                # use the fake data
+                syn = fake_data[et]
+                syn = pd.concat(syn, axis=0).reset_index(drop=True)
+
+            else: 
+                # use the real data
+                syn = df_data.iloc[:,df_data.columns.str.contains(et)].copy()
+                if n_per_sample > 1:
+                    syn = pd.DataFrame(np.repeat(syn.values, n_per_sample, axis=0), columns=syn.columns)            
+            
+            merged_data.append(syn)
+
+        # build dataframe
+        merged_data = pd.concat(merged_data, axis=1)
+
+        # repeat the patient id and visit id for each sample
+        syn_indexer = []
+        for i in range(n_per_sample):
+            syn_ind = df_data[["People","Visit"]].copy()
+            syn_ind["People"] = syn_ind["People"].astype(str).apply(lambda x: "sample_{0}_twin_{1}".format(x, i))
+            syn_indexer.append(syn_ind)
+        syn_indexer = pd.concat(syn_indexer, axis=0).reset_index(drop=True)        
+
+        # merge
+        merged_data = pd.concat([syn_indexer, merged_data], axis=1)
+        return merged_data
+    
+    def _remove_the_last_visit(self, data):
+        data['Visit_']= data['Visit'].shift(-1)
+        data.iloc[len(data)-1,-1]=-1
+        data = data[data['Visit_']-data['Visit']==1]
+        data = data.drop(columns =['Visit_'])
+        return data
 
     def _translate_sequence_to_df(self, inputs):
         '''
@@ -393,9 +486,51 @@ class TWIN(SequenceSimulationBase):
         return df
 
 
+    def _translate_df_to_sequence(self, df, seqdata, n_per_sample=1):
+        '''
+        returns SeqPatientBase from df
+        '''
+        visits = []
+        columns = []
+        x_list = []
+
+        def get_nnz(x):
+            res = np.nonzero(row[cols].to_list())[0].tolist()
+            if len(res) == 0:
+                res = [0]
+            return res
+
+        for k in self.config['orders']:
+            columns.append(df.columns[df.columns.str.contains(k)].to_list())
+
+        for idx, pid in enumerate(df.People.unique()):
+            if self.config['verbose'] and idx % 100 == 0:
+                print(f'Translating Data: Sample {idx}/{df.People.nunique()}')
+            sample = []
+            temp = df[df['People']==pid]
+            for index, row in temp.iterrows():
+                visit = []
+                for cols in columns:
+                    visit.append(get_nnz(row[cols]))
+                sample.append(visit)
+            visits.append(sample)
+            x_list.append([pid, len(sample)])
+        
+        x_list = pd.DataFrame(x_list, columns=['pid', 'num_visits'])
+
+        # copy metadata
+        metadata = copy.deepcopy(seqdata.metadata)
+        if getattr(seqdata, 'label', None) is not None:
+            y = seqdata.label
+            if n_per_sample > 1:
+                y = np.tile(y, n_per_sample)
+        else:
+            y = None
+        seqdata = SequencePatient(data={'v':visits, 'y': y, 'x': x_list}, metadata=metadata)
+        return seqdata
 
 
-class TWIN_unimodal(SequenceSimulationBase):
+class UnimodalTWIN(SequenceSimulationBase):
     '''
     Implement a VAE based model for clinical trial patient digital twin simulation [1]_.
     
@@ -468,7 +603,7 @@ class TWIN_unimodal(SequenceSimulationBase):
         ):
         super().__init__(experiment_id)
 
-        assert isinstance(event_type, str), "TWIN_unimodal only supports one event type! Got {} instead.".format(event_type)
+        assert isinstance(event_type, str), "UnimodalTWIN only supports one event type! Got {} instead.".format(event_type)
 
         if isinstance(freeze_event, str):
             freeze_event = [freeze_event]
@@ -521,9 +656,11 @@ class TWIN_unimodal(SequenceSimulationBase):
             A `SequencePatientBase` contains patient records where 'v' corresponds to 
             visit sequence of different events.
         '''
-        raise NotImplementedError("TWIN_unimodal does not support fit method! Use `TWIN` instead.")
+        raise NotImplementedError("UnimodalTWIN does not support fit method! Use `TWIN` instead.")
 
-    def next_step_df(self, data):
+    def _next_step_df(self, data):
+        # do not make in-place change
+        data = data.copy()
         columns = pd.Series(data.columns)
         target_columns = columns[columns.str.startswith(self.config["event_type"])]
         if self.config["freeze_event"] is not None:
@@ -548,10 +685,7 @@ class TWIN_unimodal(SequenceSimulationBase):
         data = pd.concat([data, nxt_data], axis=1)
 
         # remove NaN rows
-        data['Visit_']= data['Visit'].shift(-1)
-        data.iloc[len(data)-1,-1]=-1
-        data = data[data['Visit_']-data['Visit']==1]
-        data = data.drop(columns =['Visit_'])
+        data = self._remove_the_last_visit(data)
 
         # build X and y
         y = data[nxt_target_columns]
@@ -607,7 +741,7 @@ class TWIN_unimodal(SequenceSimulationBase):
             print("Finish!!")
 
     def _fit_model(self, df, out_dir=None):
-        X, y = self.next_step_df(df)
+        X, y = self._next_step_df(df)
         train_dl= prepare_data(X, y, self.config['batch_size'])
         optimizer = Adam(self.model.parameters(), lr=self.config['learning_rate'])
         self._train(train_dl, self.device, optimizer, self.config['vocab_size'], self.config['batch_size'], self.model, out_dir)
@@ -615,7 +749,14 @@ class TWIN_unimodal(SequenceSimulationBase):
     def _input_data_check(self, inputs):
         assert isinstance(inputs, SequencePatientBase), f'`trial_simulation.sequence` models require input training data in `SequencePatientBase`, find {type(inputs)} instead.'
 
-    def SequencePatientBase_to_df(self, inputs):
+    def _remove_the_last_visit(self, data):
+        data['Visit_']= data['Visit'].shift(-1)
+        data.iloc[len(data)-1,-1]=-1
+        data = data[data['Visit_']-data['Visit']==1]
+        data = data.drop(columns =['Visit_'])
+        return data
+
+    def _translate_sequence_to_df(self, inputs):
         '''
         returns dataframe from SeqPatientBase
         '''
@@ -625,50 +766,27 @@ class TWIN_unimodal(SequenceSimulationBase):
             for j in range(self.config['vocab_size'][i]):
               column_names.append(self.config['orders'][i]+'_'+str(j))
 
-        df = pd.DataFrame(columns=column_names)
+        visits = []
         for i in range(len(inputs)):#each patient
+            if self.config['verbose'] and i % 100 == 0:
+                print(f'Translating Data: Sample {i}/{len(inputs)}')
+
             for j in range(len(inputs[i])): #each visit
                 binary_visit = [i, j]
                 for k in range(len(self.config["orders"])): #orders indicate the order of events
-                    event_binary= [0]*self.config['vocab_size'][k]
-                    for l in inputs[i][j][k]: #multihot from dense
-                        event_binary[l]=1
-                    binary_visit.extend(event_binary)
-                df.loc[len(df)] = binary_visit
+                    event_binary= np.array([0]*self.config['vocab_size'][k])
+                    event_binary[inputs[i][j][k]] = 1 #multihot from dense
+                    binary_visit.extend(event_binary.tolist())
+
+                visits.append(binary_visit)
+        df = pd.DataFrame(visits, columns=column_names)
         return df
 
-    def df_to_SequencePatientBase(self, df, inputs):
+    def _generate_one_loop(self, X, y):
         '''
-        returns SeqPatientBase from df
+        generate one loop of the model
         '''
-        visits = []
-        columns=[]
-        for k in self.config['orders']:
-            columns.extend([col for col in df if col.startswith('k')])
-        for i in df.People.unique():
-            sample=[]
-            temp = df[df['People']==i]
-            for index, row in temp.iterrows():
-                visit=[]
-                visit.append(np.nonzero(row[columns].to_list())[0].tolist())
-                sample.append(visit)
-            visits.append(sample)
-            seqdata = SequencePatient(
-                data={'v':visits, 'y': inputs.label, 'x':None},
-                metadata={
-                    'visit':seqdata.metadata['visit'],
-                    'label':{'mode':'tensor'},
-                    'voc':seqdata.metadata['voc'],
-                    'max_visit':seqdata.metadata['max_visit'],
-                }
-            )
-        return seqdata
-
-    def predict(self, data ):
-        self._input_data_check(data)
-        df_data = self.SequencePatientBase_to_df(data)
-        X, y = self.next_step_df(df_data)
-        dl= prepare_data(X, y, self.config['batch_size'])
+        dl = prepare_data(X, y, self.config['batch_size'])
         self.model.eval()
         x_hats, ins= list(), list()
         for i, (x, y) in enumerate(dl):
@@ -686,17 +804,44 @@ class TWIN_unimodal(SequenceSimulationBase):
                 ext_x.append(x_)
     
             ext_x= torch.as_tensor(ext_x)
+            ext_x = ext_x.to(self.config["device"])
     
             x_hat, mean, log_var, yhat= self.model(ext_x)
     
-            inp = x.detach().numpy()
-            x_hat = x_hat.detach().numpy()
+            inp = x.detach().cpu().numpy()
+            x_hat = x_hat.detach().cpu().numpy()
             x_hat = x_hat.round()
+            
             x_hats.append(x_hat)
             ins.append(inp)
 
-        x_hats, ins=  vstack(x_hats), vstack(ins)
+        x_hats, ins =  vstack(x_hats), vstack(ins)
         return x_hats
+    
+    def predict(self, df_data, n_per_sample=None, verbose=False):
+        # self._input_data_check(data)
+        # df_data = self._translate_sequence_to_df(data)
+        if n_per_sample is None:
+            n_per_sample = 1
+        
+        x_hat_list = []
+        for i in range(n_per_sample):
+            if verbose:
+                print(f'Generating loop {i+1}/{n_per_sample} for event type: `{self.config["event_type"]}`.')
+            X, y = self._next_step_df(df_data)
+            x_hats = self._generate_one_loop(X, y)
+
+            # get the target event columns
+            tgt_event = self.config["event_type"]
+            tgt_columns = X.columns[X.columns.str.contains(tgt_event)].tolist()
+
+            # fillnan with the original data for the last visits
+            x_hats = pd.DataFrame(x_hats, columns=tgt_columns, index=X.index)
+            left, x_hats = df_data[tgt_columns].align(x_hats, axis=0, join='left')
+            x_hats = x_hats.fillna(left)            
+            x_hat_list.append(x_hats)
+            
+        return x_hat_list
 
     def load_model(self, checkpoint):
         '''
@@ -710,27 +855,28 @@ class TWIN_unimodal(SequenceSimulationBase):
             - If a directory, the only checkpoint file `*.pth.tar` will be loaded.
             - If a filepath, will load from this file.
         '''
-        checkpoint_filename = check_checkpoint_file(checkpoint)
-        config_filename = check_model_config_file(checkpoint)
-        state_dict = torch.load(checkpoint_filename, map_location=self.config['device'])
-        if config_filename is not None:
-            config = self._load_config(config_filename)
-            self.config = config
-        if self.config['event_type']=='medication':
-            self.model.Encoder_med.load_state_dict(state_dict['encoder'])
-            self.model.Decoder_med.load_state_dict(state_dict['decoder'])
-            self.model.AE_pred.load_state_dict(state_dict['predictor'])
-        if self.config['event_type']=='adverse events':
-            self.model.Encoder_ae.load_state_dict(state_dict['encoder'])
-            self.model.Decoder_ae.load_state_dict(state_dict['decoder'])
-            self.model.Med_pred.load_state_dict(state_dict['predictor'])
+        # checkpoint_filename = check_checkpoint_file(checkpoint)
+        # config_filename = check_model_config_file(checkpoint)
+        # state_dict = torch.load(checkpoint_filename, map_location=self.config['device'])
+        # if config_filename is not None:
+        #     config = self._load_config(config_filename)
+        #     self.config = config
+        # if self.config['event_type']=='medication':
+        #     self.model.Encoder_med.load_state_dict(state_dict['encoder'])
+        #     self.model.Decoder_med.load_state_dict(state_dict['decoder'])
+        #     self.model.AE_pred.load_state_dict(state_dict['predictor'])
+        # if self.config['event_type']=='adverse events':
+        #     self.model.Encoder_ae.load_state_dict(state_dict['encoder'])
+        #     self.model.Decoder_ae.load_state_dict(state_dict['decoder'])
+        #     self.model.Med_pred.load_state_dict(state_dict['predictor'])
+        raise NotImplementedError("UnimodalTWIN does not support `load_model`. Use `TWIN` instead.")
 
-    def _save_config(self, config, output_dir=None):
-        temp_path = os.path.join(output_dir, self.config['event_type']+'_twin_config.json')
-        with open(temp_path, 'w', encoding='utf-8') as f:
-            f.write(
-                json.dumps(config, indent=4)
-            )
+    # def _save_config(self, config, output_dir=None):
+    #     temp_path = os.path.join(output_dir, self.config['event_type']+'_twin_config.json')
+    #     with open(temp_path, 'w', encoding='utf-8') as f:
+    #         f.write(
+    #             json.dumps(config, indent=4)
+    #         )
 
     def save_model(self, output_dir):
         '''
@@ -740,18 +886,19 @@ class TWIN_unimodal(SequenceSimulationBase):
         output_dir: str
             The dir to save the learned model.
         '''
-        make_dir_if_not_exist(output_dir)
-        self._save_config(config=self.config, output_dir=output_dir)
-        if (self.config['event_type']=='medication'):
-            self._save_checkpoint({
-                    'encoder': self.model.Encoder_med.state_dict(),
-                    'decoder': self.model.Decoder_med.state_dict(),
-                    'predictor': self.model.AE_pred.state_dict()
-                },output_dir=output_dir, filename='checkpoint_med.pth.tar')
-        if (self.config['event_type']=='adverse events'):
-            self._save_checkpoint({
-                    'encoder': self.model.Encoder_ae.state_dict(),
-                    'decoder': self.model.Decoder_ae.state_dict(),
-                    'predictor': self.model.Med_pred.state_dict()
-                },output_dir=output_dir, filename='checkpoint_ae.pth.tar')
-        print('Save the trained model to:', output_dir)
+        # make_dir_if_not_exist(output_dir)
+        # self._save_config(config=self.config, output_dir=output_dir)
+        # if (self.config['event_type']=='medication'):
+        #     self._save_checkpoint({
+        #             'encoder': self.model.Encoder_med.state_dict(),
+        #             'decoder': self.model.Decoder_med.state_dict(),
+        #             'predictor': self.model.AE_pred.state_dict()
+        #         },output_dir=output_dir, filename='checkpoint_med.pth.tar')
+        # if (self.config['event_type']=='adverse events'):
+        #     self._save_checkpoint({
+        #             'encoder': self.model.Encoder_ae.state_dict(),
+        #             'decoder': self.model.Decoder_ae.state_dict(),
+        #             'predictor': self.model.Med_pred.state_dict()
+        #         },output_dir=output_dir, filename='checkpoint_ae.pth.tar')
+        # print('Save the trained model to:', output_dir)
+        raise NotImplementedError("UnimodalTWIN does not support `save_model`. Use `TWIN` instead.")
