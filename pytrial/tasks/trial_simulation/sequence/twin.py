@@ -1,26 +1,27 @@
-import torch
-import pandas as pd
-from torch import nn
-from torch.utils.data import DataLoader
-from torch.nn.utils.rnn import pad_sequence, pack_padded_sequence, pad_packed_sequence
-import numpy as np
-from collections import defaultdict
-from pytrial.data.patient_data import SequencePatientBase, SeqPatientCollator
-from pytrial.utils.check import (
-    check_checkpoint_file, check_model_dir, check_model_config_file, make_dir_if_not_exist
-)
+import joblib
 import os
 import pdb
-import json
 import copy
+import json
+
+import torch
+from torch import nn
+from torch.utils.data import DataLoader
 import torch.nn.functional as F
-import random
 from torch.utils.data import Dataset
-from numpy import vstack
 from torch.optim import Adam
+
+import pandas as pd
+import numpy as np
+from numpy import vstack
 
 from pytrial.tasks.trial_simulation.sequence.base import SequenceSimulationBase
 from pytrial.tasks.trial_simulation.data import SequencePatient
+from pytrial.data.patient_data import SequencePatientBase
+from pytrial.utils.check import (
+    check_checkpoint_file, check_model_dir, check_model_config_file, make_dir_if_not_exist
+)
+
 
 class trial_data(Dataset):
     # load the dataset
@@ -318,27 +319,6 @@ class TWIN(SequenceSimulationBase):
         self.device = device
         self._build_model()
     
-    def _build_model(self):
-        # build unimodal TWIN for the given event types
-        self.models = {}
-        for et in self.config['perturb_event']:
-            self.models[et] = UnimodalTWIN(
-                event_type=et,
-                epochs=self.config['epochs'],
-                vocab_size=self.config['vocab_size'],
-                order=self.config['orders'],
-                freeze_event=self.config['freeze_event'],
-                max_visit=self.config['max_visit'],
-                emb_size=self.config['emb_size'],
-                hidden_dim=self.config['hidden_dim'],
-                latent_dim=self.config['latent_dim'],
-                device=self.config['device'],
-                verbose=self.config['verbose'],
-                )
-
-    def _input_data_check(self, inputs):
-        assert isinstance(inputs, SequencePatientBase), f'`trial_simulation.sequence` models require input training data in `SequencePatientBase`, find {type(inputs)} instead.'
-
     def fit(self, train_data):
         '''
         Fit the model with training data.
@@ -360,10 +340,42 @@ class TWIN(SequenceSimulationBase):
             print("Training finished.")
 
     def load_model(self, checkpoint):
-        pass
+        '''
+        Load the learned model from the disk.
 
-    def save_model(self, checkpoint):
-        pass
+        Parameters
+        ----------
+        checkpoint: str
+            - If a directory, the only checkpoint file `.model` will be loaded.
+            - If a filepath, will load from this file;
+            - If None, will load from `self.checkout_dir`.
+        '''
+        if checkpoint is None:
+            checkpoint = self.checkout_dir
+
+        checkpoint_filename = check_checkpoint_file(checkpoint, suffix='model')
+        model = joblib.load(checkpoint_filename)
+        self.__dict__.update(model.__dict__)
+
+    def save_model(self, output_dir=None):
+        '''Save the model to the given directory.
+
+        Parameters
+        ----------
+        output_dir: str
+            The directory to save the model. If None, then save to the default directory.
+            `self.checkout_dir` is the default directory.
+        '''
+        if output_dir is None:
+            output_dir = self.checkout_dir
+        make_dir_if_not_exist(output_dir)
+        ckpt_path = os.path.join(output_dir, 'twin.model')
+        joblib.dump(self, ckpt_path)
+        # save config
+        config_path = os.path.join(output_dir, 'config.json')
+        with open(config_path, 'w') as f:
+            json.dump(self.config, f, indent=4)
+
 
     def predict(self, test_data, n_per_sample=None, n=None, verbose=False):
         '''
@@ -528,6 +540,27 @@ class TWIN(SequenceSimulationBase):
             y = None
         seqdata = SequencePatient(data={'v':visits, 'y': y, 'x': x_list}, metadata=metadata)
         return seqdata
+    
+    def _build_model(self):
+        # build unimodal TWIN for the given event types
+        self.models = {}
+        for et in self.config['perturb_event']:
+            self.models[et] = UnimodalTWIN(
+                event_type=et,
+                epochs=self.config['epochs'],
+                vocab_size=self.config['vocab_size'],
+                order=self.config['orders'],
+                freeze_event=self.config['freeze_event'],
+                max_visit=self.config['max_visit'],
+                emb_size=self.config['emb_size'],
+                hidden_dim=self.config['hidden_dim'],
+                latent_dim=self.config['latent_dim'],
+                device=self.config['device'],
+                verbose=self.config['verbose'],
+                )
+
+    def _input_data_check(self, inputs):
+        assert isinstance(inputs, SequencePatientBase), f'`trial_simulation.sequence` models require input training data in `SequencePatientBase`, find {type(inputs)} instead.'
 
 
 class UnimodalTWIN(SequenceSimulationBase):
