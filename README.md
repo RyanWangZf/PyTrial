@@ -21,10 +21,13 @@ PyTrial: A Python Package for Artificial Intelligence in Drug Development
 <figure>
 <img src = "docs/images/pytrial_tasks.png">
 <figcaption align = "center"> 
-A series of clinical trial tasks that are supported by PyTrial.
+A series of clinical trial task solutions and resources that are offered by PyTrial.
 </figcaption>
 </figure>
 
+## :bulb: News
+
+- [06/11/2023] Check our recently released paper [PyTrial: A Comprehensive Platform for Artificial Intelligence for Drug Development](https://arxiv.org/pdf/2306.04018.pdf) on arXiv!
 
 
 ## :star: Features
