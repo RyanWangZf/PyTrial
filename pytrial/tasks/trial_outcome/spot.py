@@ -703,10 +703,12 @@ class SPOT(TrialOutcomeBase):
         seqdatas = self.transform_topic(train_data.df, valid_data.df if valid_data is not None else None)
         train_seq_data = seqdatas['seqtrain']
         valid_seq_data = seqdatas['seqval'] if valid_data is not None else None
-        self._fit_model(train_seq_data, valid_seq_data)
-
+        
         # save the seqdata
         self.seqdata = train_seq_data if valid_seq_data is None else valid_seq_data
+        
+        # fit the model
+        self._fit_model(train_seq_data, valid_seq_data)
 
     def predict(self, data, target_trials=None):
         '''
