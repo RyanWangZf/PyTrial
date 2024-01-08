@@ -51,6 +51,8 @@ templates_path = ['_templates']
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = []
 
+# override the default index filename
+master_doc = 'index'
 
 # -- Options for HTML output -------------------------------------------------
 
