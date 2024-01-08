@@ -20,13 +20,21 @@ efficacy and safety of a new drug.
 
    The demonstration of clinical trial tasks supported by PyTrial.
 
+The package is developed based on our extensive research in AI for clinical trials over several years. Here is a list of select papers.
+
+.. figure:: ../images/pytrial_papers.png
+   :width: 800
+   :align: center
+
+   The list of select papers that PyTrial is based on.
+
 
 If you find this package useful, please consider citing it in your scientific publications:
 
 .. code:: latex
 
    @article{wang2023pytrial,
-     title={PyTrial: A Comprehensive Platform for Artificial Intelligence for Drug Development},
+     title={PyTrial: Machine Learning Software and Benchmark for Clinical Trial Applications},
      author={Wang, Zifeng and Theodorou, Brandon and Fu, Tianfan and Xiao, Cao and Sun, Jimeng},
      journal={arXiv preprint arXiv:2306.04018},
      year={2023}
