@@ -20,11 +20,10 @@ sys.path.insert(0, os.path.abspath('../../'))
 
 project = 'PyTrial'
 copyright = '2022, SunLab@UIUC'
-author = 'Zifeng Wang, Brandon Theodorou, Tianfan Fu, Jingtang Ma'
+author = 'Zifeng Wang, Brandon Theodorou, Tianfan Fu'
 
 # The full version, including alpha/beta/rc tags
-release = '0.0.1'
-
+release = '0.0.6'
 
 # -- General configuration ---------------------------------------------------
 
