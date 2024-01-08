@@ -1,9 +1,8 @@
 sphinx-markdown-tables
 recommonmark
-sphinx
-sphinx-rtd-theme
-sphinxcontrib-bibtex
-readthedocs-sphinx-search
+sphinx==4.2.0
+sphinx_rtd_theme==1.0.0
+readthedocs-sphinx-search==0.1.1
 copulas==0.7.0
 ctgan==0.5.2
 datasets==2.3.2
